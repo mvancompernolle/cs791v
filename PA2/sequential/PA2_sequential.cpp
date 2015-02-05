@@ -56,15 +56,13 @@ int main(int argc, char *argv[]){
 
 	for(int i=0; i<NUM_ITERATIONS; i++){
 
-		// get time as soon as message sends
 		gettimeofday(&tod1, NULL);
 
 		// add vectors A and B to C
 		for(int index=0; index < SIZE; index++){
 			sum += vector[index];
 		}
-
-		// get time as soon as message is recieved
+		
 		gettimeofday(&tod2, NULL);
 
 		// determine message passing time and add it to the average (in microseconds)

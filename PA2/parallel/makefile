@@ -14,3 +14,4 @@ PA2: PA2.cu reduce.cu
 clean:
 	rm -f *.o
 	rm -f *~
+	rm PA2
