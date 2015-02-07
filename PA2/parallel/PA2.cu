@@ -140,7 +140,7 @@ void runTest(Range numElements, Range numBlocks, Range numThreads){
           cudaEventElapsedTime( &elapsedTime, start, end );
           totalTime += elapsedTime;
 
-          //std::cout << "Device sum: " << dev_result << std::endl;
+          std::cout << "Device sum: " << dev_result << std::endl;
 
           if(dev_result != correctSum){
             std::cout << "Results did not match!" << std::endl;
@@ -178,6 +178,8 @@ void runTest(Range numElements, Range numBlocks, Range numThreads){
   // Cleanup in the event of success.
   cudaEventDestroy(start);
   cudaEventDestroy(end);
+
+  fout.close();
 }
 
 
