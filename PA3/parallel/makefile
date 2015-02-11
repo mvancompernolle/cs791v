@@ -7,7 +7,7 @@
 
 all: PA3
 
-PA3: PA3.cu reduce.cu
+PA3: PA3.cu mandelbrot.cu
 #	nvcc -ccbin=/home/richard/bin/ $^ -o $@
 	nvcc $^ -o $@
 

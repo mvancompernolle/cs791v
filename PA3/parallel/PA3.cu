@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib>
 
-#include "reduce.h"
+#include "mandelbrot.h"
 
 // used to take the average run time on the gpu
 #define NUM_ITERATIONS 5
@@ -26,7 +26,7 @@ struct Range{
 };
 
 void getCudaInfo(cudaDeviceProp props[], int& count);
-void runTest(Range numElements, Range numBlocks, Range numThreads);
+void runTest(Range numElements, Range numBlocks, Range numThreads, Range numMaxIterations);
 bool write_image(unsigned char *image, int size);
 
 int main(int argc, char *argv[]) {
@@ -39,6 +39,8 @@ int main(int argc, char *argv[]) {
   unsigned int currentDevice = 0;
   char inputc;
   int inputi;
+  numIterations.start=1024;
+  numIterations.end=1024;
 
   srand(time(NULL));
 
@@ -59,7 +61,7 @@ int main(int argc, char *argv[]) {
     std::cout << "3. Select the number of blocks" << std::endl;
     std::cout << "4. Select the max number of iterations" << std::endl;
     std::cout << "5. Display run settings" << std::endl;
-    std::cout << "6. Run vector reduction" << std::endl;
+    std::cout << "6. Run Mandelbrot" << std::endl;
     std::cout << "Q. Quit Program" << std::endl;
     std::cout << "Select a menu option: ";
     std::cin >> input;
@@ -107,6 +109,7 @@ int main(int argc, char *argv[]) {
           numBlocks.end = inputi;
         }
         else if(inputc == 'n' || inputc == 'N'){
+          numIterations.end = numIterations.start;
           numBlocks.end = numBlocks.start;
         }
         break;
@@ -128,7 +131,7 @@ int main(int argc, char *argv[]) {
 
       case '5':
         std::cout << "------------- RUN INFO --------------" << std::endl;
-        std::cout << "Vector Size:\t\t"; 
+        std::cout << "Image Size (NxN):\t\t"; 
         size.printRange();
         std::cout << std::endl;
         std::cout << "Number of threads:\t"; 
@@ -136,12 +139,13 @@ int main(int argc, char *argv[]) {
         std::cout << std::endl;
         std::cout << "Number of blocks:\t"; 
         numBlocks.printRange();
+        std::cout << std::endl;
         std::cout << "Number of max iterations:\t"; 
         numIterations.printRange();
         std::cout << std::endl;
         break;
       case '6':
-        runTest(size, numBlocks, numThreads);
+        runTest(size, numBlocks, numThreads, numIterations);
         break;
       case 'Q': 
       case 'q':
@@ -170,7 +174,7 @@ void getCudaInfo(cudaDeviceProp props[], int& count){
   }
 }
 
-void runTest(Range size, Range numBlocks, Range numThreads){
+void runTest(Range size, Range numBlocks, Range numThreads, Range numMaxIterations){
   float elapsedTime, totalTime;
   cudaEvent_t start, end;
   std::ofstream fout;
@@ -188,17 +192,6 @@ void runTest(Range size, Range numBlocks, Range numThreads){
     // Arrays on the host (CPU)
     img = new unsigned char[n*n];
 
-          /*for(int i=0; i<n/2; i++){
-            for(int j=0; j<n; j++){
-              img[i*n + j ] = 0;
-            }
-          }
-          for(int i=n/2; i<n; i++){
-            for(int j=0; j<n; j++){
-              img[i*n + j ] = 255;
-            }
-          }*/
-
     // arrays on device (GPU)
     cudaError_t err = cudaMalloc( (void**) &devImg, n * n * sizeof(unsigned char));
     if (err != cudaSuccess) {
@@ -215,55 +208,36 @@ void runTest(Range size, Range numBlocks, Range numThreads){
       // loop for the number of threads
       for(int t = numThreads.start; t <= numThreads.end; t*= 2){
 
-        totalTime = 0;
+        // loop for the number of mandelbrot max iterations
+        for(int m = numMaxIterations.start; m <= numMaxIterations.end; m*=2){
 
-        // loop for number of iterations
-        for(int i = 0; i < NUM_ITERATIONS; i++){
-          cudaEventRecord( start, 0 );
+          totalTime = 0;
 
-          err = cudaMemcpy(devImg, img, n * n * sizeof(unsigned char), cudaMemcpyHostToDevice);
-          if (err != cudaSuccess) {
-            std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-            exit(1);
-          }
+          // loop for number of iterations
+          for(int i = 0; i < NUM_ITERATIONS; i++){
+            cudaEventRecord( start, 0 );
 
-          dim3 grid(n,n);
-          mandelbrotKernel<<<grid, 1>>>(devImg);
+            mandelbrotKernel<<<b, t>>>(devImg, n, m);
 
-          cudaMemcpy(img, devImg, n * n * sizeof(unsigned char), cudaMemcpyDeviceToHost);
+            cudaMemcpy(img, devImg, n * n * sizeof(unsigned char), cudaMemcpyDeviceToHost);
 
-          for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
-              //std::cout << i << " " << j << " " << img[i * n + j] << " " << n << std::endl;
-            }
-          }
+            cudaEventRecord( end, 0 );
+            cudaEventSynchronize( end );
+            cudaEventElapsedTime( &elapsedTime, start, end );
+            totalTime += elapsedTime;
+          } // end of iterations loop
 
-          cudaEventRecord( end, 0 );
-          cudaEventSynchronize( end );
-          cudaEventElapsedTime( &elapsedTime, start, end );
-          totalTime += elapsedTime;
+          // print results to screen
+          std::cout << "blocks: " << b << " threads: " << t << std::endl;
+          std::cout << "Size: " << n << " Blocks: " << b << " Threads: " << t << " Max Iterations: " << m << std::endl;
+          std::cout << "Your program took: " << totalTime/NUM_ITERATIONS << " ms (I/O). " << std::endl;
+          unsigned int bytes = n * sizeof(unsigned char);
+          std::cout << "Throughput: " << (bytes * bytes)/((totalTime/NUM_ITERATIONS)/1000) * 1.0e-9 << std::endl;
 
-          /*if(dev_result != correctSum){
-            std::cout << "Results did not match!" << std::endl;
+          // output results to file
+          //fout << n << ", " << b << ", " << t << ", " << (totalTime + (totalCPUTime/1000))/NUM_ITERATIONS << std::endl;
 
-            // clean up events - we should check for error codes here.
-            cudaEventDestroy( start );
-            cudaEventDestroy( end );
-
-            // clean up device pointers
-            cudaFree(devInput);
-            cudaFree(devPartialSums);
-            exit(1);
-          }*/
-        } // end of iterations loop
-
-        // print results to screen
-        std::cout << "Size: " << n << " Blocks: " << b << " Threads: " << t << std::endl;
-        //std::cout << totalCPUTime/1000 << " " << totalTime << std::endl;
-        std::cout << "Your program took: " << totalTime/NUM_ITERATIONS << " ms (I/O). " << std::endl;
-
-        // output results to file
-        //fout << n << ", " << b << ", " << t << ", " << (totalTime + (totalCPUTime/1000))/NUM_ITERATIONS << std::endl;
+        } // end of max mandelbrot iterations loop
 
       } // end of threads loop
 
@@ -284,23 +258,23 @@ void runTest(Range size, Range numBlocks, Range numThreads){
 }
 
 bool write_image(unsigned char *image, int size){
-    /* http://stackoverflow.com/questions/4346831/saving-numerical-2d-array-to-image */
-    FILE *f = fopen("mandelbrot.ppm", "wb");
-    fprintf(f, "P6\n%i %i 255\n", size, size);
+  /* http://stackoverflow.com/questions/4346831/saving-numerical-2d-array-to-image */
+  FILE *f = fopen("mandelbrot.ppm", "wb");
+  fprintf(f, "P6\n%i %i 255\n", size, size);
 
   unsigned int r = 0, g = 0, b = 0;
-    for (int y=0; y<size; y++)
-        for (int x=0; x<size; x++)
-        {
+  for (int y=0; y<size; y++){
+    for (int x=0; x<size; x++){
       // shade mandelbrot as red
       b = image[y * size + x];
       r = image[y * size + x];
       g = image[y * size + x];
-            fputc(r, f);   // 0 .. 255
-            fputc(g, f); // 0 .. 255
-            fputc(b, f);  // 0 .. 255
-        }
-    fclose(f);
-    
-    return true;
+      fputc(r, f);   // 0 .. 255
+      fputc(g, f); // 0 .. 255
+      fputc(b, f);  // 0 .. 255
+    }
+  }
+  fclose(f);
+  
+  return true;
 }
