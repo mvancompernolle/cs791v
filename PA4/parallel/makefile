@@ -9,7 +9,7 @@ all: PA4
 
 PA4: PA4.cu reduce.cu
 #	nvcc -ccbin=/home/richard/bin/ $^ -o $@
-	nvcc $^ -o $@ -arch compute_52 -rdc=true
+	nvcc $^ -o $@
 
 clean:
 	rm -f *.o

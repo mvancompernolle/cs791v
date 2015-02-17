@@ -133,7 +133,7 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
         // call the recursive kernel for device version
         else if(reductionType == RECURSIVE_DEVICE)
         {
-          reduceRecursive<<<b, t, memorySize>>>(devInput, devPartialSums, n, t);
+          //reduceRecursive<<<b, t, memorySize>>>(devInput, devPartialSums, n, t);
         }
 
         if(reductionType == RECURSIVE_HOST){

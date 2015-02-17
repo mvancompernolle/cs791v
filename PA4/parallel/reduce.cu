@@ -3,6 +3,10 @@
 
 // REFERENCE : http://developer.download.nvidia.com/assets/cuda/files/reduction.pdf
 
+__device__ bool isEven(unsigned num){
+  return num%2 == 0;
+}
+
 __device__ void warpWiseReduce(volatile int* sdata, const unsigned int tid, const unsigned int blockSize){
   // reduce without sync (threads in warp all execute at same time)
   if(blockSize >= 64)
@@ -49,33 +53,23 @@ __global__ void reduce(const int *input, int *blockResults, const unsigned int N
   // sync to make sure all shared memory has been initialized
   __syncthreads();
 
-  // repeatedly sum the left half of shared memory with the right half
-  // effectively reduces by half of current size each time and leaves half of threads idle
-  // make sure to sync between reducitons
-  if(blockSize >= 1024 && threadIdx.x < 512){
-    sharedData[threadIdx.x] += sharedData[threadIdx.x + 512];
-  }
-  __syncthreads();
+  // loop version
+  for(unsigned int s=blockDim.x/2; s>0; s/=2){
+    __syncthreads();
+    if(threadIdx.x < s){
+      sharedData[threadIdx.x] += sharedData[threadIdx.x+s];
+      if(!isEven(blockSize) && threadIdx.x == 0)
+        sharedData[threadIdx.x] += sharedData[blockSize-1];
+    }
 
-  if(blockSize >= 512 && threadIdx.x < 256){
-    sharedData[threadIdx.x] += sharedData[threadIdx.x + 256];
   }
-  __syncthreads();
 
-  if(blockSize >= 256 && threadIdx.x < 128){
-    sharedData[threadIdx.x] += sharedData[threadIdx.x + 128];
-  }
-  __syncthreads();
-
-  if(blockSize >= 128 && threadIdx.x < 64){
-    sharedData[threadIdx.x] += sharedData[threadIdx.x + 64];
-  }
-  __syncthreads();
+  /*__syncthreads();
 
   // when small enough for a warp to reduce
   if(threadIdx.x < 32){
     warpWiseReduce(sharedData, threadIdx.x, blockSize);
-  }
+  }*/
 
   // save block's partial sum in results
   if(threadIdx.x == 0){
@@ -83,7 +77,7 @@ __global__ void reduce(const int *input, int *blockResults, const unsigned int N
   }
 }
 
-__global__ void reduceRecursive(const int *input, int *blockResults, const unsigned int N, const unsigned int blockSize) {
+/*__global__ void reduceRecursive(const int *input, int *blockResults, const unsigned int N, const unsigned int blockSize) {
 
   extern __shared__ int sharedData[];
   int i = blockIdx.x*(blockSize*2) + threadIdx.x;
@@ -147,5 +141,34 @@ __global__ void reduceRecursive(const int *input, int *blockResults, const unsig
     }
 
   }
-}
+}*/
 
+  /*// repeatedly sum the left half of shared memory with the right half
+  // effectively reduces by half of current size each time and leaves half of threads idle
+  // make sure to sync between reducitons
+  if(blockSize >= 1024 && threadIdx.x < blockSize/2){
+    sharedData[threadIdx.x] += sharedData[threadIdx.x + blockSize/2];
+    if(isEven(blockSize) && threadIdx.x == 0)
+      sharedData[threadIdx.x] += sharedData[blockSize-1];
+  }
+  __syncthreads();
+
+  if(blockSize >= 1024 && threadIdx.x < blockSize/4){
+    sharedData[threadIdx.x] += sharedData[threadIdx.x + blockSize/4];
+    if(isEven(blockSize) && threadIdx.x == 0)
+      sharedData[threadIdx.x] += sharedData[blockSize-1];
+  }
+  __syncthreads();
+
+  if(blockSize >= 1024 && threadIdx.x < blockSize/8){
+    sharedData[threadIdx.x] += sharedData[threadIdx.x + blockSize/8];
+    if(isEven(blockSize) && threadIdx.x == 0)
+      sharedData[threadIdx.x] += sharedData[blockSize-1];
+  }
+  __syncthreads();
+
+  if(blockSize >= 1024 && threadIdx.x < blockSize/16){
+    sharedData[threadIdx.x] += sharedData[threadIdx.x + blockSize/16];
+    if(isEven(blockSize) && threadIdx.x == 0)
+      sharedData[threadIdx.x] += sharedData[blockSize-1];
+  }*/
