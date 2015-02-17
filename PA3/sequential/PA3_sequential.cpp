@@ -31,6 +31,7 @@ int main(int argc, char *argv[]){
 	complex c;
 	double totalTime = 0.0f;
 	unsigned char **charImage;
+	ofstream fout;
 
 	processFlags(argc, argv, size, maxIterations);
 
@@ -75,6 +76,10 @@ int main(int argc, char *argv[]){
 
 	cout << setprecision(3) << setiosflags(ios::fixed) << setiosflags(ios::showpoint) << "Avg Time Passed for size "
 		<< size  << " X " << size << " = " << (totalTime/NUM_ITERATIONS)/1000 << " ms" << endl;
+
+	// append results to the end of file
+	fout.open("sequential_results.txt", ios::app);
+	fout << size << ", " << (totalTime/NUM_ITERATIONS)/1000 << endl;
 
 	// reset total and avg times
 	totalTime = 0.0f;

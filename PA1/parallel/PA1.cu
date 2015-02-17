@@ -336,8 +336,8 @@ int main(int argc, char *argv[]) {
         }
       } // end of iterations loop
 
-      std::cout << "Size: " << N << " Blocks: " << bSize << " Threads: " << tSize << std::endl;
-      std::cout << "Your program took: " << totalTime/NUM_ITERATIONS << " ms." << std::endl;
+      //std::cout << "Size: " << N << " Blocks: " << bSize << " Threads: " << tSize << std::endl;
+      //std::cout << "Your program took: " << totalTime/NUM_ITERATIONS << " ms." << std::endl;
 
       // output to file
       fout << bSize << ", " << tSize << ", " << totalTime/NUM_ITERATIONS << std::endl;

@@ -180,8 +180,8 @@ void runTest(Range size, Range numBlocks, Range numThreads, Range numMaxIteratio
   std::ofstream fout;
   unsigned char *img, *devImg;
 
-  //fout.open("results.txt", std::ios::app);
-  //fout << std::endl << "Size, Blocks, Threads, Time" << std::endl;
+  fout.open("results.txt", std::ios::app);
+  fout << std::endl << "Size, Blocks, Threads, Iterations, Time" << std::endl;
 
   cudaEventCreate(&start);
   cudaEventCreate(&end);
@@ -230,12 +230,11 @@ void runTest(Range size, Range numBlocks, Range numThreads, Range numMaxIteratio
           // print results to screen
           std::cout << "blocks: " << b << " threads: " << t << std::endl;
           std::cout << "Size: " << n << " Blocks: " << b << " Threads: " << t << " Max Iterations: " << m << std::endl;
-          std::cout << "Your program took: " << totalTime/NUM_ITERATIONS << " ms (I/O). " << std::endl;
-          unsigned int bytes = n * sizeof(unsigned char);
-          std::cout << "Throughput: " << (bytes * bytes)/((totalTime/NUM_ITERATIONS)/1000) * 1.0e-9 << std::endl;
+          std::cout << "Your program took: " << (totalTime/NUM_ITERATIONS)/1000 << " sec (I/O). " << std::endl;
 
           // output results to file
-          //fout << n << ", " << b << ", " << t << ", " << (totalTime + (totalCPUTime/1000))/NUM_ITERATIONS << std::endl;
+          fout << n << ", " << b << ", " << t << ", " << m <<
+              ", " << (totalTime/1000)/NUM_ITERATIONS << std::endl;
 
         } // end of max mandelbrot iterations loop
 
