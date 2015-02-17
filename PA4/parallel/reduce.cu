@@ -52,23 +52,23 @@ __global__ void reduce(const int *input, int *blockResults, const unsigned int N
   // repeatedly sum the left half of shared memory with the right half
   // effectively reduces by half of current size each time and leaves half of threads idle
   // make sure to sync between reducitons
-  if(blockSize >= 1024 && threadIdx.x < (blockSize + (blockSize/2 -1))/2){
-    sharedData[threadIdx.x] += sharedData[threadIdx.x + (blockSize + (blockSize/2 -1))/2];
+  if(blockSize >= 1024 && threadIdx.x < 512){
+    sharedData[threadIdx.x] += sharedData[threadIdx.x + 512];
   }
   __syncthreads();
 
-  if(blockSize >= 512 && threadIdx.x < (blockSize + (blockSize/4 -1))/4){
-    sharedData[threadIdx.x] += sharedData[threadIdx.x + (blockSize + (blockSize/4 -1))/4];
+  if(blockSize >= 512 && threadIdx.x < 256){
+    sharedData[threadIdx.x] += sharedData[threadIdx.x + 256];
   }
   __syncthreads();
 
-  if(blockSize >= 256 && threadIdx.x < (blockSize + (blockSize/8 -1))/8){
-    sharedData[threadIdx.x] += sharedData[threadIdx.x + (blockSize + (blockSize/8 -1))/8];
+  if(blockSize >= 256 && threadIdx.x < 128){
+    sharedData[threadIdx.x] += sharedData[threadIdx.x + 128];
   }
   __syncthreads();
 
-  if(blockSize >= 128 && threadIdx.x < (blockSize + (blockSize/16 -1))/16){
-    sharedData[threadIdx.x] += sharedData[threadIdx.x + (blockSize + (blockSize/16 -1))/16];
+  if(blockSize >= 128 && threadIdx.x < 64){
+    sharedData[threadIdx.x] += sharedData[threadIdx.x + 64];
   }
   __syncthreads();
 
@@ -143,8 +143,7 @@ __global__ void reduceRecursive(const int *input, int *blockResults, const unsig
     if(blockIdx.x == 0 && N > 1){
       int b = (gridDim.x + (blockSize*2 - 1))/(blockSize*2);
       int memSize = (blockSize <= 32) ? 2 * blockSize * sizeof(int) : blockSize * sizeof(int);
-      reduceRecursive<<<b, blockSize, memSize>>>(blockResults, blockResults, b, blockSize);
-      cudaDeviceSynchronize();
+      reduceRecursive<<<b, blockSize, memSize>>>(blockResults, blockResults, gridDim.x, blockSize);
     }
 
   }

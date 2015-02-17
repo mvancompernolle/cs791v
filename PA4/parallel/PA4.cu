@@ -126,8 +126,11 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
         dev_result = 0;
 
         int memorySize = (t <= 32) ? 2 * t * sizeof(int) : t * sizeof(int);
+
+        // run normal reduction for CPU final reduction versions
         if(reductionType == CPU || reductionType == RECURSIVE_HOST)
           reduce<<<b, t, memorySize>>>(devInput, devPartialSums, n, t);
+        // call the recursive kernel for device version
         else if(reductionType == RECURSIVE_DEVICE)
         {
           reduceRecursive<<<b, t, memorySize>>>(devInput, devPartialSums, n, t);
@@ -143,13 +146,8 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
           }
         }
 
-        // check to see if sum is correct
-        if(reductionType == CPU){
-          cudaMemcpy(partialSums, devPartialSums, b * sizeof(int), cudaMemcpyDeviceToHost);
-        }
-        else{
-          cudaMemcpy(partialSums, devPartialSums, currentSize * sizeof(int), cudaMemcpyDeviceToHost);
-        }
+        // get result back
+        cudaMemcpy(partialSums, devPartialSums, b * sizeof(int), cudaMemcpyDeviceToHost);
 
         cudaEventRecord( end, 0 );
         cudaEventSynchronize( end );
@@ -161,7 +159,6 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
           gettimeofday(&tod1, NULL);
           for(int i = 0; i < b; i++){
             dev_result += partialSums[i];
-            std::cout << "dev: " << dev_result << std::endl;
           }
           gettimeofday(&tod2, NULL);
           totalTime += todiff(&tod2, &tod1)/1000;
@@ -172,13 +169,15 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
             dev_result += partialSums[index];
           }
         }
+        // perfor final reduction for recursive device
         else{
-          for(int index=0; index<b; index++){
+          /*for(int index=0; index<b; index++){
             std::cout << "num " << partialSums[index] << std::endl;
-          }
-          dev_result = partialSums[i];
+          }*/
+          dev_result = partialSums[0];
         }
 
+        std::cout << "blocks: " << b << " t: " << t << " n: " << n << std::endl;
         std::cout << "Device sum: " << dev_result << std::endl;
 
         if(dev_result != correctSum){
