@@ -93,10 +93,10 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
       input[i] = rand() % 1 + 1;
       correctSum += input[i];
     }
-    std::cout << "Correct Reduced Sum: " << correctSum << std::endl;
+    //std::cout << "Correct Reduced Sum: " << correctSum << std::endl;
 
     // loop for the number of threads
-    for(int t = numThreads.start; t <= numThreads.end; t*= 2){
+    for(int t = numThreads.start; t <= numThreads.end; t++){
 
       b = (n + (t*2 - 1))/(t*2);
       if(b > 65535)
@@ -133,7 +133,7 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
         // call the recursive kernel for device version
         else if(reductionType == RECURSIVE_DEVICE)
         {
-          //reduceRecursive<<<b, t, memorySize>>>(devInput, devPartialSums, n, t);
+          reduceRecursive<<<b, t, memorySize>>>(devInput, devPartialSums, n, t);
         }
 
         if(reductionType == RECURSIVE_HOST){
@@ -142,7 +142,7 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
           while(currentSize > 1){
             reduce<<<currentSize, t, memorySize>>>(devPartialSums, devPartialSums, currentSize, t);
             currentSize = (currentSize + (t*2 - 1))/(t*2);
-            std::cout << "currSize: " << currentSize << std::endl;
+            //std::cout << "currSize: " << currentSize << std::endl;
           }
         }
 
@@ -177,19 +177,20 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
           dev_result = partialSums[0];
         }
 
-        std::cout << "blocks: " << b << " t: " << t << " n: " << n << std::endl;
-        std::cout << "Device sum: " << dev_result << std::endl;
+
+        //std::cout << "blocks: " << b << " t: " << t << " n: " << n << std::endl;
+        //std::cout << "Device sum: " << dev_result << std::endl;
 
         if(dev_result != correctSum){
-          std::cout << "Results did not match!" << std::endl;
+          std::cout << "Results did not match! " << dev_result << std::endl;
 
           // clean up events - we should check for error codes here.
-          cudaEventDestroy( start );
-          cudaEventDestroy( end );
+          // cudaEventDestroy( start );
+          // cudaEventDestroy( end );
 
-          // clean up device pointers
-          cudaFree(devInput);
-          cudaFree(devPartialSums);
+          // // clean up device pointers
+          // cudaFree(devInput);
+          // cudaFree(devPartialSums);
           exit(1);
         }
       } // end of iterations loop
@@ -197,7 +198,7 @@ void runTest(Range numElements, Range numThreads, RUN_TYPE reductionType){
       // print results to screen
       std::cout << "Size: " << n << " Blocks: " << b << " Threads: " << t << std::endl;
       //std::cout << totalCPUTime/1000 << " " << totalTime << std::endl;
-      std::cout << "Your program took: " << totalTime/NUM_ITERATIONS << " ms (I/O). " << std::endl;
+      std::cout << "Your program took: " << totalTime/NUM_ITERATIONS << " ms (I/O). " << std::endl << std::endl;
 
       // output results to file
       fout << n << ", " << b << ", " << t << ", " << totalTime/NUM_ITERATIONS << std::endl;
