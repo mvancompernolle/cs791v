@@ -33,10 +33,12 @@ __global__ void reduce(const int *input, int *blockResults, const unsigned int N
   for(unsigned int s=blockDim.x/2; s>0; s/=2){
     __syncthreads();
 
+    // add up left half with right half of current reduction
     if(threadIdx.x < s){
       sharedData[threadIdx.x] += sharedData[threadIdx.x+s];
 
-      if(size%2 == 1 && threadIdx.x == 0)
+      // have the first thread do one additional add if the current size is odd
+      if(size&0x0001 == 0x0001 && threadIdx.x == 0)
         sharedData[threadIdx.x] += sharedData[size-1];
     }
 
@@ -83,10 +85,12 @@ __global__ void reduceRecursive(const int *input, int *blockResults, const unsig
   for(unsigned int s=blockDim.x/2; s>0; s/=2){
     __syncthreads();
 
+    // add up left half with right half of current reduction
     if(threadIdx.x < s){
       sharedData[threadIdx.x] += sharedData[threadIdx.x+s];
 
-      if(size%2 == 1 && threadIdx.x == 0)
+      // have the first thread do one additional add if the current size is odd
+      if(size&0x0001 == 0x0001 && threadIdx.x == 0)
         sharedData[threadIdx.x] += sharedData[size-1];
     }
 
@@ -105,14 +109,24 @@ __global__ void reduceRecursive(const int *input, int *blockResults, const unsig
     isLastBlockDone = (value == (gridDim.x-1));
   }
 
+  // make sure each block has correct isLastBlockDone value
   __syncthreads();
 
+  // recursively call once all of the blocks have finished
   if(isLastBlockDone && threadIdx.x == 0 && N > 1){
+
+    // reset flag and count
     isLastBlockDone = false;
     count = 0;
+
+    // recalculate the input size and amount of memeory needed
     int b = (gridDim.x + (blockSize*2 - 1))/(blockSize*2);
     int memSize = (blockSize <= 32) ? 2 * blockSize * sizeof(int) : blockSize * sizeof(int);
+
+    // call reduce again recursively
     reduceRecursive<<<b, blockSize, memSize>>>(blockResults, blockResults, gridDim.x, blockSize);
   }
 
 }
+
+           

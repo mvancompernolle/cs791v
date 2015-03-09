@@ -1,0 +1,25 @@
+CC=clang++
+CFLAGS=-c -std=c++11 -O3
+
+all: project
+
+project: main.o Vertex.o MC.o MC0.o MCQ.o
+	$(CC) main.o Vertex.o MC.o MC0.o MCQ.o -o project
+
+main.o: main.cpp
+	$(CC) $(CFLAGS) main.cpp
+
+MC.o: MC.cpp
+	$(CC) $(CFLAGS) MC.cpp
+
+MC0.o: MC0.cpp
+	$(CC) $(CFLAGS) MC0.cpp
+
+MCQ.o: MCQ.cpp
+	$(CC) $(CFLAGS) MCQ.cpp
+
+Vertex.o: Vertex.cpp
+	$(CC) $(CFLAGS) Vertex.cpp
+
+clean:
+	rm *o project
