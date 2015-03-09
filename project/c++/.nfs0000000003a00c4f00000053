@@ -26,7 +26,7 @@ protected:
 	std::vector<int> solution;
 	timeval tod1, tod2;
 	long long int todiff(struct timeval *tod1, struct timeval *tod2);
-	void expand(std::vector<int> C, std::vector<int> P);
+	void expand(std::vector<int> C, std::vector<int> P, std::vector<int> colOrd);
 	virtual void saveSolution(std::vector<int> C);
 };
 

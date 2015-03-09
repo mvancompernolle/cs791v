@@ -21,9 +21,6 @@ MCQ.o: MCQ.cpp
 MCSA.o: MCSA.cpp
 	$(CC) $(CFLAGS) MCSA.cpp
 
-BBMC.o: BBMC.cpp
-	$(CC) $(CFLAGS) BBMC.cpp	
-
 Vertex.o: Vertex.cpp
 	$(CC) $(CFLAGS) Vertex.cpp
 

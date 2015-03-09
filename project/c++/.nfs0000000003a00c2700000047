@@ -9,7 +9,6 @@
 #include "MC0.h"
 #include "MCQ.h"
 #include "MCSA.h"
-#include "BBMC.h"
 
 void readDIMACS(std::string fname,  std::vector<int>& degree, std::vector<std::vector<int> >& A, int& n);
 long long int todiff(struct timeval *tod1, struct timeval *tod2);
@@ -42,24 +41,6 @@ int main(int argc, char** argv){
 	}
 	else if(!implementation.compare("MCQ3")){
 		mc = new MCQ(n, A, degree, 3);
-	}
-	else if(!implementation.compare("MCSA1")){
-		mc = new MCSA(n, A, degree, 1);
-	}
-	else if(!implementation.compare("MCSA2")){
-		mc = new MCSA(n, A, degree, 2);
-	}
-	else if(!implementation.compare("MCSA3")){
-		mc = new MCSA(n, A, degree, 3);
-	}
-	else if(!implementation.compare("BBMC")){
-		mc = new BBMC(n, A, degree, 1);
-	}
-	else if(!implementation.compare("BBMC")){
-		mc = new BBMC(n, A, degree, 2);
-	}
-	else if(!implementation.compare("BBMC")){
-		mc = new BBMC(n, A, degree, 3);
 	}
 	else{
 		std::cout << "Valid implementation was not selected" << std::endl;

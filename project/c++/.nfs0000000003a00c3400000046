@@ -14,7 +14,7 @@ public:
 	virtual void search();
 	virtual void expand(std::vector<int> C, std::vector<int> P);
 
-protected:
+private:
 	virtual void orderVertices(std::vector<int>& verts);
 	virtual void numberSort(std::vector<int> C, std::vector<int> colOrd, std::vector<int>& P, int color[]);
 	virtual void minWidthOrder(std::vector<Vertex>& V);

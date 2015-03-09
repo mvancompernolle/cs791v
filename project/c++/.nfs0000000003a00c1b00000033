@@ -1,5 +1,5 @@
-#ifndef MCQ_H
-#define MCQ_H
+#ifndef MCSA_H
+#define MCSA_H
 
 #include <vector>
 #include <sys/time.h>
@@ -14,11 +14,11 @@ public:
 	virtual void search();
 	virtual void expand(std::vector<int> C, std::vector<int> P);
 
-protected:
-	virtual void orderVertices(std::vector<int>& verts);
-	virtual void numberSort(std::vector<int> C, std::vector<int> colOrd, std::vector<int>& P, int color[]);
-	virtual void minWidthOrder(std::vector<Vertex>& V);
-	virtual bool conflicts(int v, std::vector<int> cClass);
+private:
+	void orderVertices(std::vector<int>& verts);
+	void numberSort(std::vector<int> C, std::vector<int> colOrd, std::vector<int>& P, int color[]);
+	void minWidthOrder(std::vector<Vertex>& V);
+	bool conflicts(int v, std::vector<int> cClass);
 	std::vector<std::vector<int> > colorClass;
 };
 

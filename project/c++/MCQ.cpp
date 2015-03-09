@@ -233,11 +233,11 @@ for(int i=0; i<colors; i++){
 std::cout << "Pidgeon Hole: ";
 for(int& v: P) std::cout << v << " ";
 std::cout << std::endl;
-*/
+
 std::cout << "Colors: ";
 for(int i=0; i<m; i++) std::cout << color[i] << " ";
 std::cout << std::endl;
-
+*/
 }
 
 void MCQ::minWidthOrder(std::vector<Vertex>& V){

@@ -1,0 +1,29 @@
+#include "BBMC.h"
+
+BBMC::BBMC(int n, std::vector<std::vector<int> > A, std::vector<int> degree, int style){
+
+}
+
+BBMC::~BBMC(){
+
+}
+
+void BBMC::search(){
+
+}
+
+void BBMC::orderVertices(){
+
+}
+
+void BBMC::BBMaxClique(boost::dynamic_bitset<> C, boost::dynamic_bitset<> P){
+
+}
+
+void BBMC::BBColor(boost::dynamic_bitset<> P, std::vector<int> U, std::vector<int> color){
+
+}
+
+void BBMC::saveSolution(boost::dynamic_bitset<> C){
+	
+}

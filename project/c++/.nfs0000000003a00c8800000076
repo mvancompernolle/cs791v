@@ -10,15 +10,13 @@ class BBMC : public MCQ{
 public:
 	BBMC(int n, std::vector<std::vector<int> > A, std::vector<int> degree, int style);
 	~BBMC();
-	void search();
-	void orderVertices();
-	void BBMaxClique(boost::dynamic_bitset<> C, boost::dynamic_bitset<> P);
-	void BBColor(boost::dynamic_bitset<> P, int U[], int color[]);
-	void saveSolution(boost::dynamic_bitset<> C);
+	void init(int n);
+	int applyColor();
+	void removeColor(int i);
 
 private:
-	boost::dynamic_bitset<>* N;
-	boost::dynamic_bitset<>* invN;
+	boost::dynamic_bitset<> N();
+	boost::dynamic_bitset<> invN();
 	std::vector<Vertex> V;
 };
 
