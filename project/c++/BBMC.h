@@ -20,6 +20,8 @@ private:
 	boost::dynamic_bitset<>* N;
 	boost::dynamic_bitset<>* invN;
 	std::vector<Vertex> V;
+	int calcCardinality(const boost::dynamic_bitset<>& bitset) const;
+	void printBitSet(const boost::dynamic_bitset<>& bitset) const;
 };
 
 #endif

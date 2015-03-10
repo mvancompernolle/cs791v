@@ -121,3 +121,15 @@ long long int MC::todiff(struct timeval *tod1, struct timeval *tod2)
 	t2 = tod2->tv_sec * 1000000 + tod2->tv_usec;
 	return t1 - t2;
 }
+
+void MC::printVector(const std::vector<int>& v) const{
+	for(int i=0; i<v.size(); i++)
+		std::cout << v[i] << " ";
+	std::cout << std::endl;
+}
+
+void MC::printArray(const int a[], int size) const{
+	for(int i=0; i<size; i++)
+		std::cout << a[i] << " ";
+	std::cout << std::endl;
+}

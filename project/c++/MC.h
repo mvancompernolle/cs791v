@@ -28,6 +28,8 @@ protected:
 	long long int todiff(struct timeval *tod1, struct timeval *tod2);
 	void expand(std::vector<int> C, std::vector<int> P);
 	virtual void saveSolution(std::vector<int> C);
+	void printVector(const std::vector<int>& v) const;
+	void printArray(const int a[], int size) const;
 };
 
 #endif

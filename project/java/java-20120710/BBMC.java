@@ -18,6 +18,7 @@ public class BBMC extends MCQ {
 	nodes    = 0;
 	BitSet C = new BitSet(n);
 	BitSet P = new BitSet(n);
+
 	for (int i=0;i<n;i++){	  
 	    N[i]    = new BitSet(n);
 	    invN[i] = new BitSet(n);
@@ -26,23 +27,50 @@ public class BBMC extends MCQ {
 	orderVertices();
 	C.set(0,n,false);
 	P.set(0,n,true);
+/*
+printBitset(C);
+printBitset(P);
+for(int i=0; i<n; i++)
+	printBitset(invN[i]);
+*/
 	BBMaxClique(C,P);
     }
     
     void BBMaxClique(BitSet C,BitSet P){
+//System.out.print("\n");
+//printBitset(C);
+//printBitset(P);
+
 	if (timeLimit > 0 && System.currentTimeMillis() - cpuTime >= timeLimit) return;
 	nodes++;
 	int m = P.cardinality();
+//System.out.print(m + "\n");
 	int[] U = new int[m];
 	int[] colour = new int[m];
 	BBColour(P,U,colour);
+
+//printArray(U, m);
+//printArray(colour, m);
+
 	for (int i=m-1;i>=0;i--){
 	    if (colour[i] + C.cardinality() <= maxSize) return;
 	    BitSet newP = (BitSet)P.clone();	    
 	    int v = U[i];
 	    C.set(v,true); newP.and(N[v]);
-	    if (newP.isEmpty() && C.cardinality() > maxSize) saveSolution(C);
-	    if (!newP.isEmpty()) BBMaxClique(C,newP);
+/*
+System.out.print("N: \n");
+printBitset(N[v]);
+System.out.print("newP: \n");
+printBitset(newP);
+*/
+	    if (newP.isEmpty() && C.cardinality() > maxSize) {
+	    	//System.out.print("saved\n");
+	    	saveSolution(C);
+	    }
+	    if (!newP.isEmpty()) {
+	    	//System.out.print("called again\n");
+	    	BBMaxClique(C,newP);
+	    }
 	    P.set(v,false); C.set(v,false);
 	}
     }
@@ -87,5 +115,22 @@ public class BBMC extends MCQ {
 	Arrays.fill(solution,0);
 	for (int i=0;i<C.size();i++) if (C.get(i)) solution[V[i].index] = 1;
 	maxSize = C.cardinality();
+    }
+
+    void printBitset(BitSet b){
+    	for(int i=0; i<n; i++){
+    		int v = 0;
+    		if(b.get(i))
+    			v = 1;
+    		System.out.print(v + " ");
+    	}
+    	System.out.print("\n");
+    }
+
+    void printArray(int[] b, int size){
+    	for(int i=0; i<size; i++){
+    		System.out.print(b[i] + " ");
+    	}
+    	System.out.print("\n");
     }
 }

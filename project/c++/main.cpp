@@ -52,13 +52,13 @@ int main(int argc, char** argv){
 	else if(!implementation.compare("MCSA3")){
 		mc = new MCSA(n, A, degree, 3);
 	}
-	else if(!implementation.compare("BBMC")){
+	else if(!implementation.compare("BBMC1")){
 		mc = new BBMC(n, A, degree, 1);
 	}
-	else if(!implementation.compare("BBMC")){
+	else if(!implementation.compare("BBMC2")){
 		mc = new BBMC(n, A, degree, 2);
 	}
-	else if(!implementation.compare("BBMC")){
+	else if(!implementation.compare("BBMC3")){
 		mc = new BBMC(n, A, degree, 3);
 	}
 	else{
