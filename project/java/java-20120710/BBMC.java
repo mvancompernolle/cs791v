@@ -44,7 +44,7 @@ for(int i=0; i<n; i++)
 	if (timeLimit > 0 && System.currentTimeMillis() - cpuTime >= timeLimit) return;
 	nodes++;
 	int m = P.cardinality();
-//System.out.print(m + "\n");
+
 	int[] U = new int[m];
 	int[] colour = new int[m];
 	BBColour(P,U,colour);

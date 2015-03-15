@@ -3,9 +3,9 @@
 
 BBMC::BBMC(int n, std::vector<std::vector<int> > A, std::vector<int> degree, int style) : MCQ(n, A, degree, style){
 	// N stores the neighborhood of vertex v
-	N = new bitset[n];
+	N = new boost::dynamic_bitset<>[n];
 	// invN stores the inverse neighborhood of vertex v
-	invN = new bitset[n];
+	invN = new boost::dynamic_bitset<>[n];
 	V.resize(n);
 }
 
@@ -17,13 +17,13 @@ void BBMC::search(){
 	nodes = 0;
 
 	// current clique encoded as a bit string
-	bitset C(n);
+	boost::dynamic_bitset<> C(n);
 	// candidate set encoded as a bit string
-	bitset P(n);
+	boost::dynamic_bitset<> P(n);
 
 	for(int i=0; i<n; i++){
-		N[i].bits.resize(n);
-		invN[i].bits.resize(n);
+		N[i].resize(n);
+		invN[i].resize(n);
 		V[i].index = i;
 		V[i].degree = degree[i];
 
@@ -31,9 +31,9 @@ void BBMC::search(){
 
 	// order vertices
 	orderVertices();
-	for(int i=0; i<C.bits.size(); i++){
-		C.bits[i] = 0;
-		P.bits[i] = 1;
+	for(int i=0; i<C.size(); i++){
+		C[i] = 0;
+		P[i] = 1;
 	}
 /*
 printBitSet(C);
@@ -89,14 +89,14 @@ void BBMC::orderVertices(){
 		for(int j=0; j<n; j++){
 			u = V[i].index;
 			v = V[j].index;
-			N[i].bits[j] = (A[u][v] == 1);
-			invN[i].bits[j] = (A[u][v] == 0);
+			N[i][j] = (A[u][v] == 1);
+			invN[i][j] = (A[u][v] == 0);
 		}
 	}
 
 }
 
-void BBMC::BBMaxClique(bitset C, bitset P){
+void BBMC::BBMaxClique(boost::dynamic_bitset<> C, boost::dynamic_bitset<> P){
 	int w;
 /*
 std::cout << std::endl;
@@ -111,7 +111,7 @@ printBitSet(P);
 	// count the size of the backtrack search tree explored
 	nodes++;
 
-	int m = calcCardinality(P.bits);
+	int m = P.count();
 	int U[m];
 	int color[m];
 //std::cout << m << std::endl;
@@ -122,18 +122,16 @@ printBitSet(P);
 	for(int i=m-1; i>= 0; i--){
 
 		// return if clique cannot grow large enough to be maximum clique
-		if(color[i] + calcCardinality(C.bits) <= maxSize) 
+		if(color[i] + C.count() <= maxSize) 
 			return;
 
 		// select a vertex from P and add it to the current clique
-		bitset newP(P);
+		boost::dynamic_bitset<> newP(P);
 		int v = U[i];
-		C.bits[v] = 1;
+		C[v] = 1;
 
 		// perform bitwise and
-		for(int i=0; i<newP.bits.size(); i++){
-			newP.bits[i] = newP.bits[i] * N[v].bits[i];
-		}
+		newP &= N[v];
 /*
 std::cout << "N: ";
 printBitSet(N[v]);
@@ -141,19 +139,19 @@ std::cout << "newP: ";
 printBitSet(newP);
 */
 		// if newP is empty is is maximal, so stop searching and save it if it is maximum
-		if(newP.bits.none() && calcCardinality(C.bits) > maxSize){
+		if(newP.none() && C.count() > maxSize){
 //std::cout << "saved" << std::endl;
 			saveSolution(C);
 		}
 		// else recursively continue search 
-		else if(!newP.bits.none()){
+		else if(!newP.none()){
 //std::cout << "called again" << std::endl;
 			BBMaxClique(C, newP);
 		}
 
 		// remove v from P and C when returning
-		C.bits[v] = 0;
-		P.bits[v] = 0;
+		C[v] = 0;
+		P[v] = 0;
 
 		//gettimeofday(&t2, NULL);
 		//std::cout << todiff(&t2, &t1)/1000 << std::endl;
@@ -161,63 +159,47 @@ printBitSet(newP);
 
 }
 
-void BBMC::BBColor(bitset P, int U[], int color[]){
-	bitset copyP(P);
+void BBMC::BBColor(const boost::dynamic_bitset<>& P, int U[], int color[]){
+	boost::dynamic_bitset<> copyP(P);
 	int v;
 	int colorClass = 0;
 	int i = 0;
-	int card = 0, qCard = 0;
-	card = calcCardinality(copyP.bits);
 
-	while(card != 0){
+	while(copyP.count() != 0){
 		colorClass++;
-		bitset Q(copyP);
+		boost::dynamic_bitset<> Q(copyP);
 
-		qCard = calcCardinality(Q.bits);
-
-		while(qCard != 0){
+		while(Q.count() != 0){
 			// return the index of the first set bit
-			for(int i=0; i<Q.bits.size(); i++){
-				if(Q.bits[i]){
+			for(int i=0; i<Q.size(); i++){
+				if(Q[i]){
 					v = i;
 					break;
 				}
 			}
-			copyP.bits[v] = 0;
-			Q.bits[v] = 0;
+			copyP[v] = 0;
+			Q[v] = 0;
+
 			// perform a bitwise and operation
-			for(int i=0; i<Q.bits.size(); i++){
-				Q.bits[i] = Q.bits[i] * invN[v].bits[i];
-			}
+			Q &= invN[v];
 			U[i] = v;
 			color[i++] = colorClass;
-
-			qCard = calcCardinality(Q.bits);
 		}
-
-		card = calcCardinality(copyP.bits);
 	}
 }
 
-void BBMC::saveSolution(bitset C){
+void BBMC::saveSolution(const boost::dynamic_bitset<>& C){
 	std::fill(solution.begin(), solution.end(), 0);
-	for(int i=0; i<C.bits.size(); i++){
-		if(C.bits[i])
+	for(int i=0; i<C.size(); i++){
+		if(C[i])
 			solution[V[i].index] = 1;
 	}
-	maxSize = calcCardinality(C.bits);
+	maxSize = C.count();
 }
 
-int BBMC::calcCardinality(const boost::dynamic_bitset<>& bitSet) const{
-	int count = 0;
-	for(int i=0; i<bitSet.size(); i++)
-		count += bitSet[i];
-	return count;
-}
-
-void BBMC::printBitSet(const boost::dynamic_bitset<>& bitSet) const{
-	for(int i=0; i<bitSet.size(); i++){
-		std::cout << bitSet[i] << " ";
+void BBMC::printBitSet(const boost::dynamic_bitset<>& bitset) const{
+	for(int i=0; i<bitset.size(); i++){
+		std::cout << bitset[i] << " ";
 	}
 	std::cout << std::endl;
 }
