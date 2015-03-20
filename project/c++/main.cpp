@@ -9,6 +9,7 @@
 #include "MC0.h"
 #include "MCQ.h"
 #include "MCSA.h"
+#include "MCSB.h"
 #include "BBMC.h"
 
 void readDIMACS(std::string fname,  std::vector<int>& degree, std::vector<std::vector<int> >& A, int& n);
@@ -52,6 +53,15 @@ int main(int argc, char** argv){
 	else if(!implementation.compare("MCSA3")){
 		mc = new MCSA(n, A, degree, 3);
 	}
+	else if(!implementation.compare("MCSB1")){
+		mc = new MCSB(n, A, degree, 1);
+	}
+	else if(!implementation.compare("MCSB2")){
+		mc = new MCSB(n, A, degree, 2);
+	}
+	else if(!implementation.compare("MCSB3")){
+		mc = new MCSB(n, A, degree, 3);
+	}
 	else if(!implementation.compare("BBMC1")){
 		mc = new BBMC(n, A, degree, 1);
 	}
@@ -84,6 +94,23 @@ int main(int argc, char** argv){
 			std::cout << i+1 << " ";
 	}
 	std::cout << std::endl;
+
+	// output results to a file
+	std::ofstream fout;
+	fout.open("results.txt", std::ofstream::app);
+	std::string timeLimit;
+	if(argv[3] != NULL){
+		timeLimit = argv[3];
+	}
+	else{
+		timeLimit = "-1";
+	}
+	fout << argv[1] << ", " << argv[2] << ", " << timeLimit << std::endl;
+	fout << mc->getMaxSize() << ", " << mc->getNumNodes() << ", " << todiff(&tod2, &tod1)/1000 << std::endl << std::endl;	
+
+	// delete max clique algorithm
+	delete mc;
+
 	return 0;
 }
 

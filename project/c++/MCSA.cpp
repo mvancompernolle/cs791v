@@ -50,6 +50,7 @@ void MCSA::expand(std::vector<int> C, std::vector<int> P, std::vector<int> colOr
 
 	int m = colOrd.size();
 	int color[m];
+
 	numberSort(C, colOrd, P, color);
 /*
 std::cout << "Color: ";

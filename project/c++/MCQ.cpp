@@ -80,7 +80,7 @@ std::cout << "Loop:" << i << " Max: " << maxSize << std::endl;
 
 		//timeval t1, t2;
 		//gettimeofday(&t1, NULL);
-
+/*
 // print C and P
 std::cout << "C: ";
 for(auto& w: C){
@@ -92,7 +92,7 @@ for(auto& w: P){
 	std::cout << w << " ";
 }
 std::cout << std::endl;
-
+*/
 		// return if clique cannot grow large enough to be maximum clique
 		if(C.size() + color[i] <= maxSize) 
 			return;
@@ -116,12 +116,12 @@ std::cout << std::endl;
 
 		// if newP is empty is is maximal, so stop searching and save it if it is maximum
 		if(newP.empty() && C.size() > maxSize){
-std::cout << "Saving" << std::endl;
+//std::cout << "Saving" << std::endl;
 			saveSolution(C);
 		}
 		// else recursively continue search 
 		else if(!newP.empty()){
-std::cout << "Expanding" << std::endl;
+//std::cout << "Expanding" << std::endl;
 			expand(C, newP);
 		}
 

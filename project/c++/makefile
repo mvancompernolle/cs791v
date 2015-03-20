@@ -3,8 +3,8 @@ CFLAGS=-c -std=c++11 -O3
 
 all: project
 
-project: main.o Vertex.o MC.o MC0.o MCQ.o MCSA.o BBMC.o
-	$(CC) main.o Vertex.o MC.o MC0.o MCQ.o MCSA.o BBMC.o -o project
+project: main.o Vertex.o MC.o MC0.o MCQ.o MCSA.o MCSB.o BBMC.o
+	$(CC) main.o Vertex.o MC.o MC0.o MCQ.o MCSA.o MCSB.o BBMC.o -o project
 
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp
@@ -20,6 +20,9 @@ MCQ.o: MCQ.cpp
 
 MCSA.o: MCSA.cpp
 	$(CC) $(CFLAGS) MCSA.cpp
+
+MCSB.o: MCSB.cpp
+	$(CC) $(CFLAGS) MCSB.cpp
 
 BBMC.o: BBMC.cpp
 	$(CC) $(CFLAGS) BBMC.cpp	

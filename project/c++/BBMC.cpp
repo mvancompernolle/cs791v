@@ -1,15 +1,34 @@
 #include "BBMC.h"
 #include <iostream>
 
+/*
+Algorithm description:
+- Vertices are selected from the candidate set to add to the current clique in non-decreasing color order
+	with a color cut-off.
+- Bitset encoding of MCSa with the following features:
+	1. The "BB" in "BB-MaxClique is for "Bit Board". Sets are represented using bit string.
+	2. BBMC color sthe candidate set using a static sequential ordering, the ordering set at the top of search
+	3. BBMC represents the neighborhood of a vertex and its inverse neighborhood as bit strings, rather 
+		than using an adjacency matrix and its complement.
+	4. When coloring takes place a color class perspective is taken, determining what vertices can be placed 
+		in a color class together, before moving onto the next color class. 
+*/
+
 BBMC::BBMC(int n, std::vector<std::vector<int> > A, std::vector<int> degree, int style) : MCQ(n, A, degree, style){
 	// N stores the neighborhood of vertex v
+	// the set of vertices that are adjacent to v
 	N = new boost::dynamic_bitset<>[n];
 	// invN stores the inverse neighborhood of vertex v
+	// the set of vertices that are not adjacent to v
 	invN = new boost::dynamic_bitset<>[n];
 	V.resize(n);
 }
 
 BBMC::~BBMC(){
+	if(N != NULL)
+		delete[] N;
+	if(invN != NULL)
+		delete[] invN;
 }
 
 void BBMC::search(){
@@ -36,15 +55,23 @@ void BBMC::search(){
 		P[i] = 1;
 	}
 /*
+std::cout << "Initial Ordering: " << std::endl;
+std::cout << "C: " << std::endl;
 printBitSet(C);
+std::cout << "P: " << std::endl;
 printBitSet(P);
+std::cout << "N: " << std::endl;
+for(int i=0; i<n; i++)
+	printBitSet(N[i]);
+std::cout << "invN: " << std::endl;
 for(int i=0; i<n; i++)
 	printBitSet(invN[i]);
+std::cout << "V: (index / degree) " << std::endl;
 for(Vertex& v: V){
 	std::cout << v.index << "-" << v.degree << " ";
 }
-std::cout << std::endl;
-*/
+std::cout << std::endl;*/
+
 	BBMaxClique(C, P);
 
 /*
@@ -57,9 +84,6 @@ std::cout << std::endl;
 void BBMC::orderVertices(){
 	// calculate the sum of the neighboring degrees
 	for(int i=0; i<n; i++){
-		V[i].index = i;
-		V[i].degree = degree[i];
-
 		for(int j=0; j<n; j++){
 			if(A[i][j] == 1)
 				V[i].setNebDeg(V[i].getNebDeg() + degree[j]);
@@ -114,10 +138,24 @@ printBitSet(P);
 	int m = P.count();
 	int U[m];
 	int color[m];
+
 //std::cout << m << std::endl;
+
+	// builds color classes
+	// if v = U[i] then color[i] is v's color and color[i] <= color[i+1]
 	BBColor(P, U, color);
-//printArray(U, m);
-//printArray(color, m);
+/*
+std::cout << "m: " << m << std::endl;
+std::cout << "C: " << std::endl;
+printBitSet(C);
+std::cout << "P: " << std::endl;
+printBitSet(P);
+std::cout << "U: " << std::endl;
+printArray(U, m);
+std::cout << "color: " << std::endl;
+printArray(color, m);
+std::cout << std::endl;
+*/
 	// iterate over the candidate set
 	for(int i=m-1; i>= 0; i--){
 
@@ -126,11 +164,12 @@ printBitSet(P);
 			return;
 
 		// select a vertex from P and add it to the current clique
+		// newP is set of vertices in the candidate set P that are adjacent to v
 		boost::dynamic_bitset<> newP(P);
 		int v = U[i];
 		C[v] = 1;
 
-		// perform bitwise and
+		// perform bitwise and (fast for set of element that reside in word boundaries)
 		newP &= N[v];
 /*
 std::cout << "N: ";
@@ -140,7 +179,6 @@ printBitSet(newP);
 */
 		// if newP is empty is is maximal, so stop searching and save it if it is maximum
 		if(newP.none() && C.count() > maxSize){
-//std::cout << "saved" << std::endl;
 			saveSolution(C);
 		}
 		// else recursively continue search 
@@ -160,6 +198,7 @@ printBitSet(newP);
 }
 
 void BBMC::BBColor(const boost::dynamic_bitset<>& P, int U[], int color[]){
+	// copy of candidate set
 	boost::dynamic_bitset<> copyP(P);
 	int v;
 	int colorClass = 0;
@@ -177,10 +216,12 @@ void BBMC::BBColor(const boost::dynamic_bitset<>& P, int U[], int color[]){
 					break;
 				}
 			}
+			// remove v from Q and copyP
 			copyP[v] = 0;
 			Q[v] = 0;
 
 			// perform a bitwise and operation
+			// Q becomes set of vertices that are in Q but not adjacent to v
 			Q &= invN[v];
 			U[i] = v;
 			color[i++] = colorClass;
@@ -195,6 +236,11 @@ void BBMC::saveSolution(const boost::dynamic_bitset<>& C){
 			solution[V[i].index] = 1;
 	}
 	maxSize = C.count();
+/*std::cout << "saved" << std::endl;
+for(int i=0; i<solution.size(); i++){
+	std::cout << solution[i] << " ";
+}
+std::cout << std::endl;*/
 }
 
 void BBMC::printBitSet(const boost::dynamic_bitset<>& bitset) const{

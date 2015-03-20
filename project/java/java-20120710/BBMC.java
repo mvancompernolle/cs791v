@@ -24,6 +24,13 @@ public class BBMC extends MCQ {
 	    invN[i] = new BitSet(n);
 	    V[i]    = new Vertex(i,degree[i]);
 	}
+
+System.out.print("V: (index / degree)\n");
+for(Vertex v: V){
+	System.out.print(v.index + "-" + v.degree + " ");
+}
+System.out.print("\n");
+
 	orderVertices();
 	C.set(0,n,false);
 	P.set(0,n,true);
@@ -102,6 +109,13 @@ printBitset(newP);
         if (style == 1) Arrays.sort(V); 
 	if (style == 2) minWidthOrder(V);    
 	if (style == 3) Arrays.sort(V,new MCRComparator());
+
+System.out.print("V: (index / degree)\n");
+for(Vertex v: V){
+	System.out.print(v.index + "-" + v.degree + " ");
+}
+System.out.print("\n");
+
 	for (int i=0;i<n;i++)
 	    for (int j=0;j<n;j++){
 		int u = V[i].index;
