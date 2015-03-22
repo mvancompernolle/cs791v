@@ -76,7 +76,7 @@ std::cout << std::endl;
 	// iterate over the candidate set
 	for(int i=P.size()-1; i>= 0; i--){
 
-std::cout << "Loop:" << i << " Max: " << maxSize << std::endl;
+//std::cout << "Loop:" << i << " Max: " << maxSize << std::endl;
 
 		//timeval t1, t2;
 		//gettimeofday(&t1, NULL);

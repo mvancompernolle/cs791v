@@ -210,12 +210,8 @@ void BBMC::BBColor(const boost::dynamic_bitset<>& P, int U[], int color[]){
 
 		while(Q.count() != 0){
 			// return the index of the first set bit
-			for(int i=0; i<Q.size(); i++){
-				if(Q[i]){
-					v = i;
-					break;
-				}
-			}
+			v = Q.find_first();
+			
 			// remove v from Q and copyP
 			copyP[v] = 0;
 			Q[v] = 0;

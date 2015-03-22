@@ -1,0 +1,621 @@
+BBMC1, ../java/DIMACS_cliques/brock200_1.clq, 3600
+21, 524723, 967
+
+BBMC2, ../java/DIMACS_cliques/brock200_1.clq, 3600
+21, 301726, 606
+
+BBMC3, ../java/DIMACS_cliques/brock200_1.clq, 3600
+21, 320219, 652
+
+BBMC1, ../java/DIMACS_cliques/brock400_4.clq, 3600
+33, 54440888, 174020
+
+BBMC2, ../java/DIMACS_cliques/brock400_4.clq, 3600
+33, 19306889, 66866
+
+BBMC3, ../java/DIMACS_cliques/brock400_4.clq, 3600
+33, 90918739, 280571
+
+BBMC1, ../java/DIMACS_cliques/MANN_a27.clq, 3600
+126, 38019, 604
+
+BBMC2, ../java/DIMACS_cliques/MANN_a27.clq, 3600
+126, 38019, 579
+
+BBMC3, ../java/DIMACS_cliques/MANN_a27.clq, 3600
+126, 38019, 610
+
+BBMC1, ../java/DIMACS_cliques/p_hat1000-1.clq, 3600
+10, 176576, 521
+
+BBMC2, ../java/DIMACS_cliques/p_hat1000-1.clq, 3600
+10, 171777, 516
+
+BBMC3, ../java/DIMACS_cliques/p_hat1000-1.clq, 3600
+10, 178151, 529
+
+BBMC1, ../java/DIMACS_cliques/p_hat1500-1.clq, 3600
+12, 1184526, 5364
+
+BBMC2, ../java/DIMACS_cliques/p_hat1500-1.clq, 3600
+12, 1201054, 5398
+
+BBMC3, ../java/DIMACS_cliques/p_hat1500-1.clq, 3600
+12, 1350338, 5912
+
+BBMC1, ../java/DIMACS_cliques/p_hat300-3.clq, 3600
+36, 624947, 2303
+
+BBMC2, ../java/DIMACS_cliques/p_hat300-3.clq, 3600
+36, 488036, 1810
+
+BBMC3, ../java/DIMACS_cliques/p_hat300-3.clq, 3600
+36, 639906, 2348
+
+BBMC1, ../java/DIMACS_cliques/p_hat500-2.clq, 3600
+36, 114009, 577
+
+BBMC2, ../java/DIMACS_cliques/p_hat500-2.clq, 3600
+36, 83873, 439
+
+BBMC3, ../java/DIMACS_cliques/p_hat500-2.clq, 3600
+36, 125017, 624
+
+BBMC1, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 39260458, 257523
+
+BBMC2, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 16963659, 116782
+
+BBMC3, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 30908070, 201899
+
+BBMC1, ../java/DIMACS_cliques/p_hat700-2.clq, 3600
+44, 750903, 5857
+
+BBMC2, ../java/DIMACS_cliques/p_hat700-2.clq, 3600
+44, 634166, 5184
+
+BBMC3, ../java/DIMACS_cliques/p_hat700-2.clq, 3600
+44, 593627, 4839
+
+BBMC1, ../java/DIMACS_cliques/san1000.clq, 3600
+15, 150725, 2212
+
+BBMC2, ../java/DIMACS_cliques/san1000.clq, 3600
+15, 150167, 2211
+
+BBMC3, ../java/DIMACS_cliques/san1000.clq, 3600
+15, 147251, 2159
+
+BBMC1, ../java/DIMACS_cliques/san200_0.9_2.clq, 3600
+60, 229567, 849
+
+BBMC2, ../java/DIMACS_cliques/san200_0.9_2.clq, 3600
+60, 65126, 205
+
+BBMC3, ../java/DIMACS_cliques/san200_0.9_2.clq, 3600
+60, 243794, 892
+
+BBMC1, ../java/DIMACS_cliques/san200_0.9_3.clq, 3600
+44, 6815145, 21696
+
+BBMC2, ../java/DIMACS_cliques/san200_0.9_3.clq, 3600
+44, 13014, 37
+
+BBMC3, ../java/DIMACS_cliques/san200_0.9_3.clq, 3600
+44, 3570725, 12035
+
+BBMC1, ../java/DIMACS_cliques/san400_0.7_1.clq, 3600
+40, 119356, 409
+
+BBMC2, ../java/DIMACS_cliques/san400_0.7_1.clq, 3600
+40, 662733, 2874
+
+BBMC3, ../java/DIMACS_cliques/san400_0.7_1.clq, 3600
+40, 147898, 680
+
+BBMC1, ../java/DIMACS_cliques/san400_0.7_2.clq, 3600
+30, 889125, 3507
+
+BBMC2, ../java/DIMACS_cliques/san400_0.7_2.clq, 3600
+30, 881547, 4098
+
+BBMC3, ../java/DIMACS_cliques/san400_0.7_2.clq, 3600
+30, 929628, 3811
+
+BBMC1, ../java/DIMACS_cliques/san400_0.7_3.clq, 3600
+22, 521410, 1821
+
+BBMC2, ../java/DIMACS_cliques/san400_0.7_3.clq, 3600
+22, 921858, 3466
+
+BBMC3, ../java/DIMACS_cliques/san400_0.7_3.clq, 3600
+22, 1913725, 6487
+
+BBMC1, ../java/DIMACS_cliques/sanr200_0.9.clq, 3600
+42, 14921850, 53397
+
+BBMC2, ../java/DIMACS_cliques/sanr200_0.9.clq, 3600
+42, 12513474, 43775
+
+BBMC3, ../java/DIMACS_cliques/sanr200_0.9.clq, 3600
+42, 20607493, 68787
+
+BBMC1, ../java/DIMACS_cliques/sanr400_0.5.clq, 3600
+13, 320110, 537
+
+BBMC2, ../java/DIMACS_cliques/sanr400_0.5.clq, 3600
+13, 320501, 533
+
+BBMC3, ../java/DIMACS_cliques/sanr400_0.5.clq, 3600
+13, 299605, 511
+
+BBMC1, ../java/DIMACS_cliques/sanr400_0.7.clq, 3600
+21, 64412015, 162810
+
+BBMC2, ../java/DIMACS_cliques/sanr400_0.7.clq, 3600
+21, 54359745, 137635
+
+BBMC3, ../java/DIMACS_cliques/sanr400_0.7.clq, 3600
+21, 64131901, 161611
+
+BBMC1, ../java/DIMACS_cliques/san400_0.9_1.clq, 3600
+100, 4536723, 53459
+
+BBMC2, ../java/DIMACS_cliques/san400_0.9_1.clq, 3600
+57, 663697074, 3600000
+
+BBMC3, ../java/DIMACS_cliques/san400_0.9_1.clq, 3600
+100, 220183637, 1528864
+
+BBMC1, ../java/DIMACS_cliques/p_hat1000-2.clq, 3600
+46, 34473978, 419050
+
+BBMC2, ../java/DIMACS_cliques/p_hat1000-2.clq, 3600
+46, 19211738, 243409
+
+BBMC3, ../java/DIMACS_cliques/p_hat1000-2.clq, 3600
+46, 36870703, 444339
+
+BBMC1, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 39260458, 253171
+
+BBMC2, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 16963659, 114909
+
+BBMC3, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 30908070, 201827
+
+BBMC1, ../java/DIMACS_cliques/brock400_3.clq, 3600
+31, 120230513, 353091
+
+BBMC2, ../java/DIMACS_cliques/brock400_3.clq, 3600
+31, 101550262, 302154
+
+BBMC3, ../java/DIMACS_cliques/brock400_3.clq, 3600
+31, 72814612, 222536
+
+BBMC1, ../java/DIMACS_cliques/brock400_2.clq, 3600
+29, 145597994, 449111
+
+BBMC2, ../java/DIMACS_cliques/brock400_2.clq, 3600
+29, 178500937, 523023
+
+BBMC3, ../java/DIMACS_cliques/brock400_2.clq, 3600
+29, 76368768, 251952
+
+BBMC1, ../java/DIMACS_cliques/brock400_1.clq, 3600
+27, 198359829, 610891
+
+BBMC2, ../java/DIMACS_cliques/brock400_1.clq, 3600
+27, 132762147, 420203
+
+BBMC3, ../java/DIMACS_cliques/brock400_1.clq, 3600
+27, 278967735, 823272
+
+BBMC1, ../java/DIMACS_cliques/brock800_4.clq, 3600
+26, 640444536, 3370891
+
+BBMC2, ../java/DIMACS_cliques/brock800_4.clq, 3600
+26, 753246993, 3600000
+
+BBMC3, ../java/DIMACS_cliques/brock800_4.clq, 3600
+21, 904928321, 3600000
+
+MCSA1, ../java/DIMACS_cliques/brock200_1.clq, 3600
+21, 524723, 4444
+
+MCSA2, ../java/DIMACS_cliques/brock200_1.clq, 3600
+21, 301726, 2853
+
+MCSA3, ../java/DIMACS_cliques/brock200_1.clq, 3600
+21, 320219, 3037
+
+MCSB1, ../java/DIMACS_cliques/brock200_1.clq, 3600
+21, 245146, 3107
+
+MCSB2, ../java/DIMACS_cliques/brock200_1.clq, 3600
+21, 257330, 3240
+
+MCSB3, ../java/DIMACS_cliques/brock200_1.clq, 3600
+21, 267102, 3319
+
+MCSA1, ../java/DIMACS_cliques/brock400_4.clq, 3600
+33, 54440888, 811610
+
+MCSA2, ../java/DIMACS_cliques/brock400_4.clq, 3600
+33, 19306889, 362934
+
+MCSA3, ../java/DIMACS_cliques/brock400_4.clq, 3600
+33, 90918739, 1313794
+
+MCSB1, ../java/DIMACS_cliques/brock400_4.clq, 3600
+33, 68252352, 1273884
+
+MCSB2, ../java/DIMACS_cliques/brock400_4.clq, 3600
+33, 62725065, 1118118
+
+MCSB3, ../java/DIMACS_cliques/brock400_4.clq, 3600
+33, 31887105, 613778
+
+MCSA1, ../java/DIMACS_cliques/MANN_a27.clq, 3600
+126, 38019, 16385
+
+MCSA2, ../java/DIMACS_cliques/MANN_a27.clq, 3600
+126, 38019, 14901
+
+MCSA3, ../java/DIMACS_cliques/MANN_a27.clq, 3600
+126, 38019, 16289
+
+MCSB1, ../java/DIMACS_cliques/MANN_a27.clq, 3600
+126, 38597, 18847
+
+MCSB2, ../java/DIMACS_cliques/MANN_a27.clq, 3600
+126, 34772, 15127
+
+MCSB3, ../java/DIMACS_cliques/MANN_a27.clq, 3600
+126, 38597, 18813
+
+MCSA1, ../java/DIMACS_cliques/p_hat1000-1.clq, 3600
+10, 176576, 830
+
+MCSA2, ../java/DIMACS_cliques/p_hat1000-1.clq, 3600
+10, 171777, 808
+
+MCSA3, ../java/DIMACS_cliques/p_hat1000-1.clq, 3600
+10, 178151, 835
+
+MCSB1, ../java/DIMACS_cliques/p_hat1000-1.clq, 3600
+10, 151033, 870
+
+MCSB2, ../java/DIMACS_cliques/p_hat1000-1.clq, 3600
+10, 148074, 864
+
+MCSB3, ../java/DIMACS_cliques/p_hat1000-1.clq, 3600
+10, 148385, 852
+
+MCSA1, ../java/DIMACS_cliques/p_hat1500-1.clq, 3600
+12, 1184526, 7220
+
+MCSA2, ../java/DIMACS_cliques/p_hat1500-1.clq, 3600
+12, 1201054, 7215
+
+MCSA3, ../java/DIMACS_cliques/p_hat1500-1.clq, 3600
+12, 1350338, 7763
+
+MCSB1, ../java/DIMACS_cliques/p_hat1500-1.clq, 3600
+12, 990246, 7350
+
+MCSB2, ../java/DIMACS_cliques/p_hat1500-1.clq, 3600
+12, 957967, 7166
+
+MCSB3, ../java/DIMACS_cliques/p_hat1500-1.clq, 3600
+12, 1153792, 7920
+
+MCSA1, ../java/DIMACS_cliques/p_hat300-3.clq, 3600
+36, 624947, 15961
+
+MCSA2, ../java/DIMACS_cliques/p_hat300-3.clq, 3600
+36, 488036, 12463
+
+MCSA3, ../java/DIMACS_cliques/p_hat300-3.clq, 3600
+36, 639906, 16229
+
+MCSB1, ../java/DIMACS_cliques/p_hat300-3.clq, 3600
+36, 713107, 24929
+
+MCSB2, ../java/DIMACS_cliques/p_hat300-3.clq, 3600
+36, 821147, 28164
+
+MCSB3, ../java/DIMACS_cliques/p_hat300-3.clq, 3600
+36, 640554, 22193
+
+MCSA1, ../java/DIMACS_cliques/p_hat500-2.clq, 3600
+36, 114009, 3345
+
+MCSA2, ../java/DIMACS_cliques/p_hat500-2.clq, 3600
+36, 83873, 2553
+
+MCSA3, ../java/DIMACS_cliques/p_hat500-2.clq, 3600
+36, 125017, 3582
+
+MCSB1, ../java/DIMACS_cliques/p_hat500-2.clq, 3600
+36, 137568, 5447
+
+MCSB2, ../java/DIMACS_cliques/p_hat500-2.clq, 3600
+36, 117359, 4733
+
+MCSB3, ../java/DIMACS_cliques/p_hat500-2.clq, 3600
+36, 95716, 4170
+
+MCSA1, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 39260458, 1948733
+
+MCSA2, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 16963659, 907169
+
+MCSA3, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 30908070, 1560833
+
+MCSB1, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 55219987, 3600001
+
+MCSB2, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+49, 60505338, 3600002
+
+MCSB3, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 56419443, 3600001
+
+MCSA1, ../java/DIMACS_cliques/p_hat700-2.clq, 3600
+44, 750903, 33039
+
+MCSA2, ../java/DIMACS_cliques/p_hat700-2.clq, 3600
+44, 634166, 29337
+
+MCSA3, ../java/DIMACS_cliques/p_hat700-2.clq, 3600
+44, 593627, 27984
+
+MCSB1, ../java/DIMACS_cliques/p_hat700-2.clq, 3600
+44, 1490522, 90101
+
+MCSB2, ../java/DIMACS_cliques/p_hat700-2.clq, 3600
+44, 1964124, 111772
+
+MCSB3, ../java/DIMACS_cliques/p_hat700-2.clq, 3600
+44, 2244441, 133828
+
+MCSA1, ../java/DIMACS_cliques/san1000.clq, 3600
+15, 150725, 5313
+
+MCSA2, ../java/DIMACS_cliques/san1000.clq, 3600
+15, 150167, 5319
+
+MCSA3, ../java/DIMACS_cliques/san1000.clq, 3600
+15, 147251, 5183
+
+MCSB1, ../java/DIMACS_cliques/san1000.clq, 3600
+15, 53215, 1600
+
+MCSB2, ../java/DIMACS_cliques/san1000.clq, 3600
+15, 50694, 1553
+
+MCSB3, ../java/DIMACS_cliques/san1000.clq, 3600
+15, 50711, 1528
+
+MCSA1, ../java/DIMACS_cliques/san200_0.9_2.clq, 3600
+60, 229567, 7512
+
+MCSA2, ../java/DIMACS_cliques/san200_0.9_2.clq, 3600
+60, 65126, 1760
+
+MCSA3, ../java/DIMACS_cliques/san200_0.9_2.clq, 3600
+60, 243794, 7841
+
+MCSB1, ../java/DIMACS_cliques/san200_0.9_2.clq, 3600
+60, 62776, 2424
+
+MCSB2, ../java/DIMACS_cliques/san200_0.9_2.clq, 3600
+60, 49519, 2411
+
+MCSB3, ../java/DIMACS_cliques/san200_0.9_2.clq, 3600
+60, 31831, 1485
+
+MCSA1, ../java/DIMACS_cliques/san200_0.9_3.clq, 3600
+44, 6815145, 165121
+
+MCSA2, ../java/DIMACS_cliques/san200_0.9_3.clq, 3600
+44, 13014, 263
+
+MCSA3, ../java/DIMACS_cliques/san200_0.9_3.clq, 3600
+44, 3570725, 90784
+
+MCSB1, ../java/DIMACS_cliques/san200_0.9_3.clq, 3600
+44, 1218317, 47393
+
+MCSB2, ../java/DIMACS_cliques/san200_0.9_3.clq, 3600
+44, 119703, 4624
+
+MCSB3, ../java/DIMACS_cliques/san200_0.9_3.clq, 3600
+44, 238268, 12303
+
+MCSA1, ../java/DIMACS_cliques/san400_0.7_1.clq, 3600
+40, 119356, 2397
+
+MCSA2, ../java/DIMACS_cliques/san400_0.7_1.clq, 3600
+40, 662733, 18864
+
+MCSA3, ../java/DIMACS_cliques/san400_0.7_1.clq, 3600
+40, 147898, 4098
+
+MCSB1, ../java/DIMACS_cliques/san400_0.7_1.clq, 3600
+40, 134772, 3548
+
+MCSB2, ../java/DIMACS_cliques/san400_0.7_1.clq, 3600
+40, 15097, 277
+
+MCSB3, ../java/DIMACS_cliques/san400_0.7_1.clq, 3600
+40, 51646, 1503
+
+MCSA1, ../java/DIMACS_cliques/san400_0.7_2.clq, 3600
+30, 889125, 18586
+
+MCSA2, ../java/DIMACS_cliques/san400_0.7_2.clq, 3600
+30, 881547, 24267
+
+MCSA3, ../java/DIMACS_cliques/san400_0.7_2.clq, 3600
+30, 929628, 21092
+
+MCSB1, ../java/DIMACS_cliques/san400_0.7_2.clq, 3600
+30, 754146, 14413
+
+MCSB2, ../java/DIMACS_cliques/san400_0.7_2.clq, 3600
+30, 312606, 7685
+
+MCSB3, ../java/DIMACS_cliques/san400_0.7_2.clq, 3600
+30, 155521, 4232
+
+MCSA1, ../java/DIMACS_cliques/san400_0.7_3.clq, 3600
+22, 521410, 8982
+
+MCSA2, ../java/DIMACS_cliques/san400_0.7_3.clq, 3600
+22, 921858, 16908
+
+MCSA3, ../java/DIMACS_cliques/san400_0.7_3.clq, 3600
+22, 1913725, 30883
+
+MCSB1, ../java/DIMACS_cliques/san400_0.7_3.clq, 3600
+22, 215785, 4397
+
+MCSB2, ../java/DIMACS_cliques/san400_0.7_3.clq, 3600
+22, 550601, 9338
+
+MCSB3, ../java/DIMACS_cliques/san400_0.7_3.clq, 3600
+22, 998131, 15898
+
+MCSA1, ../java/DIMACS_cliques/sanr200_0.9.clq, 3600
+42, 14921850, 440884
+
+MCSA2, ../java/DIMACS_cliques/sanr200_0.9.clq, 3600
+42, 12513474, 345029
+
+MCSA3, ../java/DIMACS_cliques/sanr200_0.9.clq, 3600
+42, 20607493, 549292
+
+MCSB1, ../java/DIMACS_cliques/sanr200_0.9.clq, 3600
+42, 9730778, 383750
+
+MCSB2, ../java/DIMACS_cliques/sanr200_0.9.clq, 3600
+42, 8100319, 339950
+
+MCSB3, ../java/DIMACS_cliques/sanr200_0.9.clq, 3600
+42, 19042812, 708734
+
+MCSA1, ../java/DIMACS_cliques/sanr400_0.5.clq, 3600
+13, 320110, 1573
+
+MCSA2, ../java/DIMACS_cliques/sanr400_0.5.clq, 3600
+13, 320501, 1547
+
+MCSA3, ../java/DIMACS_cliques/sanr400_0.5.clq, 3600
+13, 299605, 1507
+
+MCSB1, ../java/DIMACS_cliques/sanr400_0.5.clq, 3600
+13, 190706, 1298
+
+MCSB2, ../java/DIMACS_cliques/sanr400_0.5.clq, 3600
+13, 183671, 1278
+
+MCSB3, ../java/DIMACS_cliques/sanr400_0.5.clq, 3600
+13, 203842, 1345
+
+MCSA1, ../java/DIMACS_cliques/sanr400_0.7.clq, 3600
+21, 64412015, 606493
+
+MCSA2, ../java/DIMACS_cliques/sanr400_0.7.clq, 3600
+21, 54359745, 511730
+
+MCSA3, ../java/DIMACS_cliques/sanr400_0.7.clq, 3600
+21, 64131901, 606131
+
+MCSB1, ../java/DIMACS_cliques/sanr400_0.7.clq, 3600
+21, 46125168, 565147
+
+MCSB2, ../java/DIMACS_cliques/sanr400_0.7.clq, 3600
+21, 44880802, 566100
+
+MCSB3, ../java/DIMACS_cliques/sanr400_0.7.clq, 3600
+21, 48664182, 597615
+
+MCSA1, ../java/DIMACS_cliques/san400_0.9_1.clq, 3600
+100, 4536723, 785025
+
+MCSA2, ../java/DIMACS_cliques/san400_0.9_1.clq, 3600
+55, 88723414, 3600001
+
+MCSA3, ../java/DIMACS_cliques/san400_0.9_1.clq, 3600
+56, 57882625, 3600001
+
+MCSB1, ../java/DIMACS_cliques/san400_0.9_1.clq, 3600
+100, 582445, 94291
+
+MCSB2, ../java/DIMACS_cliques/san400_0.9_1.clq, 3600
+100, 15590, 876
+
+MCSB3, ../java/DIMACS_cliques/san400_0.9_1.clq, 3600
+56, 54409030, 3600001
+
+MCSA1, ../java/DIMACS_cliques/p_hat1000-2.clq, 3600
+46, 34473978, 1703196
+
+MCSA2, ../java/DIMACS_cliques/p_hat1000-2.clq, 3600
+46, 19211738, 1004710
+
+MCSA3, ../java/DIMACS_cliques/p_hat1000-2.clq, 3600
+46, 36870703, 1809224
+
+MCSB1, ../java/DIMACS_cliques/p_hat1000-2.clq, 3600
+46, 67880765, 3600006
+
+MCSB2, ../java/DIMACS_cliques/p_hat1000-2.clq, 3600
+46, 65058683, 3600007
+
+MCSB3, ../java/DIMACS_cliques/p_hat1000-2.clq, 3600
+46, 60721281, 3600006
+
+MCSA1, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 39260458, 1977317
+
+MCSA2, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 16963659, 915323
+
+MCSA3, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 30908070, 1566919
+
+MCSB1, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 55202335, 3600001
+
+MCSB2, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+49, 60160737, 3600001
+
+MCSB3, ../java/DIMACS_cliques/p_hat500-3.clq, 3600
+50, 56030533, 3600001
+
+MCSA1, ../java/DIMACS_cliques/brock400_3.clq, 3600
+31, 120230513, 1556221
+
+MCSA2, ../java/DIMACS_cliques/brock400_3.clq, 3600
+31, 101550262, 1374842
+
+MCSA3, ../java/DIMACS_cliques/brock400_3.clq, 3600
+31, 72814612, 1035032
+
+MCSB1, ../java/DIMACS_cliques/brock400_3.clq, 3600
+31, 70263846, 1218792
+
+MCSB2, ../java/DIMACS_cliques/brock400_3.clq, 3600
+31, 163468194, 2689373
+
+MCSB3, ../java/DIMACS_cliques/brock400_3.clq, 3600
+31, 125495337, 2096304
+
