@@ -6,14 +6,14 @@ def main():
     L = []
 
     #L.append("BBMC1")
-    #L.append("BBMC2")
+    L.append("BBMC2")
     #L.append("BBMC3")
-    L.append("MCSA1")
-    L.append("MCSA2")
-    L.append("MCSA3")
-    L.append("MCSB1")
-    L.append("MCSB2")
-    L.append("MCSB3")
+    #L.append("MCSA1")
+    #L.append("MCSA2")
+    #L.append("MCSA3")
+    #L.append("MCSB1")
+    #L.append("MCSB2")
+    #L.append("MCSB3")
     #L.append("MCQ1")
     #L.append("MCQ2")
     #L.append("MCQ3")
@@ -42,9 +42,46 @@ def main():
     #G.append("../java/DIMACS_cliques/p_hat1000-2.clq")
     #G.append("../java/DIMACS_cliques/p_hat500-3.clq")
     #G.append("../java/DIMACS_cliques/brock400_3.clq")
-    G.append("../java/DIMACS_cliques/brock400_2.clq")
-    G.append("../java/DIMACS_cliques/brock400_1.clq")
-    G.append("../java/DIMACS_cliques/brock800_4.clq")
+    #G.append("../java/DIMACS_cliques/brock400_2.clq")
+    #G.append("../java/DIMACS_cliques/brock400_1.clq")
+    #G.append("../java/DIMACS_cliques/brock800_4.clq")
+
+
+
+    G.append("../200_3.txt")
+    G.append("../200_4.txt")
+    G.append("../200_5.txt")
+    G.append("../200_6.txt")
+    G.append("../200_7.txt")
+    G.append("../200_8.txt")
+
+    G.append("../300_3.txt")
+    G.append("../300_4.txt")
+    G.append("../300_5.txt")
+    G.append("../300_6.txt")
+    G.append("../300_7.txt")
+    G.append("../300_8.txt")
+
+    G.append("../400_3.txt")
+    G.append("../400_4.txt")
+    G.append("../400_5.txt")
+    G.append("../400_6.txt")
+    G.append("../400_7.txt")
+    G.append("../400_8.txt")
+
+    G.append("../500_3.txt")
+    G.append("../500_4.txt")
+    G.append("../500_5.txt")
+    G.append("../500_6.txt")
+    G.append("../500_7.txt")
+    G.append("../500_8.txt")
+
+    G.append("../600_3.txt")
+    G.append("../600_4.txt")
+    G.append("../600_5.txt")
+    G.append("../600_6.txt")
+    G.append("../600_7.txt")
+    G.append("../600_8.txt")
 
     with open('log.txt', 'a') as fout:
 

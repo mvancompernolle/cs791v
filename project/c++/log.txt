@@ -1567,4 +1567,690 @@ Output: 4 MCSA1 ../java/DIMACS_cliques/p_hat500-3.clq
 Error: 
 
 NEW LOG ENTRY
-Output: 
+Output: NEW LOG ENTRY
+Output: 4 MCSA1 ../java/DIMACS_cliques/brock400_2.clq
+ -------- Results --------- 
+29 145597994 2169794
+18 20 39 68 73 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 365 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSA2 ../java/DIMACS_cliques/brock400_2.clq
+ -------- Results --------- 
+29 178500937 2371403
+18 20 39 68 73 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 365 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSA3 ../java/DIMACS_cliques/brock400_2.clq
+ -------- Results --------- 
+29 76368768 1221923
+18 20 39 68 73 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 365 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSB1 ../java/DIMACS_cliques/brock400_2.clq
+ -------- Results --------- 
+29 61327056 1207775
+18 20 39 68 73 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 365 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSB2 ../java/DIMACS_cliques/brock400_2.clq
+ -------- Results --------- 
+29 151834849 2611492
+18 20 39 68 73 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 365 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSB3 ../java/DIMACS_cliques/brock400_2.clq
+ -------- Results --------- 
+29 154293388 2559102
+18 20 39 68 73 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 365 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSA1 ../java/DIMACS_cliques/brock400_1.clq
+ -------- Results --------- 
+27 198359829 2742350
+18 20 39 68 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSA2 ../java/DIMACS_cliques/brock400_1.clq
+ -------- Results --------- 
+27 132762147 1913338
+18 20 39 68 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSA3 ../java/DIMACS_cliques/brock400_1.clq
+ -------- Results --------- 
+27 278967735 3553942
+18 20 39 68 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSB1 ../java/DIMACS_cliques/brock400_1.clq
+ -------- Results --------- 
+27 142253319 2542763
+18 20 39 68 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSB2 ../java/DIMACS_cliques/brock400_1.clq
+ -------- Results --------- 
+27 208625482 3548621
+18 20 39 68 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSB3 ../java/DIMACS_cliques/brock400_1.clq
+ -------- Results --------- 
+27 114839435 2157810
+18 20 39 68 85 90 92 93 108 134 135 142 150 178 186 207 221 234 252 260 262 276 304 311 348 380 388 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSA1 ../java/DIMACS_cliques/brock800_4.clq
+ -------- Results --------- 
+26 260468807 3600004
+8 17 112 135 154 157 161 247 270 294 324 334 343 362 389 394 396 495 509 511 561 624 666 681 687 714 
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 4 MCSA2 ../java/DIMACS_cliques/brock800_4.clq
+ -------- Results --------- 
+26 367989282 3600004
+8 17 112 135 154 157 161 247 270 294 324 334 343 362 389 394 396 495 509 511 561 624 666 681 687 714 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSA3 ../java/DIMACS_cliques/brock800_4.clq
+ -------- Results --------- 
+21 346270240 3600005
+11 39 52 113 123 170 250 252 341 376 402 414 485 489 512 514 516 526 779 785 799 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSB1 ../java/DIMACS_cliques/brock800_4.clq
+ -------- Results --------- 
+21 287839479 3600004
+11 39 52 113 123 170 250 252 341 376 402 414 485 489 512 514 516 526 779 785 799 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSB2 ../java/DIMACS_cliques/brock800_4.clq
+ -------- Results --------- 
+21 289122637 3600004
+90 140 159 241 276 292 343 362 368 382 395 408 482 546 555 596 597 599 634 673 771 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 MCSB3 ../java/DIMACS_cliques/brock800_4.clq
+ -------- Results --------- 
+26 254612417 3600005
+8 17 112 135 154 157 161 247 270 294 324 334 343 362 389 394 396 495 509 511 561 624 666 681 687 714 
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_1.txt
+ -------- Results --------- 
+4 103 0
+23 63 153 178 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_1.txt
+ -------- Results --------- 
+4 101 0
+23 63 153 178 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_1.txt
+ -------- Results --------- 
+4 105 0
+23 63 153 178 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_2.txt
+ -------- Results --------- 
+6 189 0
+42 43 66 94 103 156 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_2.txt
+ -------- Results --------- 
+6 246 0
+10 66 88 120 174 187 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_2.txt
+ -------- Results --------- 
+6 303 0
+16 27 63 192 193 194 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_3.txt
+ -------- Results --------- 
+7 701 0
+7 39 45 61 100 120 178 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_3.txt
+ -------- Results --------- 
+7 666 1
+2 9 21 64 134 143 157 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_3.txt
+ -------- Results --------- 
+7 715 0
+2 9 21 64 134 143 157 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_4.txt
+ -------- Results --------- 
+9 2245 2
+10 11 47 83 90 95 124 131 160 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_4.txt
+ -------- Results --------- 
+9 2174 2
+10 11 47 83 90 95 124 131 160 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_4.txt
+ -------- Results --------- 
+9 1890 2
+48 67 73 83 88 90 131 147 195 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_5.txt
+ -------- Results --------- 
+11 8158 10
+17 23 41 77 94 106 127 135 155 169 184 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_5.txt
+ -------- Results --------- 
+11 7098 9
+17 23 41 77 94 106 127 135 155 169 184 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_5.txt
+ -------- Results --------- 
+11 9042 11
+19 41 52 90 124 132 137 147 173 177 185 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_6.txt
+ -------- Results --------- 
+14 26162 37
+4 7 16 75 83 133 134 139 142 162 166 175 189 200 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_6.txt
+ -------- Results --------- 
+14 23953 34
+4 7 16 75 83 133 134 139 142 162 166 175 189 200 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_6.txt
+ -------- Results --------- 
+14 26569 38
+4 10 14 15 16 30 59 117 133 138 167 170 177 190 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_7.txt
+ -------- Results --------- 
+18 211688 352
+2 26 40 46 68 69 77 87 101 110 155 165 166 170 171 180 188 195 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_7.txt
+ -------- Results --------- 
+18 139479 247
+2 26 40 46 68 69 77 87 101 110 155 165 166 170 171 180 188 195 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_7.txt
+ -------- Results --------- 
+18 177715 314
+2 26 40 46 68 69 77 87 101 110 155 165 166 170 171 180 188 195 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_8.txt
+ -------- Results --------- 
+24 2427313 5244
+2 14 17 20 26 28 36 45 51 64 73 81 88 91 94 102 107 140 153 156 163 166 184 191 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_8.txt
+ -------- Results --------- 
+24 2089841 4513
+2 14 17 20 28 36 51 64 65 73 81 88 91 94 102 107 140 153 156 163 166 184 185 191 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_8.txt
+ -------- Results --------- 
+24 2256786 4800
+3 27 33 39 41 60 65 68 71 90 97 100 114 126 135 143 151 158 163 181 187 188 192 193 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_9.txt
+ -------- Results --------- 
+39 80348923 254751
+5 10 16 17 18 23 28 31 39 47 51 53 55 58 60 66 69 82 91 95 96 106 108 115 119 126 130 132 134 139 144 154 162 176 177 182 183 197 200 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_9.txt
+ -------- Results --------- 
+39 32743422 109273
+5 10 16 17 18 23 28 31 39 47 51 53 55 58 60 66 69 82 91 95 96 106 108 115 119 126 130 132 134 139 144 154 162 176 177 182 183 197 200 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_9.txt
+ -------- Results --------- 
+39 57770134 186003
+5 10 16 17 18 23 28 31 39 47 51 53 55 58 60 66 69 82 91 95 96 106 108 115 119 126 130 132 134 139 144 154 162 176 177 182 183 197 200 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../100_5.txt
+ -------- Results --------- 
+9 356 0
+12 24 28 31 35 46 76 89 92 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../100_5.txt
+ -------- Results --------- 
+9 382 0
+3 26 28 34 35 40 56 61 76 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../100_5.txt
+ -------- Results --------- 
+9 382 0
+12 24 28 31 35 46 76 89 92 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_5.txt
+ -------- Results --------- 
+11 8158 13
+17 23 41 77 94 106 127 135 155 169 184 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_5.txt
+ -------- Results --------- 
+11 7098 9
+17 23 41 77 94 106 127 135 155 169 184 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_5.txt
+ -------- Results --------- 
+11 9042 12
+19 41 52 90 124 132 137 147 173 177 185 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../300_5.txt
+ -------- Results --------- 
+12 70067 98
+40 42 79 110 124 137 161 183 199 213 227 230 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../300_5.txt
+ -------- Results --------- 
+12 62525 88
+51 101 106 152 165 177 189 202 220 227 270 297 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../300_5.txt
+ -------- Results --------- 
+12 71311 97
+51 101 106 152 165 177 189 202 220 227 270 297 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../400_5.txt
+ -------- Results --------- 
+13 199897 375
+7 19 104 105 132 160 278 302 312 333 341 383 385 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../400_5.txt
+ -------- Results --------- 
+13 187341 353
+7 19 104 105 132 160 278 302 312 333 341 383 385 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../400_5.txt
+ -------- Results --------- 
+13 207430 384
+7 19 104 105 132 160 278 302 312 333 341 383 385 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../500_5.txt
+ -------- Results --------- 
+13 1075441 2028
+10 31 38 91 153 169 179 231 237 245 256 377 445 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../500_5.txt
+ -------- Results --------- 
+13 961313 1839
+29 79 82 86 124 170 189 208 247 255 474 488 490 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../500_5.txt
+ -------- Results --------- 
+13 1015667 1940
+29 79 82 86 124 170 189 208 247 255 474 488 490 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../600_5.txt
+ -------- Results --------- 
+13 4113416 8808
+3 56 71 87 105 135 182 269 281 471 474 544 546 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../600_5.txt
+ -------- Results --------- 
+13 3801099 8139
+22 176 184 218 268 294 303 314 344 397 443 457 507 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../600_5.txt
+ -------- Results --------- 
+13 4116378 9000
+76 205 207 234 256 397 420 541 564 567 578 582 598 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../700_5.txt
+ -------- Results --------- 
+14 7146028 18303
+6 20 24 76 94 148 294 306 312 333 397 565 573 602 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../700_5.txt
+ -------- Results --------- 
+14 6857030 17544
+6 20 24 76 94 148 294 306 312 333 397 565 573 602 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../700_5.txt
+ -------- Results --------- 
+14 8033663 19703
+117 183 237 263 351 420 421 461 490 573 616 629 630 633 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../800_5.txt
+ -------- Results --------- 
+15 16449963 49299
+12 25 102 124 152 154 198 211 256 322 467 546 623 732 795 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../800_5.txt
+ -------- Results --------- 
+15 14560586 44546
+12 25 102 124 152 154 198 211 256 322 546 588 623 732 795 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../800_5.txt
+ -------- Results --------- 
+15 17053954 51963
+12 25 102 124 152 154 198 211 256 322 467 546 623 732 795 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../900_5.txt
+ -------- Results --------- 
+14 53984618 171116
+63 67 104 210 311 465 506 536 667 713 718 829 841 861 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../900_5.txt
+ -------- Results --------- 
+14 50416557 158589
+90 168 218 221 330 338 406 590 627 693 737 848 867 897 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../900_5.txt
+ -------- Results --------- 
+14 53865385 168246
+90 168 218 221 330 338 406 590 627 693 737 848 867 897 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../1000_5.txt
+ -------- Results --------- 
+15 77881229 297294
+97 162 223 229 342 359 420 656 664 746 778 901 916 952 988 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../1000_5.txt
+ -------- Results --------- 
+15 71002658 273847
+129 270 294 296 368 420 445 544 601 616 669 705 830 883 980 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../1000_5.txt
+ -------- Results --------- 
+15 74138875 285604
+129 270 294 296 368 420 445 544 601 616 669 705 830 883 980 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_3.txt
+ -------- Results --------- 
+7 666 1
+2 9 21 64 134 143 157 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_4.txt
+ -------- Results --------- 
+9 2174 4
+10 11 47 83 90 95 124 131 160 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_5.txt
+ -------- Results --------- 
+11 7098 12
+17 23 41 77 94 106 127 135 155 169 184 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_6.txt
+ -------- Results --------- 
+14 23953 37
+4 7 16 75 83 133 134 139 142 162 166 175 189 200 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_7.txt
+ -------- Results --------- 
+18 139479 247
+2 26 40 46 68 69 77 87 101 110 155 165 166 170 171 180 188 195 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_8.txt
+ -------- Results --------- 
+24 2089841 4582
+2 14 17 20 28 36 51 64 65 73 81 88 91 94 102 107 140 153 156 163 166 184 185 191 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../300_3.txt
+ -------- Results --------- 
+8 2539 3
+6 33 46 71 99 106 138 191 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../300_4.txt
+ -------- Results --------- 
+10 10359 16
+34 63 97 114 134 197 224 246 257 295 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../300_5.txt
+ -------- Results --------- 
+12 65357 93
+45 67 106 123 162 163 202 204 207 223 234 279 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../300_6.txt
+ -------- Results --------- 
+15 375527 630
+15 34 43 50 77 80 116 121 148 184 250 251 252 268 288 
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../300_7.txt
+ -------- Results --------- 
+21 4074680 8737
+3 6 32 33 52 69 106 139 180 187 189 227 231 240 256 258 263 265 269 273 286 
+
+Error: 
+
+NEW LOG ENTRY

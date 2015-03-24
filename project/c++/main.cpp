@@ -135,7 +135,7 @@ void readDIMACS(std::string fname, std::vector<int>& degree, std::vector<std::ve
 		for(int i=0; i<n; i++)
 			A[i].resize(n);
 
-		while(fin.good() && counter < m){
+		while(fin.good()){
 			fin >> s;
 			fin >> i;
 			fin >> j;
