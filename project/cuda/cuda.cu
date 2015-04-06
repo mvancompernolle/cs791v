@@ -1,5 +1,6 @@
 
 #include "cuda.h"
+#include "stdio.h"
 
 /*
   This is the function that each thread will execute on the GPU. The
@@ -9,28 +10,34 @@
   pointers we pass in should point to memory on the device, but this
   is not indicated by the function's signature.
  */
-__global__ void add(int *a, int *b, int *c) {
+__global__ void add(unsigned int* N, unsigned int* invN) {
 
-  /*
-    Each thread knows its identity in the system. This identity is
-    made available in code via indices blockIdx and threadIdx. We
-    write blockIdx.x because block indices are multidimensional. In
-    this case, we have linear arrays of data, so we only need one
-    dimension. If this doesn't make sense, don't worry - the important
-    thing is that the first step in the function is converting the
-    thread's indentity into an index into the data.
-   */
-  int thread_id = blockIdx.x;
-
-  /*
-    We make sure that the thread_id isn't too large, and then we
-    assign c = a + b using the index we calculated above.
-
-    The big picture is that each thread is responsible for adding one
-    element from a and one element from b. Each thread is able to run
-    in parallel, so we get speedup.
-   */
-  if (thread_id < N) {
-    c[thread_id] = a[thread_id] + b[thread_id];
+  unsigned int* tmp = N;
+  if(threadIdx.x == 0 && blockIdx.x == 0){
+    for(int i=0; i<40; i++){
+      printBitSet(tmp, 2);
+      printf("\n");
+      tmp+=2;
+    }
+    //printf("\nNumber of Vertices: %d\n", numV);
   }
+  //printf("Hello from block %d, thread %d, %d\n", blockIdx.x, threadIdx.x, Adj[blockIdx.x * threadIdx.x]);
+
+}
+
+__device__ void printBitSet(unsigned int* bitSet, int size){
+
+  // loop over each int
+  for(int currInt = 0; currInt < size; currInt++){
+    // loop over each bit in the int
+    for(int b=0; b<sizeof(unsigned int)*8; b++){
+      int shift = 1 << b;
+      int val = bitSet[currInt] & shift;
+      if(val != 0)
+        val = 1;
+      printf("%u ", val);
+    }
+    printf(" | ");
+  }
+
 }

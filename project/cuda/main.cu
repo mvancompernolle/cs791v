@@ -6,6 +6,7 @@
 #include <sys/time.h>
 #include <time.h>
 #include "MC.h"
+#include "BBMC.h"
 
 void readDIMACS(std::string fname,  std::vector<int>& degree, std::vector<std::vector<int> >& A, int& n);
 long long int todiff(struct timeval *tod1, struct timeval *tod2);
@@ -27,10 +28,25 @@ int main(int argc, char** argv){
 	if(!implementation.compare("MC")){
 		mc = new MC(n, A, degree);
 	}
+	else if(!implementation.compare("BBMC1")){
+		mc = new BBMC(n, A, degree, 1);
+	}
+	else if(!implementation.compare("BBMC2")){
+		mc = new BBMC(n, A, degree, 2);
+	}
+	else if(!implementation.compare("BBMC3")){
+		mc = new BBMC(n, A, degree, 3);
+	}
 	else{
 		std::cout << "Valid implementation was not selected" << std::endl;
 		return 1;
 	}
+
+	// search for maximum clique
+	boost::dynamic_bitset<>* N;
+	boost::dynamic_bitset<>* invN;
+	std::vector<Vertex> V;
+
 
 	// set time limit if passed in
 	if(argc > 3)

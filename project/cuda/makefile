@@ -1,10 +1,10 @@
 CC=nvcc
-CFLAGS=-c -std=c++11
+CFLAGS=-c -arch compute_20 -std=c++11
 
 all: project
 
-project: main.o MC.o cuda.o
-	$(CC) main.o MC.o cuda.o -o project
+project: main.o MC.o MCQ.o BBMC.o Vertex.o
+	$(CC) main.o MC.o MCQ.o BBMC.o Vertex.o -o project
 
 main.o: main.cu
 	$(CC) $(CFLAGS) main.cu
@@ -12,8 +12,14 @@ main.o: main.cu
 MC.o: MC.cu
 	$(CC) $(CFLAGS) MC.cu
 
-cuda.o: cuda.cu
-	$(CC) $(CFLAGS) cuda.cu
+MCQ.o: MCQ.cu
+	$(CC) $(CFLAGS) MCQ.cu
+
+BBMC.o: BBMC.cu
+	$(CC) $(CFLAGS) BBMC.cu	
+
+Vertex.o: Vertex.cu
+	$(CC) $(CFLAGS) Vertex.cu
 
 clean:
 	rm *o project

@@ -1,7 +1,6 @@
 #include "MC.h"
 #include <iostream>
 #include <algorithm>
-#include "cuda.h"
 #include <queue>
 
 MC::MC(int n, std::vector<std::vector<int> > A, std::vector<int> degree){
@@ -18,16 +17,6 @@ MC::MC(int n, std::vector<std::vector<int> > A, std::vector<int> degree){
 	style = 1;
 	// largest clique found
 	solution.resize(n);
-
-	/*// allocate memory on GPU for adjacency matrix
-	int *dev_adj;
-		cudaError_t err = cudaMalloc( (void**) &dev_adj, A[0].size() * sizeof(int));
-		if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	
-	cudaMemcpy(dev_adj, A[0].data(), A[0].size() * sizeof(int), cudaMemcpyHostToDevice);*/
 }
 
 MC::~MC(){

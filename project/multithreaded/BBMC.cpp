@@ -78,6 +78,8 @@ for(Vertex& v: V){
 }
 std::cout << std::endl;*/
 
+	auto a = A();
+
     //Launch a group of threads
 	int numThreads = 4;
     std::thread* t = new std::thread[numThreads];
