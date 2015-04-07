@@ -1,5 +1,5 @@
 CC=nvcc
-CFLAGS=-c -arch compute_20 -std=c++11
+CFLAGS=-c -std=c++11 -arch=sm_35 -rdc=true -lcudadevrt
 
 all: project
 

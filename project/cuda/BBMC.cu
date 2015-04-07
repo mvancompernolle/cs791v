@@ -4,10 +4,15 @@
 
 __constant__ int numV;
 __constant__ int numI;
+//__device__ float time1, time2;
+__device__ long nodes;
+__device__ int maxSize;
+
 
 // This is the declaration of the function that will execute on the GPU.
-__global__ void maxClique(unsigned int* N, unsigned int* invN);
-__device__ void recSearch(unsigned int* C, unsigned int* P);
+__global__ void maxClique(unsigned int* N, unsigned int* invN, unsigned int* solution);
+__device__ void recSearch(unsigned int* C, unsigned int* P, unsigned int* N, unsigned int* invN, unsigned int* solution);
+__device__ void colorVerts(unsigned int* P, unsigned int* U, unsigned int* color, unsigned int* invN);
 __device__ void printBitSet(unsigned int* bitset, int size);
 __device__ int findFirstBit(unsigned int* bitset);
 __device__ int getSetBitCount(unsigned int* bitset);
@@ -79,6 +84,11 @@ std::cout << "invN: " << std::endl;
 for(int i=0; i<n; i++)
 	printBitSet(invN[i]);
 std::cout << std::endl;
+std::cout << "V: (index / degree) " << std::endl;
+for(Vertex& v: V){
+	std::cout << v.index << "-" << v.degree << " ";
+}
+std::cout << std::endl;
 
 	// calculate the number of ints needed per vertex on gpu
 	int numInts = (n+sizeof(int)*8-1)/(sizeof(int)*8);
@@ -86,13 +96,22 @@ std::cout << std::endl;
 	std::cout << numInts << " " << r << " " << n << " " << (sizeof(unsigned int)*8) << std::endl;
 	unsigned int* hostN = new unsigned int[numInts*n];
 	unsigned int* hostInvN = new unsigned int[numInts*n];
-	unsigned int* devN, *devInvN;
+	unsigned int* sol = new unsigned int[numInts];
+	unsigned int* devN, *devInvN, *devSolution;
+
+
+	cudaSetDevice(1);
 	cudaError_t err = cudaMalloc( (void**) &devN, numInts * n * sizeof(unsigned int));
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
 	err = cudaMalloc( (void**) &devInvN, numInts * n * sizeof(unsigned int));
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devSolution, numInts * sizeof(unsigned int));
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
@@ -148,12 +167,12 @@ std::cout << std::endl;
 	}
 
 	// move number of vertices to constant memory
-	err = cudaMemcpyToSymbol(numV, &n, sizeof(int));
+	err = cudaMemcpyToSymbol(numV, &n, sizeof(int), 0, cudaMemcpyHostToDevice);
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
-	err = cudaMemcpyToSymbol(numI, &numInts, sizeof(int));
+	err = cudaMemcpyToSymbol(numI, &numInts, sizeof(int), 0, cudaMemcpyHostToDevice);
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
@@ -162,8 +181,29 @@ std::cout << std::endl;
 	//printIntArray(hostN, n, numInts);
 	//std::cout << std::endl;
 	//printIntArray(hostInvN, n, numInts);
-	maxClique<<<1, 1>>>(devN, devInvN);
+	maxClique<<<1, 1>>>(devN, devInvN, devSolution);
 	cudaDeviceSynchronize();
+
+	// get solution back from kernel
+  	err = cudaMemcpy(sol, devSolution, numInts * sizeof(unsigned int), cudaMemcpyDeviceToHost);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+
+	//unsigned int* cudaSol = new unsigned int[numInts];
+	std::cout << "CUDA SOLUTION: " << std::endl;
+	for(int currInt = 0; currInt < numInts; currInt++){
+		// loop over each bit in the int
+		for(int b=0; b<sizeof(unsigned int)*8; b++){
+			int shift = 1 << b;
+			int val = sol[currInt] & shift;
+			if(val != 0)
+				std::cout << V[32 * currInt + b].index + 1 << " ";
+		}
+		std::cout << " | ";
+	}
+	std::cout << std::endl;
 
 	BBMaxClique(C, P);
 /*
@@ -236,18 +276,20 @@ printBitSet(P);
 	// builds color classes
 	// if v = U[i] then color[i] is v's color and color[i] <= color[i+1]
 	BBColor(P, U, color);
-/*
-std::cout << "m: " << m << std::endl;
-std::cout << "C: " << std::endl;
+
+
+std::cout << "host" << std::endl << "m: " << m << std::endl;
+/*std::cout << "C: " << std::endl;
 printBitSet(C);
 std::cout << "P: " << std::endl;
-printBitSet(P);
+printBitSet(P);*/
 std::cout << "U: " << std::endl;
 printArray(U, m);
 std::cout << "color: " << std::endl;
 printArray(color, m);
 std::cout << std::endl;
-*/
+
+
 	// iterate over the candidate set
 	for(int i=m-1; i>= 0; i--){
 
@@ -318,6 +360,8 @@ void BBMC::BBColor(const boost::dynamic_bitset<>& P, int U[], int color[]){
 }
 
 void BBMC::saveSolution(const boost::dynamic_bitset<>& C){
+	std::cout << "Sol C: " << std::endl;
+	printBitSet(C);
 	std::fill(solution.begin(), solution.end(), 0);
 	for(int i=0; i<C.size(); i++){
 		if(C[i])
@@ -358,7 +402,13 @@ void BBMC::printIntArray(unsigned int* arr, int n, int numInts) const{
 }
 
 ////////////////////// CUDA FUNCTIONS ///////////////////////////////////////////////////////////
-__global__ void maxClique(unsigned int* N, unsigned int* invN) {
+__global__ void maxClique(unsigned int* N, unsigned int* invN, unsigned int* solution) {
+
+	//time1 = clock();
+	nodes = 0;
+	maxSize = 0;
+	//numI = 1;
+	//printf("numI: %u\n", numI);
 
 	unsigned int* C = new unsigned int[numI];
 	unsigned int* P = new unsigned int[numI];
@@ -367,37 +417,116 @@ __global__ void maxClique(unsigned int* N, unsigned int* invN) {
 		if(i != numI -1)
 			P[i] = ~0;
 		else{
-			P[i] = (1 << numV%32) - 1;
+			P[i] = (1 << numV%33) - 1;
 		}
 	}
 	printBitSet(C, numI);
-	printf("\n");
+	printf("\nnumI: %d\n", numI);
 	printBitSet(P, numI);
+	printf("\n");
 
-	recSearch(C, P);
-	/*unsigned int* tmp = N;
-	if(threadIdx.x == 0 && blockIdx.x == 0){
-		for(int i=0; i<numV; i++){
-		  printBitSet(tmp, numI);
-		  printf("\n");
-		  tmp+=numI;
-		}
-	}
+	recSearch(C, P, N, invN, solution);
 
-	// copy n to new bitset
-	unsigned int* bitset = new unsigned int[numI * numV];
-	copyBitSet(bitset, N);
-	printf("\n\nBitset:\n");
-	tmp = bitset;
-	for(int i=0; i<numV; i++){
-	  printBitSet(tmp, numI);
-	  printf("\n");
-	  tmp+=numI;
-	}*/
+	delete[] C;
+	delete[] P;
 }
 
-__device__ void recSearch(unsigned int* C, unsigned int* P){
+__device__ void recSearch(unsigned int* oldC, unsigned int* oldP, unsigned int* N, unsigned int* invN, unsigned int* solution){
 
+	// copy C and P
+	unsigned int* C = new unsigned int[numI];
+	copyBitSet(C, oldC);
+	unsigned int* P = new unsigned int[numI];
+	copyBitSet(P, oldP);
+
+	nodes++;
+
+	int m = getSetBitCount(P);
+	unsigned int* U = new unsigned int[m];
+	unsigned int* color = new unsigned int[m];
+	printf("cuda m: %d\n", m);
+
+	colorVerts(P, U, color, invN);
+
+	printf("cuda U:\n");
+	for(int i=0; i<m; i++){
+		printf("%u ", U[i]);
+	}
+	printf("\n");
+	printf("cuda color:\n");
+	for(int i=0; i<m; i++){
+		printf("%u ", color[i]);
+	}
+	printf("\n");
+
+	// iterate over the candidate set
+	for(int i=m-1; i>=0; i--){
+
+		if(color[i] + getSetBitCount(C) <= maxSize){
+			return;
+		}
+
+		// copy the candidate set
+		unsigned int* newP = new unsigned int[numI];
+		copyBitSet(newP, P);
+		int v = U[i];
+		setBit(C[v/32], v%32);
+
+		intersectBitSet(newP, &N[v * numI]);
+
+		// if maximal, check for maximum
+		if(getSetBitCount(newP) == 0 && getSetBitCount(C) > maxSize){
+			// save the solution
+			maxSize = getSetBitCount(C);
+			printf("size: %d\n", maxSize);
+			copyBitSet(solution, C);
+			printf("Solution: ");
+			printBitSet(solution, numI);
+			printf("\n");
+		}
+		else if(getSetBitCount(newP) > 0){
+			recSearch(C, newP, N, invN, solution);
+		}
+
+		// remove v from P and C
+		clearBit(C[v/32], v%32);
+		clearBit(P[v/32], v%32);
+
+	}
+
+	delete[] C;
+	delete[] P;
+}
+
+__device__ void colorVerts(unsigned int* P, unsigned int* U, unsigned int* color, unsigned int* invN){
+	// copy the candidate set
+	unsigned int* copyP = new unsigned int[numI];
+	copyBitSet(copyP, P);
+	int v;
+	int colorClass = 0;
+	int i = 0;
+
+	while(getSetBitCount(copyP) != 0){
+		colorClass++;
+
+		// copy the candidate set
+		unsigned int* Q = new unsigned int[numI];
+		copyBitSet(Q, copyP);
+
+		while(getSetBitCount(Q) != 0){
+			// return the index of the first set bit
+			v = findFirstBit(Q);
+			//printf("%d - %d\n", colorClass, v);
+			// remove v from Q and copyP
+			clearBit(copyP[v/32], v%32);
+			clearBit(Q[v/32], v%32);
+
+			intersectBitSet(Q, &invN[v * numI]);
+
+			U[i] = v;
+			color[i++] = colorClass;
+		}
+	}
 }
 
 __device__ int findFirstBit(unsigned int* bitset){
@@ -456,5 +585,25 @@ __device__ void printBitSet(unsigned int* bitset, int size){
 		}
 		printf(" | ");
 	}
-
 }
+
+
+	/*unsigned int* tmp = N;
+	if(threadIdx.x == 0 && blockIdx.x == 0){
+		for(int i=0; i<numV; i++){
+		  printBitSet(tmp, numI);
+		  printf("\n");
+		  tmp+=numI;
+		}
+	}
+
+	// copy n to new bitset
+	unsigned int* bitset = new unsigned int[numI * numV];
+	copyBitSet(bitset, N);
+	printf("\n\nBitset:\n");
+	tmp = bitset;
+	for(int i=0; i<numV; i++){
+	  printBitSet(tmp, numI);
+	  printf("\n");
+	  tmp+=numI;
+	}*/
