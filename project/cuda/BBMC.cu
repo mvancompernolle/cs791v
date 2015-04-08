@@ -414,10 +414,10 @@ __global__ void maxClique(unsigned int* N, unsigned int* invN, unsigned int* sol
 	unsigned int* P = new unsigned int[numI];
 	for(int i=0; i<numI; i++){
 		C[i] = 0;
-		if(i != numI -1)
+		if(i != numI -1 || numV%32 == 0)
 			P[i] = ~0;
 		else{
-			P[i] = (1 << numV%33) - 1;
+			P[i] = (1 << (numV%32)) - 1;
 		}
 	}
 	printBitSet(C, numI);
