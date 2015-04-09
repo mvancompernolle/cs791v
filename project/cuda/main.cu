@@ -5,7 +5,6 @@
 #include <cstdlib>
 #include <sys/time.h>
 #include <time.h>
-#include "MC.h"
 #include "BBMC.h"
 
 void readDIMACS(std::string fname,  std::vector<int>& degree, std::vector<std::vector<int> >& A, int& n);
@@ -19,16 +18,13 @@ int main(int argc, char** argv){
 	std::vector<int> degree;
 	std::vector<std::vector<int> > A;
 	int n; 
-	MC* mc = NULL;
+	BBMC* mc = NULL;
 
 	// read in the graph
 	readDIMACS(argv[2], degree, A, n);
 
 	// select the implemenation
-	if(!implementation.compare("MC")){
-		mc = new MC(n, A, degree);
-	}
-	else if(!implementation.compare("BBMC1")){
+	if(!implementation.compare("BBMC1")){
 		mc = new BBMC(n, A, degree, 1);
 	}
 	else if(!implementation.compare("BBMC2")){
@@ -54,7 +50,7 @@ int main(int argc, char** argv){
 
 	timeval tod1, tod2;
 	gettimeofday(&tod1, NULL);
-	mc->search();
+	mc->searchParallel();
 	gettimeofday(&tod2, NULL);
 
 	// output results

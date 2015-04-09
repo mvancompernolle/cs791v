@@ -910,3 +910,72 @@ BBMC2, ../java/DIMACS_cliques/brock200_1.clq, -1
 BBMC2, ../java/DIMACS_cliques/p_hat500-3.clq, -1
 50, 16523789, 118409
 
+BBMC2, ../test20, -1
+6, 6, 0
+
+BBMC2, ../test20, -1
+6, 6, 0
+
+BBMC2, ../test20, -1
+6, 6, 0
+
+BBMC2, ../test20, -1
+6, 6, 0
+
+BBMC2, ../test10, -1
+4, 6, 0
+
+BBMC2, ../test3.clq, -1
+7, 17, 1
+
+BBMC2, ../test32, -1
+6, 14, 1
+
+BBMC2, ../test3.clq, -1
+7, 17, 1
+
+BBMC2, ../test75, -1
+7, 60, 1
+
+BBMC2, ../test75, -1
+6, 47, 1
+
+BBMC2, ../test75, -1
+6, 47, 0
+
+BBMC2, ../test75, -1
+2, 83, 1
+
+BBMC2, ../test75, -1
+2, 83, 0
+
+BBMC2, ../test75, -1
+2, 83, 0
+
+BBMC2, ../test75, -1
+7, 60, 4
+
+BBMC2, ../test75, -1
+7, 60, 1
+
+BBMC2, ../200_5.txt, -1
+11, 7098, 21170
+
+BBMC2, ../100_1.txt, -1
+3, 36, 10
+
+BBMC2, ../100_5.txt, -1
+9, 382, 517
+
+BBMC2, ../300_3.txt, -1
+8, 2539, 9776
+
+BBMC2, ../500_3.txt, -1
+8, 21260, 126867
+
+BBMC2, ../1000_2.txt, -1
+8, 42111, 463067
+
+BBMC2, ../test75, -1
+7, 60, 7
+

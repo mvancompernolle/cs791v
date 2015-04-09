@@ -78,8 +78,6 @@ for(Vertex& v: V){
 }
 std::cout << std::endl;*/
 
-	auto a = A();
-
     //Launch a group of threads
 	int numThreads = 4;
     std::thread* t = new std::thread[numThreads];
@@ -90,7 +88,7 @@ std::cout << std::endl;*/
 
     std::cout << "starting workers\n" << std::endl;
 
-    // run all remaining work in the queue
+    /*// run all remaining work in the queue
     for(int i=0; i<numThreads; i++){
 		t[i] = std::thread(&BBMC::runWorker, this, i);    	
     }
@@ -100,7 +98,7 @@ std::cout << std::endl;*/
     numIdle = numThreads;
     for (int i = 0; i < numThreads; ++i) {
        t[i].join();
-    }
+    }*/
 
     delete[] t;
 
@@ -236,9 +234,18 @@ void BBMC::BBMaxClique(boost::dynamic_bitset<> C, boost::dynamic_bitset<> P, int
 				w.C = C;
 				w.P = newP;
 				work.push(w);
+std::cout << "pushing" << std::endl;
+		std::cout << "node C: " << std::endl;
+		printBitSet(C);
+		std::cout << "node P: " << std::endl;
+		printBitSet(newP);	
 			}
 			else{
-//std::cout << "expanding" << std::endl;
+std::cout << "expanding" << std::endl;
+		std::cout << "node C: " << std::endl;
+		printBitSet(C);
+		std::cout << "node P: " << std::endl;
+		printBitSet(newP);	
 				BBMaxClique(C, newP, tid);
 			}
 		}
