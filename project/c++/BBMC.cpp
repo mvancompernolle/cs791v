@@ -147,16 +147,16 @@ printBitSet(P);
 	// if v = U[i] then color[i] is v's color and color[i] <= color[i+1]
 	BBColor(P, U, color);
 
-std::cout << "m: " << m << std::endl;
+//std::cout << "m: " << m << std::endl;
 /*std::cout << "C: " << std::endl;
 printBitSet(C);*/
-std::cout << "P: " << std::endl;
-printBitSet(P);
-std::cout << "U: " << std::endl;
-printArray(U, m);
-std::cout << "color: " << std::endl;
-printArray(color, m);
-std::cout << std::endl;
+//std::cout << "P: " << std::endl;
+//printBitSet(P);
+//std::cout << "U: " << std::endl;
+//printArray(U, m);
+//std::cout << "color: " << std::endl;
+//printArray(color, m);
+//std::cout << std::endl;
 
 	// iterate over the candidate set
 	for(int i=m-1; i>= 0; i--){
@@ -176,14 +176,14 @@ std::cout << std::endl;
 /*
 std::cout << "N: ";
 printBitSet(N[v]);*/
-std::cout << "newP: ";
-printBitSet(newP);
+//std::cout << "newP: ";
+//printBitSet(newP);
 
 		// if newP is empty is is maximal, so stop searching and save it if it is maximum
 		if(newP.none() && C.count() > maxSize){
-			std::cout << "HOST SOLUTION" << std::endl;
-			printBitSet(C);
-			std::cout << std::endl;
+			//std::cout << "HOST SOLUTION" << std::endl;
+			//printBitSet(C);
+			//std::cout << std::endl;
 			saveSolution(C);
 		}
 		// else recursively continue search 
@@ -216,15 +216,15 @@ void BBMC::BBColor(const boost::dynamic_bitset<>& P, int U[], int color[]){
 		while(Q.count() != 0){
 			// return the index of the first set bit
 			v = Q.find_first();
-			std::cout << colorClass << " - " << v << std::endl;
+			//std::cout << colorClass << " - " << v << std::endl;
 			// remove v from Q and copyP
 			copyP[v] = 0;
 			Q[v] = 0;
 
 			if(v == 43 && colorClass == 2){
-				std::cout << "Q: ";
-				printBitSet(Q);
-				std::cout << std::endl;
+				//std::cout << "Q: ";
+				//printBitSet(Q);
+				//std::cout << std::endl;
 			}
 
 			// perform a bitwise and operation
@@ -232,9 +232,9 @@ void BBMC::BBColor(const boost::dynamic_bitset<>& P, int U[], int color[]){
 			Q &= invN[v];
 
 			if(v == 43 && colorClass == 2){
-				std::cout << "Q2: ";
-				printBitSet(Q);
-				std::cout << std::endl;
+				//std::cout << "Q2: ";
+				//printBitSet(Q);
+				//std::cout << std::endl;
 			}
 
 			U[i] = v;

@@ -64,8 +64,8 @@ int main(int argc, char** argv){
 	std::cout << std::endl;
 
 	// output results to a file
-	std::ofstream fout;
-	fout.open("results.txt", std::ofstream::app);
+	//std::ofstream fout;
+	//fout.open("results.txt", std::ofstream::app);
 	std::string timeLimit;
 	if(argv[3] != NULL){
 		timeLimit = argv[3];
@@ -73,8 +73,8 @@ int main(int argc, char** argv){
 	else{
 		timeLimit = "-1";
 	}
-	fout << argv[1] << ", " << argv[2] << ", " << timeLimit << std::endl;
-	fout << mc->getMaxSize() << ", " << mc->getNumNodes() << ", " << todiff(&tod2, &tod1)/1000 << std::endl << std::endl;	
+	//fout << argv[1] << ", " << argv[2] << ", " << timeLimit << std::endl;
+	//fout << mc->getMaxSize() << ", " << mc->getNumNodes() << ", " << todiff(&tod2, &tod1)/1000 << std::endl << std::endl;	
 
 	// delete max clique algorithm
 	delete mc;
