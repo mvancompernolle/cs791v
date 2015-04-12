@@ -538,6 +538,12 @@ __global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int
 __device__ void recSearchP(unsigned int* N,
  unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP, unsigned int workArr[]){
 
+	if(threadIdx.x == 0 && blockIdx.x == 0){
+		printf("recursion called: \n");
+	} 
+
+	int newPNum, cNum;
+
  	__syncthreads();
 
 	// copy C and P
@@ -546,16 +552,20 @@ __device__ void recSearchP(unsigned int* N,
 
  	__syncthreads();
 
-	if(threadIdx.x == 0 && blockIdx.x == 0){
+	/*if(threadIdx.x == 0 && blockIdx.x == 0){
 		printf("P: \n");
 		printBitSet(P, numI);
 		printf("\n");
-	}
+	}*/
 
 	// ahve only a single thread incr the num nodes
-	if(threadIdx.x == 0){
+	if(threadIdx.x == 0 && blockIdx.x == 0){
 		nodes++;
 	}
+
+	// use this to end testing
+	if(nodes == 2)
+		return;
 
 	newP += numI;
 
@@ -572,6 +582,7 @@ __device__ void recSearchP(unsigned int* N,
 
 	__syncthreads();
 
+	// color the vertices to create a tighter upper bound
 	colorVertsP(P, U, color);
 
 	__syncthreads();
@@ -588,81 +599,81 @@ __device__ void recSearchP(unsigned int* N,
 		}
 		printf("\n");
 	}
-	return;
 
-	if(threadIdx.x == 0){
-		// iterate over the candidate set
-		for(int i=workArr[0]-1; i>=0; i--){
+	// iterate over the candidate set
+	for(int i=m-1; i>=0; i--){
 
-			if(color[i] + getSetBitCount(C) <= maxSize){
-				return;
-			}
+		getSetBitCountP(C, workArr);
 
-			// copy the candidate set
-			copyBitSet(newP, P);
-			int v = U[i];
-			setBit(C[v/32], v%32);
+		__syncthreads();
 
-			intersectBitSet(newP, &N[v * numI]);
-
-		/*printf("new P: \n");
-		printBitSet(newP, numI);
-		printf("\n");*/
-
-			// if maximal, check for maximum
-			if(getSetBitCount(newP) == 0 && getSetBitCount(C) > maxSize){
-				// save the solution
-				atomicMax(&maxSize, getSetBitCount(C));
-				//printf("b: %d, m: %d\n", blockIdx.x, getSetBitCount(C));
-				max[blockIdx.x] = getSetBitCount(C);
-				//printf("size: %d\n", maxSize);
-				copyBitSet(solution + (blockIdx.x*numI), C);
-				/*printf("Solution: ");
-				printBitSet(solution + (blockIdx.x*numI), numI);
-				printf("\n");*/
-			}
-			else if(getSetBitCount(newP) > 0){
-				recSearchP(N, solution, max, C + numI, P + numI, newP, workArr);
-			}
-
-			// remove v from P and C
-			clearBit(C[v/32], v%32);
-			clearBit(P[v/32], v%32);
-
+		if(color[i] + workArr[0] <= maxSize){
+			return;
 		}
 
-		//delete[] U;
-		//delete[] color;
-	}
-	/*if(C == NULL || P == NULL){
-		printf("Out of heap memory\n");
-		return;
-	}
-	if(oldP == NULL || oldC == NULL){
-		printf("Out of stack memory\n");
-		return;
-	}	*/
+		// copy the candidate set
+		copyBitSetP(newP, P);
 
-	//printf("addr P: %p\n", oldP);
+		// pick a candidate
+		int v = U[i];
+		if(threadIdx.x == 0){
+			setBit(C[v/32], v%32);
+		}
 
-	/*if(nodes > 2)
-		return;*/
+		__syncthreads();
 
-	/*printf("cuda m: %d\n", m);
-	printf("P: \n");
-	printBitSet(P, numI);
-	printf("\n");*/
+		/*if(threadIdx.x == 0 && blockIdx.x == 0){
+			printf("newP: \n");
+			printBitSet(newP, numI);
+			printf("\n");
+		}*/
 
-	/*printf("cuda U:\n");
-	for(int i=0; i<m; i++){
-		printf("%u ", U[i]);
+		// create the new candidate set
+		intersectBitSet(newP, &N[v * numI]);
+
+		if(threadIdx.x == 0 && blockIdx.x == 0){
+			printf("new P: \n");
+			printBitSet(newP, numI);
+			printf("\n");
+		}
+
+		__syncthreads();
+
+		// get the set bits for the candidate set and the current set
+		getSetBitCountP(newP, workArr);
+		newPNum = workArr[0];
+		__syncthreads();
+
+		getSetBitCountP(C, workArr);
+		cNum = workArr[0];
+		__syncthreads();
+
+		// if maximal, check for maximum
+		if(newPNum == 0 && cNum > maxSize){
+
+			if(threadIdx.x == 0){
+				// save the new max size so that it is shared among blocks
+				atomicMax(&maxSize, cNum);
+				//printf("b: %d, m: %d\n", blockIdx.x, getSetBitCount(C));
+				max[blockIdx.x] = cNum;
+				//printf("size: %d\n", maxSize);
+			}
+
+			copyBitSetP(solution + (blockIdx.x*numI), C);
+			/*printf("Solution: ");
+			printBitSet(solution + (blockIdx.x*numI), numI);
+			printf("\n");*/
+		}
+		else if(newPNum > 0){
+			//recSearchP(N, solution, max, C + numI, P + numI, newP, workArr);
+		}
+
+		// remove v from P and C
+		if(threadIdx.x == 0){
+			clearBit(C[v/32], v%32);
+			clearBit(P[v/32], v%32);
+		}	
 	}
-	printf("\n");
-	printf("cuda color:\n");
-	for(int i=0; i<m; i++){
-		printf("%u ", color[i]);
-	}
-	printf("\n");*/
 }
 
 __device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* color){
@@ -714,9 +725,9 @@ if(threadIdx.x == 0 && blockIdx.x == 0){
 			// return the index of the first set bit
 			findFirstBitP(Q, U-numI);
 
-if(threadIdx.x == 0 && blockIdx.x == 0){
-	printf("bit pos: %d\n", *(U-numI));
-}
+			/*if(threadIdx.x == 0 && blockIdx.x == 0){
+				printf("bit pos: %d\n", *(U-numI));
+			}*/
 			//printf("%d - %d\n", colorClass, v);
 			// remove v from Q and copyP
 			if(threadIdx.x == 0){
@@ -724,11 +735,11 @@ if(threadIdx.x == 0 && blockIdx.x == 0){
 				clearBit(Q[*(U-numI)/32], *(U-numI)%32);
 			}
 
-			if(threadIdx.x == 0 && blockIdx.x == 0 && colorClass == 1){
+			/*if(threadIdx.x == 0 && blockIdx.x == 0 && colorClass == 1){
 				printf("Q: ");
 				printBitSet(Q, numI);
 				printf("\n");
-			}
+			}*/
 
 			__syncthreads();
 
@@ -784,19 +795,22 @@ __device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work){
 	}
 
 	if(threadIdx.x == 0 && blockIdx.x == 0){
-		printf("count: %d\n", work[0]);
+		//printf("count: %d\n", work[0]);
 	}
 }
 
 __device__ void findFirstBitP(unsigned int* bitset, unsigned int* work){
 
+	// set min to highest value
 	if(threadIdx.x == 0)
 		work[0] = numI * 32;
 
+	// have each thread get bit pos in int
 	unsigned int pos = __ffs(bitset[threadIdx.x]);
 
 	// set atomic min if bit was found
 	if(pos != 0){
+		// calculate overall position in bitstring and attempt to set to min
 		pos += (threadIdx.x * 32) - 1;
 		atomicMin(work, pos);
 	}
@@ -805,3 +819,33 @@ __device__ void findFirstBitP(unsigned int* bitset, unsigned int* work){
 __device__ void intersectBitSetP(unsigned int* bitset1, unsigned int* bitset2){
 	bitset1[threadIdx.x] &= bitset2[threadIdx.x];
 }
+
+	/*if(C == NULL || P == NULL){
+		printf("Out of heap memory\n");
+		return;
+	}
+	if(oldP == NULL || oldC == NULL){
+		printf("Out of stack memory\n");
+		return;
+	}	*/
+
+	//printf("addr P: %p\n", oldP);
+
+	/*if(nodes > 2)
+		return;*/
+
+	/*printf("cuda m: %d\n", m);
+	printf("P: \n");
+	printBitSet(P, numI);
+	printf("\n");*/
+
+	/*printf("cuda U:\n");
+	for(int i=0; i<m; i++){
+		printf("%u ", U[i]);
+	}
+	printf("\n");
+	printf("cuda color:\n");
+	for(int i=0; i<m; i++){
+		printf("%u ", color[i]);
+	}
+	printf("\n");*/
