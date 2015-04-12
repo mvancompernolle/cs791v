@@ -216,7 +216,7 @@ std::cout << std::endl;
 	printIntArray(hostN, n, numInts);
 	std::cout << std::endl;
 	printIntArray(hostInvN, n, numInts);
-	maxClique<<<1, 1>>>(devN, devInvN, devSolution, devC, devP);
+	maxClique<<<1, numInts>>>(devN, devInvN, devSolution, devC, devP);
 	cudaDeviceSynchronize();
 
 	// get solution back from kernel
@@ -648,24 +648,3 @@ __device__ void printBitSet(unsigned int* bitset, int size){
 		printf(" | ");
 	}
 }
-
-
-	/*unsigned int* tmp = N;
-	if(threadIdx.x == 0 && blockIdx.x == 0){
-		for(int i=0; i<numV; i++){
-		  printBitSet(tmp, numI);
-		  printf("\n");
-		  tmp+=numI;
-		}
-	}
-
-	// copy n to new bitset
-	unsigned int* bitset = new unsigned int[numI * numV];
-	copyBitSet(bitset, N);
-	printf("\n\nBitset:\n");
-	tmp = bitset;
-	for(int i=0; i<numV; i++){
-	  printBitSet(tmp, numI);
-	  printf("\n");
-	  tmp+=numI;
-	}*/

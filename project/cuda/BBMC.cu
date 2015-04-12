@@ -30,6 +30,8 @@ __device__ void recSearchP(unsigned int* N, unsigned int* solution, unsigned int
 __device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* color);
 __device__ void copyBitSetP(unsigned int* dest, unsigned int* src);
 __device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work);
+__device__ void findFirstBitP(unsigned int* bitset, unsigned int* work);
+__device__ void intersectBitSetP(unsigned int* bitset1, unsigned int* bitset2);
 
 
 /*
@@ -387,7 +389,9 @@ std::cout << std::endl;
 	cudaEventCreate(&end);
 
 	cudaEventRecord( start, 0 );
-	maxCliqueP<<<n, numInts>>>(devN, devSolution, devMax, 
+	// size for bitwise operations + size of verts * 2
+	int memSize = (sizeof(unsigned int) * numI) + (sizeof(unsigned int) * n * 2);
+	maxCliqueP<<<n, numInts, memSize>>>(devN, devSolution, devMax, 
 		thrust::raw_pointer_cast( &devC[0] ), thrust::raw_pointer_cast( &devP[0] ), devRecC, devRecP, devNewP);
     cudaEventRecord( end, 0 );
     cudaEventSynchronize( end );
@@ -503,7 +507,8 @@ __global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int
 	//time1 = clock();
 	__shared__ unsigned int* C;
 	__shared__ unsigned int* P;
-	__shared__ unsigned int workArr[7];
+	extern __shared__ unsigned int workArr[];
+	__shared__ unsigned int* U;
 	//numI = 1;
 	//printf("numI: %u\n", numI);
 
@@ -515,6 +520,7 @@ __global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int
 		max[blockIdx.x] = 0;
 		C = devC + (numI * blockIdx.x);
 		P = devP + (numI * blockIdx.x);	
+		U = workArr + numI;
 	}
 
 	copyBitSetP(devRecC + (blockIdx.x * numV * numI), C);
@@ -554,17 +560,37 @@ __device__ void recSearchP(unsigned int* N,
 	newP += numI;
 
 	getSetBitCountP(P, workArr);
-return;
+	int m = workArr[0];
+	__shared__ unsigned int* U;
+	__shared__ unsigned int* color;
 
 	if(threadIdx.x == 0){
-		unsigned int U[200];
-		unsigned int color[200];
+		// point U and color to their parts of shared memory		
+		U = workArr + numI;
+		color = U + numV;
 	}
 
-	if(threadIdx.x == 0){		
+	__syncthreads();
 
-		colorVertsP(P, U, color);
+	colorVertsP(P, U, color);
 
+	__syncthreads();
+
+	if(threadIdx.x == 0 && blockIdx.x == 0){
+		printf("cuda U:\n");
+		for(int i=0; i<m; i++){
+			printf("%u ", U[i]);
+		}
+		printf("\n");
+		printf("cuda color:\n");
+		for(int i=0; i<m; i++){
+			printf("%u ", color[i]);
+		}
+		printf("\n");
+	}
+	return;
+
+	if(threadIdx.x == 0){
 		// iterate over the candidate set
 		for(int i=workArr[0]-1; i>=0; i--){
 
@@ -640,49 +666,98 @@ return;
 }
 
 __device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* color){
+
 	// copy the candidate set
 	//printf("thread: %d\n", threadIdx.x);
+	__shared__ int v;
+	__shared__ int colorClass;
+	__shared__ int i;
+	__shared__ unsigned int copyP[32];
+	__shared__ unsigned int Q[32];
+	copyBitSetP(copyP, P);
+
+	// have main thread init values to zero
 	if(threadIdx.x == 0){
-		unsigned int copyP[32];
-		unsigned int Q[32];
-		copyBitSet(copyP, P);
-		int v;
-		int colorClass = 0;
-		int i = 0;
+		v = 0;
+		colorClass = 0;
+	}
 
-		while(getSetBitCount(copyP) != 0){
+	__syncthreads();
+
+	// get num bits set (U-numI is the start of shared memory to work on)
+	getSetBitCountP(copyP, U-numI);
+
+	__syncthreads();
+
+	while(*(U-numI) != 0){
+
+		if(threadIdx.x == 0){
 			colorClass++;
+		}
 
-			// copy the candidate set
-			copyBitSet(Q, copyP);
+		__syncthreads();
 
-			while(getSetBitCount(Q) != 0){
-				// return the index of the first set bit
-				v = findFirstBit(Q);
-				//printf("%d - %d\n", colorClass, v);
-				// remove v from Q and copyP
-				clearBit(copyP[v/32], v%32);
-				clearBit(Q[v/32], v%32);
+		// copy the candidate set
+		copyBitSetP(Q, copyP);
+/*
+if(threadIdx.x == 0 && blockIdx.x == 0){
+	printf("Q: ");
+	printBitSet(Q, numI);
+	printf("\n");
+}*/
 
-				/*if(v == 43 && colorClass == 2){
-					printf("Q: ");
-					printBitSet(Q, numI);
-					printf("\n");
-				}*/
+		__syncthreads();
 
-				intersectBitSet(Q, &constInvN[v * numI]);
+		getSetBitCountP(Q, U-numI);
 
-				/*if(v == 43 && colorClass == 2){
-					printf("Q2: ");
-					printBitSet(Q, numI);
-					printf("\n");
-					printf("first bit: %d\n", __ffs(Q[2]));
-				}*/
+		while(*(U-numI) != 0){
+			// return the index of the first set bit
+			findFirstBitP(Q, U-numI);
 
-				U[i] = v;
+if(threadIdx.x == 0 && blockIdx.x == 0){
+	printf("bit pos: %d\n", *(U-numI));
+}
+			//printf("%d - %d\n", colorClass, v);
+			// remove v from Q and copyP
+			if(threadIdx.x == 0){
+				clearBit(copyP[*(U-numI)/32], *(U-numI)%32);
+				clearBit(Q[*(U-numI)/32], *(U-numI)%32);
+			}
+
+			if(threadIdx.x == 0 && blockIdx.x == 0 && colorClass == 1){
+				printf("Q: ");
+				printBitSet(Q, numI);
+				printf("\n");
+			}
+
+			__syncthreads();
+
+			intersectBitSetP(Q, &constInvN[(*(U-numI)) * numI]);
+
+			__syncthreads();
+
+			/*if(threadIdx.x == 0 && blockIdx.x == 0 && colorClass == 1){
+				printf("Q2: ");
+				printBitSet(Q, numI);
+				printf("\n");
+			}*/
+
+			if(threadIdx.x == 0){
+				U[i] = *(U-numI);
 				color[i++] = colorClass;
 			}
+
+			// recalculate set bits in Q for inner loop
+			__syncthreads();
+			getSetBitCountP(Q, U-numI);
+			__syncthreads();
+
 		}
+
+		// recalculate set bits in copyP for outer loop
+		__syncthreads();
+		getSetBitCountP(copyP, U-numI);
+		__syncthreads();
 	}
 }
 
@@ -708,8 +783,25 @@ __device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work){
 		size /= 2;
 	}
 
-	// rewrite reduction to be parallel
 	if(threadIdx.x == 0 && blockIdx.x == 0){
 		printf("count: %d\n", work[0]);
 	}
+}
+
+__device__ void findFirstBitP(unsigned int* bitset, unsigned int* work){
+
+	if(threadIdx.x == 0)
+		work[0] = numI * 32;
+
+	unsigned int pos = __ffs(bitset[threadIdx.x]);
+
+	// set atomic min if bit was found
+	if(pos != 0){
+		pos += (threadIdx.x * 32) - 1;
+		atomicMin(work, pos);
+	}
+}
+
+__device__ void intersectBitSetP(unsigned int* bitset1, unsigned int* bitset2){
+	bitset1[threadIdx.x] &= bitset2[threadIdx.x];
 }
