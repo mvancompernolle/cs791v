@@ -1,0 +1,894 @@
+MC, ../100_1.txt, -1
+3, 181, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test2, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, -1
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test.clq, make
+4, 4, 0
+
+BBMC2, ../test2, -1
+4, 4, 0
+
+BBMC2, ../test2, -1
+4, 4, 0
+
+BBMC2, ../test2, -1
+4, 4, 0
+
+BBMC2, ../test2, -1
+4, 4, 0
+
+BBMC2, ../test3.clq, -1
+7, 17, 1
+
+BBMC2, ../test3.clq, -1
+7, 17, 1
+
+BBMC2, ../test3.clq, -1
+7, 17, 1
+
+BBMC2, ../test3.clq, -1
+7, 17, 0
+
+BBMC2, ../test3.clq, -1
+7, 17, 0
+
+BBMC2, ../test3.clq, -1
+7, 17, 0
+
+BBMC2, ../test3.clq, -1
+7, 17, 109
+
+BBMC2, ../test3.clq, -1
+7, 17, 105
+
+BBMC2, ../test3.clq, -1
+7, 17, 109
+
+BBMC2, ../test3.clq, -1
+7, 17, 109
+
+BBMC2, ../test3.clq, -1
+7, 17, 109
+
+BBMC2, ../test3.clq, -1
+7, 17, 108
+
+BBMC2, ../test3.clq, -1
+7, 17, 108
+
+BBMC2, ../test3.clq, -1
+7, 17, 0
+
+BBMC2, ../test3.clq, -1
+7, 17, 0
+
+BBMC2, ../test3.clq, -1
+7, 17, 78
+
+BBMC2, ../test3.clq, -1
+7, 17, 80
+
+BBMC2, ../test3.clq, -1
+7, 17, 96
+
+BBMC2, ../test3.clq, -1
+7, 17, 229
+
+BBMC2, ../test3.clq, -1
+7, 17, 240
+
+BBMC2, ../test3.clq, -1
+7, 17, 216
+
+BBMC2, ../test3.clq, -1
+7, 17, 185
+
+BBMC2, ../test3.clq, -1
+7, 17, 225
+
+BBMC2, ../test3.clq, -1
+7, 17, 235
+
+BBMC2, ../test3.clq, -1
+7, 17, 194
+
+BBMC2, ../test3.clq, -1
+7, 17, 195
+
+BBMC2, ../test3.clq, -1
+7, 17, 242
+
+BBMC2, ../test3.clq, -1
+7, 17, 184
+
+BBMC2, ../test3.clq, -1
+7, 17, 188
+
+BBMC2, ../test3.clq, -1
+7, 17, 218
+
+BBMC2, ../test3.clq, -1
+7, 17, 214
+
+BBMC2, ../test3.clq, -1
+7, 17, 234
+
+BBMC2, ../test3.clq, -1
+7, 17, 243
+
+BBMC2, ../test3.clq, -1
+7, 17, 249
+
+BBMC2, ../test3.clq, -1
+7, 17, 217
+
+BBMC2, ../test3.clq, -1
+7, 17, 237
+
+BBMC2, ../test3.clq, -1
+7, 17, 226
+
+BBMC2, ../test3.clq, -1
+7, 17, 250
+
+BBMC2, ../test3.clq, -1
+7, 17, 216
+
+BBMC2, ../test3.clq, -1
+7, 17, 241
+
+BBMC2, ../test3.clq, -1
+7, 17, 249
+
+BBMC2, ../test3.clq, -1
+7, 17, 245
+
+BBMC2, ../test3.clq, -1
+7, 17, 223
+
+BBMC2, ../test3.clq, -1
+7, 17, 186
+
+BBMC2, ../test3.clq, -1
+7, 17, 235
+
+BBMC2, ../test3.clq, -1
+7, 17, 250
+
+BBMC2, ../test3.clq, -1
+7, 17, 254
+
+BBMC2, ../test3.clq, -1
+7, 17, 225
+
+BBMC2, ../test3.clq, -1
+7, 17, 225
+
+BBMC2, ../test3.clq, -1
+7, 17, 235
+
+BBMC2, ../test3.clq, -1
+7, 17, 249
+
+BBMC2, ../test3.clq, -1
+7, 17, 249
+
+BBMC2, ../test3.clq, -1
+7, 17, 274
+
+BBMC2, ../test3.clq, -1
+7, 17, 254
+
+BBMC2, ../test3.clq, -1
+7, 17, 268
+
+BBMC2, ../test3.clq, -1
+7, 17, 275
+
+BBMC2, ../test3.clq, -1
+7, 17, 239
+
+BBMC2, ../test3.clq, -1
+7, 17, 218
+
+BBMC2, ../test3.clq, -1
+7, 17, 219
+
+BBMC2, ../test3.clq, -1
+7, 17, 230
+
+BBMC2, ../test3.clq, -1
+7, 17, 248
+
+BBMC2, ../test3.clq, -1
+7, 17, 221
+
+BBMC2, ../test3.clq, -1
+7, 17, 244
+
+BBMC2, ../test3.clq, -1
+7, 17, 232
+
+BBMC2, ../test2, -1
+4, 4, 117
+
+BBMC2, ../test2, -1
+4, 4, 111
+
+BBMC2, ../test2, -1
+4, 4, 84
+
+BBMC2, ../test2, -1
+4, 4, 108
+
+BBMC2, ../test2, -1
+4, 4, 97
+
+BBMC2, ../test2, -1
+4, 4, 111
+
+BBMC2, ../test2, -1
+4, 4, 118
+
+BBMC2, ../test2, -1
+4, 4, 110
+
+BBMC2, ../test2, -1
+4, 4, 101
+
+BBMC2, ../test2, -1
+4, 4, 97
+
+BBMC2, ../test2, -1
+4, 4, 113
+
+BBMC2, ../test3.clq, -1
+7, 17, 96
+
+BBMC2, ../test3.clq, -1
+7, 17, 67
+
+BBMC2, ../test2, -1
+4, 4, 152
+
+BBMC2, ../test2, -1
+4, 4, 112
+
+BBMC2, ../test2, -1
+4, 4, 111
+
+BBMC2, ../test2, -1
+4, 4, 106
+
+BBMC2, ../test2, -1
+4, 4, 112
+
+BBMC2, ../test2, -1
+4, 4, 113
+
+BBMC2, ../test2, -1
+4, 4, 26786
+
+BBMC2, ../test2, -1
+4, 4, 224
+
+BBMC2, ../test2, -1
+4, 4, 626
+
+BBMC2, ../test2, -1
+4, 4, 1756
+
+BBMC2, ../test2, -1
+4, 4, 172
+
+BBMC2, ../test2, -1
+4, 4, 236
+
+BBMC2, ../test2, -1
+1, 1, 135
+
+BBMC2, ../test2, -1
+1, 1, 183
+
+BBMC2, ../test2, -1
+1, 1, 183
+
+BBMC2, ../test2, -1
+1, 1, 196
+
+BBMC2, ../test2, -1
+1, 1, 133
+
+BBMC2, ../test3.clq, -1
+1, 1, 161
+
+BBMC2, ../test2, -1
+1, 1, 150
+
+BBMC2, ../test2, -1
+1, 1, 200
+
+BBMC2, ../test2, -1
+1, 1, 152
+
+BBMC2, ../test2, -1
+1, 1, 174
+
+BBMC2, ../test2, -1
+1, 1, 147
+
+BBMC2, ../test2, -1
+1, 1, 179
+
+BBMC2, ../test2, -1
+1, 1, 181
+
+BBMC2, ../test2, -1
+1, 1, 184
+
+BBMC2, ../test2, -1
+4, 4, 138
+
+BBMC2, ../test2, -1
+4, 4, 139
+
+BBMC2, ../test2, -1
+1, 1, 137
+
+BBMC2, ../test2, -1
+1, 1, 174
+
+BBMC2, ../test2, -1
+1, 1, 136
+
+BBMC2, ../test2, -1
+1, 1, 144
+
+BBMC2, ../test2, -1
+1, 1, 193
+
+BBMC2, ../test2, -1
+1, 1, 145
+
+BBMC2, ../test2, -1
+1, 1, 197
+
+BBMC2, ../test2, -1
+1, 1, 180
+
+BBMC2, ../test2, -1
+1, 1, 169
+
+BBMC2, ../test2, -1
+1, 1, 177
+
+BBMC2, ../test3.clq, -1
+1, 1, 128
+
+BBMC2, ../test3.clq, -1
+1, 1, 186
+
+BBMC2, ../test3.clq, -1
+1, 1, 167
+
+BBMC2, ../test3.clq, -1
+1, 1, 174
+
+BBMC2, ../test3.clq, -1
+1, 1, 89
+
+BBMC2, ../test3.clq, -1
+1, 1, 87
+
+BBMC2, ../test3.clq, -1
+1, 1, 116
+
+BBMC2, ../test3.clq, -1
+1, 1, 200
+
+BBMC2, ../test3.clq, -1
+1, 1, 199
+
+BBMC2, ../test3.clq, -1
+1, 1, 196
+
+BBMC2, ../test3.clq, -1
+1, 1, 204
+
+BBMC2, ../test3.clq, -1
+1, 1, 1848
+
+BBMC2, ../test3.clq, -1
+1, 1, 1765
+
+BBMC2, ../test3.clq, -1
+1, 1, 1765
+
+BBMC2, ../test3.clq, -1
+1, 1, 1777
+
+BBMC2, ../test3.clq, -1
+1, 1, 211
+
+BBMC2, ../test3.clq, -1
+1, 1, 221
+
+BBMC2, ../test3.clq, -1
+1, 1, 188
+
+BBMC2, ../test3.clq, -1
+1, 1, 223
+
+BBMC2, ../test3.clq, -1
+1, 1, 143
+
+BBMC2, ../test3.clq, -1
+1, 1, 151
+
+BBMC2, ../test3.clq, -1
+1, 1, 144
+
+BBMC2, ../test3.clq, -1
+1, 1, 132
+
+BBMC2, ../test3.clq, -1
+1, 1, 133
+
+BBMC2, ../test3.clq, -1
+1, 1, 139
+
+BBMC2, ../test3.clq, -1
+1, 1, 159
+
+BBMC2, ../test3.clq, -1
+1, 1, 141
+
+BBMC2, ../test3.clq, -1
+1, 1, 146
+
+BBMC2, ../test3.clq, -1
+1, 1, 150
+
+BBMC2, ../test3.clq, -1
+1, 1, 160
+
+BBMC2, ../test3.clq, -1
+1, 1, 96
+
+BBMC2, ../test3.clq, -1
+1, 1, 92
+
+BBMC2, ../test3.clq, -1
+1, 1, 95
+
+BBMC2, ../test3.clq, -1
+1, 1, 94
+
+BBMC2, ../test3.clq, -1
+1, 1, 108
+
+BBMC2, ../test3.clq, -1
+1, 1, 84
+
+BBMC2, ../test3.clq, -1
+7, 17, 89
+
+BBMC2, ../test2, -1
+4, 4, 133
+
+BBMC2, ../test3.clq, -1
+7, 17, 90
+
+BBMC2, ../test2, -1
+4, 4, 82
+
+BBMC2, ../test2, -1
+4, 4, 83
+
+BBMC2, ../test2, -1
+4, 4, 122
+
+BBMC2, ../test2, -1
+4, 4, 128
+
+BBMC2, ../test2, -1
+4, 4, 81
+
+BBMC2, ../test2, -1
+4, 4, 86
+
+BBMC2, ../test2, -1
+4, 4, 141
+
+BBMC2, ../test2, -1
+4, 4, 139
+
+BBMC2, ../test2, -1
+4, 4, 198
+
+BBMC2, ../test2, -1
+4, 4, 217
+
+BBMC2, ../test2, -1
+4, 4, 89
+
+BBMC2, ../test3.clq, -1
+7, 17, 96
+
+BBMC2, ../test3.clq, -1
+7, 17, 104
+
+BBMC2, ../test3.clq, -1
+7, 17, 76
+
+BBMC2, ../test3.clq, -1
+7, 17, 93
+
+BBMC2, ../200_5.txt, -1
+11, 7098, 3129
+
+BBMC2, ../test2, -1
+4, 4, 92
+
+BBMC2, ../test32, -1
+6, 14, 94
+
+BBMC2, ../test32, -1
+6, 14, 82
+
+BBMC2, ../test2, -1
+4, 4, 88
+
+BBMC2, ../test2, -1
+4, 4, 84
+
+BBMC2, ../test32, -1
+6, 14, 94
+
+BBMC2, ../test32, -1
+6, 14, 105
+
+BBMC2, ../test2, -1
+4, 4, 93
+
+BBMC2, ../test10, -1
+4, 6, 100
+
+BBMC2, ../test10, -1
+4, 6, 91
+
+BBMC2, ../test10, -1
+4, 6, 92
+
+BBMC2, ../test2, -1
+4, 4, 90
+
+BBMC2, ../test32, -1
+6, 14, 82
+
+BBMC2, ../test32, -1
+6, 14, 220
+
+BBMC2, ../test32, -1
+6, 14, 233
+
+BBMC2, ../test32, -1
+6, 14, 227
+
+BBMC2, ../test2, -1
+4, 4, 100
+
+BBMC2, ../test32, -1
+6, 14, 266
+
+BBMC2, ../test10, -1
+4, 6, 91
+
+BBMC2, ../test15, -1
+5, 8, 101
+
+BBMC2, ../test10, -1
+4, 6, 131
+
+BBMC2, ../test10, -1
+4, 6, 149
+
+BBMC2, ../test3.clq, -1
+7, 17, 261
+
+BBMC2, ../test3.clq, -1
+7, 17, 249
+
+BBMC2, ../test32, -1
+6, 14, 135
+
+BBMC2, ../test32, -1
+6, 14, 397
+
+BBMC2, ../test3.clq, -1
+7, 17, 255
+
+BBMC2, ../test3.clq, -1
+0, 0, 248
+
+BBMC2, ../test75, -1
+0, 0, 1058
+
+BBMC2, ../test75, -1
+0, 0, 564
+
+BBMC2, ../test75, -1
+0, 0, 996
+
+BBMC2, ../test75, -1
+0, 0, 476
+
+BBMC2, ../test75, -1
+0, 0, 528
+
+BBMC2, ../test75, -1
+0, 0, 989
+
+BBMC2, ../100_1.txt, -1
+0, 0, 427
+
+BBMC2, ../100_5.txt, -1
+0, 0, 3989
+
+BBMC2, ../200_3.txt, -1
+0, 0, 9827
+
+BBMC2, ../300_3.txt, -1
+0, 0, 60584
+
+BBMC2, ../500_3.txt, -1
+0, 0, 1596290
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 107
+
+BBMC2, ../../Desktop/CS791v/project/test3.clq, -1
+0, 0, 200
+
+BBMC2, ../../Desktop/CS791v/project/200_3.txt, -1
+0, 0, 9809
+
+BBMC2, ../../Desktop/CS791v/project/100_3.txt, -1
+0, 0, 1075
+
+BBMC2, ../../Desktop/CS791v/project/test10, -1
+0, 0, 101
+
+BBMC2, ../../Desktop/CS791v/project/test10, -1
+0, 0, 269
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 107
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 289
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 420
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 567
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 219
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 564
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 212
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 207
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 204
+
+BBMC2, ../../Desktop/CS791v/project/test32, -1
+0, 0, 521
+

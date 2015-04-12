@@ -26,9 +26,10 @@ __device__ void copyBitSet(unsigned int* dest, unsigned int* src);
 
 __global__ void maxCliqueP(unsigned int* N, unsigned int* solution,
  unsigned int* max, unsigned int* devC, unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* devNewP);
-__device__ void recSearchP(unsigned int* N, unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP);
+__device__ void recSearchP(unsigned int* N, unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP, unsigned int workArr[]);
 __device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* color);
 __device__ void copyBitSetP(unsigned int* dest, unsigned int* src);
+__device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work);
 
 
 /*
@@ -270,7 +271,7 @@ std::cout << std::endl;
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
-	err = cudaDeviceSetLimit(cudaLimitMallocHeapSize, 1684354560);
+	err = cudaDeviceSetLimit(cudaLimitMallocHeapSize, 2684354560);
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
@@ -332,7 +333,7 @@ std::cout << std::endl;
 		for(int i=0; i<numInts; i++){
 			for(int j=0; j<sizeof(unsigned int)*8; j++){
 
-				if(i == numInts-1 && j == r)
+				if(r != 0 && i == numInts-1 && j == r)
 					break;
 
 				// assign each bit the the integer array
@@ -500,8 +501,9 @@ __global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int
  unsigned int* devC, unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* newP) {
 
 	//time1 = clock();
-	unsigned int* C;
-	unsigned int* P;
+	__shared__ unsigned int* C;
+	__shared__ unsigned int* P;
+	__shared__ unsigned int workArr[7];
 	//numI = 1;
 	//printf("numI: %u\n", numI);
 
@@ -510,31 +512,17 @@ __global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int
 		//printf("const n: %u\n", constN[1]);
 		nodes = 0;
 		maxSize = 0;
-		max[blockIdx.x] = 0;	
+		max[blockIdx.x] = 0;
 		C = devC + (numI * blockIdx.x);
-		P = devP + (numI * blockIdx.x);
+		P = devP + (numI * blockIdx.x);	
 	}
-	//printf("addr C: %p %d\n", C, blockIdx.x);
-	//printf("addr P: %p %d\n", P, blockIdx.x);
 
-	/*if(threadIdx.x == 0 && blockIdx.x == 0){
-		for(int i=0; i<gridDim.x; i++){
-			printf("Block: %d C: \n", blockIdx.x);
-			printBitSet(C, numI);
-			printf("\n");
-			printf("Block: %d P: \n", blockIdx.x);
-			printBitSet(P, numI);
-			printf("\n");
-			C += numI;
-			P += numI;	
-		}
-	}*/
-	if(threadIdx.x == 0){
-		copyBitSet(devRecC + (blockIdx.x * numV * numI), C);
-		copyBitSet(devRecP + (blockIdx.x * numV * numI), P);
-		copyBitSet(newP + (blockIdx.x * numV * numI), P);
-		recSearchP(N, solution, max, devRecC + (blockIdx.x * numV * numI) + numI, devRecP + (blockIdx.x * numV * numI) + numI, newP + (blockIdx.x * numV * numI));
-	}
+	copyBitSetP(devRecC + (blockIdx.x * numV * numI), C);
+	copyBitSetP(devRecP + (blockIdx.x * numV * numI), P);
+	copyBitSetP(newP + (blockIdx.x * numV * numI), P);
+	recSearchP(N, solution, max, devRecC + (blockIdx.x * numV * numI) + numI, 
+		devRecP + (blockIdx.x * numV * numI) + numI, newP + (blockIdx.x * numV * numI), workArr);
+
 
 	//if(blockIdx.x == 0){
 		//printf("Max found: %d\n", maxSize);
@@ -542,23 +530,43 @@ __global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int
 }
 
 __device__ void recSearchP(unsigned int* N,
- unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP){
+ unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP, unsigned int workArr[]){
+
+ 	__syncthreads();
 
 	// copy C and P
-	if(threadIdx.x == 0){
-		copyBitSet(C, C-numI);
-		copyBitSet(P, newP);
-		newP += numI;
-		nodes++;
+	copyBitSetP(C, C-numI);
+	copyBitSetP(P, newP);
 
-		int m = getSetBitCount(P);
+ 	__syncthreads();
+
+	if(threadIdx.x == 0 && blockIdx.x == 0){
+		printf("P: \n");
+		printBitSet(P, numI);
+		printf("\n");
+	}
+
+	// ahve only a single thread incr the num nodes
+	if(threadIdx.x == 0){
+		nodes++;
+	}
+
+	newP += numI;
+
+	getSetBitCountP(P, workArr);
+return;
+
+	if(threadIdx.x == 0){
 		unsigned int U[200];
 		unsigned int color[200];
+	}
+
+	if(threadIdx.x == 0){		
 
 		colorVertsP(P, U, color);
 
 		// iterate over the candidate set
-		for(int i=m-1; i>=0; i--){
+		for(int i=workArr[0]-1; i>=0; i--){
 
 			if(color[i] + getSetBitCount(C) <= maxSize){
 				return;
@@ -588,7 +596,7 @@ __device__ void recSearchP(unsigned int* N,
 				printf("\n");*/
 			}
 			else if(getSetBitCount(newP) > 0){
-				recSearchP(N, solution, max, C + numI, P + numI, newP);
+				recSearchP(N, solution, max, C + numI, P + numI, newP, workArr);
 			}
 
 			// remove v from P and C
@@ -680,4 +688,28 @@ __device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* colo
 
 __device__ void copyBitSetP(unsigned int* dest, unsigned int* src){
 	dest[threadIdx.x] = src[threadIdx.x];
+}
+
+__device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work){
+	work[threadIdx.x] = __popc(bitset[threadIdx.x]);
+
+	__syncthreads();
+	int size = numI;
+	for(int s=numI/2; s>0; s>>=1){
+		__syncthreads();
+
+	    if(threadIdx.x < s)
+	      work[threadIdx.x] += work[threadIdx.x+s];
+
+		// have the first thread do one additional add if the current size is odd
+		if(size&0x0001 == 0x0001 && threadIdx.x == 0)
+			work[threadIdx.x] += work[size-1];
+
+		size /= 2;
+	}
+
+	// rewrite reduction to be parallel
+	if(threadIdx.x == 0 && blockIdx.x == 0){
+		printf("count: %d\n", work[0]);
+	}
 }
