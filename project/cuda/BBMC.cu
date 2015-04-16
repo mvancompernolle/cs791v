@@ -24,10 +24,11 @@ __device__ void setBit(unsigned int& bitset, int pos);
 __device__ void clearBit(unsigned int& bitset, int pos);
 __device__ void copyBitSet(unsigned int* dest, unsigned int* src);
 
-__global__ void maxCliqueP(unsigned int* N, unsigned int* solution,
- unsigned int* max, unsigned int* devC, unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* devNewP);
-__device__ void recSearchP(unsigned int* N, unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP, unsigned int workArr[]);
-__device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* color);
+__global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int* max, unsigned int* devC,
+ unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* devNewP, unsigned int* devU, unsigned int* devColor);
+__device__ void recSearchP(unsigned int* N, unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P,
+ unsigned int* newP, unsigned int workArr[], unsigned int* U, unsigned int* Color, int level);
+__device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* color, unsigned int* work);
 __device__ void copyBitSetP(unsigned int* dest, unsigned int* src);
 __device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work);
 __device__ void findFirstBitP(unsigned int* bitset, unsigned int* work);
@@ -260,7 +261,7 @@ std::cout << std::endl;
 	unsigned int* hostInvN = new unsigned int[numInts*n];
 	unsigned int* sol = new unsigned int[numInts * n];
 	unsigned int* max = new unsigned int[n];
-	unsigned int* devN, *devInvN, *devSolution, *devMax;
+	unsigned int* devN, *devInvN, *devSolution, *devMax, *devU, *devColor;
 
 	// need to preallocate memory for recursive calls
 	unsigned int* devRecC, *devRecP, *devNewP;
@@ -321,6 +322,17 @@ std::cout << std::endl;
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
+	// allocate a Mb for each block for color and U arrays
+	err = cudaMalloc( (void**) &devU, 1048576 * n);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devColor, 1048576 * n);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
 
 	// default all values to 0
 	for(int r=0; r<n; r++){
@@ -360,7 +372,6 @@ std::cout << std::endl;
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
-
 	// move number of vertices to constant memory
 	err = cudaMemcpyToSymbol(numV, &n, sizeof(int), 0, cudaMemcpyHostToDevice);
 	if (err != cudaSuccess) {
@@ -389,24 +400,31 @@ std::cout << std::endl;
 	cudaEventCreate(&end);
 
 	cudaEventRecord( start, 0 );
-	// size for bitwise operations + size of verts * 2
-	int memSize = (sizeof(unsigned int) * numI) + (sizeof(unsigned int) * n * 2);
-	maxCliqueP<<<n, numInts, memSize>>>(devN, devSolution, devMax, 
-		thrust::raw_pointer_cast( &devC[0] ), thrust::raw_pointer_cast( &devP[0] ), devRecC, devRecP, devNewP);
+	// size for bitwise operations
+	int memSize = (sizeof(unsigned int) * numI);
+	maxCliqueP<<<n, numInts, memSize>>>(devN, devSolution, devMax, thrust::raw_pointer_cast( &devC[0] ),
+	 thrust::raw_pointer_cast( &devP[0] ), devRecC, devRecP, devNewP, devU, devColor);
     cudaEventRecord( end, 0 );
     cudaEventSynchronize( end );
     cudaEventElapsedTime( &elapsedTime, start, end );
     std::cout << "Kernel Time: " << elapsedTime << std::endl;
 
+    // get a cuda error if there was one
+    err = cudaGetLastError();
+	if (err != cudaSuccess) {
+		std::cerr << "Last Kernel Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+
 	// get solution back from kernel
   	err = cudaMemcpy(sol, devSolution, numInts * n * sizeof(unsigned int), cudaMemcpyDeviceToHost);
 	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		std::cerr << "Error1: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
   	err = cudaMemcpy(max, devMax, n * sizeof(unsigned int), cudaMemcpyDeviceToHost);
 	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		std::cerr << "Error2: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
 
@@ -501,14 +519,16 @@ void BBMC::generateInitialNodes(){
 	}
 }
 
-__global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int* max,
- unsigned int* devC, unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* newP) {
+__global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int* max, unsigned int* devC,
+ unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* newP, unsigned int* devU,
+ unsigned int* devColor) {
 
 	//time1 = clock();
 	__shared__ unsigned int* C;
 	__shared__ unsigned int* P;
 	extern __shared__ unsigned int workArr[];
 	__shared__ unsigned int* U;
+	__shared__ unsigned int* color;
 	//numI = 1;
 	//printf("numI: %u\n", numI);
 
@@ -519,32 +539,25 @@ __global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int
 		maxSize = 0;
 		max[blockIdx.x] = 0;
 		C = devC + (numI * blockIdx.x);
-		P = devP + (numI * blockIdx.x);	
-		U = workArr + numI;
+		P = devP + (numI * blockIdx.x);
+		U = devU + (blockIdx.x * 1048576/sizeof(unsigned int));
+		color = devColor + (blockIdx.x * 1048576/sizeof(unsigned int));
 	}
-
 	copyBitSetP(devRecC + (blockIdx.x * numV * numI), C);
 	copyBitSetP(devRecP + (blockIdx.x * numV * numI), P);
 	copyBitSetP(newP + (blockIdx.x * numV * numI), P);
+
+	__syncthreads();
+
 	recSearchP(N, solution, max, devRecC + (blockIdx.x * numV * numI) + numI, 
-		devRecP + (blockIdx.x * numV * numI) + numI, newP + (blockIdx.x * numV * numI), workArr);
-
-
-	//if(blockIdx.x == 0){
-		//printf("Max found: %d\n", maxSize);
-	//}
+		devRecP + (blockIdx.x * numV * numI) + numI, newP + (blockIdx.x * numV * numI), workArr, U, color, 0);
 }
 
 __device__ void recSearchP(unsigned int* N,
- unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP, unsigned int workArr[]){
-
-	if(threadIdx.x == 0 && blockIdx.x == 0){
-		printf("recursion called: \n");
-	} 
+ unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP,
+  unsigned int workArr[], unsigned int* U, unsigned int* color, int level){
 
 	int newPNum, cNum;
-
- 	__syncthreads();
 
 	// copy C and P
 	copyBitSetP(C, C-numI);
@@ -552,53 +565,23 @@ __device__ void recSearchP(unsigned int* N,
 
  	__syncthreads();
 
-	/*if(threadIdx.x == 0 && blockIdx.x == 0){
-		printf("P: \n");
-		printBitSet(P, numI);
-		printf("\n");
-	}*/
-
 	// ahve only a single thread incr the num nodes
 	if(threadIdx.x == 0 && blockIdx.x == 0){
 		nodes++;
 	}
 
-	// use this to end testing
-	if(nodes == 2)
-		return;
-
 	newP += numI;
 
 	getSetBitCountP(P, workArr);
+
+	__syncthreads();
+
 	int m = workArr[0];
-	__shared__ unsigned int* U;
-	__shared__ unsigned int* color;
-
-	if(threadIdx.x == 0){
-		// point U and color to their parts of shared memory		
-		U = workArr + numI;
-		color = U + numV;
-	}
 
 	__syncthreads();
-
-	// color the vertices to create a tighter upper bound
-	colorVertsP(P, U, color);
+	colorVertsP(P, U, color, workArr);
 
 	__syncthreads();
-
-	if(threadIdx.x == 0 && blockIdx.x == 0){
-		printf("cuda U:\n");
-		for(int i=0; i<m; i++){
-			printf("%u ", U[i]);
-		}
-		printf("\n");
-		printf("cuda color:\n");
-		for(int i=0; i<m; i++){
-			printf("%u ", color[i]);
-		}
-		printf("\n");
-	}
 
 	// iterate over the candidate set
 	for(int i=m-1; i>=0; i--){
@@ -622,31 +605,23 @@ __device__ void recSearchP(unsigned int* N,
 
 		__syncthreads();
 
-		/*if(threadIdx.x == 0 && blockIdx.x == 0){
-			printf("newP: \n");
-			printBitSet(newP, numI);
-			printf("\n");
-		}*/
-
 		// create the new candidate set
-		intersectBitSet(newP, &N[v * numI]);
-
-		if(threadIdx.x == 0 && blockIdx.x == 0){
-			printf("new P: \n");
-			printBitSet(newP, numI);
-			printf("\n");
-		}
+		intersectBitSetP(newP, N + (v * numI));
 
 		__syncthreads();
 
 		// get the set bits for the candidate set and the current set
 		getSetBitCountP(newP, workArr);
-		newPNum = workArr[0];
+
 		__syncthreads();
+		newPNum = workArr[0];
+		
 
 		getSetBitCountP(C, workArr);
-		cNum = workArr[0];
 		__syncthreads();
+
+		cNum = workArr[0];
+		
 
 		// if maximal, check for maximum
 		if(newPNum == 0 && cNum > maxSize){
@@ -654,18 +629,12 @@ __device__ void recSearchP(unsigned int* N,
 			if(threadIdx.x == 0){
 				// save the new max size so that it is shared among blocks
 				atomicMax(&maxSize, cNum);
-				//printf("b: %d, m: %d\n", blockIdx.x, getSetBitCount(C));
 				max[blockIdx.x] = cNum;
-				//printf("size: %d\n", maxSize);
 			}
-
 			copyBitSetP(solution + (blockIdx.x*numI), C);
-			/*printf("Solution: ");
-			printBitSet(solution + (blockIdx.x*numI), numI);
-			printf("\n");*/
 		}
 		else if(newPNum > 0){
-			//recSearchP(N, solution, max, C + numI, P + numI, newP, workArr);
+			recSearchP(N, solution, max, C + numI, P + numI, newP, workArr, U + m, color + m, level + 1);
 		}
 
 		// remove v from P and C
@@ -676,11 +645,10 @@ __device__ void recSearchP(unsigned int* N,
 	}
 }
 
-__device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* color){
+__device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* color, unsigned int* work){
 
 	// copy the candidate set
 	//printf("thread: %d\n", threadIdx.x);
-	__shared__ int v;
 	__shared__ int colorClass;
 	__shared__ int i;
 	__shared__ unsigned int copyP[32];
@@ -689,18 +657,18 @@ __device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* colo
 
 	// have main thread init values to zero
 	if(threadIdx.x == 0){
-		v = 0;
 		colorClass = 0;
+		i = 0;
 	}
 
 	__syncthreads();
 
-	// get num bits set (U-numI is the start of shared memory to work on)
-	getSetBitCountP(copyP, U-numI);
+	// get num bits set (work is the start of shared memory to work on)
+	getSetBitCountP(copyP, work);
 
 	__syncthreads();
 
-	while(*(U-numI) != 0){
+	while(work[0] != 0){
 
 		if(threadIdx.x == 0){
 			colorClass++;
@@ -710,64 +678,42 @@ __device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* colo
 
 		// copy the candidate set
 		copyBitSetP(Q, copyP);
-/*
-if(threadIdx.x == 0 && blockIdx.x == 0){
-	printf("Q: ");
-	printBitSet(Q, numI);
-	printf("\n");
-}*/
 
 		__syncthreads();
 
-		getSetBitCountP(Q, U-numI);
+		getSetBitCountP(Q, work);
 
-		while(*(U-numI) != 0){
+		while(work[0] != 0){
 			// return the index of the first set bit
-			findFirstBitP(Q, U-numI);
+			findFirstBitP(Q, work);
 
-			/*if(threadIdx.x == 0 && blockIdx.x == 0){
-				printf("bit pos: %d\n", *(U-numI));
-			}*/
-			//printf("%d - %d\n", colorClass, v);
 			// remove v from Q and copyP
 			if(threadIdx.x == 0){
-				clearBit(copyP[*(U-numI)/32], *(U-numI)%32);
-				clearBit(Q[*(U-numI)/32], *(U-numI)%32);
+				clearBit(copyP[work[0]/32], work[0]%32);
+				clearBit(Q[work[0]/32], work[0]%32);
 			}
 
-			/*if(threadIdx.x == 0 && blockIdx.x == 0 && colorClass == 1){
-				printf("Q: ");
-				printBitSet(Q, numI);
-				printf("\n");
-			}*/
-
 			__syncthreads();
 
-			intersectBitSetP(Q, &constInvN[(*(U-numI)) * numI]);
+			intersectBitSetP(Q, &constInvN[(work[0]) * numI]);
 
 			__syncthreads();
-
-			/*if(threadIdx.x == 0 && blockIdx.x == 0 && colorClass == 1){
-				printf("Q2: ");
-				printBitSet(Q, numI);
-				printf("\n");
-			}*/
 
 			if(threadIdx.x == 0){
-				U[i] = *(U-numI);
+				U[i] = work[0];
 				color[i++] = colorClass;
 			}
 
 			// recalculate set bits in Q for inner loop
 			__syncthreads();
-			getSetBitCountP(Q, U-numI);
+			getSetBitCountP(Q, work);
 			__syncthreads();
 
 		}
 
 		// recalculate set bits in copyP for outer loop
 		__syncthreads();
-		getSetBitCountP(copyP, U-numI);
+		getSetBitCountP(copyP, work);
 		__syncthreads();
 	}
 }
