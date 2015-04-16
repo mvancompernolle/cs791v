@@ -21,6 +21,8 @@ public:
 private:
 	boost::dynamic_bitset<>* N;
 	boost::dynamic_bitset<>* invN;
+	// unsigned int* hostN;
+	// unsigned int* hostInvN;
 	std::vector<Vertex> V;
 	int numInts;
 	thrust::host_vector<unsigned int> activeC;

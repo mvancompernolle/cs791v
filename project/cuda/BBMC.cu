@@ -5,14 +5,13 @@
 
 __constant__ int numV;
 __constant__ int numI;
-// Limit of about 700 vertices
-__device__ __constant__ unsigned int constInvN[16000];
 //__device__ float time1, time2;
 __device__ long nodes;
 __device__ int maxSize;
 __device__ unsigned int* globalC;
 __device__ unsigned int* globalP;
-__device__ unsigned int* globalN;
+__constant__ unsigned int* constN;
+__constant__ unsigned int* constInvN;
 
 // This is the declaration of the function that will execute on the GPU.
 __device__ void printBitSet(unsigned int* bitset, int size);
@@ -24,9 +23,9 @@ __device__ void setBit(unsigned int& bitset, int pos);
 __device__ void clearBit(unsigned int& bitset, int pos);
 __device__ void copyBitSet(unsigned int* dest, unsigned int* src);
 
-__global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int* max, unsigned int* devC,
+__global__ void maxCliqueP(unsigned int* N, unsigned int* invN, unsigned int* solution, unsigned int* max, unsigned int* devC,
  unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* devNewP, unsigned int* devU, unsigned int* devColor);
-__device__ void recSearchP(unsigned int* N, unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P,
+__device__ void recSearchP(unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P,
  unsigned int* newP, unsigned int workArr[], unsigned int* U, unsigned int* Color, int level);
 __device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* color, unsigned int* work);
 __device__ void copyBitSetP(unsigned int* dest, unsigned int* src);
@@ -34,19 +33,6 @@ __device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work);
 __device__ void findFirstBitP(unsigned int* bitset, unsigned int* work);
 __device__ void intersectBitSetP(unsigned int* bitset1, unsigned int* bitset2);
 
-
-/*
-Algorithm description:
-- Vertices are selected from the candidate set to add to the current clique in non-decreasing color order
-	with a color cut-off.
-- Bitset encoding of MCSa with the following features:
-	1. The "BB" in "BB-MaxClique is for "Bit Board". Sets are represented using bit string.
-	2. BBMC color sthe candidate set using a static sequential ordering, the ordering set at the top of search
-	3. BBMC represents the neighborhood of a vertex and its inverse neighborhood as bit strings, rather 
-		than using an adjacency matrix and its complement.
-	4. When coloring takes place a color class perspective is taken, determining what vertices can be placed 
-		in a color class together, before moving onto the next color class. 
-*/
 
 BBMC::BBMC(int n, std::vector<std::vector<int> > A, std::vector<int> degree, int style) : MCQ(n, A, degree, style){
 	// N stores the neighborhood of vertex v
@@ -271,12 +257,12 @@ std::cout << std::endl;
 	// get limit for stack and heap size
 	err = cudaDeviceSetLimit(cudaLimitStackSize, 50048);
 	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		std::cerr << "Error2: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
 	err = cudaDeviceSetLimit(cudaLimitMallocHeapSize, 2684354560);
 	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		std::cerr << "Error1: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
 	size_t stackLimit, heapLimit;
@@ -293,6 +279,11 @@ std::cout << std::endl;
 	std::cout << "Stack Limit: " << stackLimit << " Heap Limit: " << heapLimit << std::endl;
 
 	err = cudaMalloc( (void**) &devN, numInts * n * sizeof(unsigned int));
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devInvN, numInts * n * sizeof(unsigned int));
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
@@ -361,13 +352,13 @@ std::cout << std::endl;
 		}
 	}
 
-	// move the adjacency matrices to constant memory on the GPU
+	// move the adjacency matrices to memory on the GPU
 	err = cudaMemcpy(devN, hostN, n * numInts * sizeof(unsigned int), cudaMemcpyHostToDevice);
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
-	err = cudaMemcpyToSymbol(constInvN, hostInvN, n * numInts * sizeof(unsigned int));
+	err = cudaMemcpy(devInvN, hostInvN, n * numInts * sizeof(unsigned int), cudaMemcpyHostToDevice);
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
@@ -379,6 +370,16 @@ std::cout << std::endl;
 		exit(1);
 	}
 	err = cudaMemcpyToSymbol(numI, &numInts, sizeof(int), 0, cudaMemcpyHostToDevice);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMemcpyToSymbol(constN, &devN, sizeof(unsigned int*), 0, cudaMemcpyHostToDevice);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMemcpyToSymbol(constInvN, &devInvN, sizeof(unsigned int*), 0, cudaMemcpyHostToDevice);
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
@@ -402,7 +403,7 @@ std::cout << std::endl;
 	cudaEventRecord( start, 0 );
 	// size for bitwise operations
 	int memSize = (sizeof(unsigned int) * numI);
-	maxCliqueP<<<n, numInts, memSize>>>(devN, devSolution, devMax, thrust::raw_pointer_cast( &devC[0] ),
+	maxCliqueP<<<n, numInts, memSize>>>(devN, devInvN, devSolution, devMax, thrust::raw_pointer_cast( &devC[0] ),
 	 thrust::raw_pointer_cast( &devP[0] ), devRecC, devRecP, devNewP, devU, devColor);
     cudaEventRecord( end, 0 );
     cudaEventSynchronize( end );
@@ -519,7 +520,7 @@ void BBMC::generateInitialNodes(){
 	}
 }
 
-__global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int* max, unsigned int* devC,
+__global__ void maxCliqueP(unsigned int* devN, unsigned int* devInvN, unsigned int* solution, unsigned int* max, unsigned int* devC,
  unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* newP, unsigned int* devU,
  unsigned int* devColor) {
 
@@ -542,6 +543,10 @@ __global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int
 		P = devP + (numI * blockIdx.x);
 		U = devU + (blockIdx.x * 1048576/sizeof(unsigned int));
 		color = devColor + (blockIdx.x * 1048576/sizeof(unsigned int));
+		// if(blockIdx.x == 0){
+		// 	N = devN;
+		// 	invN = devInvN;
+		// }
 	}
 	copyBitSetP(devRecC + (blockIdx.x * numV * numI), C);
 	copyBitSetP(devRecP + (blockIdx.x * numV * numI), P);
@@ -549,11 +554,11 @@ __global__ void maxCliqueP(unsigned int* N, unsigned int* solution, unsigned int
 
 	__syncthreads();
 
-	recSearchP(N, solution, max, devRecC + (blockIdx.x * numV * numI) + numI, 
+	recSearchP(solution, max, devRecC + (blockIdx.x * numV * numI) + numI, 
 		devRecP + (blockIdx.x * numV * numI) + numI, newP + (blockIdx.x * numV * numI), workArr, U, color, 0);
 }
 
-__device__ void recSearchP(unsigned int* N,
+__device__ void recSearchP(
  unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP,
   unsigned int workArr[], unsigned int* U, unsigned int* color, int level){
 
@@ -606,7 +611,7 @@ __device__ void recSearchP(unsigned int* N,
 		__syncthreads();
 
 		// create the new candidate set
-		intersectBitSetP(newP, N + (v * numI));
+		intersectBitSetP(newP, constN + (v * numI));
 
 		__syncthreads();
 
@@ -634,7 +639,7 @@ __device__ void recSearchP(unsigned int* N,
 			copyBitSetP(solution + (blockIdx.x*numI), C);
 		}
 		else if(newPNum > 0){
-			recSearchP(N, solution, max, C + numI, P + numI, newP, workArr, U + m, color + m, level + 1);
+			recSearchP(solution, max, C + numI, P + numI, newP, workArr, U + m, color + m, level + 1);
 		}
 
 		// remove v from P and C
@@ -651,8 +656,8 @@ __device__ void colorVertsP(unsigned int* P, unsigned int* U, unsigned int* colo
 	//printf("thread: %d\n", threadIdx.x);
 	__shared__ int colorClass;
 	__shared__ int i;
-	__shared__ unsigned int copyP[32];
-	__shared__ unsigned int Q[32];
+	__shared__ unsigned int copyP[35];
+	__shared__ unsigned int Q[35];
 	copyBitSetP(copyP, P);
 
 	// have main thread init values to zero
