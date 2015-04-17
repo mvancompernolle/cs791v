@@ -14,9 +14,10 @@ public:
 	BBMC(int n, std::vector<std::vector<int> > A, std::vector<int> degree, int style);
 	~BBMC();
 	void searchParallel();
-	void generateInitialNodes();
+	void generateInitialNodes(int numBlocks);
 	void orderVertices();
 	void BBColor(const boost::dynamic_bitset<>& P, int U[], int color[]);
+	void queueFcn();
 
 private:
 	boost::dynamic_bitset<>* N;
