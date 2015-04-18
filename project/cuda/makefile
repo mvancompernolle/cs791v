@@ -1,10 +1,11 @@
-CC=nvcc
-CFLAGS=-c -std=c++11 -arch=sm_35 -rdc=true -lcudadevrt
+CC=nvcc 
+CFLAGS=-c -std=c++11 -arch=sm_35 -rdc=true 
+LIBS= -lcudadevrt -lboost_thread -lboost_system
 
 all: project
 
 project: main.o MC.o MCQ.o BBMC.o Vertex.o
-	$(CC) main.o MC.o MCQ.o BBMC.o Vertex.o -o project
+	$(CC) main.o MC.o MCQ.o BBMC.o Vertex.o -o project $(LIBS)
 
 main.o: main.cu
 	$(CC) $(CFLAGS) main.cu

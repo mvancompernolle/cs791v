@@ -6,7 +6,7 @@
 #include <sys/time.h>
 #include <time.h>
 #include "BBMC.h"
-#include <pthread.h>
+#include <boost/thread/thread.hpp>
 
 bool STILL_RUNNING = true;
 
@@ -18,7 +18,7 @@ struct threadData{
 
 void readDIMACS(std::string fname,  std::vector<int>& degree, std::vector<std::vector<int> >& A, int& n);
 long long int todiff(struct timeval *tod1, struct timeval *tod2);
-void* runTimer(void* data);
+void timeLimit(threadData data);
 
 int main(int argc, char** argv){
 
@@ -29,7 +29,6 @@ int main(int argc, char** argv){
 	std::vector<std::vector<int> > A;
 	int n; 
 	BBMC* mc = NULL;
-	pthread_t thread;
 	int ret;
 
 	// read in the graph
@@ -54,8 +53,11 @@ int main(int argc, char** argv){
 	boost::dynamic_bitset<>* N;
 	boost::dynamic_bitset<>* invN;
 	std::vector<Vertex> V;
-	threadData* data = new threadData;
+	threadData data;
+	boost::thread t;
 
+
+	
 
 	// set time limit if passed in
 	if(argc > 3)
@@ -65,18 +67,17 @@ int main(int argc, char** argv){
 	gettimeofday(&tod1, NULL);
 	//mc->queueFcn();
 	if(argc > 3){
-		data->limit = (1000 * atoi(argv[3]));
-		data->argv = argv;
-		data->mc = mc;
-		ret = pthread_create(&thread, NULL, &runTimer, (void*)data);
-		if(ret != 0){
-			std::cout << "thread failed to be created" << std::endl;
-			exit(1);
-		}
+		data.limit = (1000 * atoi(argv[3]));
+		data.argv = argv;
+		data.mc = mc;
+		// create boost thread
+		t = boost::thread(timeLimit, data);
 	}
 	mc->searchParallel();
 	STILL_RUNNING = false;
 	gettimeofday(&tod2, NULL);
+
+	t.join();
 
 	// output results
 	std::cout << " -------- Results --------- " << std::endl;
@@ -156,16 +157,13 @@ long long int todiff(struct timeval *tod1, struct timeval *tod2)
 	return t1 - t2;
 }
 
-void* runTimer(void* data){
+void timeLimit(threadData d){
 	// this function is used to kill the program if it runs too long
 	timeval tod1, tod2;
 	gettimeofday(&tod1, NULL);
 
-	threadData* d = (threadData*) data;
-	std::cout << d->argv[1] << ", " << d->argv[2] << ", " << d->limit << std::endl;
-
 	gettimeofday(&tod2, NULL);
-	while(todiff(&tod2, &tod1)/1000 < d->limit && STILL_RUNNING){
+	while(todiff(&tod2, &tod1)/1000 < d.limit && STILL_RUNNING){
 		gettimeofday(&tod2, NULL);
 	}
 
@@ -175,13 +173,12 @@ void* runTimer(void* data){
 		// print results to file here
 		std::ofstream fout;
 		fout.open("results.txt", std::ofstream::app);
-		fout << d->argv[1] << ", " << d->argv[2] << ", " << d->limit/1000 << std::endl;
-		fout << d->mc->getMaxSize() << ", " << d->mc->getNumNodes() << ", " 
-			<< d->limit << std::endl << std::endl;
+		fout << d.argv[1] << ", " << d.argv[2] << ", " << d.limit/1000 << std::endl;
+		fout << d.mc->getMaxSize() << ", " << d.mc->getNumNodes() << ", " 
+			<< d.limit << std::endl << std::endl;
 
 		// terminate cuda kernel and program
 		cudaDeviceReset();
 		exit(1);
 	}
-	return NULL;
 }

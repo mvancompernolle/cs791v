@@ -3,11 +3,12 @@
 #include "stdio.h"
 #include <bitset>
 #include <queue>
+#include <boost/thread/thread.hpp>
 
 __constant__ int numV;
 __constant__ int numI;
 __device__ long nodes;
-__device__ int maxSize;
+__device__ int* globalMax;
 __device__ unsigned int* globalC;
 __device__ unsigned int* globalP;
 __constant__ unsigned int* constN;
@@ -23,7 +24,7 @@ __device__ void setBit(unsigned int& bitset, int pos);
 __device__ void clearBit(unsigned int& bitset, int pos);
 __device__ void copyBitSet(unsigned int* dest, unsigned int* src);
 
-__global__ void maxCliqueP(unsigned int* N, unsigned int* invN, unsigned int* solution, unsigned int* max, unsigned int* devC,
+__global__ void maxCliqueP(int* currMax, unsigned int* N, unsigned int* invN, unsigned int* solution, unsigned int* max, unsigned int* devC,
  unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* devNewP, unsigned short* devU, unsigned short* devColor);
 __device__ void recSearchP(unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P,
  unsigned int* newP, unsigned int workArr[], unsigned short* U, unsigned short* color, int level);
@@ -37,6 +38,172 @@ __device__ void intersectBitSetP(unsigned int* bitset1, unsigned int* bitset2);
 __global__ void testQueue(int* queue);
 
 
+void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInvN, unsigned int* retSol, unsigned int* retMax, int* currMax){
+	std::cout << "new kernel launched: " << threadId << std::endl;
+
+	unsigned int* devN, *devInvN, *devSolution, *devMax, *devRecP, *devRecC, *devNewP;
+	unsigned short* devU, *devColor;
+	thrust::device_vector<unsigned int> devC, devP;
+	cudaError_t err;
+	cudaEvent_t start, end;
+	float elapsedTime;
+	unsigned int* sol = new unsigned int[numInts * numBlocks];
+	unsigned int* max = new unsigned int[numBlocks];
+
+	cudaSetDevice(threadId);
+
+	// get limit for stack and heap size
+	err = cudaDeviceSetLimit(cudaLimitStackSize, 40048);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devN, numInts * n * sizeof(unsigned int));
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devInvN, numInts * n * sizeof(unsigned int));
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devSolution, numInts * sizeof(unsigned int) * numBlocks);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devMax, sizeof(unsigned int) * numBlocks);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devRecC, sizeof(unsigned int) * numInts * n * numBlocks);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devRecP, sizeof(unsigned int) * numInts * n * numBlocks);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devNewP, sizeof(unsigned int) * numInts * n * numBlocks);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	// allocate a Mb for each block for color and U arrays
+	err = cudaMalloc( (void**) &devU, 548576 * numBlocks);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMalloc( (void**) &devColor, 548576 * numBlocks);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+
+	// move the adjacency matrices to memory on the GPU
+	err = cudaMemcpy(devN, hostN, n * numInts * sizeof(unsigned int), cudaMemcpyHostToDevice);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMemcpy(devInvN, hostInvN, n * numInts * sizeof(unsigned int), cudaMemcpyHostToDevice);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	// move number of vertices to constant memory
+	err = cudaMemcpyToSymbol(numV, &n, sizeof(int), 0, cudaMemcpyHostToDevice);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMemcpyToSymbol(numI, &numInts, sizeof(int), 0, cudaMemcpyHostToDevice);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMemcpyToSymbol(constN, &devN, sizeof(unsigned int*), 0, cudaMemcpyHostToDevice);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaMemcpyToSymbol(constInvN, &devInvN, sizeof(unsigned int*), 0, cudaMemcpyHostToDevice);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+
+	// allocate inital nodes for each gpu
+	devC = activeC[threadId];
+	devP = activeP[threadId];
+	std::cout << "Input size: " << devC.size() << std::endl;
+
+
+
+	cudaEventCreate(&start);
+	cudaEventCreate(&end);
+
+
+	cudaEventRecord( start, 0 );
+	maxCliqueP<<<numBlocks, numInts, memSize>>>(currMax, devN, devInvN, devSolution, devMax, thrust::raw_pointer_cast( &devC[0] ),
+	 thrust::raw_pointer_cast( &devP[0] ), devRecC, devRecP, devNewP, devU, devColor);
+    cudaEventRecord( end, 0 );
+    cudaEventSynchronize( end );
+    cudaEventElapsedTime( &elapsedTime, start, end );
+    std::cout << threadId << " Kernel Time: " << elapsedTime << std::endl;
+
+	// get solution back from kernel
+  	err = cudaMemcpy(sol, devSolution, numInts * numBlocks * sizeof(unsigned int), cudaMemcpyDeviceToHost);
+	if (err != cudaSuccess) {
+		std::cerr << "Error1: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+  	err = cudaMemcpy(max, devMax, numBlocks * sizeof(unsigned int), cudaMemcpyDeviceToHost);
+	if (err != cudaSuccess) {
+		std::cerr << "Error2: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+
+	// print out maxes found in cuda for each search
+	int m = 0, index = 0;
+	for(int i=0; i<numBlocks; i++){
+		if(max[i] > m){
+			m = max[i];
+			index = i;
+			// std::cout << "i: " << i << " max: " << max[i] << std::endl;
+		}
+	}
+
+	// printIntArray(sol + index*(numInts), 1, numInts);
+
+	// //unsigned int* cudaSol = new unsigned int[numInts];
+	// std::cout << "CUDA SOLUTION: " << threadId << std::endl;
+	// for(int currInt = 0; currInt < numInts; currInt++){
+	// 	// loop over each bit in the int
+	// 	for(int b=0; b<sizeof(unsigned int)*8; b++){
+	// 		int shift = 1 << b;
+	// 		int val = sol[currInt + index*(numInts)] & shift;
+	// 		if(val != 0)
+	// 			std::cout << V[32 * currInt + b].index + 1 << " ";
+	// 	}
+	// 	std::cout << " | ";
+	// }
+	// std::cout << std::endl;
+
+
+	// place local solution into global solution
+	retMax[threadId] = max[index];
+	for(int i=0; i<numInts; i++){
+		retSol[(threadId * numInts) + i] = sol[index*numInts + i];
+	}
+}
+
+
 BBMC::BBMC(int n, std::vector<std::vector<int> > A, std::vector<int> degree, int style) : MCQ(n, A, degree, style){
 	// N stores the neighborhood of vertex v
 	// the set of vertices that are adjacent to v
@@ -45,7 +212,6 @@ BBMC::BBMC(int n, std::vector<std::vector<int> > A, std::vector<int> degree, int
 	// the set of vertices that are not adjacent to v
 	invN = new boost::dynamic_bitset<>[n];
 	V.resize(n);
-	numInts = 0;
 }
 
 BBMC::~BBMC(){
@@ -216,7 +382,26 @@ __device__ void printBitSet(unsigned int* bitset, int size){
 //////////////////////////// CUDA PARALLEL FUNCITONS /////////////////////////
 void BBMC::searchParallel(){
 	cudaError_t err;
-	int numBlocks = n;
+	numInts = (n+sizeof(int)*8-1)/(sizeof(int)*8);
+	memSize = (sizeof(unsigned int) * numInts);
+	// get the number of devices
+	err = cudaGetDeviceCount(&numDevices);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	std::cout << "Num Devices: " << numDevices << std::endl;
+	numBlocks = n;
+	activeC.resize(numDevices);
+	activeP.resize(numDevices);
+
+	// calculate the number of ints needed per vertex on gpu
+	int r = n % (sizeof(int)*8);
+	std::cout << numInts << " " << r << " " << n << " " << (sizeof(unsigned int)*8) << std::endl;
+	unsigned int* hostN = new unsigned int[numInts*n];
+	unsigned int* hostInvN = new unsigned int[numInts*n];
+	unsigned int* sol = new unsigned int[numDevices * numInts];
+	unsigned int* max = new unsigned int[numDevices];
 
 	for(int i=0; i<n; i++){
 		N[i].resize(n);
@@ -228,88 +413,6 @@ void BBMC::searchParallel(){
 
 	// order vertices
 	orderVertices();
-
-	// calculate the number of ints needed per vertex on gpu
-	numInts = (n+sizeof(int)*8-1)/(sizeof(int)*8);
-	int r = n % (sizeof(int)*8);
-	std::cout << numInts << " " << r << " " << n << " " << (sizeof(unsigned int)*8) << std::endl;
-	unsigned int* hostN = new unsigned int[numInts*n];
-	unsigned int* hostInvN = new unsigned int[numInts*n];
-	unsigned int* sol = new unsigned int[numInts * numBlocks];
-	unsigned int* max = new unsigned int[numBlocks];
-	unsigned int* devN, *devInvN, *devSolution, *devMax;
-	unsigned short *devU, *devColor; 
-
-	// need to preallocate memory for recursive calls
-	unsigned int* devRecC, *devRecP, *devNewP;
-
-	cudaSetDevice(1);
-
-	// get limit for stack and heap size
-	err = cudaDeviceSetLimit(cudaLimitStackSize, 40048);
-	if (err != cudaSuccess) {
-		std::cerr << "Error2: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	size_t stackLimit, heapLimit;
-	err = cudaDeviceGetLimit(&stackLimit, cudaLimitStackSize);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaDeviceGetLimit(&heapLimit, cudaLimitMallocHeapSize);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	std::cout << "Stack Limit: " << stackLimit << " Heap Limit: " << heapLimit << std::endl;
-
-	err = cudaMalloc( (void**) &devN, numInts * n * sizeof(unsigned int));
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMalloc( (void**) &devInvN, numInts * n * sizeof(unsigned int));
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMalloc( (void**) &devSolution, numInts * sizeof(unsigned int) * numBlocks);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMalloc( (void**) &devMax, sizeof(unsigned int) * numBlocks);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMalloc( (void**) &devRecC, sizeof(unsigned int) * numInts * n * numBlocks);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMalloc( (void**) &devRecP, sizeof(unsigned int) * numInts * n * numBlocks);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMalloc( (void**) &devNewP, sizeof(unsigned int) * numInts * n * numBlocks);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	// allocate a Mb for each block for color and U arrays
-	err = cudaMalloc( (void**) &devU, 548576 * numBlocks);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMalloc( (void**) &devColor, 548576 * numBlocks);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
 
 	// default all values to 0
 	for(int r=0; r<n; r++){
@@ -338,64 +441,40 @@ void BBMC::searchParallel(){
 		}
 	}
 
-	// move the adjacency matrices to memory on the GPU
-	err = cudaMemcpy(devN, hostN, n * numInts * sizeof(unsigned int), cudaMemcpyHostToDevice);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMemcpy(devInvN, hostInvN, n * numInts * sizeof(unsigned int), cudaMemcpyHostToDevice);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	// move number of vertices to constant memory
-	err = cudaMemcpyToSymbol(numV, &n, sizeof(int), 0, cudaMemcpyHostToDevice);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMemcpyToSymbol(numI, &numInts, sizeof(int), 0, cudaMemcpyHostToDevice);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMemcpyToSymbol(constN, &devN, sizeof(unsigned int*), 0, cudaMemcpyHostToDevice);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-	err = cudaMemcpyToSymbol(constInvN, &devInvN, sizeof(unsigned int*), 0, cudaMemcpyHostToDevice);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
+	generateInitialNodes(numBlocks, numDevices);
 
-	// specify the amount of nodes/blocks you want to have preprocessed
-	generateInitialNodes(numBlocks);
+	size_t stackLimit, heapLimit;
+	err = cudaDeviceGetLimit(&stackLimit, cudaLimitStackSize);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	err = cudaDeviceGetLimit(&heapLimit, cudaLimitMallocHeapSize);
+	if (err != cudaSuccess) {
+		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+		exit(1);
+	}
+	std::cout << "Stack Limit: " << stackLimit << " Heap Limit: " << heapLimit << std::endl;
 
-	// allocated nodes on the gpu
-	thrust::device_vector<unsigned int> devC = activeC;
-	thrust::device_vector<unsigned int> devP = activeP;
-	std::cout << "sizes: " << activeC.size() << " " << activeP.size() << std::endl;
+	// allocate unified memory to share current max size
+	int* currentMax;
+	cudaMallocManaged(&currentMax, sizeof(int));
+	*currentMax = 1;
 
-	//printIntArray(hostN, n, numInts);
-	//std::cout << std::endl;
-	//printIntArray(hostInvN, n, numInts);
-	cudaEvent_t start, end;
-	float elapsedTime;
-	cudaEventCreate(&start);
-	cudaEventCreate(&end);
+	// create threads to launch a kernel on each gpu
+	boost::thread threads[numDevices];
 
-	cudaEventRecord( start, 0 );
 	// size for bitwise operations
-	int memSize = (sizeof(unsigned int) * numI);
-	maxCliqueP<<<numBlocks, numInts, memSize>>>(devN, devInvN, devSolution, devMax, thrust::raw_pointer_cast( &devC[0] ),
-	 thrust::raw_pointer_cast( &devP[0] ), devRecC, devRecP, devNewP, devU, devColor);
-    cudaEventRecord( end, 0 );
-    cudaEventSynchronize( end );
-    cudaEventElapsedTime( &elapsedTime, start, end );
-    std::cout << "Kernel Time: " << elapsedTime << std::endl;
+	for(int i=0; i<numDevices; i++){
+		// maxCliqueP<<<numBlocks, numInts, memSize>>>(devN[i], devInvN[i], devSolution[i], devMax[i], thrust::raw_pointer_cast( &devC[i][0] ),
+		//  thrust::raw_pointer_cast( &devP[i][0] ), devRecC[i], devRecP[i], devNewP[i], devU[i], devColor[i]);
+		threads[i] = boost::thread(&BBMC::luanchKernel, this, i, hostN, hostInvN, sol, max, currentMax);
+	}
+
+	// join threads
+	for(int i=0; i<numDevices; i++){
+		threads[i].join();
+	} 
 
     // get a cuda error if there was one
     err = cudaGetLastError();
@@ -404,31 +483,19 @@ void BBMC::searchParallel(){
 		exit(1);
 	}
 
-	// get solution back from kernel
-  	err = cudaMemcpy(sol, devSolution, numInts * numBlocks * sizeof(unsigned int), cudaMemcpyDeviceToHost);
-	if (err != cudaSuccess) {
-		std::cerr << "Error1: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-  	err = cudaMemcpy(max, devMax, numBlocks * sizeof(unsigned int), cudaMemcpyDeviceToHost);
-	if (err != cudaSuccess) {
-		std::cerr << "Error2: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
-
 	// print out maxes found in cuda for each search
 	int m = 0, index = 0;
-	for(int i=0; i<numBlocks; i++){
+	for(int i=0; i<numDevices; i++){
 		if(max[i] > m){
 			m = max[i];
 			index = i;
-			std::cout << "i: " << i << " max: " << max[i] << std::endl;
 		}
 	}
-	printIntArray(sol + index*(numInts), 1, numInts);
+	std::cout << "MAX SIZE: " << *currentMax << std::endl;
+	// printIntArray(sol + index*(numInts), 1, numInts);
 
-	//unsigned int* cudaSol = new unsigned int[numInts];
-	std::cout << "CUDA SOLUTION: " << std::endl;
+	unsigned int* cudaSol = new unsigned int[numInts];
+	std::cout << "CUDA SOLUTION FINAL: " << std::endl;
 	for(int currInt = 0; currInt < numInts; currInt++){
 		// loop over each bit in the int
 		for(int b=0; b<sizeof(unsigned int)*8; b++){
@@ -442,7 +509,7 @@ void BBMC::searchParallel(){
 	std::cout << std::endl;
 }
 
-void BBMC::generateInitialNodes(int numBlocks){
+void BBMC::generateInitialNodes(int numBlocks, int numDevices){
 	boost::dynamic_bitset<> C(n);
 	boost::dynamic_bitset<> P(n);
 	boost::dynamic_bitset<> newP;
@@ -450,6 +517,7 @@ void BBMC::generateInitialNodes(int numBlocks){
 	std::queue<boost::dynamic_bitset<>> activePBitset;
 	int m, v;
 	unsigned int c = 0, p = 0;
+	int num = numBlocks * numDevices;
 
 	// initialize starting node
 	for(int i=0; i<C.size(); i++){
@@ -464,7 +532,7 @@ void BBMC::generateInitialNodes(int numBlocks){
 	BBColor(P, U, color);
 
 	// iterate over the candidate set
-	for(int i=m-1; i>= 0 && activeCBitset.size()<numBlocks-1; i--){
+	for(int i=m-1; i>= 0 && activeCBitset.size()<num-1; i--){
 
 		// select a vertex from P and add it to the current clique
 		// newP is set of vertices in the candidate set P that are adjacent to v
@@ -488,7 +556,7 @@ void BBMC::generateInitialNodes(int numBlocks){
 	}
 
 	// expand nodes in queue to enqueue more sub branches and increase parallelism
-	while(activeCBitset.size() < numBlocks){
+	while(activeCBitset.size() < num){
 		// get first nodes in queue
 		C = activeCBitset.front();
 		activeCBitset.pop();
@@ -500,7 +568,7 @@ void BBMC::generateInitialNodes(int numBlocks){
 		BBColor(P, U, color);
 
 		// iterate over part of the candidate set (lower i's usually get bounded out)
-		for(int i=m-1; i>= m/2 && activeCBitset.size()<numBlocks-1; i--){
+		for(int i=m-1; i>= m/2 && activeCBitset.size()<num-1; i--){
 
 			// select a vertex from P and add it to the current clique
 			// newP is set of vertices in the candidate set P that are adjacent to v
@@ -527,12 +595,15 @@ void BBMC::generateInitialNodes(int numBlocks){
 	std::cout << std::endl << "num blocks: " << activeCBitset.size() << std::endl;
 
 	// convert bitsets to GPU format
+
+	int count = 0;
+	int limit = numBlocks;
+	int index = 0;
 	while(activeCBitset.size() > 0){
 		C = activeCBitset.front();
 		newP = activePBitset.front();
 		activeCBitset.pop();
 		activePBitset.pop();
-
 		for(int i=0; i<numInts; i++){
 			c = 0;
 			p = 0;
@@ -549,9 +620,15 @@ void BBMC::generateInitialNodes(int numBlocks){
 				}
 				//std::cout << std::endl;
 			}		
-			//std::cout << "c " << c << " p " <<  p << std::endl;
-			activeC.push_back(c);
-			activeP.push_back(p);
+			// std::cout << "c " << c << " p " <<  p << std::endl;
+			activeC[index].push_back(c);
+			activeP[index].push_back(p);
+		}
+		// std::cout << count << " " << limit << " " << index << std::endl;
+		count++;
+		if(count == limit){
+			index++;
+			count = 0;
 		}
 	}
 
@@ -568,7 +645,7 @@ void BBMC::generateInitialNodes(int numBlocks){
 	// }
 }
 
-__global__ void maxCliqueP(unsigned int* devN, unsigned int* devInvN, unsigned int* solution, unsigned int* max, unsigned int* devC,
+__global__ void maxCliqueP(int* currMax, unsigned int* devN, unsigned int* devInvN, unsigned int* solution, unsigned int* max, unsigned int* devC,
  unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* newP, unsigned short* devU,
  unsigned short* devColor) {
 
@@ -584,16 +661,12 @@ __global__ void maxCliqueP(unsigned int* devN, unsigned int* devInvN, unsigned i
 	// have each block 
 	if(threadIdx.x == 0){
 		nodes = 0;
-		maxSize = 0;
 		max[blockIdx.x] = 0;
 		C = devC + (numI * blockIdx.x);
 		P = devP + (numI * blockIdx.x);
 		U = devU + (blockIdx.x * 548576/sizeof(unsigned short));
 		color = devColor + (blockIdx.x * 548576/sizeof(unsigned short));
-		// if(blockIdx.x == 0){
-		// 	N = devN;
-		// 	invN = devInvN;
-		// }
+		globalMax = currMax;
 	}
 	__syncthreads();
 
@@ -649,7 +722,7 @@ __device__ void recSearchP(
 
 		__syncthreads();
 
-		if(color[i] + workArr[0] <= maxSize){
+		if(color[i] + workArr[0] <= *globalMax){
 			return;
 		}
 
@@ -681,11 +754,11 @@ __device__ void recSearchP(
 		
 
 		// if maximal, check for maximum
-		if(newPNum == 0 && cNum > maxSize){
+		if(newPNum == 0 && cNum > *globalMax){
 
 			if(threadIdx.x == 0){
 				// save the new max size so that it is shared among blocks
-				atomicMax(&maxSize, cNum);
+				atomicMax(globalMax, cNum);
 				max[blockIdx.x] = cNum;
 			}
 			copyBitSetP(solution + (blockIdx.x*numI), C);
