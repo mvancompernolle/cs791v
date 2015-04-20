@@ -97,7 +97,7 @@ int main(int argc, char** argv){
 	// output results to a file
 	if(OUTPUT_TO_FILE){
 		std::ofstream fout;
-		fout.open("results.txt", std::ofstream::app);
+		fout.open("results2.txt", std::ofstream::app);
 		std::string timeLimit = "0";
 		if(argv[4] != NULL){
 			timeLimit = argv[4];
@@ -189,7 +189,7 @@ void timeLimit(threadData d){
 		if(OUTPUT_TO_FILE){
 			// print results to file here
 			std::ofstream fout;
-			fout.open("results.txt", std::ofstream::app);
+			fout.open("results2.txt", std::ofstream::app);
 			fout << d.argv[1] << ", " << d.argv[2] << ", " << d.limit/1000 << std::endl;
 			fout << d.mc->getMaxSize() << ", " << d.mc->getNumNodes() << ", " 
 				<< d.limit << std::endl << std::endl;

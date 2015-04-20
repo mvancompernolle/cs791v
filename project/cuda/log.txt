@@ -4559,6 +4559,9 @@ CUDA SOLUTION FINAL:
 
 Error: 
 
+
+
+
 NEW LOG ENTRY
 Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat1500-1.clq
 Num Devices: 2
@@ -4568,11 +4571,17 @@ num blocks: 3000
 Stack Limit: 1024 Heap Limit: 8388608
 new kernel launched: 0
 new kernel launched: 1
-0 Kernel Time (no transfer): 1028.49
-0 Kernel Time (transfer): 1029.62
+1 Kernel Time (no transfer): 70.1215
+1 Kernel Time (transfer): 70.726
+0 Kernel Time (no transfer): 1017.89
+0 Kernel Time (transfer): 1018.63
+CUDA SOLUTION FINAL: 
+671 485  | 622  |  | 444  |  |  |  | 983 566  |  | 1323 580  |  | 971  | 1139  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2558
 
-Error: Error: out of memory
 
+Error: 
 
 NEW LOG ENTRY
 Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat1500-1.clq
@@ -4583,11 +4592,17 @@ num blocks: 3000
 Stack Limit: 1024 Heap Limit: 8388608
 new kernel launched: 0
 new kernel launched: 1
-0 Kernel Time (no transfer): 1008.57
-0 Kernel Time (transfer): 1009.55
+1 Kernel Time (no transfer): 58.8534
+1 Kernel Time (transfer): 59.4196
+0 Kernel Time (no transfer): 1022.84
+0 Kernel Time (transfer): 1023.64
+CUDA SOLUTION FINAL: 
+622 444  | 1323  | 485  |  | 983  |  |  | 671 580  |  |  |  |  | 971 566  |  | 1139  |  |  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2724
 
-Error: Error: out of memory
 
+Error: 
 
 NEW LOG ENTRY
 Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat1500-1.clq
@@ -4598,9 +4613,4849 @@ num blocks: 3000
 Stack Limit: 1024 Heap Limit: 8388608
 new kernel launched: 0
 new kernel launched: 1
-0 Kernel Time (no transfer): 1013.22
-0 Kernel Time (transfer): 1014.18
+1 Kernel Time (no transfer): 111.71
+1 Kernel Time (transfer): 112.318
+0 Kernel Time (no transfer): 1059.15
+0 Kernel Time (transfer): 1059.87
+CUDA SOLUTION FINAL: 
+622 444  | 1323  | 485  |  | 983  |  |  | 671 580  |  |  |  |  | 971 566  |  | 1139  |  |  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2547
 
-Error: Error: out of memory
 
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 2
+47 28 1500 32
+
+num blocks: 3000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 70.6688
+1 Kernel Time (transfer): 71.2278
+0 Kernel Time (no transfer): 1016.91
+0 Kernel Time (transfer): 1017.53
+CUDA SOLUTION FINAL: 
+671 485  | 622  |  | 444  |  |  |  | 983 566  |  | 1323 580  |  | 971  | 1139  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2546
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 2
+47 28 1500 32
+
+num blocks: 3000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 59.4422
+1 Kernel Time (transfer): 59.8855
+0 Kernel Time (no transfer): 1038.4
+0 Kernel Time (transfer): 1039.24
+CUDA SOLUTION FINAL: 
+622 444  | 1323  | 485  |  | 983  |  |  | 671 580  |  |  |  |  | 971 566  |  | 1139  |  |  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2542
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 2
+47 28 1500 32
+
+num blocks: 3000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 110.795
+1 Kernel Time (transfer): 111.21
+0 Kernel Time (no transfer): 1066.35
+0 Kernel Time (transfer): 1067.1
+CUDA SOLUTION FINAL: 
+622 444  | 1323  | 485  |  | 983  |  |  | 671 580  |  |  |  |  | 971 566  |  | 1139  |  |  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2558
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.775168
+0 Kernel Time (transfer): 0.852032
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 100
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.78486
+0 Kernel Time (transfer): 1.86262
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 78
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 11.139
+0 Kernel Time (transfer): 11.2466
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 89
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 39.6524
+0 Kernel Time (transfer): 39.7289
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 116
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 429.737
+0 Kernel Time (transfer): 429.812
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 515
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.774112
+0 Kernel Time (transfer): 0.845824
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 935
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.77152
+0 Kernel Time (transfer): 1.84346
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 907
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 10.8401
+0 Kernel Time (transfer): 10.9107
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 900
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 39.6462
+0 Kernel Time (transfer): 39.7202
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 928
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 402.297
+0 Kernel Time (transfer): 402.369
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 1289
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 7247.7
+0 Kernel Time (transfer): 7247.8
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 8150
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_9.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 381352
+0 Kernel Time (transfer): 381352
+CUDA SOLUTION FINAL: 
+186 177 174 169 167 165 164 153 147 112 111 65 34 26  | 28 25 22 16 200 183  | 189 150 140 110 68 66 49 47 33 168  | 115 79  | 126 75 72 46 71  | 194 154  |  | 
+ -------- Results --------- 
+39 0 382236
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../300_5.txt
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 55.3677
+0 Kernel Time (transfer): 55.4505
+CUDA SOLUTION FINAL: 
+ |  | 214 87 281 293 297  | 124 127  | 128 289  | 36  | 107  | 180  |  |  | 
+ -------- Results --------- 
+12 0 955
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../400_5.txt
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 233.947
+0 Kernel Time (transfer): 234.043
+CUDA SOLUTION FINAL: 
+202 105  | 279 354  | 85  | 28  |  |  | 269 41  | 73  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 1149
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../500_5.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 690.285
+0 Kernel Time (transfer): 690.398
+CUDA SOLUTION FINAL: 
+368  | 319 126  |  | 159 154  | 478 95  |  | 109  |  |  | 53  | 305  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 1620
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../600_5.txt
+Num Devices: 1
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 2085.31
+0 Kernel Time (transfer): 2085.45
+CUDA SOLUTION FINAL: 
+535 286 399  | 329  |  | 521  |  | 3  | 149 600  | 471  | 271  | 225 262  |  |  |  | 310  |  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 3045
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../700_5.txt
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 4683.47
+0 Kernel Time (transfer): 4683.63
+CUDA SOLUTION FINAL: 
+614  | 132 438  | 354  |  |  | 391  |  | 89 477  | 561  | 621  |  |  |  |  | 153  | 618  |  | 638  | 264  | 662  |  |  | 
+ -------- Results --------- 
+14 0 5654
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../800_5.txt
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 8272.41
+0 Kernel Time (transfer): 8272.6
+CUDA SOLUTION FINAL: 
+ |  | 12  | 152  |  | 795  | 154  | 124  |  | 322 732  | 546  |  |  | 623 588  |  |  |  | 102  | 211 25 198  |  | 256  |  |  |  |  | 
+ -------- Results --------- 
+15 0 9287
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../900_5.txt
+Num Devices: 1
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 30092.3
+0 Kernel Time (transfer): 30092.4
+CUDA SOLUTION FINAL: 
+749 31  |  |  | 184 406  | 787 848  |  | 409  | 282  |  |  |  |  |  |  |  |  | 431  | 358  | 112  |  |  | 611  |  |  |  |  | 58 401  |  |  | 
+ -------- Results --------- 
+14 0 31133
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../1000_5.txt
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 41006.9
+0 Kernel Time (transfer): 41007.1
+CUDA SOLUTION FINAL: 
+ | 368  |  | 445 420  |  | 129  | 270  |  |  |  | 883  |  |  | 601 544  | 705  | 294  |  |  | 669  | 616  |  |  |  |  | 980  |  |  |  |  | 296 830  |  |  | 
+ -------- Results --------- 
+15 0 42093
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 815.519
+0 Kernel Time (transfer): 815.591
+CUDA SOLUTION FINAL: 
+180 175 83 4 100 32 48 103  | 144 138 137 107 132 199 122 120 191 26 104  | 46  |  |  | 41  |  | 
+ -------- Results --------- 
+21 0 1714
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 30750.9
+0 Kernel Time (transfer): 30751
+CUDA SOLUTION FINAL: 
+19  | 7 340 247 154 8 242  |  | 389 324  | 245  |  | 211 294  | 394 202 380 353 186  | 197 267 135 241 17 334  | 393  | 266 396 112 157  | 362 270 343 147  | 161  | 
+ -------- Results --------- 
+33 0 31683
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 1
+12 26 378 32
+
+num blocks: 378
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 6427.91
+0 Kernel Time (transfer): 6428
+CUDA SOLUTION FINAL: 
+366 363 333 327 318 297 291  | 282 240 237 225 219 213  | 162 159 141 96 93  | 81 75 69 66 54 51 33 378 359 350  | 323 314 287 275 272 269 266 260 254  | 248 233 230 206 197 194 176 170  | 134 125 122 83 77 62  | 373 370 367 355 352 346 343 340 337 334 328 319  | 310 307 304 301 298 292 283 277 262 256 250 244 241 226 220  | 214 208 202 199 190 187 184 181 178 172 166 163 154 151 148 145 142 136 130 127  | 118 115 112 109 106 103 100 97 88 85 70 58 55 46 43 40 37 34 28  | 21 14 13 11 10 9 5 4 3  | 
+ -------- Results --------- 
+126 0 7323
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 104.262
+0 Kernel Time (transfer): 104.523
+CUDA SOLUTION FINAL: 
+322 297  | 824  |  | 157  |  |  | 370  | 904  | 988 280  |  |  |  | 814  |  |  |  |  |  |  |  |  |  | 775  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 1170
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 1
+47 28 1500 32
+
+num blocks: 1500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1019.5
+0 Kernel Time (transfer): 1020.05
+CUDA SOLUTION FINAL: 
+671 485  | 622  |  | 444  |  |  |  | 983 566  |  | 1323 580  |  | 971  | 1139  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2355
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 959.852
+0 Kernel Time (transfer): 959.935
+CUDA SOLUTION FINAL: 
+299 298 290 273 255 252 239 221 219 205 199 190 166 160 149 139 98 89 75 49 40 33 21 20 19 4  | 247 174 76 48 226 56 235  | 24 245  | 176  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1860
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 193.382
+0 Kernel Time (transfer): 193.498
+CUDA SOLUTION FINAL: 
+489 480 455 445 432 425 412 404 381 368 349 348 342 302 269 231 206 186 150 124 71  | 490 137 37 383 300 160 384 457 133 222 59  | 308 68 359 102  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1123
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 70653.3
+0 Kernel Time (transfer): 70653.4
+CUDA SOLUTION FINAL: 
+500 490 489 465 455 445 412 404 368 349 348 342 323 302 300 269  | 222 206 194 173 150 69 63 39 37 408 383 137 23 266 248 221  | 215 133 71 440 428 384 381 186 475 413 124  | 466 102 19 184  | 370 460  | 107  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 71579
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1654.31
+0 Kernel Time (transfer): 1654.47
+CUDA SOLUTION FINAL: 
+678 667 649 636 612 608 584 579 576 562 513 511 373 351 326 325 323 317 295 292  | 212 193 122 76 54 495 468 345 149 119 106 387 115 397 189  | 118 393 581  | 15 484 290 190  | 658 676  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 2624
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 51.0546
+0 Kernel Time (transfer): 51.3156
+CUDA SOLUTION FINAL: 
+ | 920  | 822 842  | 774  |  |  | 536  | 528  |  |  | 432  | 313  |  |  |  |  |  | 280  | 139  |  |  |  | 350  | 673  | 733  |  | 155  |  | 457  |  |  |  | 
+ -------- Results --------- 
+15 0 1131
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 13.3264
+0 Kernel Time (transfer): 13.3992
+CUDA SOLUTION FINAL: 
+195 186 179 170 163 159 136 133 114 99  | 83 46 138 112 98 94 88 79 76 59 58 56  | 30 24 17 92 52 38 37 33 26 23 12  | 10 4 168 15 196 165 131 129 105 177 141 169  | 135 161 57 144 73 51 182 149 74  | 167 75 19 174 160 86  |  | 
+ -------- Results --------- 
+60 0 900
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 132.172
+0 Kernel Time (transfer): 132.244
+CUDA SOLUTION FINAL: 
+199 195 189 188 111 94 148  | 131 126 117 102 89 87 74 132 119 113  | 49 40 105 101 47 44 37 177  | 68 197 142 78 34 198 147 143 120 20  | 50 27 159 80  | 60 100 14  | 67 8  | 
+ -------- Results --------- 
+44 0 1018
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 37.1436
+0 Kernel Time (transfer): 37.2388
+CUDA SOLUTION FINAL: 
+386 349  | 319 301 298 260 188  | 187 164  | 201 125 234 229  | 112 95 82 76 46 138  | 42  | 177 10  | 330  | 27 360 216 126 339  | 78 142 74 362 129  | 206 300  | 338 215 270 145  | 25  | 
+ -------- Results --------- 
+40 0 935
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 63.4788
+0 Kernel Time (transfer): 63.5763
+CUDA SOLUTION FINAL: 
+364 325  | 341 347  | 297 228 175  | 196 79  | 119 49  | 46 7 44  | 23 386  | 106 250 176 4  | 168 29 385 162  | 227 37  |  | 372 361  | 202 375  | 
+ -------- Results --------- 
+30 0 975
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 160.111
+0 Kernel Time (transfer): 160.209
+CUDA SOLUTION FINAL: 
+371 360 334  | 314 355 362  |  |  | 201  | 113 59 97 20  | 33 368  |  | 350 263 217  | 227 117  | 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 1075
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 60832.4
+0 Kernel Time (transfer): 60832.5
+CUDA SOLUTION FINAL: 
+193 190 189 185 160 159 150 143 136 124 107 102 98 93 63 59 57 40 26  | 20 110 90 74 94 166 172  | 198 111 119 45 82  | 35 23 13 50 14 120 104  | 132  | 66 169 69  |  | 
+ -------- Results --------- 
+42 0 61719
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 217.104
+0 Kernel Time (transfer): 217.202
+CUDA SOLUTION FINAL: 
+273 248 142  | 183 300 120 304  | 343  | 64  | 134  | 129  | 318  |  |  |  | 286  |  |  | 
+ -------- Results --------- 
+13 0 1133
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 97759.2
+0 Kernel Time (transfer): 97759.3
+CUDA SOLUTION FINAL: 
+44 72 84 148 330  | 303 293  | 29 59 62 349 252  | 129 275  | 36  |  |  | 169 14  |  | 342 79  |  | 163  | 262  | 
+ -------- Results --------- 
+21 0 98669
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 70.7789
+0 Kernel Time (transfer): 70.8761
+CUDA SOLUTION FINAL: 
+387 378 377 376 367 332 317  | 312 305 304 294 225 354 353  | 257 254 246 236 229 204 203 107  | 94 51 357 341 331 269 186 179 156 153 143  | 140 138 137 130 83 55 233 206  | 80 75 30 23 19 16 13 8  | 214 135 132 108 161 379 278 315  | 283 53 129 62 343 245 223 189 67  | 311 210 87 85 34 389 371  | 286 111 326 290 275 268 289 175  | 276 249 74 375 142 196 182 273  | 400 287 195 288 252 11 247 35  | 234 147 127  | 
+ -------- Results --------- 
+100 0 973
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 71572.2
+0 Kernel Time (transfer): 71572.4
+CUDA SOLUTION FINAL: 
+997 993 962 900 864 862 839 824 819 801 800 798 782 639 636 608 549 537 495 492 489  | 322 297 226 171 155 122 653 640 562 298 227 671 186 961  | 75 630 179 38 927 623 84  | 370 271  | 253  |  | 260  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 72655
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 70638.7
+0 Kernel Time (transfer): 70638.8
+CUDA SOLUTION FINAL: 
+500 490 489 465 455 445 412 404 368 349 348 342 323 302 300 269  | 222 206 194 173 150 69 63 39 37 408 383 137 23 266 248 221  | 215 133 71 440 428 384 381 186 475 413 124  | 466 102 19 184  | 370 460  | 107  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 71571
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 66050.6
+0 Kernel Time (transfer): 66050.7
+CUDA SOLUTION FINAL: 
+92  |  | 178  | 102 135 93 90  | 252 221  | 73  | 348 260  | 68 380  | 142 223 186 262 18  | 20 150 388 234  | 311 207 134 39 365  | 276 304 85 108  |  | 
+ -------- Results --------- 
+31 0 66948
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 228920
+0 Kernel Time (transfer): 228920
+CUDA SOLUTION FINAL: 
+135 90  | 85  |  | 262  | 207 186  | 380 304  | 260 150  | 178 92  | 276 311 73 348 108  | 221 68 93 18 20 365  | 234 134 142 39  |  | 252 388  | 
+ -------- Results --------- 
+29 0 229833
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 314242
+0 Kernel Time (transfer): 314242
+CUDA SOLUTION FINAL: 
+276  | 92 304 186  |  | 380  |  |  | 68 20 252  | 142 39 260 134 234 348  | 311 150 207 178 221  | 135 108  | 262 85 90  | 93 388 18  |  | 
+ -------- Results --------- 
+27 0 315138
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 994061
+0 Kernel Time (transfer): 994061
+CUDA SOLUTION FINAL: 
+ |  |  |  |  |  | 511  | 154 157 294  | 135  | 681  |  | 687  | 161 561  |  |  |  | 362 624  | 112  | 8  | 17  | 324 343  | 270 714  | 389 666 495 509 396 394  | 247  | 334  | 
+ -------- Results --------- 
+26 0 995065
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.700416
+0 Kernel Time (transfer): 0.752192
+CUDA SOLUTION FINAL: 
+39 32 37 100  | 65  | 167  | 109  |  |  |  | 
+ -------- Results --------- 
+7 0 891
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.75718
+0 Kernel Time (transfer): 1.82989
+CUDA SOLUTION FINAL: 
+88 131  | 90  | 73 48  | 195  | 67 147  | 83  |  | 
+ -------- Results --------- 
+9 0 875
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 10.3772
+0 Kernel Time (transfer): 10.4499
+CUDA SOLUTION FINAL: 
+72 58  | 179 49  | 191 104 110  | 97  | 62 151  | 160  |  | 
+ -------- Results --------- 
+11 0 897
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 52.7678
+0 Kernel Time (transfer): 52.8408
+CUDA SOLUTION FINAL: 
+16 83 7 162 133  | 139 142 166 75  | 134 4  |  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 944
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 431.576
+0 Kernel Time (transfer): 431.652
+CUDA SOLUTION FINAL: 
+40 77 101 2 110  | 166 180 46 87 26 69  | 195  | 170 155  | 188  | 165 171  | 68  | 
+ -------- Results --------- 
+18 0 1304
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 8935.07
+0 Kernel Time (transfer): 8935.15
+CUDA SOLUTION FINAL: 
+166 17 2 79 192 23  | 13 106 163 128 142 169  | 120 64 94 65  | 122 154 35 62 189  | 28  | 102  | 84  | 
+ -------- Results --------- 
+24 0 9824
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_9.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 676376
+0 Kernel Time (transfer): 676376
+CUDA SOLUTION FINAL: 
+1 197 16 32 110 198 107  | 40 52 87 92 129 177 193 83 111  | 73 85 122 164 7 22 48  | 190 63 90 139 145 152 171  | 56 188 143 17  | 39 102 199 146 161  |  | 
+ -------- Results --------- 
+39 0 677281
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../300_5.txt
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 56.5412
+0 Kernel Time (transfer): 56.6262
+CUDA SOLUTION FINAL: 
+195 92 29  | 258 127 163  | 169  | 181  | 76 178  |  |  | 246  | 242  |  | 
+ -------- Results --------- 
+12 0 961
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../400_5.txt
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 238.736
+0 Kernel Time (transfer): 238.832
+CUDA SOLUTION FINAL: 
+279  | 202 28  | 354 41 105  | 269 73  | 85  |  |  |  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 1141
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../500_5.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 764.084
+0 Kernel Time (transfer): 764.199
+CUDA SOLUTION FINAL: 
+159 319  | 95 109  | 478  |  | 154 53 126  |  |  | 305  | 368  |  |  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 1713
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../600_5.txt
+Num Devices: 1
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1881.66
+0 Kernel Time (transfer): 1881.79
+CUDA SOLUTION FINAL: 
+286 535  | 521 329  |  | 471  |  | 399  |  | 225 3  | 271  |  | 600 262  |  |  | 310  | 149  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 2842
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../700_5.txt
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 5154.83
+0 Kernel Time (transfer): 5154.99
+CUDA SOLUTION FINAL: 
+247  |  | 555  |  | 277  | 584 439 476  | 619  | 50  | 414  | 319  | 287  | 697  |  |  |  | 171  |  |  |  | 699  |  |  | 
+ -------- Results --------- 
+14 0 6125
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../800_5.txt
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 8201.88
+0 Kernel Time (transfer): 8202.07
+CUDA SOLUTION FINAL: 
+152  | 12  |  |  | 154  | 795 623 124  |  |  | 546  |  | 322  |  |  | 102 211  | 467  |  | 256  | 25  | 732  | 198  |  |  |  |  |  | 
+ -------- Results --------- 
+15 0 9202
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../900_5.txt
+Num Devices: 1
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 30080.8
+0 Kernel Time (transfer): 30081
+CUDA SOLUTION FINAL: 
+ | 59  | 500 872  |  | 61  | 314  | 416  |  | 673  |  |  |  |  |  |  |  | 159  | 507 206  |  |  | 775 126  |  |  |  |  |  | 400 797  |  |  | 
+ -------- Results --------- 
+14 0 31124
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../1000_5.txt
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 40940
+0 Kernel Time (transfer): 40940.3
+CUDA SOLUTION FINAL: 
+471  |  |  |  |  |  | 182  | 327  | 383  |  |  | 770  |  | 56 287  |  |  | 911 347  | 766  | 68  | 711  | 821  |  |  |  |  |  |  | 578 921  |  |  |  |  | 
+ -------- Results --------- 
+15 0 42001
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1090.87
+0 Kernel Time (transfer): 1090.94
+CUDA SOLUTION FINAL: 
+108 20 73 18 93  | 178 90 94 142  | 135 186 87  | 81 150  | 92 39  | 68 102 85 136  | 134  | 
+ -------- Results --------- 
+21 0 1998
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 51279.8
+0 Kernel Time (transfer): 51279.9
+CUDA SOLUTION FINAL: 
+242 154 247 19  | 202  | 389  | 267 7 197  | 8 186  | 241 334 353 394 340  | 211 245 380 393 294 17  |  | 135 324 157  | 112 362  |  | 270 147 343 396 266  | 161  | 
+ -------- Results --------- 
+33 0 52192
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 1
+12 26 378 32
+
+num blocks: 378
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 6424.83
+0 Kernel Time (transfer): 6424.92
+CUDA SOLUTION FINAL: 
+28 33 36 39 42 45 47 51 53 55  | 60 63 66 67 70 73 76 80 84 86  | 90 93 94 97 102 105 108 111 114 117 120  | 123 126 129 132 135 138 141 144 147 150 153  | 156 159 162 165 168 171 174 177 180 183  | 186 189 192 195 198 201 204 207 210 213 216  | 219 222 225 228 231 234 237 240 243 245 249  | 252 253 256 261 264 267 270 272 276 279  | 282 285 288 291 294 297 300 303 306 309 312  | 315 317 321 324 325 328 333 336 339 342 344  | 348 351 353 357 360 363 366 369 372 375 378  | 2 3 4 7 14 15 17 18 19  | 
+ -------- Results --------- 
+126 0 7320
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 106.432
+0 Kernel Time (transfer): 106.689
+CUDA SOLUTION FINAL: 
+ | 608  | 927 525  | 785  | 719  | 692  |  |  | 157  | 904  |  |  | 686  |  |  | 741  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 1176
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 1
+47 28 1500 32
+
+num blocks: 1500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1052.56
+0 Kernel Time (transfer): 1053.11
+CUDA SOLUTION FINAL: 
+622 444  | 1323  | 485  |  | 983  |  |  | 671 580  |  |  |  |  | 971 566  |  | 1139  |  |  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2357
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 2116.68
+0 Kernel Time (transfer): 2116.74
+CUDA SOLUTION FINAL: 
+76 255 239 56 49 4 190 219 40 205 149 247 33 290 48 299 139 298  | 89 19 235 273 24 226 176  | 252 174 21 293 98 160 245  | 199 166 221 20  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 3003
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 456.368
+0 Kernel Time (transfer): 456.484
+CUDA SOLUTION FINAL: 
+404 480 381 302 124 489 412 238 150 206 269 37 222 300 445 308  | 342 432 71 231 63 457 500 368 59 349 383  | 186 348 133 384 68 425  | 102 137 160  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1371
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 144461
+0 Kernel Time (transfer): 144461
+CUDA SOLUTION FINAL: 
+266 404 124 71 342 302 412 221 69 222 206 489 500 215 445 150 133  | 381 440 490 37 39 63 173 248 383 455 370 194 269 300 349  | 408 465 384 19 23 460 102 348  | 368 428 107 186 475  | 323 137 413  | 184  | 466  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 145371
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 4869.82
+0 Kernel Time (transfer): 4869.98
+CUDA SOLUTION FINAL: 
+115 576 678 76 579 608 212 106 292 437 562 317 323 495 373 387 350 122 325 612  | 351 295 345 513 149 326 152 649 297 54  | 397 118 189 193 667 15 379 468 584  | 73 658 9 31  | 581  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 5845
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 53.7385
+0 Kernel Time (transfer): 53.9987
+CUDA SOLUTION FINAL: 
+ |  |  | 842 313  | 432 822  |  |  |  |  |  |  |  | 528  |  | 536 774  | 920  |  | 280  | 139  |  |  |  |  | 350 673 733  |  |  | 155  |  | 457  |  |  |  | 
+ -------- Results --------- 
+15 0 1123
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 45.1717
+0 Kernel Time (transfer): 45.2455
+CUDA SOLUTION FINAL: 
+179 4 168 58 76 114 159  | 15 105 112 165 79 83 129 131 133 196  | 24 33 59 99 141 144 161 177 57 169 12 26  | 30 52 56 135 136 46 98 17 19 23 38  | 51 73 74 88 167 195 10 75 92 149 163  | 182 37 94 170 86 160 174 138 186  |  | 
+ -------- Results --------- 
+60 0 934
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 12380.8
+0 Kernel Time (transfer): 12380.9
+CUDA SOLUTION FINAL: 
+68 177 126 197 34 78 117 119 142  | 49 74 101 111 20 47  | 198 27 50 94 120 143 147  | 159 37 80 131 148 195  | 100 105 189 188 40 87 89  | 113 132 44 60 102 199 14 67  | 8  | 
+ -------- Results --------- 
+44 0 13269
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 74.6148
+0 Kernel Time (transfer): 74.7117
+CUDA SOLUTION FINAL: 
+95 76 177  | 10 349  | 164 27  | 201 298 229  | 319 330 360 74 126 138 234  | 260 78 129 142 216  | 339 82 188  | 362 386 42  | 206  | 338 112  | 187 215 300 46  | 270 25 125 145 301  |  | 
+ -------- Results --------- 
+40 0 974
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 520.256
+0 Kernel Time (transfer): 520.354
+CUDA SOLUTION FINAL: 
+347 44 49  | 386  | 341 119 23 176  | 4 250 297  | 106  | 364 29 168 175  | 162 385 37  | 227  | 325  | 228 196 7  | 79 372  | 361 46  | 202 375  | 
+ -------- Results --------- 
+30 0 1420
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1221.48
+0 Kernel Time (transfer): 1221.58
+CUDA SOLUTION FINAL: 
+314 334  | 113 59  | 20 201  | 362 97 371  |  | 360 368 33  |  | 217 355  | 263 350  | 227 117  | 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 2121
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 117129
+0 Kernel Time (transfer): 117129
+CUDA SOLUTION FINAL: 
+110 57 143 93 150 63 107 40 59 74  | 120 160 45 90 102 185 189 15 35 82  | 166 190 198 14 26 98 111 124  | 50 172 193 23 132 136 159  | 20 94 119 66 104  | 69 169  |  | 
+ -------- Results --------- 
+42 0 118000
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 233.296
+0 Kernel Time (transfer): 233.396
+CUDA SOLUTION FINAL: 
+343 248 350  |  | 304 3  | 120 147 265 273 307  |  |  | 286  | 261  |  |  | 210  |  |  | 
+ -------- Results --------- 
+13 0 1135
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 111090
+0 Kernel Time (transfer): 111090
+CUDA SOLUTION FINAL: 
+221 307 140 214  | 244 97 194 350  | 385  |  |  | 261 49 34  | 271  | 336 69  | 61  | 344 42  |  | 327 50  | 364  | 
+ -------- Results --------- 
+21 0 111989
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 6720.76
+0 Kernel Time (transfer): 6720.86
+CUDA SOLUTION FINAL: 
+214 132 108 135 206 161  | 353 138 246 283 8  | 53 62 80 83 179 278 331 19 30 75 94 137  | 236 315 367 379 23 51 67 87 129 189 245  | 378 111 223 332  | 343 389 13 34 203 210 269 294 311  | 85 107 275 289 371  | 55 142 153 156 175 186 204 249 268 276 290 304 317 326 341 376 387 16  | 229 286 354 182  | 196 225 254 312 140 305  | 375 74 233 273 377 11 143 257 357 400  | 35 252 288 130 195 247 287 234  | 147 127  | 
+ -------- Results --------- 
+100 0 7632
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 151697
+0 Kernel Time (transfer): 151697
+CUDA SOLUTION FINAL: 
+378 464 798 226 489 993 819 65 801 562 862 900 492 495 608 636 283 639  | 800 997 497 824 782 671 322 716 171 961  | 839 537 640 155 624 75 927 549 370 297  | 962 630  | 784 848 298  | 97 271  |  |  |  |  |  |  | 324  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 152757
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 144466
+0 Kernel Time (transfer): 144466
+CUDA SOLUTION FINAL: 
+266 404 124 71 342 302 412 221 69 222 206 489 500 215 445 150 133  | 381 440 490 37 39 63 173 248 383 455 370 194 269 300 349  | 408 465 384 19 23 460 102 348  | 368 428 107 186 475  | 323 137 413  | 184  | 466  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 145376
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 119314
+0 Kernel Time (transfer): 119314
+CUDA SOLUTION FINAL: 
+90 92 102 252  | 260  | 68 178 221  | 93 142 186  | 135  | 380 73  | 18  | 262 388 207 348  | 234 20 223  | 85 150 39  | 365 134 311  | 276 304 108  |  | 
+ -------- Results --------- 
+31 0 120210
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 208539
+0 Kernel Time (transfer): 208539
+CUDA SOLUTION FINAL: 
+135 85 262  | 207 186 90  | 311  | 260  | 73 304 380 150 221 276  | 20  | 68 18  | 108 134 178 365  | 93  | 348 142  | 39 234  | 92  | 252 388  | 
+ -------- Results --------- 
+29 0 209432
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 447650
+0 Kernel Time (transfer): 447650
+CUDA SOLUTION FINAL: 
+380  | 186  | 304 90 252  | 276 348 108  | 39 260 178  | 142 234 311  | 135 221 20 68  | 150  | 134 92  | 207 85 93  | 388  | 262 18  |  | 
+ -------- Results --------- 
+27 0 448548
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.45766e+06
+0 Kernel Time (transfer): 1.45766e+06
+CUDA SOLUTION FINAL: 
+ | 135  | 294 561  |  | 8  |  | 362 687  | 511  | 161  | 154  |  |  |  |  | 112  | 157 17  | 681  | 270 389  |  | 624 509  | 343 714 396  | 324 394  | 495 666  | 247  | 334  | 
+ -------- Results --------- 
+26 0 1458646
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.70352
+0 Kernel Time (transfer): 0.774944
+CUDA SOLUTION FINAL: 
+190 11 176  | 123 76  | 29  | 189  |  |  |  | 
+ -------- Results --------- 
+7 0 893
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 2.15142
+0 Kernel Time (transfer): 2.22371
+CUDA SOLUTION FINAL: 
+88 131  | 90  | 73 48  | 195 67  | 147  | 83  |  | 
+ -------- Results --------- 
+9 0 875
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 9.68294
+0 Kernel Time (transfer): 9.75408
+CUDA SOLUTION FINAL: 
+11 52 83 41  | 139 137  | 152  | 132 19 177 117  |  |  |  | 
+ -------- Results --------- 
+11 0 883
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 41.129
+0 Kernel Time (transfer): 41.2027
+CUDA SOLUTION FINAL: 
+16 83 7 162 133 142  | 139 166 75  | 134 4  |  | 200  | 175 189  |  | 
+ -------- Results --------- 
+14 0 913
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 393.873
+0 Kernel Time (transfer): 393.947
+CUDA SOLUTION FINAL: 
+40 77 101 110 2  | 180 166 46 87 69  | 26 195 170  | 155  | 188  | 165 171  | 68  | 
+ -------- Results --------- 
+18 0 1266
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 9454.24
+0 Kernel Time (transfer): 9454.31
+CUDA SOLUTION FINAL: 
+181 143 184 140 90 45 25 185  | 124 74 97 38 142 158  | 60 190 58 87  | 193 188 99 131  | 129  | 34  |  | 
+ -------- Results --------- 
+24 0 10343
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_9.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 428964
+0 Kernel Time (transfer): 428964
+CUDA SOLUTION FINAL: 
+1 200 32 110 186 82 189 174 25 49 114 180 34  | 92 167 40 130 129 140 184  | 164 85 65 118 22 8 126  | 69 70 75 44  | 15 71 125 137 39  | 38 199 163  |  | 
+ -------- Results --------- 
+39 0 429851
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../300_5.txt
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 55.0502
+0 Kernel Time (transfer): 55.1323
+CUDA SOLUTION FINAL: 
+195 92 21 29 258  | 127 163  | 169  | 181  | 178 76  |  |  |  | 242  |  | 
+ -------- Results --------- 
+12 0 943
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../400_5.txt
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 236.233
+0 Kernel Time (transfer): 236.329
+CUDA SOLUTION FINAL: 
+348  | 48 83  | 92  | 355  | 15 308 24  | 199  |  | 251  | 281  | 377  |  | 185  |  | 
+ -------- Results --------- 
+13 0 1138
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../500_5.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 771.383
+0 Kernel Time (transfer): 771.496
+CUDA SOLUTION FINAL: 
+117 375  | 495  |  |  | 191  | 185 212 203  |  | 491 254  |  |  | 415  |  |  |  | 121 102  | 365  | 
+ -------- Results --------- 
+13 0 1687
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../600_5.txt
+Num Devices: 1
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1906.66
+0 Kernel Time (transfer): 1906.8
+CUDA SOLUTION FINAL: 
+286 535  | 521 329  |  | 471  |  | 399  |  | 225  | 3 271  | 600  | 262  |  |  | 310  | 149  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 2868
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../700_5.txt
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 4804.8
+0 Kernel Time (transfer): 4804.96
+CUDA SOLUTION FINAL: 
+602 94 614 573  | 565 20  | 6  |  | 333 397  | 148 306  | 24  |  |  | 76  |  |  |  |  |  |  |  |  |  |  |  | 294  | 
+ -------- Results --------- 
+14 0 5795
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../800_5.txt
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 9022.08
+0 Kernel Time (transfer): 9022.29
+CUDA SOLUTION FINAL: 
+152  | 12  |  |  | 795 154  | 623 124  |  |  | 546  |  | 322  |  |  | 211  | 102 467  |  | 256  | 25  | 732  | 198  |  |  |  |  |  | 
+ -------- Results --------- 
+15 0 10021
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../900_5.txt
+Num Devices: 1
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 30856.8
+0 Kernel Time (transfer): 30857
+CUDA SOLUTION FINAL: 
+73  | 536  |  | 103 568  | 366 278  |  |  |  |  | 108  | 683  |  |  |  |  |  |  | 728 100  |  | 412  |  |  |  | 176  | 18  | 395  |  |  |  | 
+ -------- Results --------- 
+14 0 31883
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../1000_5.txt
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 41676
+0 Kernel Time (transfer): 41676.3
+CUDA SOLUTION FINAL: 
+342  | 664 420  |  | 746  |  | 988  | 97  | 359  |  |  |  | 916  |  | 223  |  | 162  | 778  |  |  |  |  |  | 901 952  |  |  |  | 656  |  | 229  |  |  |  | 
+ -------- Results --------- 
+15 0 42745
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 980.959
+0 Kernel Time (transfer): 981.035
+CUDA SOLUTION FINAL: 
+108 20 73 178 93  | 18 90 94 142  | 186 135 87  | 81 150  | 92  | 39 68 102 85 136  | 134  | 
+ -------- Results --------- 
+21 0 1870
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 48659.5
+0 Kernel Time (transfer): 48659.6
+CUDA SOLUTION FINAL: 
+242 154 247 19  | 202  | 389  | 267 7  | 197 8 186  | 334 394 241 353 340  | 245 380 393 211 294  | 17  | 135 324 157  | 112 362  |  | 270 147 343 396 266  | 161  | 
+ -------- Results --------- 
+33 0 49566
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 1
+12 26 378 32
+
+num blocks: 378
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 6416.9
+0 Kernel Time (transfer): 6416.99
+CUDA SOLUTION FINAL: 
+30 33 36 39 42 45 48 51 54 57  | 60 63 66 67 72 75 78 81 82 87 88  | 92 96 99 100 103 108 111 114 117 120  | 123 126 129 132 135 137 139 144 147 150 153  | 156 159 162 165 168 171 173 175 180 182 185  | 189 190 195 196 201 203 206 208 212 216  | 219 222 225 228 231 234 237 240 243 246 249  | 252 255 258 260 262 266 268 273 275 278 280  | 284 288 289 292 297 299 303 305 309 311  | 314 318 321 324 327 330 332 334 338 340 345  | 346 349 354 356 359 363 364 367 372 375 378 1  | 10 14 15 16 20 21 23 24  | 
+ -------- Results --------- 
+126 0 7312
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 102.144
+0 Kernel Time (transfer): 102.405
+CUDA SOLUTION FINAL: 
+155  | 839  | 669  | 872 20 705  |  |  | 152  | 638  |  |  |  |  |  |  |  |  |  |  | 581  |  |  |  | 64  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 1154
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 1
+47 28 1500 32
+
+num blocks: 1500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1062.97
+0 Kernel Time (transfer): 1063.52
+CUDA SOLUTION FINAL: 
+622 444  | 1323  | 485  |  | 983  |  |  | 671 580  |  |  |  |  | 971 566  |  | 1139  |  |  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2351
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 2349.38
+0 Kernel Time (transfer): 2349.46
+CUDA SOLUTION FINAL: 
+76 255 239 56 49 190 219 4 205 40 149 247 290 33 48 299 139 298 89  | 19 235 273 226 24 176  | 252 174 21 293 160 98 245  | 199 221 166 20  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 3234
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 618.373
+0 Kernel Time (transfer): 618.488
+CUDA SOLUTION FINAL: 
+404 480 381 302 124 489 412 238 150 206 269 300 37 222 445 308  | 342 432 71 231 63 457 490 368 59 349 383  | 186 348 133 384 68 425  | 102 137 160  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1533
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 155072
+0 Kernel Time (transfer): 155073
+CUDA SOLUTION FINAL: 
+266 480 404 342 302 412 221 69 222 206 489 500 215 445 150  | 381 231 490 440 455 383 63 39 37 248 173 370 349 269 300 194 282  | 408 465 384 320 19 23 460 102 348 368  | 160 428 186 475 123  | 323 137  | 184  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 156000
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 4800.3
+0 Kernel Time (transfer): 4800.46
+CUDA SOLUTION FINAL: 
+115 576 678 608 579 76 212 106 562 437 292 317 495 323 373 387 350 325 122 612  | 351 295 345 513 149 326 152 649 297 54 397  | 118 189 193 667 379 15 468 584  | 73 658 31 9  | 581  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 5769
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 30.3698
+0 Kernel Time (transfer): 30.6299
+CUDA SOLUTION FINAL: 
+ |  |  | 842  | 313 432  | 822  |  |  |  |  |  |  | 528  |  | 774 536  | 920  |  | 280  | 139  |  |  |  |  | 350 673 733  |  |  | 155  |  |  | 457  |  |  | 
+ -------- Results --------- 
+15 0 1099
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 44.3003
+0 Kernel Time (transfer): 44.374
+CUDA SOLUTION FINAL: 
+179 4 168 159 114 76 58  | 112 105 15 165 83 133 79 129 131 196  | 33 99 59 24 141 177 161 144 169 57 136 30 52  | 26 12 56 135 46 98 38 17 195 88 23  | 73 51 167 19 74 163 10 92 182 149  | 75 170 94 37 174 160 86 186 138  |  | 
+ -------- Results --------- 
+60 0 916
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 12390.1
+0 Kernel Time (transfer): 12390.2
+CUDA SOLUTION FINAL: 
+177 68 126 197 117 142 119 34 78  | 101 49 74 111 47  | 20 198 27 147 120 50 143 159  | 94 148 37 131 195 80  | 189 105 100 188 40 87 89 113  | 132 44 102 60 199 14  | 67 8  | 
+ -------- Results --------- 
+44 0 13279
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 77.1031
+0 Kernel Time (transfer): 77.1993
+CUDA SOLUTION FINAL: 
+95 76 177  | 10 349  | 164 27  | 201 298 229  | 330 360 319 126 138  | 260 234 74 339 216 142 78  | 129 82 362 188  | 386 42  | 206  | 338 187  | 112 215 300  | 46 270 125 25 145 301  |  | 
+ -------- Results --------- 
+40 0 976
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 544.368
+0 Kernel Time (transfer): 544.464
+CUDA SOLUTION FINAL: 
+347 44  | 49 386 341  | 119 23 176  | 4 297 250  | 106 364  | 175 168  | 29 385 162  | 37 227 325  |  | 228 196 7  | 79 372  | 361 46  | 202 375  | 
+ -------- Results --------- 
+30 0 1444
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1300.93
+0 Kernel Time (transfer): 1301.02
+CUDA SOLUTION FINAL: 
+314 334  | 113  | 59 20 201  | 362 371 97  |  | 360 368  | 33  | 355 217  | 350 263  | 227  | 117 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 2209
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 113594
+0 Kernel Time (transfer): 113594
+CUDA SOLUTION FINAL: 
+110 143 57 93 150 107 63 74 160 40 18  | 59 120 189 45 90 185 190 15 166  | 82 35 198 124 111 26 98 186 14  | 193 172 159 23 132 136  | 94 119 20 66 104  | 169 69  |  | 
+ -------- Results --------- 
+42 0 114475
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 211.48
+0 Kernel Time (transfer): 211.576
+CUDA SOLUTION FINAL: 
+142 183 343 300 248  | 129 304  | 318  | 273 120  |  | 134  | 64 286  |  |  |  |  |  |  | 
+ -------- Results --------- 
+13 0 1113
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 90851.2
+0 Kernel Time (transfer): 90851.3
+CUDA SOLUTION FINAL: 
+173 84 70 114 292  | 351 121 350  |  |  | 180  | 198 179  | 14 378  | 208  | 55 68 132  | 287  | 238 166  | 286  |  | 
+ -------- Results --------- 
+21 0 91767
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 6301.35
+0 Kernel Time (transfer): 6301.45
+CUDA SOLUTION FINAL: 
+214 132 108 135 206 161 353  | 283 246 138 278  | 83 179 8 80 53 62 331 379 94 367 75 137  | 315 236 19 30 245 189 129 67 87  | 23 378 51 343 389 223 332  | 111 210 34 311 203 269 294 13  | 85 275 107 289 371 387  | 276 55 304 156 142 249 326 153 204 268 376 290 317 341 175 186  | 16 354 286 229 225 182  | 196 254 312 140 305  | 375 74 273 233 377 357 143 400 11 257  | 288 252 35 247 195 130 287  | 234 147 127  | 
+ -------- Results --------- 
+100 0 7203
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 177222
+0 Kernel Time (transfer): 177222
+CUDA SOLUTION FINAL: 
+464 798 489 993 819 777 65 801 562 862 900 653 623 492 608 636 283 639 122 800  | 997 824 179 782 864 84 671 322 961 330  | 8 839 537 253 227 640 155 549 370 297  | 20 630  | 600 298 284  | 271  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 178290
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 155113
+0 Kernel Time (transfer): 155113
+CUDA SOLUTION FINAL: 
+266 480 404 342 302 412 221 69 222 206 489 500 215 445 150  | 381 231 490 440 455 383 63 39 37 248 173 370 349 269 300 194 282  | 408 465 384 320 19 23 460 102 348 368  | 160 428 186 475 123  | 323 137  | 184  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 156052
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 129111
+0 Kernel Time (transfer): 129111
+CUDA SOLUTION FINAL: 
+90 92 102  | 252 260  | 178 68 221  | 93 142 186  | 135  | 380 73  | 18  | 388 262 348  | 207 234  | 20 223 150 85  | 365 39 311 134  | 276 304 108  |  | 
+ -------- Results --------- 
+31 0 130010
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 185358
+0 Kernel Time (transfer): 185358
+CUDA SOLUTION FINAL: 
+135 85 262  | 207 186 90  | 311  | 260  | 304 380 73 221 150 276  |  | 20 68  | 18 178 108 365 134  |  | 93 348 142  | 234 39  | 92  | 252 388  | 
+ -------- Results --------- 
+29 0 186290
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 268809
+0 Kernel Time (transfer): 268809
+CUDA SOLUTION FINAL: 
+380  | 186  | 304 252 90  | 276 348  | 108 39 260  | 178 311 234  | 142 135 221 68 20  | 150  | 134 92  | 207 93  | 85 388  | 262 18  |  | 
+ -------- Results --------- 
+27 0 269707
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 992678
+0 Kernel Time (transfer): 992679
+CUDA SOLUTION FINAL: 
+ |  | 135 294 561  |  |  | 8  | 687  | 362 511  | 161  | 154  |  |  |  |  |  | 112 157  | 17 681  |  | 270 389  | 624  | 509 714 343 396  | 324  | 394 666 495  | 247  | 334  | 
+ -------- Results --------- 
+26 0 993668
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 0.77312
+0 Kernel Time (transfer): 0.914752
+1 Kernel Time (no transfer): 0.224256
+1 Kernel Time (transfer): 0.286688
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 951
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 1.7623
+0 Kernel Time (transfer): 1.91882
+1 Kernel Time (no transfer): 0.750592
+1 Kernel Time (transfer): 0.813312
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 946
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 10.8616
+0 Kernel Time (transfer): 11.0115
+1 Kernel Time (no transfer): 1.02294
+1 Kernel Time (transfer): 1.08669
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 948
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 39.5366
+0 Kernel Time (transfer): 40.0161
+1 Kernel Time (no transfer): 2.79347
+1 Kernel Time (transfer): 2.85696
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 949
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 3.81952
+1 Kernel Time (transfer): 3.88576
+0 Kernel Time (no transfer): 442.713
+0 Kernel Time (transfer): 442.848
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 1332
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 15.8536
+1 Kernel Time (transfer): 15.9375
+0 Kernel Time (no transfer): 7249.76
+0 Kernel Time (transfer): 7250.02
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 8139
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_9.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.236544
+1 Kernel Time (transfer): 0.317568
+0 Kernel Time (no transfer): 381454
+0 Kernel Time (transfer): 381454
+CUDA SOLUTION FINAL: 
+186 177 174 169 167 165 164 153 147 112 111 65 34 26  | 28 25 22 16 200 183  | 189 150 140 110 68 66 49 47 33 168  | 115 79  | 126 75 72 46 71  | 194 154  |  | 
+ -------- Results --------- 
+39 0 382358
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../300_5.txt
+Num Devices: 2
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 55.0687
+0 Kernel Time (transfer): 55.1717
+1 Kernel Time (no transfer): 4.5793
+1 Kernel Time (transfer): 4.66128
+CUDA SOLUTION FINAL: 
+ |  | 214 87 281 293 297  | 124 127  | 128 289  | 36  | 107  | 180  |  |  | 
+ -------- Results --------- 
+12 0 970
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../400_5.txt
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 24.2115
+1 Kernel Time (transfer): 24.2954
+0 Kernel Time (no transfer): 253.923
+0 Kernel Time (transfer): 254.067
+CUDA SOLUTION FINAL: 
+202 105  | 279 354  | 85  | 28  |  |  | 269 41  | 73  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 1157
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../500_5.txt
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 60.2297
+1 Kernel Time (transfer): 60.3454
+0 Kernel Time (no transfer): 721.408
+0 Kernel Time (transfer): 721.524
+CUDA SOLUTION FINAL: 
+368  | 319 126  |  | 159 154  | 478 95  |  | 109  |  |  | 53  | 305  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 1653
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../600_5.txt
+Num Devices: 2
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 181.008
+1 Kernel Time (transfer): 181.138
+0 Kernel Time (no transfer): 2094.32
+0 Kernel Time (transfer): 2094.44
+CUDA SOLUTION FINAL: 
+535 286 399  | 329  |  | 521  |  | 3  | 149 600  | 471  | 271  | 225 262  |  |  |  | 310  |  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 3054
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../700_5.txt
+Num Devices: 2
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 385.245
+1 Kernel Time (transfer): 385.898
+0 Kernel Time (no transfer): 4664.22
+0 Kernel Time (transfer): 4664.36
+CUDA SOLUTION FINAL: 
+614  | 132 438  | 354  |  |  | 391  |  | 89 477  | 561  | 621  |  |  |  |  | 153  | 618  |  | 638  | 264  | 662  |  |  | 
+ -------- Results --------- 
+14 0 5653
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../800_5.txt
+Num Devices: 2
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 661.013
+1 Kernel Time (transfer): 661.179
+0 Kernel Time (no transfer): 8250.68
+0 Kernel Time (transfer): 8250.86
+CUDA SOLUTION FINAL: 
+ |  | 12  | 152  |  | 795  | 154  | 124  |  | 322 732  | 546  |  |  | 623 588  |  |  |  | 102  | 211 25 198  |  | 256  |  |  |  |  | 
+ -------- Results --------- 
+15 0 9251
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../900_5.txt
+Num Devices: 2
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 1560.32
+1 Kernel Time (transfer): 1560.52
+0 Kernel Time (no transfer): 30141.8
+0 Kernel Time (transfer): 30142
+CUDA SOLUTION FINAL: 
+749 31  |  |  | 184 406  | 787 848  |  | 409  | 282  |  |  |  |  |  |  |  |  | 431  | 358  | 112  |  |  | 611  |  |  |  |  | 58 401  |  |  | 
+ -------- Results --------- 
+14 0 31198
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../1000_5.txt
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2336.66
+1 Kernel Time (transfer): 2336.86
+0 Kernel Time (no transfer): 41002.1
+0 Kernel Time (transfer): 41002.3
+CUDA SOLUTION FINAL: 
+ | 368  |  | 445 420  |  | 129  | 270  |  |  |  | 883  |  |  | 601 544  | 705  | 294  |  |  | 669  | 616  |  |  |  |  | 980  |  |  |  |  | 296 830  |  |  | 
+ -------- Results --------- 
+15 0 42088
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 5.12106
+1 Kernel Time (transfer): 5.20246
+0 Kernel Time (no transfer): 828.11
+0 Kernel Time (transfer): 828.186
+CUDA SOLUTION FINAL: 
+180 175 83 4 100 32 48 103  | 144 138 137 107 132 199 122 120 191 26 104  | 46  |  |  | 41  |  | 
+ -------- Results --------- 
+21 0 1715
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 1863.5
+1 Kernel Time (transfer): 1863.59
+0 Kernel Time (no transfer): 30649.9
+0 Kernel Time (transfer): 30650.1
+CUDA SOLUTION FINAL: 
+19  | 7 340 247 154 8 242  |  | 389 324  | 245  |  | 211 294  | 394 202 380 353 186  | 197 267 135 241 17 334  | 393  | 266 396 112 157  | 362 270 343 147  | 161  | 
+ -------- Results --------- 
+33 0 31566
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 2
+12 26 378 32
+
+num blocks: 378
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.494592
+1 Kernel Time (transfer): 0.572544
+0 Kernel Time (no transfer): 6444.64
+0 Kernel Time (transfer): 6444.73
+CUDA SOLUTION FINAL: 
+366 363 333 327 318 297 291  | 282 240 237 225 219 213  | 162 159 141 96 93  | 81 75 69 66 54 51 33 378 359 350  | 323 314 287 275 272 269 266 260 254  | 248 233 230 206 197 194 176 170  | 134 125 122 83 77 62  | 373 370 367 355 352 346 343 340 337 334 328 319  | 310 307 304 301 298 292 283 277 262 256 250 244 241 226 220  | 214 208 202 199 190 187 184 181 178 172 166 163 154 151 148 145 142 136 130 127  | 118 115 112 109 106 103 100 97 88 85 70 58 55 46 43 40 37 34 28  | 21 14 13 11 10 9 5 4 3  | 
+ -------- Results --------- 
+126 0 7368
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 35.925
+1 Kernel Time (transfer): 36.141
+0 Kernel Time (no transfer): 102.219
+0 Kernel Time (transfer): 102.433
+CUDA SOLUTION FINAL: 
+322 297  | 824  |  | 157  |  |  | 370  | 904  | 988 280  |  |  |  | 814  |  |  |  |  |  |  |  |  |  | 775  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 1256
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 2
+47 28 1500 32
+
+num blocks: 1500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 368.877
+1 Kernel Time (transfer): 369.264
+0 Kernel Time (no transfer): 1027.47
+0 Kernel Time (transfer): 1038.93
+CUDA SOLUTION FINAL: 
+671 485  | 622  |  | 444  |  |  |  | 983 566  |  | 1323 580  |  | 971  | 1139  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2375
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 2
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 1.00966
+1 Kernel Time (transfer): 1.0815
+0 Kernel Time (no transfer): 1004.13
+0 Kernel Time (transfer): 1004.39
+CUDA SOLUTION FINAL: 
+299 298 290 273 255 252 239 221 219 205 199 190 166 160 149 139 98 89 75 49 40 33 21 20 19 4  | 247 174 76 48 226 56 235  | 24 245  | 176  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1909
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.4864
+1 Kernel Time (transfer): 0.595968
+0 Kernel Time (no transfer): 213.394
+0 Kernel Time (transfer): 213.511
+CUDA SOLUTION FINAL: 
+489 480 455 445 432 425 412 404 381 368 349 348 342 302 269 231 206 186 150 124 71  | 490 137 37 383 300 160 384 457 133 222 59  | 308 68 359 102  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1145
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 367.978
+1 Kernel Time (transfer): 368.087
+0 Kernel Time (no transfer): 70645.6
+0 Kernel Time (transfer): 70645.7
+CUDA SOLUTION FINAL: 
+500 490 489 465 455 445 412 404 368 349 348 342 323 302 300 269  | 222 206 194 173 150 69 63 39 37 408 383 137 23 266 248 221  | 215 133 71 440 428 384 381 186 475 413 124  | 466 102 19 184  | 370 460  | 107  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 71574
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 2
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.752608
+1 Kernel Time (transfer): 0.894944
+0 Kernel Time (no transfer): 1666.38
+0 Kernel Time (transfer): 1666.69
+CUDA SOLUTION FINAL: 
+678 667 649 636 612 608 584 579 576 562 513 511 373 351 326 325 323 317 295 292  | 212 193 122 76 54 495 468 345 149 119 106 387 115 397 189  | 118 393 581  | 15 484 290 190  | 658 676  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 2634
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 50.5119
+0 Kernel Time (transfer): 50.7356
+1 Kernel Time (no transfer): 1.42438
+1 Kernel Time (transfer): 1.61571
+CUDA SOLUTION FINAL: 
+ | 920  | 822 842  | 774  |  |  | 536  | 528  |  |  | 432  | 313  |  |  |  |  |  | 280  | 139  |  |  |  | 350  | 673  | 733  |  | 155  |  | 457  |  |  |  | 
+ -------- Results --------- 
+15 0 1126
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 13.2751
+0 Kernel Time (transfer): 13.3836
+1 Kernel Time (no transfer): 0.237568
+1 Kernel Time (transfer): 0.300672
+CUDA SOLUTION FINAL: 
+195 186 179 170 163 159 136 133 114 99  | 83 46 138 112 98 94 88 79 76 59 58 56  | 30 24 17 92 52 38 37 33 26 23 12  | 10 4 168 15 196 165 131 129 105 177 141 169  | 135 161 57 144 73 51 182 149 74  | 167 75 19 174 160 86  |  | 
+ -------- Results --------- 
+60 0 945
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.222208
+1 Kernel Time (transfer): 0.288416
+0 Kernel Time (no transfer): 137.903
+0 Kernel Time (transfer): 138.046
+CUDA SOLUTION FINAL: 
+199 195 189 188 111 94 148  | 131 126 117 102 89 87 74 132 119 113  | 49 40 105 101 47 44 37 177  | 68 197 142 78 34 198 147 143 120 20  | 50 27 159 80  | 60 100 14  | 67 8  | 
+ -------- Results --------- 
+44 0 1027
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 37.2552
+0 Kernel Time (transfer): 37.4191
+1 Kernel Time (no transfer): 0.451584
+1 Kernel Time (transfer): 0.545504
+CUDA SOLUTION FINAL: 
+386 349  | 319 301 298 260 188  | 187 164  | 201 125 234 229  | 112 95 82 76 46 138  | 42  | 177 10  | 330  | 27 360 216 126 339  | 78 142 74 362 129  | 206 300  | 338 215 270 145  | 25  | 
+ -------- Results --------- 
+40 0 965
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 0.445472
+1 Kernel Time (transfer): 0.527424
+0 Kernel Time (no transfer): 63.2668
+0 Kernel Time (transfer): 63.4118
+CUDA SOLUTION FINAL: 
+364 325  | 341 347  | 297 228 175  | 196 79  | 119 49  | 46 7 44  | 23 386  | 106 250 176 4  | 168 29 385 162  | 227 37  |  | 372 361  | 202 375  | 
+ -------- Results --------- 
+30 0 999
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.475168
+1 Kernel Time (transfer): 0.574912
+0 Kernel Time (no transfer): 173.379
+0 Kernel Time (transfer): 173.522
+CUDA SOLUTION FINAL: 
+371 360 334  | 314 355 362  |  |  | 201  | 113 59 97 20  | 33 368  |  | 350 263 217  | 227 117  | 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 1091
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.243712
+1 Kernel Time (transfer): 0.322592
+0 Kernel Time (no transfer): 60871.2
+0 Kernel Time (transfer): 60871.4
+CUDA SOLUTION FINAL: 
+193 190 189 185 160 159 150 143 136 124 107 102 98 93 63 59 57 40 26  | 20 110 90 74 94 166 172  | 198 111 119 45 82  | 35 23 13 50 14 120 104  | 132  | 66 169 69  |  | 
+ -------- Results --------- 
+42 0 61760
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 21.4344
+1 Kernel Time (transfer): 21.5357
+0 Kernel Time (no transfer): 239.693
+0 Kernel Time (transfer): 239.835
+CUDA SOLUTION FINAL: 
+273 248 142  | 183 300 120 304  | 343  | 64  | 134  | 129  | 318  |  |  |  | 286  |  |  | 
+ -------- Results --------- 
+13 0 1142
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 1162.86
+1 Kernel Time (transfer): 1162.96
+0 Kernel Time (no transfer): 97735.2
+0 Kernel Time (transfer): 97735.4
+CUDA SOLUTION FINAL: 
+44 72 84 148 330  | 303 293  | 29 59 62 349 252  | 129 275  | 36  |  |  | 169 14  |  | 342 79  |  | 163  | 262  | 
+ -------- Results --------- 
+21 0 98635
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.51504
+1 Kernel Time (transfer): 0.613184
+0 Kernel Time (no transfer): 69.8501
+0 Kernel Time (transfer): 69.9433
+CUDA SOLUTION FINAL: 
+387 378 377 376 367 332 317  | 312 305 304 294 225 354 353  | 257 254 246 236 229 204 203 107  | 94 51 357 341 331 269 186 179 156 153 143  | 140 138 137 130 83 55 233 206  | 80 75 30 23 19 16 13 8  | 214 135 132 108 161 379 278 315  | 283 53 129 62 343 245 223 189 67  | 311 210 87 85 34 389 371  | 286 111 326 290 275 268 289 175  | 276 249 74 375 142 196 182 273  | 400 287 195 288 252 11 247 35  | 234 147 127  | 
+ -------- Results --------- 
+100 0 985
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 74.7131
+1 Kernel Time (transfer): 74.9293
+0 Kernel Time (no transfer): 70287.8
+0 Kernel Time (transfer): 70288
+CUDA SOLUTION FINAL: 
+997 993 962 900 864 862 839 824 819 801 800 798 782 639 636 608 549 537 495 492 489  | 322 297 226 171 155 122 653 640 562 298 227 671 186 961  | 75 630 179 38 927 623 84  | 370 271  | 253  |  | 260  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 71458
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 377.996
+1 Kernel Time (transfer): 378.095
+0 Kernel Time (no transfer): 70637.1
+0 Kernel Time (transfer): 70637.2
+CUDA SOLUTION FINAL: 
+500 490 489 465 455 445 412 404 368 349 348 342 323 302 300 269  | 222 206 194 173 150 69 63 39 37 408 383 137 23 266 248 221  | 215 133 71 440 428 384 381 186 475 413 124  | 466 102 19 184  | 370 460  | 107  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 71557
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2769.78
+1 Kernel Time (transfer): 2769.87
+0 Kernel Time (no transfer): 65947.7
+0 Kernel Time (transfer): 65947.9
+CUDA SOLUTION FINAL: 
+92  |  | 178  | 102 135 93 90  | 252 221  | 73  | 348 260  | 68 380  | 142 223 186 262 18  | 20 150 388 234  | 311 207 134 39 365  | 276 304 85 108  |  | 
+ -------- Results --------- 
+31 0 66883
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 4145.13
+1 Kernel Time (transfer): 4145.24
+0 Kernel Time (no transfer): 228797
+0 Kernel Time (transfer): 228797
+CUDA SOLUTION FINAL: 
+135 90  | 85  |  | 262  | 207 186  | 380 304  | 260 150  | 178 92  | 276 311 73 348 108  | 221 68 93 18 20 365  | 234 134 142 39  |  | 252 388  | 
+ -------- Results --------- 
+29 0 229731
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2833.2
+1 Kernel Time (transfer): 2833.29
+0 Kernel Time (no transfer): 314138
+0 Kernel Time (transfer): 314138
+CUDA SOLUTION FINAL: 
+276  | 92 304 186  |  | 380  |  |  | 68 20 252  | 142 39 260 134 234 348  | 311 150 207 178 221  | 135 108  | 262 85 90  | 93 388 18  |  | 
+ -------- Results --------- 
+27 0 315053
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 2
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 46230.3
+1 Kernel Time (transfer): 46230.5
+0 Kernel Time (no transfer): 993531
+0 Kernel Time (transfer): 993531
+CUDA SOLUTION FINAL: 
+ |  |  |  |  |  | 511  | 154 157 294  | 135  | 681  |  | 687  | 161 561  |  |  |  | 362 624  | 112  | 8  | 17  | 324 343  | 270 714  | 389 666 495 509 396 394  | 247  | 334  | 
+ -------- Results --------- 
+26 0 994537
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 0.696288
+0 Kernel Time (transfer): 0.828544
+1 Kernel Time (no transfer): 0.217056
+1 Kernel Time (transfer): 0.279296
+CUDA SOLUTION FINAL: 
+39 120 100  | 7  | 61  |  | 178  | 45  |  | 
+ -------- Results --------- 
+7 0 947
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+0 Kernel Time (no transfer): 1.75408
+0 Kernel Time (transfer): 2.19645
+1 Kernel Time (no transfer): 0.620544
+1 Kernel Time (transfer): 0.68304
+CUDA SOLUTION FINAL: 
+88 131  | 90  | 73 48  | 195  | 67 147  | 83  |  | 
+ -------- Results --------- 
+9 0 947
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 10.3363
+0 Kernel Time (transfer): 10.4428
+1 Kernel Time (no transfer): 1.28
+1 Kernel Time (transfer): 1.34339
+CUDA SOLUTION FINAL: 
+72 58  | 179 49  | 191 104 110  | 97  | 62 151  | 160  |  | 
+ -------- Results --------- 
+11 0 950
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 52.9244
+0 Kernel Time (transfer): 53.073
+1 Kernel Time (no transfer): 2.4033
+1 Kernel Time (transfer): 2.4648
+CUDA SOLUTION FINAL: 
+16 83 7 162 133  | 139 142 166 75  | 134 4  |  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 948
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 5.16918
+1 Kernel Time (transfer): 5.25325
+0 Kernel Time (no transfer): 455.746
+0 Kernel Time (transfer): 455.879
+CUDA SOLUTION FINAL: 
+40 77 101 2 110  | 166 180 46 87 26 69  | 195  | 170 155  | 188  | 165 171  | 68  | 
+ -------- Results --------- 
+18 0 1346
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_8.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 14.1834
+1 Kernel Time (transfer): 14.2688
+0 Kernel Time (no transfer): 8955.16
+0 Kernel Time (transfer): 8955.3
+CUDA SOLUTION FINAL: 
+166 17 2 79 192 23  | 13 106 163 128 142 169  | 120 64 94 65  | 122 154 35 62 189  | 28  | 102  | 84  | 
+ -------- Results --------- 
+24 0 9845
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../200_9.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 3.30035
+1 Kernel Time (transfer): 3.38403
+0 Kernel Time (no transfer): 676167
+0 Kernel Time (transfer): 676167
+CUDA SOLUTION FINAL: 
+1 197 16 32 110 198 107  | 40 52 87 92 129 177 193 83 111  | 73 85 122 164 7 22 48  | 190 63 90 139 145 152 171  | 56 188 143 17  | 39 102 199 146 161  |  | 
+ -------- Results --------- 
+39 0 677054
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../300_5.txt
+Num Devices: 2
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: new kernel launched: 01
+
+0 Kernel Time (no transfer): 56.3128
+0 Kernel Time (transfer): 56.4059
+1 Kernel Time (no transfer): 5.04115
+1 Kernel Time (transfer): 5.11235
+CUDA SOLUTION FINAL: 
+195 92 29  | 258 127 163  | 169  | 181  | 76 178  |  |  | 246  | 242  |  | 
+ -------- Results --------- 
+12 0 948
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../400_5.txt
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 21.25
+1 Kernel Time (transfer): 21.334
+0 Kernel Time (no transfer): 247.257
+0 Kernel Time (transfer): 247.401
+CUDA SOLUTION FINAL: 
+279  | 202 28  | 354 41 105  | 269 73  | 85  |  |  |  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 1149
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../500_5.txt
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 64.3707
+1 Kernel Time (transfer): 64.4701
+0 Kernel Time (no transfer): 756.692
+0 Kernel Time (transfer): 756.863
+CUDA SOLUTION FINAL: 
+159 319  | 95 109  | 478  |  | 154 53 126  |  |  | 305  | 368  |  |  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 1684
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../600_5.txt
+Num Devices: 2
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 248.95
+1 Kernel Time (transfer): 249.08
+0 Kernel Time (no transfer): 1883.74
+0 Kernel Time (transfer): 1884.05
+CUDA SOLUTION FINAL: 
+286 535  | 521 329  |  | 471  |  | 399  |  | 225 3  | 271  |  | 600 262  |  |  | 310  | 149  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 2820
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../700_5.txt
+Num Devices: 2
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 461.041
+1 Kernel Time (transfer): 461.131
+0 Kernel Time (no transfer): 5163.9
+0 Kernel Time (transfer): 5164.21
+CUDA SOLUTION FINAL: 
+247  |  | 555  |  | 277  | 584 439 476  | 619  | 50  | 414  | 319  | 287  | 697  |  |  |  | 171  |  |  |  | 699  |  |  | 
+ -------- Results --------- 
+14 0 6137
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../800_5.txt
+Num Devices: 2
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 634.393
+1 Kernel Time (transfer): 634.545
+0 Kernel Time (no transfer): 8191.63
+0 Kernel Time (transfer): 8191.83
+CUDA SOLUTION FINAL: 
+152  | 12  |  |  | 154  | 795 623 124  |  |  | 546  |  | 322  |  |  | 102 211  | 467  |  | 256  | 25  | 732  | 198  |  |  |  |  |  | 
+ -------- Results --------- 
+15 0 9203
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../900_5.txt
+Num Devices: 2
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 1520.82
+1 Kernel Time (transfer): 1521
+0 Kernel Time (no transfer): 30049
+0 Kernel Time (transfer): 30049.2
+CUDA SOLUTION FINAL: 
+ | 59  | 500 872  |  | 61  | 314  | 416  |  | 673  |  |  |  |  |  |  |  | 159  | 507 206  |  |  | 775 126  |  |  |  |  |  | 400 797  |  |  | 
+ -------- Results --------- 
+14 0 31093
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../1000_5.txt
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2348.52
+1 Kernel Time (transfer): 2348.73
+0 Kernel Time (no transfer): 40916.1
+0 Kernel Time (transfer): 40916.3
+CUDA SOLUTION FINAL: 
+471  |  |  |  |  |  | 182  | 327  | 383  |  |  | 770  |  | 56 287  |  |  | 911 347  | 766  | 68  | 711  | 821  |  |  |  |  |  |  | 578 921  |  |  |  |  | 
+ -------- Results --------- 
+15 0 41985
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 6.528
+1 Kernel Time (transfer): 6.59427
+0 Kernel Time (no transfer): 1065.88
+0 Kernel Time (transfer): 1065.96
+CUDA SOLUTION FINAL: 
+108 20 73 18 93  | 178 90 94 142  | 135 186 87  | 81 150  | 92 39  | 68 102 85 136  | 134  | 
+ -------- Results --------- 
+21 0 1953
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2536.22
+1 Kernel Time (transfer): 2536.31
+0 Kernel Time (no transfer): 51243
+0 Kernel Time (transfer): 51243.1
+CUDA SOLUTION FINAL: 
+242 154 247 19  | 202  | 389  | 267 7 197  | 8 186  | 241 334 353 394 340  | 211 245 380 393 294 17  |  | 135 324 157  | 112 362  |  | 270 147 343 396 266  | 161  | 
+ -------- Results --------- 
+33 0 52158
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 2
+12 26 378 32
+
+num blocks: 378
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.49664
+1 Kernel Time (transfer): 0.57648
+0 Kernel Time (no transfer): 6445.11
+0 Kernel Time (transfer): 6445.18
+CUDA SOLUTION FINAL: 
+28 33 36 39 42 45 47 51 53 55  | 60 63 66 67 70 73 76 80 84 86  | 90 93 94 97 102 105 108 111 114 117 120  | 123 126 129 132 135 138 141 144 147 150 153  | 156 159 162 165 168 171 174 177 180 183  | 186 189 192 195 198 201 204 207 210 213 216  | 219 222 225 228 231 234 237 240 243 245 249  | 252 253 256 261 264 267 270 272 276 279  | 282 285 288 291 294 297 300 303 306 309 312  | 315 317 321 324 325 328 333 336 339 342 344  | 348 351 353 357 360 363 366 369 372 375 378  | 2 3 4 7 14 15 17 18 19  | 
+ -------- Results --------- 
+126 0 7360
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 34.987
+1 Kernel Time (transfer): 35.204
+0 Kernel Time (no transfer): 111.098
+0 Kernel Time (transfer): 111.308
+CUDA SOLUTION FINAL: 
+ | 608  | 927 525  | 785  | 719  | 692  |  |  | 157  | 904  |  |  | 686  |  |  | 741  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 1178
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 2
+47 28 1500 32
+
+num blocks: 1500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 348.846
+1 Kernel Time (transfer): 349.227
+0 Kernel Time (no transfer): 1043.82
+0 Kernel Time (transfer): 1044.19
+CUDA SOLUTION FINAL: 
+622 444  | 1323  | 485  |  | 983  |  |  | 671 580  |  |  |  |  | 971 566  |  | 1139  |  |  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2346
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 2
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 9.33789
+1 Kernel Time (transfer): 9.4121
+0 Kernel Time (no transfer): 2131.7
+0 Kernel Time (transfer): 2131.8
+CUDA SOLUTION FINAL: 
+76 255 239 56 49 4 190 219 40 205 149 247 33 290 48 299 139 298  | 89 19 235 273 24 226 176  | 252 174 21 293 98 160 245  | 199 166 221 20  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 3019
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.457728
+1 Kernel Time (transfer): 0.552096
+0 Kernel Time (no transfer): 471.985
+0 Kernel Time (transfer): 472.146
+CUDA SOLUTION FINAL: 
+404 480 381 302 124 489 412 238 150 206 269 37 222 300 445 308  | 342 432 71 231 63 457 500 368 59 349 383  | 186 348 133 384 68 425  | 102 137 160  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1404
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 1968.69
+1 Kernel Time (transfer): 1968.79
+0 Kernel Time (no transfer): 144420
+0 Kernel Time (transfer): 144420
+CUDA SOLUTION FINAL: 
+266 404 124 71 342 302 412 221 69 222 206 489 500 215 445 150 133  | 381 440 490 37 39 63 173 248 383 455 370 194 269 300 349  | 408 465 384 19 23 460 102 348  | 368 428 107 186 475  | 323 137 413  | 184  | 466  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 145349
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 2
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.909312
+1 Kernel Time (transfer): 1.0336
+0 Kernel Time (no transfer): 4897.03
+0 Kernel Time (transfer): 4897.35
+CUDA SOLUTION FINAL: 
+115 576 678 76 579 608 212 106 292 437 562 317 323 495 373 387 350 122 325 612  | 351 295 345 513 149 326 152 649 297 54  | 397 118 189 193 667 15 379 468 584  | 73 658 9 31  | 581  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 5866
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 52.9244
+0 Kernel Time (transfer): 53.1552
+1 Kernel Time (no transfer): 1.46534
+1 Kernel Time (transfer): 1.65875
+CUDA SOLUTION FINAL: 
+ |  |  | 842 313  | 432 822  |  |  |  |  |  |  |  | 528  |  | 536 774  | 920  |  | 280  | 139  |  |  |  |  | 350 673 733  |  |  | 155  |  | 457  |  |  |  | 
+ -------- Results --------- 
+15 0 1127
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 45.0918
+0 Kernel Time (transfer): 45.1492
+1 Kernel Time (no transfer): 0.233472
+1 Kernel Time (transfer): 0.309376
+CUDA SOLUTION FINAL: 
+179 4 168 58 76 114 159  | 15 105 112 165 79 83 129 131 133 196  | 24 33 59 99 141 144 161 177 57 169 12 26  | 30 52 56 135 136 46 98 17 19 23 38  | 51 73 74 88 167 195 10 75 92 149 163  | 182 37 94 170 86 160 174 138 186  |  | 
+ -------- Results --------- 
+60 0 949
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.242688
+1 Kernel Time (transfer): 0.322592
+0 Kernel Time (no transfer): 12403.9
+0 Kernel Time (transfer): 12404
+CUDA SOLUTION FINAL: 
+68 177 126 197 34 78 117 119 142  | 49 74 101 111 20 47  | 198 27 50 94 120 143 147  | 159 37 80 131 148 195  | 100 105 189 188 40 87 89  | 113 132 44 60 102 199 14 67  | 8  | 
+ -------- Results --------- 
+44 0 13293
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.401408
+1 Kernel Time (transfer): 0.48432
+0 Kernel Time (no transfer): 73.9195
+0 Kernel Time (transfer): 74.0199
+CUDA SOLUTION FINAL: 
+95 76 177  | 10 349  | 164 27  | 201 298 229  | 319 330 360 74 126 138 234  | 260 78 129 142 216  | 339 82 188  | 362 386 42  | 206  | 338 112  | 187 215 300 46  | 270 25 125 145 301  |  | 
+ -------- Results --------- 
+40 0 991
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 1.1817
+1 Kernel Time (transfer): 1.27619
+0 Kernel Time (no transfer): 540.261
+0 Kernel Time (transfer): 540.354
+CUDA SOLUTION FINAL: 
+347 44 49  | 386  | 341 119 23 176  | 4 250 297  | 106  | 364 29 168 175  | 162 385 37  | 227  | 325  | 228 196 7  | 79 372  | 361 46  | 202 375  | 
+ -------- Results --------- 
+30 0 1456
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.455712
+1 Kernel Time (transfer): 0.55504
+0 Kernel Time (no transfer): 1245.52
+0 Kernel Time (transfer): 1245.68
+CUDA SOLUTION FINAL: 
+314 334  | 113 59  | 20 201  | 362 97 371  |  | 360 368 33  |  | 217 355  | 263 350  | 227 117  | 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 2145
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.432128
+1 Kernel Time (transfer): 0.497632
+0 Kernel Time (no transfer): 117119
+0 Kernel Time (transfer): 117119
+CUDA SOLUTION FINAL: 
+110 57 143 93 150 63 107 40 59 74  | 120 160 45 90 102 185 189 15 35 82  | 166 190 198 14 26 98 111 124  | 50 172 193 23 132 136 159  | 20 94 119 66 104  | 69 169  |  | 
+ -------- Results --------- 
+42 0 118008
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 19.2655
+1 Kernel Time (transfer): 19.3362
+0 Kernel Time (no transfer): 244.516
+0 Kernel Time (transfer): 244.659
+CUDA SOLUTION FINAL: 
+343 248 350  |  | 304 3  | 120 147 265 273 307  |  |  | 286  | 261  |  |  | 210  |  |  | 
+ -------- Results --------- 
+13 0 1155
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 1619.5
+1 Kernel Time (transfer): 1619.61
+0 Kernel Time (no transfer): 111116
+0 Kernel Time (transfer): 111116
+CUDA SOLUTION FINAL: 
+221 307 140 214  | 244 97 194 350  | 385  |  |  | 261 49 34  | 271  | 336 69  | 61  | 344 42  |  | 327 50  | 364  | 
+ -------- Results --------- 
+21 0 112032
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.528416
+1 Kernel Time (transfer): 0.62272
+0 Kernel Time (no transfer): 6747.62
+0 Kernel Time (transfer): 6747.72
+CUDA SOLUTION FINAL: 
+214 132 108 135 206 161  | 353 138 246 283 8  | 53 62 80 83 179 278 331 19 30 75 94 137  | 236 315 367 379 23 51 67 87 129 189 245  | 378 111 223 332  | 343 389 13 34 203 210 269 294 311  | 85 107 275 289 371  | 55 142 153 156 175 186 204 249 268 276 290 304 317 326 341 376 387 16  | 229 286 354 182  | 196 225 254 312 140 305  | 375 74 233 273 377 11 143 257 357 400  | 35 252 288 130 195 247 287 234  | 147 127  | 
+ -------- Results --------- 
+100 0 7662
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 632.024
+1 Kernel Time (transfer): 632.246
+0 Kernel Time (no transfer): 150657
+0 Kernel Time (transfer): 150657
+CUDA SOLUTION FINAL: 
+378 464 798 226 489 993 819 65 801 562 862 900 492 495 608 636 283 639  | 800 997 497 824 782 671 322 716 171 961  | 839 537 640 155 624 75 927 549 370 297  | 962 630  | 784 848 298  | 97 271  |  |  |  |  |  |  | 324  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 151725
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 1963.7
+1 Kernel Time (transfer): 1963.81
+0 Kernel Time (no transfer): 144413
+0 Kernel Time (transfer): 144413
+CUDA SOLUTION FINAL: 
+266 404 124 71 342 302 412 221 69 222 206 489 500 215 445 150 133  | 381 440 490 37 39 63 173 248 383 455 370 194 269 300 349  | 408 465 384 19 23 460 102 348  | 368 428 107 186 475  | 323 137 413  | 184  | 466  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 145333
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2703.11
+1 Kernel Time (transfer): 2703.21
+0 Kernel Time (no transfer): 119248
+0 Kernel Time (transfer): 119248
+CUDA SOLUTION FINAL: 
+90 92 102 252  | 260  | 68 178 221  | 93 142 186  | 135  | 380 73  | 18  | 262 388 207 348  | 234 20 223  | 85 150 39  | 365 134 311  | 276 304 108  |  | 
+ -------- Results --------- 
+31 0 120164
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2960.88
+1 Kernel Time (transfer): 2960.98
+0 Kernel Time (no transfer): 208426
+0 Kernel Time (transfer): 208426
+CUDA SOLUTION FINAL: 
+135 85 262  | 207 186 90  | 311  | 260  | 73 304 380 150 221 276  | 20  | 68 18  | 108 134 178 365  | 93  | 348 142  | 39 234  | 92  | 252 388  | 
+ -------- Results --------- 
+29 0 209365
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 3971.24
+1 Kernel Time (transfer): 3971.34
+0 Kernel Time (no transfer): 447424
+0 Kernel Time (transfer): 447424
+CUDA SOLUTION FINAL: 
+380  | 186  | 304 90 252  | 276 348 108  | 39 260 178  | 142 234 311  | 135 221 20 68  | 150  | 134 92  | 207 85 93  | 388  | 262 18  |  | 
+ -------- Results --------- 
+27 0 448330
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 2
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 75510.1
+1 Kernel Time (transfer): 75510.3
+0 Kernel Time (no transfer): 1.45722e+06
+0 Kernel Time (transfer): 1.45722e+06
+CUDA SOLUTION FINAL: 
+ | 135  | 294 561  |  | 8  |  | 362 687  | 511  | 161  | 154  |  |  |  |  | 112  | 157 17  | 681  | 270 389  |  | 624 509  | 343 714 396  | 324 394  | 495 666  | 247  | 334  | 
+ -------- Results --------- 
+26 0 1458277
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 0.7168
+0 Kernel Time (transfer): 0.850848
+1 Kernel Time (no transfer): 0.183296
+1 Kernel Time (transfer): 0.258144
+CUDA SOLUTION FINAL: 
+190 11 176  | 123 76  | 29  | 189  |  |  |  | 
+ -------- Results --------- 
+7 0 949
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+0 Kernel Time (no transfer): 2.14835
+0 Kernel Time (transfer): 2.43117
+1 Kernel Time (no transfer): 0.411648
+1 Kernel Time (transfer): 0.473984
+CUDA SOLUTION FINAL: 
+88 131  | 90  | 73 48  | 195 67  | 147  | 83  |  | 
+ -------- Results --------- 
+9 0 946
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 9.67475
+0 Kernel Time (transfer): 9.90794
+1 Kernel Time (no transfer): 2.03978
+1 Kernel Time (transfer): 2.11635
+CUDA SOLUTION FINAL: 
+11 52 83 41  | 139 137  | 152  | 132 19 177 117  |  |  |  | 
+ -------- Results --------- 
+11 0 949
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+0 Kernel Time (no transfer): 41.0869
+0 Kernel Time (transfer): 41.4234
+1 Kernel Time (no transfer): 2.66342
+1 Kernel Time (transfer): 2.74102
+CUDA SOLUTION FINAL: 
+16 83 7 162 133 142  | 139 166 75  | 134 4  |  | 200  | 175 189  |  | 
+ -------- Results --------- 
+14 0 951
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 4.07859
+1 Kernel Time (transfer): 4.14557
+0 Kernel Time (no transfer): 398.878
+0 Kernel Time (transfer): 399.013
+CUDA SOLUTION FINAL: 
+40 77 101 110 2  | 180 166 46 87 69  | 26 195 170  | 155  | 188  | 165 171  | 68  | 
+ -------- Results --------- 
+18 0 1288
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_8.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 25.5386
+1 Kernel Time (transfer): 25.6051
+0 Kernel Time (no transfer): 9462.44
+0 Kernel Time (transfer): 9462.59
+CUDA SOLUTION FINAL: 
+181 143 184 140 90 45 25 185  | 124 74 97 38 142 158  | 60 190 58 87  | 193 188 99 131  | 129  | 34  |  | 
+ -------- Results --------- 
+24 0 10351
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../200_9.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 0.603136
+1 Kernel Time (transfer): 0.669248
+0 Kernel Time (no transfer): 428884
+0 Kernel Time (transfer): 428884
+CUDA SOLUTION FINAL: 
+1 200 32 110 186 82 189 174 25 49 114 180 34  | 92 167 40 130 129 140 184  | 164 85 65 118 22 8 126  | 69 70 75 44  | 15 71 125 137 39  | 38 199 163  |  | 
+ -------- Results --------- 
+39 0 429772
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../300_5.txt
+Num Devices: 2
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 54.6099
+0 Kernel Time (transfer): 54.9017
+1 Kernel Time (no transfer): 5.18451
+1 Kernel Time (transfer): 5.25619
+CUDA SOLUTION FINAL: 
+195 92 21 29 258  | 127 163  | 169  | 181  | 178 76  |  |  |  | 242  |  | 
+ -------- Results --------- 
+12 0 949
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../400_5.txt
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 24.5146
+1 Kernel Time (transfer): 24.6124
+0 Kernel Time (no transfer): 246.948
+0 Kernel Time (transfer): 247.09
+CUDA SOLUTION FINAL: 
+348  | 48 83  | 92  | 355  | 15 308 24  | 199  |  | 251  | 281  | 377  |  | 185  |  | 
+ -------- Results --------- 
+13 0 1150
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../500_5.txt
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 63.6979
+1 Kernel Time (transfer): 63.8116
+0 Kernel Time (no transfer): 788.765
+0 Kernel Time (transfer): 788.872
+CUDA SOLUTION FINAL: 
+117 375  | 495  |  |  | 191  | 185 212 203  |  | 491 254  |  |  | 415  |  |  |  | 121 102  | 365  | 
+ -------- Results --------- 
+13 0 1721
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../600_5.txt
+Num Devices: 2
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 223.068
+1 Kernel Time (transfer): 223.178
+0 Kernel Time (no transfer): 1887.91
+0 Kernel Time (transfer): 1888.11
+CUDA SOLUTION FINAL: 
+286 535  | 521 329  |  | 471  |  | 399  |  | 225  | 3 271  | 600  | 262  |  |  | 310  | 149  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 2885
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../700_5.txt
+Num Devices: 2
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 295.796
+1 Kernel Time (transfer): 295.942
+0 Kernel Time (no transfer): 4781.08
+0 Kernel Time (transfer): 4781.22
+CUDA SOLUTION FINAL: 
+602 94 614 573  | 565 20  | 6  |  | 333 397  | 148 306  | 24  |  |  | 76  |  |  |  |  |  |  |  |  |  |  |  | 294  | 
+ -------- Results --------- 
+14 0 5751
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../800_5.txt
+Num Devices: 2
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 680.364
+1 Kernel Time (transfer): 680.515
+0 Kernel Time (no transfer): 9009.84
+0 Kernel Time (transfer): 9010.05
+CUDA SOLUTION FINAL: 
+152  | 12  |  |  | 795 154  | 623 124  |  |  | 546  |  | 322  |  |  | 211  | 102 467  |  | 256  | 25  | 732  | 198  |  |  |  |  |  | 
+ -------- Results --------- 
+15 0 10027
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../900_5.txt
+Num Devices: 2
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 1756.61
+1 Kernel Time (transfer): 1756.79
+0 Kernel Time (no transfer): 30831.9
+0 Kernel Time (transfer): 30832.1
+CUDA SOLUTION FINAL: 
+73  | 536  |  | 103 568  | 366 278  |  |  |  |  | 108  | 683  |  |  |  |  |  |  | 728 100  |  | 412  |  |  |  | 176  | 18  | 395  |  |  |  | 
+ -------- Results --------- 
+14 0 31871
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../1000_5.txt
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 3193.18
+1 Kernel Time (transfer): 3193.38
+0 Kernel Time (no transfer): 41603.5
+0 Kernel Time (transfer): 41603.7
+CUDA SOLUTION FINAL: 
+342  | 664 420  |  | 746  |  | 988  | 97  | 359  |  |  |  | 916  |  | 223  |  | 162  | 778  |  |  |  |  |  | 901 952  |  |  |  | 656  |  | 229  |  |  |  | 
+ -------- Results --------- 
+15 0 42673
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 17.1561
+1 Kernel Time (transfer): 17.238
+0 Kernel Time (no transfer): 1015.68
+0 Kernel Time (transfer): 1015.79
+CUDA SOLUTION FINAL: 
+108 20 73 178 93  | 18 90 94 142  | 186 135 87  | 81 150  | 92  | 39 68 102 85 136  | 134  | 
+ -------- Results --------- 
+21 0 1924
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2125.23
+1 Kernel Time (transfer): 2125.33
+0 Kernel Time (no transfer): 48563.6
+0 Kernel Time (transfer): 48563.8
+CUDA SOLUTION FINAL: 
+242 154 247 19  | 202  | 389  | 267 7  | 197 8 186  | 334 394 241 353 340  | 245 380 393 211 294  | 17  | 135 324 157  | 112 362  |  | 270 147 343 396 266  | 161  | 
+ -------- Results --------- 
+33 0 49481
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 2
+12 26 378 32
+
+num blocks: 378
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.495648
+1 Kernel Time (transfer): 0.587104
+0 Kernel Time (no transfer): 6436.56
+0 Kernel Time (transfer): 6436.66
+CUDA SOLUTION FINAL: 
+30 33 36 39 42 45 48 51 54 57  | 60 63 66 67 72 75 78 81 82 87 88  | 92 96 99 100 103 108 111 114 117 120  | 123 126 129 132 135 137 139 144 147 150 153  | 156 159 162 165 168 171 173 175 180 182 185  | 189 190 195 196 201 203 206 208 212 216  | 219 222 225 228 231 234 237 240 243 246 249  | 252 255 258 260 262 266 268 273 275 278 280  | 284 288 289 292 297 299 303 305 309 311  | 314 318 321 324 327 330 332 334 338 340 345  | 346 349 354 356 359 363 364 367 372 375 378 1  | 10 14 15 16 20 21 23 24  | 
+ -------- Results --------- 
+126 0 7352
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 42.5401
+1 Kernel Time (transfer): 42.7587
+0 Kernel Time (no transfer): 101.604
+0 Kernel Time (transfer): 101.993
+CUDA SOLUTION FINAL: 
+155  | 839  | 669  | 872 20 705  |  |  | 152  | 638  |  |  |  |  |  |  |  |  |  |  | 581  |  |  |  | 64  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 1170
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 2
+47 28 1500 32
+
+num blocks: 1500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 389.434
+1 Kernel Time (transfer): 389.793
+0 Kernel Time (no transfer): 1055.09
+0 Kernel Time (transfer): 1055.46
+CUDA SOLUTION FINAL: 
+622 444  | 1323  | 485  |  | 983  |  |  | 671 580  |  |  |  |  | 971 566  |  | 1139  |  |  |  | 820  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 912  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+12 0 2357
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 2
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+1 Kernel Time (no transfer): 11.5507
+1 Kernel Time (transfer): 11.6433
+0 Kernel Time (no transfer): 2370.4
+0 Kernel Time (transfer): 2370.5
+CUDA SOLUTION FINAL: 
+76 255 239 56 49 190 219 4 205 40 149 247 290 33 48 299 139 298 89  | 19 235 273 226 24 176  | 252 174 21 293 160 98 245  | 199 221 166 20  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 3275
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.463872
+1 Kernel Time (transfer): 0.571424
+0 Kernel Time (no transfer): 628.633
+0 Kernel Time (transfer): 628.792
+CUDA SOLUTION FINAL: 
+404 480 381 302 124 489 412 238 150 206 269 300 37 222 445 308  | 342 432 71 231 63 457 490 368 59 349 383  | 186 348 133 384 68 425  | 102 137 160  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1594
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 687.867
+1 Kernel Time (transfer): 687.982
+0 Kernel Time (no transfer): 155141
+0 Kernel Time (transfer): 155141
+CUDA SOLUTION FINAL: 
+266 480 404 342 302 412 221 69 222 206 489 500 215 445 150  | 381 231 490 440 455 383 63 39 37 248 173 370 349 269 300 194 282  | 408 465 384 320 19 23 460 102 348 368  | 160 428 186 475 123  | 323 137  | 184  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 156069
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 2
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2.45859
+1 Kernel Time (transfer): 2.58544
+0 Kernel Time (no transfer): 4811.9
+0 Kernel Time (transfer): 4812.18
+CUDA SOLUTION FINAL: 
+115 576 678 608 579 76 212 106 562 437 292 317 495 323 373 387 350 325 122 612  | 351 295 345 513 149 326 152 649 297 54 397  | 118 189 193 667 379 15 468 584  | 73 658 31 9  | 581  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 5785
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 30.5183
+0 Kernel Time (transfer): 30.7545
+1 Kernel Time (no transfer): 1.41517
+1 Kernel Time (transfer): 1.60867
+CUDA SOLUTION FINAL: 
+ |  |  | 842  | 313 432  | 822  |  |  |  |  |  |  | 528  |  | 774 536  | 920  |  | 280  | 139  |  |  |  |  | 350 673 733  |  |  | 155  |  |  | 457  |  |  | 
+ -------- Results --------- 
+15 0 1126
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 44.1518
+0 Kernel Time (transfer): 44.2512
+1 Kernel Time (no transfer): 0.236544
+1 Kernel Time (transfer): 0.29952
+CUDA SOLUTION FINAL: 
+179 4 168 159 114 76 58  | 112 105 15 165 83 133 79 129 131 196  | 33 99 59 24 141 177 161 144 169 57 136 30 52  | 26 12 56 135 46 98 38 17 195 88 23  | 73 51 167 19 74 163 10 92 182 149  | 75 170 94 37 174 160 86 186 138  |  | 
+ -------- Results --------- 
+60 0 946
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.236544
+1 Kernel Time (transfer): 0.317952
+0 Kernel Time (no transfer): 12418.3
+0 Kernel Time (transfer): 12418.4
+CUDA SOLUTION FINAL: 
+177 68 126 197 117 142 119 34 78  | 101 49 74 111 47  | 20 198 27 147 120 50 143 159  | 94 148 37 131 195 80  | 189 105 100 188 40 87 89 113  | 132 44 102 60 199 14  | 67 8  | 
+ -------- Results --------- 
+44 0 13325
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.386016
+1 Kernel Time (transfer): 0.480832
+0 Kernel Time (no transfer): 76.3054
+0 Kernel Time (transfer): 76.3986
+CUDA SOLUTION FINAL: 
+95 76 177  | 10 349  | 164 27  | 201 298 229  | 330 360 319 126 138  | 260 234 74 339 216 142 78  | 129 82 362 188  | 386 42  | 206  | 338 187  | 112 215 300  | 46 270 125 25 145 301  |  | 
+ -------- Results --------- 
+40 0 975
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 1.63123
+1 Kernel Time (transfer): 1.73146
+0 Kernel Time (no transfer): 558.519
+0 Kernel Time (transfer): 558.587
+CUDA SOLUTION FINAL: 
+347 44  | 49 386 341  | 119 23 176  | 4 297 250  | 106 364  | 175 168  | 29 385 162  | 37 227 325  |  | 228 196 7  | 79 372  | 361 46  | 202 375  | 
+ -------- Results --------- 
+30 0 1510
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.451584
+1 Kernel Time (transfer): 0.551328
+0 Kernel Time (no transfer): 1324.31
+0 Kernel Time (transfer): 1324.43
+CUDA SOLUTION FINAL: 
+314 334  | 113  | 59 20 201  | 362 371 97  |  | 360 368  | 33  | 355 217  | 350 263  | 227  | 117 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 2225
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.61136
+1 Kernel Time (transfer): 0.676896
+0 Kernel Time (no transfer): 113579
+0 Kernel Time (transfer): 113579
+CUDA SOLUTION FINAL: 
+110 143 57 93 150 107 63 74 160 40 18  | 59 120 189 45 90 185 190 15 166  | 82 35 198 124 111 26 98 186 14  | 193 172 159 23 132 136  | 94 119 20 66 104  | 169 69  |  | 
+ -------- Results --------- 
+42 0 114466
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 15.1296
+1 Kernel Time (transfer): 15.2255
+0 Kernel Time (no transfer): 222.812
+0 Kernel Time (transfer): 222.923
+CUDA SOLUTION FINAL: 
+142 183 343 300 248  | 129 304  | 318  | 273 120  |  | 134  | 64 286  |  |  |  |  |  |  | 
+ -------- Results --------- 
+13 0 1125
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 1457.84
+1 Kernel Time (transfer): 1457.93
+0 Kernel Time (no transfer): 90824.1
+0 Kernel Time (transfer): 90824.2
+CUDA SOLUTION FINAL: 
+173 84 70 114 292  | 351 121 350  |  |  | 180  | 198 179  | 14 378  | 208  | 55 68 132  | 287  | 238 166  | 286  |  | 
+ -------- Results --------- 
+21 0 91741
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.527328
+1 Kernel Time (transfer): 0.627072
+0 Kernel Time (no transfer): 6318.14
+0 Kernel Time (transfer): 6318.28
+CUDA SOLUTION FINAL: 
+214 132 108 135 206 161 353  | 283 246 138 278  | 83 179 8 80 53 62 331 379 94 367 75 137  | 315 236 19 30 245 189 129 67 87  | 23 378 51 343 389 223 332  | 111 210 34 311 203 269 294 13  | 85 275 107 289 371 387  | 276 55 304 156 142 249 326 153 204 268 376 290 317 341 175 186  | 16 354 286 229 225 182  | 196 254 312 140 305  | 375 74 273 233 377 357 143 400 11 257  | 288 252 35 247 195 130 287  | 234 147 127  | 
+ -------- Results --------- 
+100 0 7224
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 771.931
+1 Kernel Time (transfer): 772.133
+0 Kernel Time (no transfer): 176473
+0 Kernel Time (transfer): 176474
+CUDA SOLUTION FINAL: 
+464 798 489 993 819 777 65 801 562 862 900 653 623 492 608 636 283 639 122 800  | 997 824 179 782 864 84 671 322 961 330  | 8 839 537 253 227 640 155 549 370 297  | 20 630  | 600 298 284  | 271  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 177609
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 704.874
+1 Kernel Time (transfer): 704.985
+0 Kernel Time (no transfer): 155132
+0 Kernel Time (transfer): 155132
+CUDA SOLUTION FINAL: 
+266 480 404 342 302 412 221 69 222 206 489 500 215 445 150  | 381 231 490 440 455 383 63 39 37 248 173 370 349 269 300 194 282  | 408 465 384 320 19 23 460 102 348 368  | 160 428 186 475 123  | 323 137  | 184  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 156093
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 4266.34
+1 Kernel Time (transfer): 4266.41
+0 Kernel Time (no transfer): 128997
+0 Kernel Time (transfer): 128997
+CUDA SOLUTION FINAL: 
+90 92 102  | 252 260  | 178 68 221  | 93 142 186  | 135  | 380 73  | 18  | 388 262 348  | 207 234  | 20 223 150 85  | 365 39 311 134  | 276 304 108  |  | 
+ -------- Results --------- 
+31 0 129914
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 3823.57
+1 Kernel Time (transfer): 3823.67
+0 Kernel Time (no transfer): 185230
+0 Kernel Time (transfer): 185230
+CUDA SOLUTION FINAL: 
+135 85 262  | 207 186 90  | 311  | 260  | 304 380 73 221 150 276  |  | 20 68  | 18 178 108 365 134  |  | 93 348 142  | 234 39  | 92  | 252 388  | 
+ -------- Results --------- 
+29 0 186143
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 2545.16
+1 Kernel Time (transfer): 2545.26
+0 Kernel Time (no transfer): 268899
+0 Kernel Time (transfer): 268899
+CUDA SOLUTION FINAL: 
+380  | 186  | 304 252 90  | 276 348  | 108 39 260  | 178 311 234  | 142 135 221 68 20  | 150  | 134 92  | 207 93  | 85 388  | 262 18  |  | 
+ -------- Results --------- 
+27 0 269801
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 2
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 62020
+1 Kernel Time (transfer): 62020.2
+0 Kernel Time (no transfer): 992159
+0 Kernel Time (transfer): 992160
+CUDA SOLUTION FINAL: 
+ |  | 135 294 561  |  |  | 8  | 687  | 362 511  | 161  | 154  |  |  |  |  |  | 112 157  | 17 681  |  | 270 389  | 624  | 509 714 343 396  | 324  | 394 666 495  | 247  | 334  | 
+ -------- Results --------- 
+26 0 993217
+
+
+Error: 
 

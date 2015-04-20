@@ -50,10 +50,10 @@ void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInv
 	unsigned int* sol = new unsigned int[numInts * numBlocks];
 	unsigned int* max = new unsigned int[numBlocks];
 
-	if(numDevices == 1)
-		cudaSetDevice(1);
-	else
-		cudaSetDevice(threadId);
+	// if(numDevices == 1)
+	// 	cudaSetDevice(1);
+	// else
+	cudaSetDevice(threadId);
 
 	cudaEventCreate(&start);
 	cudaEventCreate(&end);
@@ -407,7 +407,7 @@ void BBMC::searchParallel(int num){
 		}
 	}
 	std::cout << "Num Devices: " << numDevices << std::endl;
-	numBlocks = n;
+	numBlocks = n/numDevices;
 	activeC.resize(numDevices);
 	activeP.resize(numDevices);
 
