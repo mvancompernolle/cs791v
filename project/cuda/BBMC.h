@@ -22,7 +22,7 @@ public:
 	float* kernelTimes;
 	float* kernelTimesIO;
 	float preProcessing;
-	int numInts, numBlocks, numDevices, memSize; 
+	int numInts, numBlocks, numDevices; 
 
 private:
 	boost::dynamic_bitset<>* N;

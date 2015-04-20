@@ -27,11 +27,11 @@ __device__ void copyBitSet(unsigned int* dest, unsigned int* src);
 __global__ void maxCliqueP(int* currMax, unsigned int* N, unsigned int* invN, unsigned int* solution, unsigned int* max, unsigned int* devC,
  unsigned int* devP, unsigned int* devRecC, unsigned int* devRecP, unsigned int* devNewP, unsigned short* devU, unsigned short* devColor);
 __device__ void recSearchP(unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P,
- unsigned int* newP, unsigned int workArr[], unsigned short* U, unsigned short* color, int level);
-__device__ void colorVertsP(unsigned int* P, unsigned short* U, unsigned short* color, unsigned int* work);
+ unsigned int* newP, unsigned short* U, unsigned short* color, int level);
+__device__ void colorVertsP(unsigned int* P, unsigned short* U, unsigned short* color);
 __device__ void copyBitSetP(unsigned int* dest, unsigned int* src);
-__device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work);
-__device__ void findFirstBitP(unsigned int* bitset, unsigned int* work);
+__device__ unsigned int getSetBitCountP(unsigned int* bitset);
+__device__ unsigned int findFirstBitP(unsigned int* bitset);
 __device__ void intersectBitSetP(unsigned int* bitset1, unsigned int* bitset2);
 
 // queue functions
@@ -50,7 +50,10 @@ void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInv
 	unsigned int* sol = new unsigned int[numInts * numBlocks];
 	unsigned int* max = new unsigned int[numBlocks];
 
-	cudaSetDevice(threadId);
+	if(numDevices == 1)
+		cudaSetDevice(1);
+	else
+		cudaSetDevice(threadId);
 
 	cudaEventCreate(&start);
 	cudaEventCreate(&end);
@@ -152,7 +155,7 @@ void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInv
 	devP = activeP[threadId];
 
 	cudaEventRecord( start, 0 );
-	maxCliqueP<<<numBlocks, numInts, memSize>>>(currMax, devN, devInvN, devSolution, devMax, thrust::raw_pointer_cast( &devC[0] ),
+	maxCliqueP<<<numBlocks, numInts>>>(currMax, devN, devInvN, devSolution, devMax, thrust::raw_pointer_cast( &devC[0] ),
 	 thrust::raw_pointer_cast( &devP[0] ), devRecC, devRecP, devNewP, devU, devColor);
     cudaEventRecord( end, 0 );
 	cudaEventSynchronize( end );
@@ -394,7 +397,6 @@ __device__ void printBitSet(unsigned int* bitset, int size){
 void BBMC::searchParallel(int num){
 	cudaError_t err;
 	numInts = (n+sizeof(int)*8-1)/(sizeof(int)*8);
-	memSize = (sizeof(unsigned int) * numInts);
 	// get the number of devices
 	numDevices = num;
 	if(num != 1){
@@ -487,8 +489,6 @@ void BBMC::searchParallel(int num){
 
 	// size for bitwise operations
 	for(int i=0; i<numDevices; i++){
-		// maxCliqueP<<<numBlocks, numInts, memSize>>>(devN[i], devInvN[i], devSolution[i], devMax[i], thrust::raw_pointer_cast( &devC[i][0] ),
-		//  thrust::raw_pointer_cast( &devP[i][0] ), devRecC[i], devRecP[i], devNewP[i], devU[i], devColor[i]);
 		threads[i] = boost::thread(&BBMC::luanchKernel, this, i, hostN, hostInvN, sol, max, currentMax);
 	}
 	gettimeofday(&tod2, NULL);
@@ -675,7 +675,6 @@ __global__ void maxCliqueP(int* currMax, unsigned int* devN, unsigned int* devIn
 	//time1 = clock();
 	__shared__ unsigned int* C;
 	__shared__ unsigned int* P;
-	extern __shared__ unsigned int workArr[];
 	__shared__ unsigned short* U;
 	__shared__ unsigned short* color;
 	//numI = 1;
@@ -700,21 +699,21 @@ __global__ void maxCliqueP(int* currMax, unsigned int* devN, unsigned int* devIn
 	__syncthreads();
 
 	recSearchP(solution, max, devRecC + (blockIdx.x * numV * numI) + numI, 
-		devRecP + (blockIdx.x * numV * numI) + numI, newP + (blockIdx.x * numV * numI), workArr, U, color, 0);
+		devRecP + (blockIdx.x * numV * numI) + numI, newP + (blockIdx.x * numV * numI), U, color, 0);
 }
 
 __device__ void recSearchP(
  unsigned int* solution, unsigned int* max, unsigned int* C, unsigned int* P, unsigned int* newP,
-  unsigned int workArr[], unsigned short* U, unsigned short* color, int level){
+ unsigned short* U, unsigned short* color, int level){
 
 	int newPNum, cNum;
+	int m, currSize, v;
 
 	// copy C and P
 	copyBitSetP(C, C-numI);
 	copyBitSetP(P, newP);
 
  	__syncthreads();
-
 	// ahve only a single thread incr the num nodes
 	if(threadIdx.x == 0 && blockIdx.x == 0){
 		nodes++;
@@ -722,30 +721,17 @@ __device__ void recSearchP(
 
 	newP += numI;
 
-	// //printf("tid: %d, address: %p\n", threadIdx.x, &workArr[threadIdx.x]);
-	// __syncthreads();
+	m = getSetBitCountP(P);
+	currSize = getSetBitCountP(C);
 
-	getSetBitCountP(P, workArr);
-
-	__syncthreads();
-
-	int m = workArr[0];
-
-	// if(threadIdx.x == 0)
-	// 	printf("level: %d m: %d\n", level, m);
-
-	colorVertsP(P, U, color, workArr);
+	colorVertsP(P, U, color);
 
 	__syncthreads();
 
 	// iterate over the candidate set
 	for(int i=m-1; i>=0; i--){
 
-		getSetBitCountP(C, workArr);
-
-		__syncthreads();
-
-		if(color[i] + workArr[0] <= *globalMax){
+		if(color[i] + currSize <= *globalMax){
 			return;
 		}
 
@@ -753,7 +739,7 @@ __device__ void recSearchP(
 		copyBitSetP(newP, P);
 
 		// pick a candidate
-		int v = U[i];
+		v = U[i];
 		if(threadIdx.x == 0){
 			setBit(C[v/32], v%32);
 		}
@@ -764,48 +750,47 @@ __device__ void recSearchP(
 		__syncthreads();
 
 		// get the set bits for the candidate set and the current set
-		getSetBitCountP(newP, workArr);
+		newPNum = getSetBitCountP(newP);
 
-		__syncthreads();
-		newPNum = workArr[0];
-		
-
-		getSetBitCountP(C, workArr);
-		__syncthreads();
-
-		cNum = workArr[0];
-		
+		currSize++;
 
 		// if maximal, check for maximum
-		if(newPNum == 0 && cNum > *globalMax){
+		if(newPNum == 0 && currSize > *globalMax){
 
 			if(threadIdx.x == 0){
 				// save the new max size so that it is shared among blocks
-				atomicMax(globalMax, cNum);
-				max[blockIdx.x] = cNum;
+				atomicMax(globalMax, currSize);
+				max[blockIdx.x] = currSize;
 			}
 			copyBitSetP(solution + (blockIdx.x*numI), C);
 		}
 		else if(newPNum > 0){
-			recSearchP(solution, max, C + numI, P + numI, newP, workArr, U + m, color + m, level + 1);
+			recSearchP(solution, max, C + numI, P + numI, newP, U + m, color + m, level + 1);
 		}
+
+		__syncthreads();
 
 		// remove v from P and C
 		if(threadIdx.x == 0){
 			clearBit(C[v/32], v%32);
 			clearBit(P[v/32], v%32);
 		}	
+		currSize--;
+		__syncthreads();
+		// return;
 	}
 }
 
-__device__ void colorVertsP(unsigned int* P, unsigned short* U, unsigned short* color, unsigned int* work){
+__device__ void colorVertsP(unsigned int* P, unsigned short* U, unsigned short* color){
 
 	// copy the candidate set
 	//printf("thread: %d\n", threadIdx.x);
 	__shared__ int colorClass;
 	__shared__ int i;
-	__shared__ unsigned int copyP[40];
-	__shared__ unsigned int Q[40];
+	__shared__ unsigned int copyP[47];
+	__shared__ unsigned int Q[47];
+	int v;
+
 	copyBitSetP(copyP, P);
 
 	// have main thread init values to zero
@@ -816,57 +801,46 @@ __device__ void colorVertsP(unsigned int* P, unsigned short* U, unsigned short* 
 
 	__syncthreads();
 
-	// get num bits set (work is the start of shared memory to work on)
-	getSetBitCountP(copyP, work);
-
-	__syncthreads();
-
-	while(work[0] != 0){
+	while(getSetBitCountP(copyP) != 0){
 
 		if(threadIdx.x == 0){
 			colorClass++;
 		}
-
-		__syncthreads();
 
 		// copy the candidate set
 		copyBitSetP(Q, copyP);
 
 		__syncthreads();
 
-		getSetBitCountP(Q, work);
+		while(getSetBitCountP(Q) != 0){
 
-		while(work[0] != 0){
+			__syncthreads();
+
 			// return the index of the first set bit
-			findFirstBitP(Q, work);
+			v = findFirstBitP(Q);
+
+			__syncthreads();
 
 			// remove v from Q and copyP
 			if(threadIdx.x == 0){
-				clearBit(copyP[work[0]/32], work[0]%32);
-				clearBit(Q[work[0]/32], work[0]%32);
+				clearBit(copyP[v/32], v%32);
+				clearBit(Q[v/32], v%32);
 			}
 
 			__syncthreads();
 
-			intersectBitSetP(Q, &constInvN[(work[0]) * numI]);
+			intersectBitSetP(Q, &constInvN[(v) * numI]);
 
 			__syncthreads();
 
 			if(threadIdx.x == 0){
-				U[i] = work[0];
+				U[i] = v;
 				color[i++] = colorClass;
 			}
 
-			// recalculate set bits in Q for inner loop
-			__syncthreads();
-			getSetBitCountP(Q, work);
 			__syncthreads();
 
 		}
-
-		// recalculate set bits in copyP for outer loop
-		__syncthreads();
-		getSetBitCountP(copyP, work);
 		__syncthreads();
 	}
 }
@@ -875,14 +849,11 @@ __device__ void copyBitSetP(unsigned int* dest, unsigned int* src){
 	dest[threadIdx.x] = src[threadIdx.x];
 }
 
-__device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work){
+__device__ unsigned int getSetBitCountP(unsigned int* bitset){
 
-	// printf("tid: %d, address: %p\n", threadIdx.x, &work[threadIdx.x]);
-	// __syncthreads();
-	// return;
+	__shared__ unsigned int work[47];
+
 	work[threadIdx.x] = __popc(bitset[threadIdx.x]);
-
-	__syncthreads();
 
 	int size = numI;
 	for(int s=numI/2; s>0; s>>=1){
@@ -897,13 +868,18 @@ __device__ void getSetBitCountP(unsigned int* bitset, unsigned int* work){
 
 		size /= 2;
 	}
+
+	__syncthreads();
+
+	return work[0];
 }
 
-__device__ void findFirstBitP(unsigned int* bitset, unsigned int* work){
+__device__ unsigned int findFirstBitP(unsigned int* bitset){
 
-	// set min to highest value
-	if(threadIdx.x == 0)
-		work[0] = numI * 32;
+	__shared__ unsigned int first;
+	first = 10000;
+
+	__syncthreads();
 
 	// have each thread get bit pos in int
 	unsigned int pos = __ffs(bitset[threadIdx.x]);
@@ -912,8 +888,13 @@ __device__ void findFirstBitP(unsigned int* bitset, unsigned int* work){
 	if(pos != 0){
 		// calculate overall position in bitstring and attempt to set to min
 		pos += (threadIdx.x * 32) - 1;
-		atomicMin(work, pos);
+		if(pos < first)
+			atomicMin(&first, pos);
 	}
+
+	__syncthreads();
+
+	return first;
 }
 
 __device__ void intersectBitSetP(unsigned int* bitset1, unsigned int* bitset2){
@@ -930,24 +911,55 @@ void BBMC::queueFcn(){
 		exit(1);
 	}
 
-	testQueue<<<1, 1>>>(devQueue);
+	testQueue<<<1, 32>>>(devQueue);
 	cudaDeviceSynchronize();
 }
 
 __device__ int qMaxSize = 1024;
 __device__ unsigned int pos;
 __global__ void testQueue(int* queue){
-	printf("queue\n");
 
-	pos = 0;
+	// __shared__ unsigned int arr[35];
+	// __shared__ unsigned int work[35];
+	// arr[10] = 1 << 11;
+	// arr[5] = 1 << 5;
+	// if(threadIdx.x == 0){
+	// 	printBitSet(arr, 35);
+	// 	printf("\n\n");
+	// }
 
-	for(int i=0; i<100; i++){
-		printf("enqueueing: %d\n", atomicAdd(&pos, 1));
-	}
+	// __syncthreads();
 
-	for(int i=0; i<150; i++){
-		printf("dequeueing: %d\n", atomicSub(&pos, 1));
-	}
+	// int first = findFirstBitPP(arr);
+
+	// __syncthreads();
+
+	// if(threadIdx.x == 0){
+	// 	printf("bit Pos: %d\n", first);
+	// }
+
+	// __syncthreads();
+
+	// int num = getSetBitCountPP(arr);
+
+	// __syncthreads();
+
+	// if(threadIdx.x == 0){
+	// 	printf("bit count: %d\n", num);
+	// }
+
+	// printf("queue\n");
+
+	// pos = 0;
+
+	// for(int i=0; i<100; i++){
+	// 	printf("enqueueing: %d\n", atomicAdd(&pos, 1));
+	// }
+
+	// for(int i=0; i<150; i++){
+	// 	printf("dequeueing: %d\n", atomicSub(&pos, 1));
+	// }
+
 }
 
 		// unsigned int c = 0, p = 0;

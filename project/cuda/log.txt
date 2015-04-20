@@ -4559,3 +4559,48 @@ CUDA SOLUTION FINAL:
 
 Error: 
 
+NEW LOG ENTRY
+Output: 5 BBMC2 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 2
+47 28 1500 32
+
+num blocks: 3000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 1028.49
+0 Kernel Time (transfer): 1029.62
+
+Error: Error: out of memory
+
+
+NEW LOG ENTRY
+Output: 5 BBMC1 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 2
+47 28 1500 32
+
+num blocks: 3000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 1008.57
+0 Kernel Time (transfer): 1009.55
+
+Error: Error: out of memory
+
+
+NEW LOG ENTRY
+Output: 5 BBMC3 ../java/DIMACS_cliques/p_hat1500-1.clq
+Num Devices: 2
+47 28 1500 32
+
+num blocks: 3000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 1013.22
+0 Kernel Time (transfer): 1014.18
+
+Error: Error: out of memory
+
+

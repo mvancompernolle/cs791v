@@ -1518,4 +1518,3 @@ BBMC3, ../java/DIMACS_cliques/brock800_4.clq, 3600
 975936, 
 975936, 
 182
-

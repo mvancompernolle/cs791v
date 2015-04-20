@@ -9,7 +9,7 @@
 #include <boost/thread/thread.hpp>
 
 bool STILL_RUNNING = true;
-bool OUTPUT_TO_FILE = false;
+bool OUTPUT_TO_FILE = true;
 
 struct threadData{
 	long long limit;
@@ -50,6 +50,9 @@ int main(int argc, char** argv){
 		std::cout << "Valid implementation was not selected" << std::endl;
 		return 1;
 	}
+
+	// mc->queueFcn();
+	// return;
 
 	// search for maximum clique
 	boost::dynamic_bitset<>* N;
@@ -95,14 +98,14 @@ int main(int argc, char** argv){
 	if(OUTPUT_TO_FILE){
 		std::ofstream fout;
 		fout.open("results.txt", std::ofstream::app);
-		std::string timeLimit;
+		std::string timeLimit = "0";
 		if(argv[4] != NULL){
 			timeLimit = argv[4];
 		}
 		else{
 			timeLimit = "-1";
 		}
-		fout << argv[1] << ", " << argv[2] << ", " << argv[4] << ", " << timeLimit << std::endl;
+		fout << argv[1] << ", " << argv[2] << ", " << numGPUs << ", " << timeLimit << std::endl;
 		fout << mc->getMaxSize() << ", " << mc->getNumNodes() << ", " << todiff(&tod2, &tod1)/1000 << std::endl;	
 		for(int i=0; i<mc->numDevices; i++){
 			fout << mc->kernelTimes[i] << ", ";
