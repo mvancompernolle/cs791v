@@ -1,0 +1,4561 @@
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 163
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 140
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 143
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 145
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 1
+
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 473
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_8.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7285
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 190
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 179
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 151
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 144
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 155
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 504
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 211
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 1
+
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 139
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 140
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: new kernel launched: 01
+
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 142
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: new kernel launched: 01
+
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 514
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_8.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7279
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_9.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+177 134 53  | 96 39 28 16 130 91 82 69 51 200 197 183  | 66 55 47 139 106 58  | 132 115 5 95 31 23 17 10  | 176 126 144 60  | 162 154 119 182 108 18  |  | 
+ -------- Results --------- 
+39 0 375575
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../300_5.txt
+Num Devices: 2
+10 12 300 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ |  | 214 87 281 293 297  | 124 127  | 128 289  | 36  | 107  | 180  |  |  | 
+ -------- Results --------- 
+12 0 173
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../400_5.txt
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: new kernel launched: 01
+
+CUDA SOLUTION FINAL: 
+202 105  | 279 354  | 85  | 28  |  |  | 269 41  | 73  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 321
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../500_5.txt
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+368  | 319 126  |  | 159 154  | 478 95  |  | 109  |  |  | 53  | 305  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 815
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../600_5.txt
+Num Devices: 2
+19 24 600 32
+
+num blocks: 1200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+535 286 399  | 329  |  | 521  |  | 3  | 149 600  | 471  | 271  | 225 262  |  |  |  | 310  |  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 2215
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../700_5.txt
+Num Devices: 2
+22 28 700 32
+
+num blocks: 1400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+614  | 132 438  | 354  |  |  | 391  |  | 89 477  | 561  | 621  |  |  |  |  | 153  | 618  |  | 638  | 264  | 662  |  |  | 
+ -------- Results --------- 
+14 0 4871
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../800_5.txt
+Num Devices: 2
+25 0 800 32
+
+num blocks: 1600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ |  | 12  | 152  |  | 795  | 154  | 124  |  | 322 732  | 546  |  |  | 623 588  |  |  |  | 102  | 211 25 198  |  | 256  |  |  |  |  | 
+ -------- Results --------- 
+15 0 8392
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../900_5.txt
+Num Devices: 2
+29 4 900 32
+
+num blocks: 1800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+749 31  |  |  | 184 406  | 787 848  |  | 409  | 282  |  |  |  |  |  |  |  |  | 431  | 358  | 112  |  |  | 611  |  |  |  |  | 58 401  |  |  | 
+ -------- Results --------- 
+14 0 29316
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../1000_5.txt
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ | 368  |  | 445 420  |  | 129  | 270  |  |  |  | 883  |  |  | 601 544  | 705  | 294  |  |  | 669  | 616  |  |  |  |  | 980  |  |  |  |  | 296 830  |  |  | 
+ -------- Results --------- 
+15 0 41197
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+180 175 83 4 100 32 48 103  | 144 138 137 107 132 199 122 120 191 26 104  | 46  |  |  | 41  |  | 
+ -------- Results --------- 
+21 0 843
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+19  | 7 340 247 154 8 242  |  | 389 324  | 245  |  | 211 294  | 394 202 380 353 186  | 197 267 135 241 17 334  | 393  | 266 396 112 157  | 362 270 343 147  | 161  | 
+ -------- Results --------- 
+33 0 30132
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 2
+12 26 378 32
+
+num blocks: 756
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+333 327 297 291  |  | 135 108 96 93  | 81 75 69 66 378 350  | 323 314 287  |  | 125 122 83 77  | 373 370 367 364 361 358 355 352 346 343 340 337 334 328 319 316  | 310 307 304 301 298 292 283 280 277 274 271 268 265 262 259 256 253 250 247 244 241 238 235 232 229 226 223 220 217  | 214 211 208 205 202 199 196 193 190 187 184 181 178 175 172 169 166 163 160 157 154 151 148 145 142 139 136 130 127  | 118 115 112 109 103 100 97 88 85 70 61 58 55 52 49 46 43 40 37 34 31 28  | 26 25 24 21 14 13 11 10 9  | 
+ -------- Results --------- 
+126 0 2632
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+322 297  | 824  |  | 157  |  |  | 370  | 904  | 988 280  |  |  |  | 814  |  |  |  |  |  |  |  |  |  | 775  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 640
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 2
+10 12 300 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+299 298 290 273 255 252 239 221 219 205 199 190 166 160 149 139 98 89 75 49 40 33 21 20 19 4  | 247 174 76 48 226 56 235  | 24 245  | 176  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1019
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+489 480 455 445 432 425 412 404 381 368 349 348 342 302 269 231 206 186 150 124 71  | 490 137 37 383 300 160 384 457 133 222 59  | 308 68 359 102  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 323
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+500 490 489 465 455 445 412 404 368 349 348 342 323 302 300 269  | 222 206 194 173 150 69 63 39 37 408 383 137 23 266 248 221  | 215 133 71 440 428 384 381 186 475 413 124  | 466 102 19 184  | 370 460  | 107  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 69144
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 2
+22 28 700 32
+
+num blocks: 1400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+678 667 649 636 612 608 584 579 576 562 513 511 373 351 326 325 323 317 295 292  | 212 193 122 76 54 495 468 345 149 119 106 387 115 397 189  | 118 393 581  | 15 484 290 190  | 658 676  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 1822
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ | 920  | 822 842  | 774  |  |  | 536  | 528  |  |  | 432  | 313  |  |  |  |  |  | 280  | 139  |  |  |  | 350  | 673  | 733  |  | 155  |  | 457  |  |  |  | 
+ -------- Results --------- 
+15 0 445
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+195 186 179 170 163 159 136 133 114 99  | 83 46 138 112 98 94 88 79 76 59 58 56  | 30 24 17 92 52 38 37 33 26 23 12  | 10 4 168 15 196 165 131 129 105 177 141 169  | 135 161 57 144 73 51 182 149 74  | 167 75 19 174 160 86  |  | 
+ -------- Results --------- 
+60 0 145
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+199 195 189 188 111 94 148  | 131 126 117 102 89 87 74 132 119 113  | 49 40 105 101 47 44 37 177  | 68 197 142 78 34 198 147 143 120 20  | 50 27 159 80  | 60 100 14  | 67 8  | 
+ -------- Results --------- 
+44 0 179
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+386 349  | 319 301 298 260 188  | 187 164  | 201 125 234 229  | 112 95 82 76 46 138  | 42  | 177 10  | 330  | 27 360 216 126 339  | 78 142 74 362 129  | 206 300  | 338 215 270 145  | 25  | 
+ -------- Results --------- 
+40 0 177
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+364 325  | 341 347  | 297 228 175  | 196 79  | 119 49  | 46 7 44  | 23 386  | 106 250 176 4  | 168 29 385 162  | 227 37  |  | 372 361  | 202 375  | 
+ -------- Results --------- 
+30 0 178
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+371 360 334  | 314 355 362  |  |  | 201  | 113 59 97 20  | 33 368  |  | 350 263 217  | 227 117  | 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 258
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 165
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 140
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: new kernel launched: 01
+
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 142
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 144
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 505
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_8.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7267
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_9.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+177 134 53  | 96 39 28 16 130 91 82 69 51 200 197 183  | 66 55 47 139 106 58  | 132 115 5 95 31 23 17 10  | 176 126 144 60  | 162 154 119 182 108 18  |  | 
+ -------- Results --------- 
+39 0 375420
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../300_5.txt
+Num Devices: 2
+10 12 300 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ |  | 214 87 281 293 297  | 124 127  | 128 289  | 36  | 107  | 180  |  |  | 
+ -------- Results --------- 
+12 0 172
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../400_5.txt
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+202 105  | 279 354  | 85  | 28  |  |  | 269 41  | 73  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 321
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../500_5.txt
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+368  | 319 126  |  | 159 154  | 478 95  |  | 109  |  |  | 53  | 305  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 814
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../600_5.txt
+Num Devices: 2
+19 24 600 32
+
+num blocks: 1200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+535 286 399  | 329  |  | 521  |  | 3  | 149 600  | 471  | 271  | 225 262  |  |  |  | 310  |  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 2211
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../700_5.txt
+Num Devices: 2
+22 28 700 32
+
+num blocks: 1400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+614  | 132 438  | 354  |  |  | 391  |  | 89 477  | 561  | 621  |  |  |  |  | 153  | 618  |  | 638  | 264  | 662  |  |  | 
+ -------- Results --------- 
+14 0 4873
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../800_5.txt
+Num Devices: 2
+25 0 800 32
+
+num blocks: 1600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ |  | 12  | 152  |  | 795  | 154  | 124  |  | 322 732  | 546  |  |  | 623 588  |  |  |  | 102  | 211 25 198  |  | 256  |  |  |  |  | 
+ -------- Results --------- 
+15 0 8386
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../900_5.txt
+Num Devices: 2
+29 4 900 32
+
+num blocks: 1800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+749 31  |  |  | 184 406  | 787 848  |  | 409  | 282  |  |  |  |  |  |  |  |  | 431  | 358  | 112  |  |  | 611  |  |  |  |  | 58 401  |  |  | 
+ -------- Results --------- 
+14 0 29320
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../1000_5.txt
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ | 368  |  | 445 420  |  | 129  | 270  |  |  |  | 883  |  |  | 601 544  | 705  | 294  |  |  | 669  | 616  |  |  |  |  | 980  |  |  |  |  | 296 830  |  |  | 
+ -------- Results --------- 
+15 0 41169
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+180 175 83 4 100 32 48 103  | 144 138 137 107 132 199 122 120 191 26 104  | 46  |  |  | 41  |  | 
+ -------- Results --------- 
+21 0 843
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+19  | 7 340 247 154 8 242  |  | 389 324  | 245  |  | 211 294  | 394 202 380 353 186  | 197 267 135 241 17 334  | 393  | 266 396 112 157  | 362 270 343 147  | 161  | 
+ -------- Results --------- 
+33 0 30131
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 2
+12 26 378 32
+
+num blocks: 756
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+333 327 297 291  |  | 135 108 96 93  | 81 75 69 66 378 350  | 323 314 287  |  | 125 122 83 77  | 373 370 367 364 361 358 355 352 346 343 340 337 334 328 319 316  | 310 307 304 301 298 292 283 280 277 274 271 268 265 262 259 256 253 250 247 244 241 238 235 232 229 226 223 220 217  | 214 211 208 205 202 199 196 193 190 187 184 181 178 175 172 169 166 163 160 157 154 151 148 145 142 139 136 130 127  | 118 115 112 109 103 100 97 88 85 70 61 58 55 52 49 46 43 40 37 34 31 28  | 26 25 24 21 14 13 11 10 9  | 
+ -------- Results --------- 
+126 0 2627
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+322 297  | 824  |  | 157  |  |  | 370  | 904  | 988 280  |  |  |  | 814  |  |  |  |  |  |  |  |  |  | 775  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 464
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 2
+10 12 300 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+299 298 290 273 255 252 239 221 219 205 199 190 166 160 149 139 98 89 75 49 40 33 21 20 19 4  | 247 174 76 48 226 56 235  | 24 245  | 176  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1015
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+489 480 455 445 432 425 412 404 381 368 349 348 342 302 269 231 206 186 150 124 71  | 490 137 37 383 300 160 384 457 133 222 59  | 308 68 359 102  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 322
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+500 490 489 465 455 445 412 404 368 349 348 342 323 302 300 269  | 222 206 194 173 150 69 63 39 37 408 383 137 23 266 248 221  | 215 133 71 440 428 384 381 186 475 413 124  | 466 102 19 184  | 370 460  | 107  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 69166
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 2
+22 28 700 32
+
+num blocks: 1400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+678 667 649 636 612 608 584 579 576 562 513 511 373 351 326 325 323 317 295 292  | 212 193 122 76 54 495 468 345 149 119 106 387 115 397 189  | 118 393 581  | 15 484 290 190  | 658 676  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 1821
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ | 920  | 822 842  | 774  |  |  | 536  | 528  |  |  | 432  | 313  |  |  |  |  |  | 280  | 139  |  |  |  | 350  | 673  | 733  |  | 155  |  | 457  |  |  |  | 
+ -------- Results --------- 
+15 0 444
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+195 186 179 170 163 159 136 133 114 99  | 83 46 138 112 98 94 88 79 76 59 58 56  | 30 24 17 92 52 38 37 33 26 23 12  | 10 4 168 15 196 165 131 129 105 177 141 169  | 135 161 57 144 73 51 182 149 74  | 167 75 19 174 160 86  |  | 
+ -------- Results --------- 
+60 0 147
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+199 195 189 188 111 94 148  | 131 126 117 102 89 87 74 132 119 113  | 49 40 105 101 47 44 37 177  | 68 197 142 78 34 198 147 143 120 20  | 50 27 159 80  | 60 100 14  | 67 8  | 
+ -------- Results --------- 
+44 0 177
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+386 349  | 319 301 298 260 188  | 187 164  | 201 125 234 229  | 112 95 82 76 46 138  | 42  | 177 10  | 330  | 27 360 216 126 339  | 78 142 74 362 129  | 206 300  | 338 215 270 145  | 25  | 
+ -------- Results --------- 
+40 0 179
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+364 325  | 341 347  | 297 228 175  | 196 79  | 119 49  | 46 7 44  | 23 386  | 106 250 176 4  | 168 29 385 162  | 227 37  |  | 372 361  | 202 375  | 
+ -------- Results --------- 
+30 0 180
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+371 360 334  | 314 355 362  |  |  | 201  | 113 59 97 20  | 33 368  |  | 350 263 217  | 227 117  | 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 258
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+193 190 189 185 160 159 150 143 136 124 107 102 98 93 63 59 57 40 26  | 20 110 90 74 94 166 172  | 198 111 119 45 82  | 35 23 13 50 14 120 104  | 132  | 66 169 69  |  | 
+ -------- Results --------- 
+42 0 60539
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+273 248 142  | 183 300 120 304  | 343  | 64  | 134  | 129  | 318  |  |  |  | 286  |  |  | 
+ -------- Results --------- 
+13 0 319
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+44 72 84 148 330  | 303 293  | 29 59 62 349 252  | 129 275  | 36  |  |  | 169 14  |  | 342 79  |  | 163  | 262  | 
+ -------- Results --------- 
+21 0 97028
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+387 378 377 376 367 332 317  | 312 305 304 294 225 354 353  | 257 254 246 236 229 204 203 107  | 94 51 357 341 331 269 186 179 156 153 143  | 140 138 137 130 83 55 233 206  | 80 75 30 23 19 16 13 8  | 214 135 132 108 161 379 278 315  | 283 53 129 62 343 245 223 189 67  | 311 210 87 85 34 389 371  | 286 111 326 290 275 268 289 175  | 276 249 74 375 142 196 182 273  | 400 287 195 288 252 11 247 35  | 234 147 127  | 
+ -------- Results --------- 
+100 0 177
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+997 993 962 900 864 862 839 824 819 801 800 798 782 639 636 608 549 537 495 492 489  | 322 297 226 171 155 122 653 640 562 298 227 671 186 961  | 75 630 179 38 927 623 84  | 370 271  | 253  |  | 260  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 70926
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+500 490 489 465 455 445 412 404 368 349 348 342 323 302 300 269  | 222 206 194 173 150 69 63 39 37 408 383 137 23 266 248 221  | 215 133 71 440 428 384 381 186 475 413 124  | 466 102 19 184  | 370 460  | 107  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 69168
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+92  |  | 178  | 102 135 93 90  | 252 221  | 73  | 348 260  | 68 380  | 142 223 186 262 18  | 20 150 388 234  | 311 207 134 39 365  | 276 304 85 108  |  | 
+ -------- Results --------- 
+31 0 65522
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+135 90  | 85  |  | 262  | 207 186  | 380 304  | 260 150  | 178 92  | 276 311 73 348 108  | 221 68 93 18 20 365  | 234 134 142 39  |  | 252 388  | 
+ -------- Results --------- 
+29 0 119762
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+276  | 92 304 186  |  | 380  |  |  | 68 20 252  | 142 39 260 134 234 348  | 311 150 207 178 221  | 135 108  | 262 85 90  | 93 388 18  |  | 
+ -------- Results --------- 
+27 0 310283
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 2
+25 0 800 32
+
+num blocks: 1600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ |  |  |  |  |  | 511  | 154 157 294  | 135  | 681  |  | 687  | 161 561  |  |  |  | 362 624  | 112  | 8  | 17  | 324 343  | 270 714  | 389 666 495 509 396 394  | 247  | 334  | 
+ -------- Results --------- 
+26 0 742226
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+39 32 37 100  | 65  | 167  | 109  |  |  |  | 
+ -------- Results --------- 
+7 0 140
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+88 131  | 90  | 73 48  | 195  | 67 147  | 83  |  | 
+ -------- Results --------- 
+9 0 141
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+72 58  | 179 49  | 191 104 110  | 97  | 62 151  | 160  |  | 
+ -------- Results --------- 
+11 0 142
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+16 83 7 162 133  | 139 142 166 75  | 134 4  |  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 140
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+40 77 101 2 110  | 166 180 46 87 26 69  | 195  | 170 155  | 188  | 165 171  | 68  | 
+ -------- Results --------- 
+18 0 479
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_8.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+166 17 2 79 192 23  | 13 106 163 128 142 169  | 120 64 94 65  | 122 154 35 62 189  | 28  | 102  | 84  | 
+ -------- Results --------- 
+24 0 8879
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_9.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+1 197 16 32 110 198 107  | 40 52 87 92 129 177 193 83 111  | 73 85 122 164 7 22 48  | 190 63 90 139 145 152 171  | 56 188 143 17  | 39 102 199 146 161  |  | 
+ -------- Results --------- 
+39 0 656193
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../300_5.txt
+Num Devices: 2
+10 12 300 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+195 92 29  | 258 127 163  | 169  | 181  | 76 178  |  |  | 246  | 242  |  | 
+ -------- Results --------- 
+12 0 160
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../400_5.txt
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+279  | 202 28  | 354 41 105  | 269 73  | 85  |  |  |  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 326
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../500_5.txt
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+159 319  | 95 109  | 478  |  | 154 53 126  |  |  | 305  | 368  |  |  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 861
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../600_5.txt
+Num Devices: 2
+19 24 600 32
+
+num blocks: 1200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+CUDA SOLUTION FINAL: 
+286 535  | 521 329  |  | 471  |  | 399  |  | 225 3  | 271  |  | 600 262  |  |  | 310  | 149  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 1985
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../700_5.txt
+Num Devices: 2
+22 28 700 32
+
+num blocks: 1400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+602 94 573  | 565 20  | 6  | 333  | 397  | 148 306 24  |  |  |  | 76  |  |  |  | 312  |  |  |  |  |  |  |  | 294  | 
+ -------- Results --------- 
+14 0 5244
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../800_5.txt
+Num Devices: 2
+25 0 800 32
+
+num blocks: 1600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+152  | 12  |  |  | 154  | 795 623 124  |  |  | 546  |  | 322  |  |  | 102 211  | 467  |  | 256  | 25  | 732  | 198  |  |  |  |  |  | 
+ -------- Results --------- 
+15 0 8258
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../900_5.txt
+Num Devices: 2
+29 4 900 32
+
+num blocks: 1800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ | 59  | 500 872  |  | 61  | 314  | 416  |  | 673  |  |  |  |  |  |  |  | 159  | 507 206  |  |  | 775 126  |  |  |  |  |  | 400 797  |  |  | 
+ -------- Results --------- 
+14 0 30019
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../1000_5.txt
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+471  |  |  |  |  |  | 182  | 327  | 383  |  |  | 770  |  | 56 287  |  |  | 911 347  | 766  | 68  | 711  | 821  |  |  |  |  |  |  | 578 921  |  |  |  |  | 
+ -------- Results --------- 
+15 0 41247
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+108 20 73 18 93  | 178 90 94 142  | 135 186 87  | 81 150  | 92 39  | 68 102 85 136  | 134  | 
+ -------- Results --------- 
+21 0 1098
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+242 154 247 19  | 202  | 389  | 267 7 197  | 8 186  | 241 334 353 394 340  | 211 245 380 393 294 17  |  | 135 324 157  | 112 362  |  | 270 147 343 396 266  | 161  | 
+ -------- Results --------- 
+33 0 27913
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 2
+12 26 378 32
+
+num blocks: 756
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+28 33 36 39 42 45 47 51 53 55  | 60 63 66 67 70 73 76 80 84 86  | 90 93 94 97 102 105 108 111 114 117 120  | 123 126 129 132 135 138 141 144 147 150 153  | 156 159 162 165 168 171 174 177 180 183  | 186 189 192 195 198 201 204 207 210 213 216  | 219 222 225 228 231 234 237 240 243 245 249  | 252 253 256 261 264 267 270 272 276 279  | 282 285 288 291 294 297 300 303 306 309 312  | 315 317 321 324 325 328 333 336 339 342 344  | 348 351 353 357 360 363 366 369 372 375 378  | 2 3 4 7 14 15 17 18 19  | 
+ -------- Results --------- 
+126 0 2627
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ | 608  | 927 525  | 785  | 719  | 692  |  |  | 157  | 904  |  |  | 686  |  |  | 741  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 462
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 2
+10 12 300 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+76 255 239 56 49 4 190 219 40 205 149 247 33 290 48 299 139 298  | 89 19 235 273 24 226 176  | 252 174 21 293 98 160 245  | 199 166 221 20  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 2130
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+404 480 381 302 124 489 412 238 150 206 269 37 222 300 445 308  | 342 432 71 231 63 457 500 368 59 349 383  | 186 348 133 384 68 425  | 102 137 160  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 560
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+266 404 124 71 342 302 412 221 69 222 206 489 500 215 445 150 133  | 381 440 490 37 39 63 173 248 383 455 370 194 269 300 349  | 408 465 384 19 23 460 102 348  | 368 428 107 186 475  | 323 137 413  | 184  | 466  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 141386
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 2
+22 28 700 32
+
+num blocks: 1400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+115 576 678 76 579 608 212 106 292 437 562 317 323 495 373 387 350 122 325 612  | 351 295 345 513 149 326 152 649 297 54  | 397 118 189 193 667 15 379 468 584  | 73 658 9 31  | 581  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 4936
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ |  |  | 842 313  | 432 822  |  |  |  |  |  |  |  | 528  |  | 536 774  | 920  |  | 280  | 139  |  |  |  |  | 350 673 733  |  |  | 155  |  | 457  |  |  |  | 
+ -------- Results --------- 
+15 0 435
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+179 4 168 58 76 114 159  | 15 105 112 165 79 83 129 131 133 196  | 24 33 59 99 141 144 161 177 57 169 12 26  | 30 52 56 135 136 46 98 17 19 23 38  | 51 73 74 88 167 195 10 75 92 149 163  | 182 37 94 170 86 160 174 138 186  |  | 
+ -------- Results --------- 
+60 0 143
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+68 177 126 197 34 78 117 119 142  | 49 74 101 111 20 47  | 198 27 50 94 120 143 147  | 159 37 80 131 148 195  | 100 105 189 188 40 87 89  | 113 132 44 60 102 199 14 67  | 8  | 
+ -------- Results --------- 
+44 0 12111
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+95 76 177  | 10 349  | 164 27  | 201 298 229  | 319 330 360 74 126 138 234  | 260 78 129 142 216  | 339 82 188  | 362 386 42  | 206  | 338 112  | 187 215 300 46  | 270 25 125 145 301  |  | 
+ -------- Results --------- 
+40 0 218
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+347 44 49  | 386  | 341 119 23 176  | 4 250 297  | 106  | 364 29 168 175  | 162 385 37  | 227  | 325  | 228 196 7  | 79 372  | 361 46  | 202 375  | 
+ -------- Results --------- 
+30 0 592
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+314 334  | 113 59  | 20 201  | 362 97 371  |  | 360 368 33  |  | 217 355  | 263 350  | 227 117  | 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 924
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+110 57 143 93 150 63 107 40 59 74  | 120 160 45 90 102 185 189 15 35 82  | 166 190 198 14 26 98 111 124  | 50 172 193 23 132 136 159  | 20 94 119 66 104  | 69 169  |  | 
+ -------- Results --------- 
+42 0 113289
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+343 248 350  |  | 304 3  | 120 147 265 273 307  |  |  | 286  | 261  |  |  | 210  |  |  | 
+ -------- Results --------- 
+13 0 321
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+278 33 373 24 26  | 369 97  | 62  | 267 15 63 183  | 299 46 40 198  |  |  | 4  | 160 305 137  |  |  |  | 150  | 
+ -------- Results --------- 
+21 0 108622
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+CUDA SOLUTION FINAL: 
+214 132 108 135 206 161  | 353 138 246 283 8  | 53 62 80 83 179 278 331 19 30 75 94 137  | 236 315 367 379 23 51 67 87 129 189 245  | 378 111 223 332  | 343 389 13 34 203 210 269 294 311  | 85 107 275 289 371  | 55 142 153 156 175 186 204 249 268 276 290 304 317 326 341 376 387 16  | 229 286 354 182  | 196 225 254 312 140 305  | 375 74 233 273 377 11 143 257 357 400  | 35 252 288 130 195 247 287 234  | 147 127  | 
+ -------- Results --------- 
+100 0 6614
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+378 464 798 226 489 993 819 65 801 562 862 900 492 495 608 636 283 639  | 800 997 497 824 782 671 322 716 171 961  | 839 537 640 155 624 75 927 549 370 297  | 962 630  | 784 848 298  | 97 271  |  |  |  |  |  |  | 324  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 147640
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+266 404 124 71 342 302 412 221 69 222 206 489 500 215 445 150 133  | 381 440 490 37 39 63 173 248 383 455 370 194 269 300 349  | 408 465 384 19 23 460 102 348  | 368 428 107 186 475  | 323 137 413  | 184  | 466  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 141366
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+90 92 102 252  | 260  | 68 178 221  | 93 142 186  | 135  | 380 73  | 18  | 262 388 207 348  | 234 20 223  | 85 150 39  | 365 134 311  | 276 304 108  |  | 
+ -------- Results --------- 
+31 0 117966
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+135 85 262  | 207 186 90  | 311  | 260  | 73 304 380 150 221 276  | 20  | 68 18  | 108 134 178 365  | 93  | 348 142  | 39 234  | 92  | 252 388  | 
+ -------- Results --------- 
+29 0 205337
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+380  | 186  | 304 90 252  | 276 348 108  | 39 260 178  | 142 234 311  | 135 221 20 68  | 150  | 134 92  | 207 85 93  | 388  | 262 18  |  | 
+ -------- Results --------- 
+27 0 440995
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 2
+25 0 800 32
+
+num blocks: 1600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ | 135  | 294 561  |  | 8  |  | 362 687  | 511  | 161  | 154  |  |  |  |  | 112  | 157 17  | 681  | 270 389  |  | 624 509  | 343 714 396  | 324 394  | 495 666  | 247  | 334  | 
+ -------- Results --------- 
+26 0 1411774
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+190 11 176  | 123 76  | 29  | 189  |  |  |  | 
+ -------- Results --------- 
+7 0 150
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+88 131  | 90  | 73 48  | 195 67  | 147  | 83  |  | 
+ -------- Results --------- 
+9 0 139
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+11 52 83 41  | 139 137  | 152  | 132 19 177 117  |  |  |  | 
+ -------- Results --------- 
+11 0 141
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+16 83 7 162 133 142  | 139 166 75  | 134 4  |  | 200  | 175 189  |  | 
+ -------- Results --------- 
+14 0 145
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+40 77 101 110 2  | 180 166 46 87 69  | 26 195 170  | 155  | 188  | 165 171  | 68  | 
+ -------- Results --------- 
+18 0 440
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_8.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+181 143 184 140 90 45 25 185  | 124 74 97 38 142 158  | 60 190 58 87  | 193 188 99 131  | 129  | 34  |  | 
+ -------- Results --------- 
+24 0 9520
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_9.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+1 200 32 110 186 82 189 174 25 49 114 180 34  | 92 167 40 130 129 140 184  | 164 85 65 118 22 8 126  | 69 70 75 44  | 15 71 125 137 39  | 38 199 163  |  | 
+ -------- Results --------- 
+39 0 418900
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../300_5.txt
+Num Devices: 2
+10 12 300 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+195 92 21 29 258  | 127 163  | 169  | 181  | 178 76  |  |  |  | 242  |  | 
+ -------- Results --------- 
+12 0 170
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../400_5.txt
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+348  | 48 83  | 92  | 355  | 15 308 24  | 199  |  | 251  | 281  | 377  |  | 185  |  | 
+ -------- Results --------- 
+13 0 318
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../500_5.txt
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+117 375  | 495  |  |  | 191  | 185 212 203  |  | 491 254  |  |  | 415  |  |  |  | 121 102  | 365  | 
+ -------- Results --------- 
+13 0 875
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../600_5.txt
+Num Devices: 2
+19 24 600 32
+
+num blocks: 1200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+286 535  | 521 329  |  | 471  |  | 399  |  | 225  | 3 271  | 600  | 262  |  |  | 310  | 149  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 2001
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../700_5.txt
+Num Devices: 2
+22 28 700 32
+
+num blocks: 1400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+602 94 614 573  | 565 20  | 6  |  | 333 397  | 148 306  | 24  |  |  | 76  |  |  |  |  |  |  |  |  |  |  |  | 294  | 
+ -------- Results --------- 
+14 0 4962
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../800_5.txt
+Num Devices: 2
+25 0 800 32
+
+num blocks: 1600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+152  | 12  |  |  | 795 154  | 623 124  |  |  | 546  |  | 322  |  |  | 211  | 102 467  |  | 256  | 25  | 732  | 198  |  |  |  |  |  | 
+ -------- Results --------- 
+15 0 9199
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../900_5.txt
+Num Devices: 2
+29 4 900 32
+
+num blocks: 1800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+73  | 536  |  | 103 568  | 366 278  |  |  |  |  | 108  | 683  |  |  |  |  |  |  | 728 100  |  | 412  |  |  |  | 176  | 18  | 395  |  |  |  | 
+ -------- Results --------- 
+14 0 31084
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../1000_5.txt
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+342  | 664 420  |  | 746  |  | 988  | 97  | 359  |  |  |  | 916  |  | 223  |  | 162  | 778  |  |  |  |  |  | 901 952  |  |  |  | 656  |  | 229  |  |  |  | 
+ -------- Results --------- 
+15 0 40717
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 
+1
+CUDA SOLUTION FINAL: 
+108 20 73 178 93  | 18 90 94 142  | 186 135 87  | 81 150  | 92  | 39 68 102 85 136  | 134  | 
+ -------- Results --------- 
+21 0 1040
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+242 154 247 19  | 202  | 389  | 267 7  | 197 8 186  | 334 394 241 353 340  | 245 380 393 211 294  | 17  | 135 324 157  | 112 362  |  | 270 147 343 396 266  | 161  | 
+ -------- Results --------- 
+33 0 47762
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 2
+12 26 378 32
+
+num blocks: 756
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+30 33 36 39 42 45 48 51 54 57  | 60 63 66 67 72 75 78 81 82 87 88  | 92 96 99 100 103 108 111 114 117 120  | 123 126 129 132 135 137 139 144 147 150 153  | 156 159 162 165 168 171 173 175 180 182 185  | 189 190 195 196 201 203 206 208 212 216  | 219 222 225 228 231 234 237 240 243 246 249  | 252 255 258 260 262 266 268 273 275 278 280  | 284 288 289 292 297 299 303 305 309 311  | 314 318 321 324 327 330 332 334 338 340 345  | 346 349 354 356 359 363 364 367 372 375 378 1  | 10 14 15 16 20 21 23 24  | 
+ -------- Results --------- 
+126 0 2640
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+155  | 839  | 669  | 872 20 705  |  |  | 152  | 638  |  |  |  |  |  |  |  |  |  |  | 581  |  |  |  | 64  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 456
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 2
+10 12 300 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+76 255 239 56 49 190 219 4 205 40 149 247 290 33 48 299 139 298 89  | 19 235 273 226 24 176  | 252 174 21 293 160 98 245  | 199 221 166 20  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 2373
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+404 480 381 302 124 489 412 238 150 206 269 300 37 222 445 308  | 342 432 71 231 63 457 490 368 59 349 383  | 186 348 133 384 68 425  | 102 137 160  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 715
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+266 480 404 342 302 412 221 69 222 206 489 500 215 445 150  | 381 231 490 440 455 383 63 39 37 248 173 370 349 269 300 194 282  | 408 465 384 320 19 23 460 102 348 368  | 160 428 186 475 123  | 323 137  | 184  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 153533
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 2
+22 28 700 32
+
+num blocks: 1400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+115 576 678 608 579 76 212 106 562 437 292 317 495 323 373 387 350 325 122 612  | 351 295 345 513 149 326 152 649 297 54 397  | 118 189 193 667 379 15 468 584  | 73 658 31 9  | 581  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 4909
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ |  |  | 842  | 313 432  | 822  |  |  |  |  |  |  | 528  |  | 774 536  | 920  |  | 280  | 139  |  |  |  |  | 350 673 733  |  |  | 155  |  |  | 457  |  |  | 
+ -------- Results --------- 
+15 0 436
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+179 4 168 159 114 76 58  | 112 105 15 165 83 133 79 129 131 196  | 33 99 59 24 141 177 161 144 169 57 136 30 52  | 26 12 56 135 46 98 38 17 195 88 23  | 73 51 167 19 74 163 10 92 182 149  | 75 170 94 37 174 160 86 186 138  |  | 
+ -------- Results --------- 
+60 0 146
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+177 68 126 197 117 142 119 34 78  | 101 49 74 111 47  | 20 198 27 147 120 50 143 159  | 94 148 37 131 195 80  | 189 105 100 188 40 87 89 113  | 132 44 102 60 199 14  | 67 8  | 
+ -------- Results --------- 
+44 0 8428
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+95 76 177  | 10 349  | 164 27  | 201 298 229  | 330 360 319 126 138  | 260 234 74 339 216 142 78  | 129 82 362 188  | 386 42  | 206  | 338 187  | 112 215 300  | 46 270 125 25 145 301  |  | 
+ -------- Results --------- 
+40 0 221
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+347 44  | 49 386 341  | 119 23 176  | 4 297 250  | 106 364  | 175 168  | 29 385 162  | 37 227 325  |  | 228 196 7  | 79 372  | 361 46  | 202 375  | 
+ -------- Results --------- 
+30 0 644
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 1
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+314 334  | 113  | 59 20 201  | 362 371 97  |  | 360 368  | 33  | 355 217  | 350 263  | 227  | 117 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 1343
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 2
+7 8 200 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+110 143 57 93 150 107 63 74 160 40 18  | 59 120 189 45 90 185 190 15 166  | 82 35 198 124 111 26 98 186 14  | 193 172 159 23 132 136  | 94 119 20 66 104  | 169 69  |  | 
+ -------- Results --------- 
+42 0 91430
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+142 183 343 300 248  | 129 304  | 318  | 273 120  |  | 134  | 64 286  |  |  |  |  |  |  | 
+ -------- Results --------- 
+13 0 301
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+173 84 70 114 292  | 351 121 350  |  |  | 180  | 198 179  | 14 378  | 208  | 55 68 132  | 287  | 238 166  | 286  |  | 
+ -------- Results --------- 
+21 0 89024
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+214 132 108 135 206 161 353  | 283 246 138 278  | 83 179 8 80 53 62 331 379 94 367 75 137  | 315 236 19 30 245 189 129 67 87  | 23 378 51 343 389 223 332  | 111 210 34 311 203 269 294 13  | 85 275 107 289 371 387  | 276 55 304 156 142 249 326 153 204 268 376 290 317 341 175 186  | 16 354 286 229 225 182  | 196 254 312 140 305  | 375 74 273 233 377 357 143 400 11 257  | 288 252 35 247 195 130 287  | 234 147 127  | 
+ -------- Results --------- 
+100 0 6059
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 2
+32 8 1000 32
+
+num blocks: 2000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+464 798 489 993 819 777 65 801 562 862 900 653 623 492 608 636 283 639 122 800  | 997 824 179 782 864 84 671 322 961 330  | 8 839 537 253 227 640 155 549 370 297  | 20 630  | 600 298 284  | 271  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 172877
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 2
+16 20 500 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+266 480 404 342 302 412 221 69 222 206 489 500 215 445 150  | 381 231 490 440 455 383 63 39 37 248 173 370 349 269 300 194 282  | 408 465 384 320 19 23 460 102 348 368  | 160 428 186 475 123  | 323 137  | 184  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 153533
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+90 92 102  | 252 260  | 178 68 221  | 93 142 186  | 135  | 380 73  | 18  | 388 262 348  | 207 234  | 20 223 150 85  | 365 39 311 134  | 276 304 108  |  | 
+ -------- Results --------- 
+31 0 127041
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+135 85 262  | 207 186 90  | 311  | 260  | 304 380 73 221 150 276  |  | 20 68  | 18 178 108 365 134  |  | 93 348 142  | 234 39  | 92  | 252 388  | 
+ -------- Results --------- 
+29 0 140933
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 2
+13 16 400 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+380  | 186  | 304 252 90  | 276 348  | 108 39 260  | 178 311 234  | 142 135 221 68 20  | 150  | 134 92  | 207 93  | 85 388  | 262 18  |  | 
+ -------- Results --------- 
+27 0 263656
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 2
+25 0 800 32
+
+num blocks: 1600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+CUDA SOLUTION FINAL: 
+ |  | 135 294 561  |  |  | 8  | 687  | 362 511  | 161  | 154  |  |  |  |  |  | 112 157  | 17 681  |  | 270 389  | 624  | 509 714 343 396  | 324  | 394 666 495  | 247  | 334  | 
+ -------- Results --------- 
+26 0 979567
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 85
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 77
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 89
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 115
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 507
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7176
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../200_9.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+186 177 174 169 167 165 164 153 147 112 111 65 34 26  | 28 25 22 16 200 183  | 189 150 140 110 68 66 49 47 33 168  | 115 79  | 126 75 72 46 71  | 194 154  |  | 
+ -------- Results --------- 
+39 0 374523
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../300_5.txt
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ |  | 214 87 281 293 297  | 124 127  | 128 289  | 36  | 107  | 180  |  |  | 
+ -------- Results --------- 
+12 0 131
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../400_5.txt
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+202 105  | 279 354  | 85  | 28  |  |  | 269 41  | 73  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 314
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../500_5.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+368  | 319 126  |  | 159 154  | 478 95  |  | 109  |  |  | 53  | 305  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 794
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../600_5.txt
+Num Devices: 1
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+535 286 399  | 329  |  | 521  |  | 3  | 149 600  | 471  | 271  | 225 262  |  |  |  | 310  |  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 2189
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../700_5.txt
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+614  | 132 438  | 354  |  |  | 391  |  | 89 477  | 561  | 621  |  |  |  |  | 153  | 618  |  | 638  | 264  | 662  |  |  | 
+ -------- Results --------- 
+14 0 4792
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../800_5.txt
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ |  | 12  | 152  |  | 795  | 154  | 124  |  | 322 732  | 546  |  |  | 623 588  |  |  |  | 102  | 211 25 198  |  | 256  |  |  |  |  | 
+ -------- Results --------- 
+15 0 8374
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../900_5.txt
+Num Devices: 1
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+749 31  |  |  | 184 406  | 787 848  |  | 409  | 282  |  |  |  |  |  |  |  |  | 431  | 358  | 112  |  |  | 611  |  |  |  |  | 58 401  |  |  | 
+ -------- Results --------- 
+14 0 30068
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../1000_5.txt
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ | 368  |  | 445 420  |  | 129  | 270  |  |  |  | 883  |  |  | 601 544  | 705  | 294  |  |  | 669  | 616  |  |  |  |  | 980  |  |  |  |  | 296 830  |  |  | 
+ -------- Results --------- 
+15 0 40858
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+180 175 83 4 100 32 48 103  | 144 138 137 107 132 199 122 120 191 26 104  | 46  |  |  | 41  |  | 
+ -------- Results --------- 
+21 0 842
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+19  | 7 340 247 154 8 242  |  | 389 324  | 245  |  | 211 294  | 394 202 380 353 186  | 197 267 135 241 17 334  | 393  | 266 396 112 157  | 362 270 343 147  | 161  | 
+ -------- Results --------- 
+33 0 30112
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 1
+12 26 378 32
+
+num blocks: 378
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+366 363 333 327 318 297 291  | 282 240 237 225 219 213  | 162 159 141 96 93  | 81 75 69 66 54 51 33 378 359 350  | 323 314 287 275 272 269 266 260 254  | 248 233 230 206 197 194 176 170  | 134 125 122 83 77 62  | 373 370 367 355 352 346 343 340 337 334 328 319  | 310 307 304 301 298 292 283 277 262 256 250 244 241 226 220  | 214 208 202 199 190 187 184 181 178 172 166 163 154 151 148 145 142 136 130 127  | 118 115 112 109 106 103 100 97 88 85 70 58 55 46 43 40 37 34 28  | 21 14 13 11 10 9 5 4 3  | 
+ -------- Results --------- 
+126 0 6294
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+322 297  | 824  |  | 157  |  |  | 370  | 904  | 988 280  |  |  |  | 814  |  |  |  |  |  |  |  |  |  | 775  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 357
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+299 298 290 273 255 252 239 221 219 205 199 190 166 160 149 139 98 89 75 49 40 33 21 20 19 4  | 247 174 76 48 226 56 235  | 24 245  | 176  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 1007
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+489 480 455 445 432 425 412 404 381 368 349 348 342 302 269 231 206 186 150 124 71  | 490 137 37 383 300 160 384 457 133 222 59  | 308 68 359 102  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 296
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+500 490 489 465 455 445 412 404 368 349 348 342 323 302 300 269  | 222 206 194 173 150 69 63 39 37 408 383 137 23 266 248 221  | 215 133 71 440 428 384 381 186 475 413 124  | 466 102 19 184  | 370 460  | 107  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 69021
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+678 667 649 636 612 608 584 579 576 562 513 511 373 351 326 325 323 317 295 292  | 212 193 122 76 54 495 468 345 149 119 106 387 115 397 189  | 118 393 581  | 15 484 290 190  | 658 676  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 1755
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ | 920  | 822 842  | 774  |  |  | 536  | 528  |  |  | 432  | 313  |  |  |  |  |  | 280  | 139  |  |  |  | 350  | 673  | 733  |  | 155  |  | 457  |  |  |  | 
+ -------- Results --------- 
+15 0 311
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+195 186 179 170 163 159 136 133 114 99  | 83 46 138 112 98 94 88 79 76 59 58 56  | 30 24 17 92 52 38 37 33 26 23 12  | 10 4 168 15 196 165 131 129 105 177 141 169  | 135 161 57 144 73 51 182 149 74  | 167 75 19 174 160 86  |  | 
+ -------- Results --------- 
+60 0 86
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+199 195 189 188 111 94 148  | 131 126 117 102 89 87 74 132 119 113  | 49 40 105 101 47 44 37 177  | 68 197 142 78 34 198 147 143 120 20  | 50 27 159 80  | 60 100 14  | 67 8  | 
+ -------- Results --------- 
+44 0 191
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+386 349  | 319 301 298 260 188  | 187 164  | 201 125 234 229  | 112 95 82 76 46 138  | 42  | 177 10  | 330  | 27 360 216 126 339  | 78 142 74 362 129  | 206 300  | 338 215 270 145  | 25  | 
+ -------- Results --------- 
+40 0 130
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+364 325  | 341 347  | 297 228 175  | 196 79  | 119 49  | 46 7 44  | 23 386  | 106 250 176 4  | 168 29 385 162  | 227 37  |  | 372 361  | 202 375  | 
+ -------- Results --------- 
+30 0 150
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+371 360 334  | 314 355 362  |  |  | 201  | 113 59 97 20  | 33 368  |  | 350 263 217  | 227 117  | 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 238
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+193 190 189 185 160 159 150 143 136 124 107 102 98 93 63 59 57 40 26  | 20 110 90 74 94 166 172  | 198 111 119 45 82  | 35 23 13 50 14 120 104  | 132  | 66 169 69  |  | 
+ -------- Results --------- 
+42 0 59694
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+273 248 142  | 183 300 120 304  | 343  | 64  | 134  | 129  | 318  |  |  |  | 286  |  |  | 
+ -------- Results --------- 
+13 0 300
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+44 72 84 148 330  | 303 293  | 29 59 62 349 252  | 129 275  | 36  |  |  | 169 14  |  | 342 79  |  | 163  | 262  | 
+ -------- Results --------- 
+21 0 96878
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+387 378 377 376 367 332 317  | 312 305 304 294 225 354 353  | 257 254 246 236 229 204 203 107  | 94 51 357 341 331 269 186 179 156 153 143  | 140 138 137 130 83 55 233 206  | 80 75 30 23 19 16 13 8  | 214 135 132 108 161 379 278 315  | 283 53 129 62 343 245 223 189 67  | 311 210 87 85 34 389 371  | 286 111 326 290 275 268 289 175  | 276 249 74 375 142 196 182 273  | 400 287 195 288 252 11 247 35  | 234 147 127  | 
+ -------- Results --------- 
+100 0 156
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+997 993 962 900 864 862 839 824 819 801 800 798 782 639 636 608 549 537 495 492 489  | 322 297 226 171 155 122 653 640 562 298 227 671 186 961  | 75 630 179 38 927 623 84  | 370 271  | 253  |  | 260  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 70261
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+500 490 489 465 455 445 412 404 368 349 348 342 323 302 300 269  | 222 206 194 173 150 69 63 39 37 408 383 137 23 266 248 221  | 215 133 71 440 428 384 381 186 475 413 124  | 466 102 19 184  | 370 460  | 107  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 69042
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+92  |  | 178  | 102 135 93 90  | 252 221  | 73  | 348 260  | 68 380  | 142 223 186 262 18  | 20 150 388 234  | 311 207 134 39 365  | 276 304 85 108  |  | 
+ -------- Results --------- 
+31 0 64899
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+135 90  | 85  |  | 262  | 207 186  | 380 304  | 260 150  | 178 92  | 276 311 73 348 108  | 221 68 93 18 20 365  | 234 134 142 39  |  | 252 388  | 
+ -------- Results --------- 
+29 0 225481
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+276  | 92 304 186  |  | 380  |  |  | 68 20 252  | 142 39 260 134 234 348  | 311 150 207 178 221  | 135 108  | 262 85 90  | 93 388 18  |  | 
+ -------- Results --------- 
+27 0 309509
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC2 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ |  |  |  |  |  | 511  | 154 157 294  | 135  | 681  |  | 687  | 161 561  |  |  |  | 362 624  | 112  | 8  | 17  | 324 343  | 270 714  | 389 666 495 509 396 394  | 247  | 334  | 
+ -------- Results --------- 
+26 0 975774
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+39 32 37 100  | 65  | 167  | 109  |  |  |  | 
+ -------- Results --------- 
+7 0 77
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+88 131  | 90  | 73 48  | 195  | 67 147  | 83  |  | 
+ -------- Results --------- 
+9 0 80
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+72 58  | 179 49  | 191 104 110  | 97  | 62 151  | 160  |  | 
+ -------- Results --------- 
+11 0 85
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+16 83 7 162 133  | 139 142 166 75  | 134 4  |  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 122
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+40 77 101 2 110  | 166 180 46 87 26 69  | 195  | 170 155  | 188  | 165 171  | 68  | 
+ -------- Results --------- 
+18 0 474
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+166 17 2 79 192 23  | 13 106 163 128 142 169  | 120 64 94 65  | 122 154 35 62 189  | 28  | 102  | 84  | 
+ -------- Results --------- 
+24 0 8875
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../200_9.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+1 197 16 32 110 198 107  | 40 52 87 92 129 177 193 83 111  | 73 85 122 164 7 22 48  | 190 63 90 139 145 152 171  | 56 188 143 17  | 39 102 199 146 161  |  | 
+ -------- Results --------- 
+39 0 664878
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../300_5.txt
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+195 92 29  | 258 127 163  | 169  | 181  | 76 178  |  |  | 246  | 242  |  | 
+ -------- Results --------- 
+12 0 133
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../400_5.txt
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+279  | 202 28  | 354 41 105  | 269 73  | 85  |  |  |  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 308
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../500_5.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+159 319  | 95 109  | 478  |  | 154 53 126  |  |  | 305  | 368  |  |  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 827
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../600_5.txt
+Num Devices: 1
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+286 535  | 521 329  |  | 471  |  | 399  |  | 225 3  | 271  |  | 600 262  |  |  | 310  | 149  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 1971
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../700_5.txt
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+247  |  | 555  |  | 277  | 584 439 476  | 619  | 50  | 414  | 319  | 287  | 697  |  |  |  | 171  |  |  |  | 699  |  |  | 
+ -------- Results --------- 
+14 0 5270
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../800_5.txt
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+152  | 12  |  |  | 154  | 795 623 124  |  |  | 546  |  | 322  |  |  | 102 211  | 467  |  | 256  | 25  | 732  | 198  |  |  |  |  |  | 
+ -------- Results --------- 
+15 0 8262
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../900_5.txt
+Num Devices: 1
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ | 59  | 500 872  |  | 61  | 314  | 416  |  | 673  |  |  |  |  |  |  |  | 159  | 507 206  |  |  | 775 126  |  |  |  |  |  | 400 797  |  |  | 
+ -------- Results --------- 
+14 0 30098
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../1000_5.txt
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+471  |  |  |  |  |  | 182  | 327  | 383  |  |  | 770  |  | 56 287  |  |  | 911 347  | 766  | 68  | 711  | 821  |  |  |  |  |  |  | 578 921  |  |  |  |  | 
+ -------- Results --------- 
+15 0 40749
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+108 20 73 18 93  | 178 90 94 142  | 135 186 87  | 81 150  | 92 39  | 68 102 85 136  | 134  | 
+ -------- Results --------- 
+21 0 1102
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+242 154 247 19  | 202  | 389  | 267 7 197  | 8 186  | 241 334 353 394 340  | 211 245 380 393 294 17  |  | 135 324 157  | 112 362  |  | 270 147 343 396 266  | 161  | 
+ -------- Results --------- 
+33 0 50370
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 1
+12 26 378 32
+
+num blocks: 378
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+28 33 36 39 42 45 47 51 53 55  | 60 63 66 67 70 73 76 80 84 86  | 90 93 94 97 102 105 108 111 114 117 120  | 123 126 129 132 135 138 141 144 147 150 153  | 156 159 162 165 168 171 174 177 180 183  | 186 189 192 195 198 201 204 207 210 213 216  | 219 222 225 228 231 234 237 240 243 245 249  | 252 253 256 261 264 267 270 272 276 279  | 282 285 288 291 294 297 300 303 306 309 312  | 315 317 321 324 325 328 333 336 339 342 344  | 348 351 353 357 360 363 366 369 372 375 378  | 2 3 4 7 14 15 17 18 19  | 
+ -------- Results --------- 
+126 0 6295
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ | 608  | 927 525  | 785  | 719  | 692  |  |  | 157  | 904  |  |  | 686  |  |  | 741  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 349
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+76 255 239 56 49 4 190 219 40 205 149 247 33 290 48 299 139 298  | 89 19 235 273 24 226 176  | 252 174 21 293 98 160 245  | 199 166 221 20  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 2133
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+404 480 381 302 124 489 412 238 150 206 269 37 222 300 445 308  | 342 432 71 231 63 457 500 368 59 349 383  | 186 348 133 384 68 425  | 102 137 160  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 533
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+266 404 124 71 342 302 412 221 69 222 206 489 500 215 445 150 133  | 381 440 490 37 39 63 173 248 383 455 370 194 269 300 349  | 408 465 384 19 23 460 102 348  | 368 428 107 186 475  | 323 137 413  | 184  | 466  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 141244
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+115 576 678 76 579 608 212 106 292 437 562 317 323 495 373 387 350 122 325 612  | 351 295 345 513 149 326 152 649 297 54  | 397 118 189 193 667 15 379 468 584  | 73 658 9 31  | 581  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 4919
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ |  |  | 842 313  | 432 822  |  |  |  |  |  |  |  | 528  |  | 536 774  | 920  |  | 280  | 139  |  |  |  |  | 350 673 733  |  |  | 155  |  | 457  |  |  |  | 
+ -------- Results --------- 
+15 0 302
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+179 4 168 58 76 114 159  | 15 105 112 165 79 83 129 131 133 196  | 24 33 59 99 141 144 161 177 57 169 12 26  | 30 52 56 135 136 46 98 17 19 23 38  | 51 73 74 88 167 195 10 75 92 149 163  | 182 37 94 170 86 160 174 138 186  |  | 
+ -------- Results --------- 
+60 0 112
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+68 177 126 197 34 78 117 119 142  | 49 74 101 111 20 47  | 198 27 50 94 120 143 147  | 159 37 80 131 148 195  | 100 105 189 188 40 87 89  | 113 132 44 60 102 199 14 67  | 8  | 
+ -------- Results --------- 
+44 0 12164
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+95 76 177  | 10 349  | 164 27  | 201 298 229  | 319 330 360 74 126 138 234  | 260 78 129 142 216  | 339 82 188  | 362 386 42  | 206  | 338 112  | 187 215 300 46  | 270 25 125 145 301  |  | 
+ -------- Results --------- 
+40 0 158
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+347 44 49  | 386  | 341 119 23 176  | 4 250 297  | 106  | 364 29 168 175  | 162 385 37  | 227  | 325  | 228 196 7  | 79 372  | 361 46  | 202 375  | 
+ -------- Results --------- 
+30 0 572
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+314 334  | 113 59  | 20 201  | 362 97 371  |  | 360 368 33  |  | 217 355  | 263 350  | 227 117  | 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 1245
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+110 57 143 93 150 63 107 40 59 74  | 120 160 45 90 102 185 189 15 35 82  | 166 190 198 14 26 98 111 124  | 50 172 193 23 132 136 159  | 20 94 119 66 104  | 69 169  |  | 
+ -------- Results --------- 
+42 0 115026
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+343 248 350  |  | 304 3  | 120 147 265 273 307  |  |  | 286  | 261  |  |  | 210  |  |  | 
+ -------- Results --------- 
+13 0 303
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+221 307 140 214  | 244 97 194 350  | 385  |  |  | 261 49 34  | 271  | 336 69  | 61  | 344 42  |  | 327 50  | 364  | 
+ -------- Results --------- 
+21 0 110131
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+214 132 108 135 206 161  | 353 138 246 283 8  | 53 62 80 83 179 278 331 19 30 75 94 137  | 236 315 367 379 23 51 67 87 129 189 245  | 378 111 223 332  | 343 389 13 34 203 210 269 294 311  | 85 107 275 289 371  | 55 142 153 156 175 186 204 249 268 276 290 304 317 326 341 376 387 16  | 229 286 354 182  | 196 225 254 312 140 305  | 375 74 233 273 377 11 143 257 357 400  | 35 252 288 130 195 247 287 234  | 147 127  | 
+ -------- Results --------- 
+100 0 6632
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+378 464 798 226 489 993 819 65 801 562 862 900 492 495 608 636 283 639  | 800 997 497 824 782 671 322 716 171 961  | 839 537 640 155 624 75 927 549 370 297  | 962 630  | 784 848 298  | 97 271  |  |  |  |  |  |  | 324  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 148717
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+266 404 124 71 342 302 412 221 69 222 206 489 500 215 445 150 133  | 381 440 490 37 39 63 173 248 383 455 370 194 269 300 349  | 408 465 384 19 23 460 102 348  | 368 428 107 186 475  | 323 137 413  | 184  | 466  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 141246
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+90 92 102 252  | 260  | 68 178 221  | 93 142 186  | 135  | 380 73  | 18  | 262 388 207 348  | 234 20 223  | 85 150 39  | 365 134 311  | 276 304 108  |  | 
+ -------- Results --------- 
+31 0 117473
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+135 85 262  | 207 186 90  | 311  | 260  | 73 304 380 150 221 276  | 20  | 68 18  | 108 134 178 365  | 93  | 348 142  | 39 234  | 92  | 252 388  | 
+ -------- Results --------- 
+29 0 204889
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+380  | 186  | 304 90 252  | 276 348 108  | 39 260 178  | 142 234 311  | 135 221 20 68  | 150  | 134 92  | 207 85 93  | 388  | 262 18  |  | 
+ -------- Results --------- 
+27 0 441512
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC1 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ | 135  | 294 561  |  | 8  |  | 362 687  | 511  | 161  | 154  |  |  |  |  | 112  | 157 17  | 681  | 270 389  |  | 624 509  | 343 714 396  | 324 394  | 495 666  | 247  | 334  | 
+ -------- Results --------- 
+26 0 1432223
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+190 11 176  | 123 76  | 29  | 189  |  |  |  | 
+ -------- Results --------- 
+7 0 76
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+88 131  | 90  | 73 48  | 195 67  | 147  | 83  |  | 
+ -------- Results --------- 
+9 0 81
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+11 52 83 41  | 139 137  | 152  | 132 19 177 117  |  |  |  | 
+ -------- Results --------- 
+11 0 84
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+16 83 7 162 133 142  | 139 166 75  | 134 4  |  | 200  | 175 189  |  | 
+ -------- Results --------- 
+14 0 109
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+40 77 101 110 2  | 180 166 46 87 69  | 26 195 170  | 155  | 188  | 165 171  | 68  | 
+ -------- Results --------- 
+18 0 434
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+181 143 184 140 90 45 25 185  | 124 74 97 38 142 158  | 60 190 58 87  | 193 188 99 131  | 129  | 34  |  | 
+ -------- Results --------- 
+24 0 9383
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../200_9.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+1 200 32 110 186 82 189 174 25 49 114 180 34  | 92 167 40 130 129 140 184  | 164 85 65 118 22 8 126  | 69 70 75 44  | 15 71 125 137 39  | 38 199 163  |  | 
+ -------- Results --------- 
+39 0 421470
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../300_5.txt
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+195 92 21 29 258  | 127 163  | 169  | 181  | 178 76  |  |  |  | 242  |  | 
+ -------- Results --------- 
+12 0 130
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../400_5.txt
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+348  | 48 83  | 92  | 355  | 15 308 24  | 199  |  | 251  | 281  | 377  |  | 185  |  | 
+ -------- Results --------- 
+13 0 306
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../500_5.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+117 375  | 495  |  |  | 191  | 185 212 203  |  | 491 254  |  |  | 415  |  |  |  | 121 102  | 365  | 
+ -------- Results --------- 
+13 0 851
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../600_5.txt
+Num Devices: 1
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+286 535  | 521 329  |  | 471  |  | 399  |  | 225  | 3 271  | 600  | 262  |  |  | 310  | 149  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 1991
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../700_5.txt
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+602 94 614 573  | 565 20  | 6  |  | 333 397  | 148 306  | 24  |  |  | 76  |  |  |  |  |  |  |  |  |  |  |  | 294  | 
+ -------- Results --------- 
+14 0 4887
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../800_5.txt
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+152  | 12  |  |  | 795 154  | 623 124  |  |  | 546  |  | 322  |  |  | 211  | 102 467  |  | 256  | 25  | 732  | 198  |  |  |  |  |  | 
+ -------- Results --------- 
+15 0 9102
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../900_5.txt
+Num Devices: 1
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+73  | 536  |  | 103 568  | 366 278  |  |  |  |  | 108  | 683  |  |  |  |  |  |  | 728 100  |  | 412  |  |  |  | 176  | 18  | 395  |  |  |  | 
+ -------- Results --------- 
+14 0 30815
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../1000_5.txt
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+342  | 664 420  |  | 746  |  | 988  | 97  | 359  |  |  |  | 916  |  | 223  |  | 162  | 778  |  |  |  |  |  | 901 952  |  |  |  | 656  |  | 229  |  |  |  | 
+ -------- Results --------- 
+15 0 41614
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock200_1.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+108 20 73 178 93  | 18 90 94 142  | 186 135 87  | 81 150  | 92  | 39 68 102 85 136  | 134  | 
+ -------- Results --------- 
+21 0 1027
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock400_4.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+242 154 247 19  | 202  | 389  | 267 7  | 197 8 186  | 334 394 241 353 340  | 245 380 393 211 294  | 17  | 135 324 157  | 112 362  |  | 270 147 343 396 266  | 161  | 
+ -------- Results --------- 
+33 0 47776
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/MANN_a27.clq
+Num Devices: 1
+12 26 378 32
+
+num blocks: 378
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+30 33 36 39 42 45 47 51 53 56  | 60 63 66 67 72 75 78 81 82 87 88  | 92 96 99 102 103 106 109 112 116 120  | 122 126 129 130 133 138 139 143 145 148 152  | 156 158 162 165 166 169 174 175 179 182 185  | 189 190 195 196 201 203 206 210 212 214 217  | 220 224 228 230 234 237 239 242 246 249  | 252 255 258 261 264 267 270 273 276 279  | 282 284 286 289 292 297 299 303 305 309 311  | 314 318 321 324 327 330 333 336 339 342 345  | 348 351 354 357 360 363 364 367 372 373 376  | 7 10 14 15 16 23 24 26 27  | 
+ -------- Results --------- 
+126 0 6287
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat1000-1.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+155  | 839  | 669  | 872 20 705  |  |  | 152  | 638  |  |  |  |  |  |  |  |  |  |  | 581  |  |  |  | 64  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+10 0 342
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat300-3.clq
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+76 255 239 56 49 190 219 4 205 40 149 247 290 33 48 299 139 298 89  | 19 235 273 226 24 176  | 252 174 21 293 160 98 245  | 199 221 166 20  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 2360
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat500-2.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+404 480 381 302 124 489 412 238 150 206 269 300 37 222 445 308  | 342 432 71 231 63 457 490 368 59 349 383  | 186 348 133 384 68 425  | 102 137 160  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+36 0 693
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+266 480 404 342 302 412 221 69 222 206 489 500 215 445 150  | 381 231 490 440 455 383 63 39 37 248 173 370 349 269 300 194 282  | 408 465 384 320 19 23 460 102 348 368  | 160 428 186 475 123  | 323 137  | 184  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 151663
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat700-2.clq
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+115 576 678 608 579 76 212 106 562 437 292 317 495 323 373 387 350 325 122 612  | 351 295 345 513 149 326 152 649 297 54 397  | 118 189 193 667 379 15 468 584  | 73 658 31 9  | 581  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+44 0 4834
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san1000.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ |  |  | 842  | 313 432  | 822  |  |  |  |  |  |  | 528  |  | 774 536  | 920  |  | 280  | 139  |  |  |  |  | 350 673 733  |  |  | 155  |  |  | 457  |  |  | 
+ -------- Results --------- 
+15 0 284
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san200_0.9_2.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+179 4 168 159 114 76 58  | 112 105 15 165 83 133 79 129 131 196  | 33 99 59 24 141 177 161 144 169 57 136 30 52  | 26 12 56 135 46 98 38 17 195 88 23  | 73 51 167 19 74 163 10 92 182 149  | 75 170 94 37 174 160 86 186 138  |  | 
+ -------- Results --------- 
+60 0 111
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san200_0.9_3.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+177 68 126 197 117 142 119 34 78  | 101 49 74 111 47  | 20 198 27 147 120 50 143 159  | 94 148 37 131 195 80  | 189 105 100 188 40 87 89 113  | 132 44 102 60 199 14  | 67 8  | 
+ -------- Results --------- 
+44 0 12166
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san400_0.7_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+95 76 177  | 10 349  | 164 27  | 201 298 229  | 330 360 319 126 138  | 260 234 74 339 216 142 78  | 129 82 362 188  | 386 42  | 206  | 338 187  | 112 215 300  | 46 270 125 25 145 301  |  | 
+ -------- Results --------- 
+40 0 161
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san400_0.7_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+347 44  | 49 386 341  | 119 23 176  | 4 297 250  | 106 364  | 175 168  | 29 385 162  | 37 227 325  |  | 228 196 7  | 79 372  | 361 46  | 202 375  | 
+ -------- Results --------- 
+30 0 596
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san400_0.7_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+314 334  | 113  | 59 20 201  | 362 371 97  |  | 360 368  | 33  | 355 217  | 350 263  | 227  | 117 138  | 207 43  | 27  | 
+ -------- Results --------- 
+22 0 1321
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/sanr200_0.9.clq
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+110 143 57 93 150 107 63 74 160 40 18  | 59 120 189 45 90 185 190 15 166  | 82 35 198 124 111 26 98 186 14  | 193 172 159 23 132 136  | 94 119 20 66 104  | 169 69  |  | 
+ -------- Results --------- 
+42 0 111509
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/sanr400_0.5.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+142 183 343 300 248  | 129 304  | 318  | 273 120  |  | 134  | 64 286  |  |  |  |  |  |  | 
+ -------- Results --------- 
+13 0 282
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/sanr400_0.7.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+173 84 70 114 292  | 351 121 350  |  |  | 180  | 198 179  | 14 378  | 208  | 55 68 132  | 287  | 238 166  | 286  |  | 
+ -------- Results --------- 
+21 0 90028
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/san400_0.9_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+214 132 108 135 206 161 353  | 283 246 138 278  | 83 179 8 80 53 62 331 379 94 367 75 137  | 315 236 19 30 245 189 129 67 87  | 23 378 51 343 389 223 332  | 111 210 34 311 203 269 294 13  | 85 275 107 289 371 387  | 276 55 304 156 142 249 326 153 204 268 376 290 317 341 175 186  | 16 354 286 229 225 182  | 196 254 312 140 305  | 375 74 273 233 377 357 143 400 11 257  | 288 252 35 247 195 130 287  | 234 147 127  | 
+ -------- Results --------- 
+100 0 6201
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat1000-2.clq
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+464 798 489 993 819 777 65 801 562 862 900 653 623 492 608 636 283 639 122 800  | 997 824 179 782 864 84 671 322 961 330  | 8 839 537 253 227 640 155 549 370 297  | 20 630  | 600 298 284  | 271  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+46 0 174048
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/p_hat500-3.clq
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+266 480 404 342 302 412 221 69 222 206 489 500 215 445 150  | 381 231 490 440 455 383 63 39 37 248 173 370 349 269 300 194 282  | 408 465 384 320 19 23 460 102 348 368  | 160 428 186 475 123  | 323 137  | 184  |  |  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+50 0 151632
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock400_3.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+90 92 102  | 252 260  | 178 68 221  | 93 142 186  | 135  | 380 73  | 18  | 388 262 348  | 207 234  | 20 223 150 85  | 365 39 311 134  | 276 304 108  |  | 
+ -------- Results --------- 
+31 0 127073
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock400_2.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+135 85 262  | 207 186 90  | 311  | 260  | 304 380 73 221 150 276  |  | 20 68  | 18 178 108 365 134  |  | 93 348 142  | 234 39  | 92  | 252 388  | 
+ -------- Results --------- 
+29 0 182283
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock400_1.clq
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+380  | 186  | 304 252 90  | 276 348  | 108 39 260  | 178 311 234  | 142 135 221 68 20  | 150  | 134 92  | 207 93  | 85 388  | 262 18  |  | 
+ -------- Results --------- 
+27 0 264693
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 4 BBMC3 ../java/DIMACS_cliques/brock800_4.clq
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+CUDA SOLUTION FINAL: 
+ |  | 135 294 561  |  |  | 8  | 687  | 362 511  | 161  | 154  |  |  |  |  |  | 112 157  | 17 681  |  | 270 389  | 624  | 509 714 343 396  | 324  | 394 666 495  | 247  | 334  | 
+ -------- Results --------- 
+26 0 976121
+
+
+Error: 
+

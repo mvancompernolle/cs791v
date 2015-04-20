@@ -9,6 +9,7 @@
 #include <boost/thread/thread.hpp>
 
 bool STILL_RUNNING = true;
+bool OUTPUT_TO_FILE = false;
 
 struct threadData{
 	long long limit;
@@ -30,6 +31,7 @@ int main(int argc, char** argv){
 	int n; 
 	BBMC* mc = NULL;
 	int ret;
+	int numGPUs = 1;
 
 	// read in the graph
 	readDIMACS(argv[2], degree, A, n);
@@ -56,24 +58,24 @@ int main(int argc, char** argv){
 	threadData data;
 	boost::thread t;
 
-
-	
-
 	// set time limit if passed in
-	if(argc > 3)
+	if(argc > 4)
 		mc->setTimeLimit(1000 * atoi(argv[3]));
 
 	timeval tod1, tod2;
 	gettimeofday(&tod1, NULL);
-	//mc->queueFcn();
 	if(argc > 3){
-		data.limit = (1000 * atoi(argv[3]));
+		numGPUs = atoi(argv[3]);
+	}
+	if(argc > 4){
+		data.limit = (1000 * atoi(argv[4]));
 		data.argv = argv;
 		data.mc = mc;
 		// create boost thread
 		t = boost::thread(timeLimit, data);
 	}
-	mc->searchParallel();
+
+	mc->searchParallel(numGPUs);
 	STILL_RUNNING = false;
 	gettimeofday(&tod2, NULL);
 
@@ -90,17 +92,29 @@ int main(int argc, char** argv){
 	std::cout << std::endl;
 
 	// output results to a file
-	//std::ofstream fout;
-	//fout.open("results.txt", std::ofstream::app);
-	std::string timeLimit;
-	if(argv[3] != NULL){
-		timeLimit = argv[3];
+	if(OUTPUT_TO_FILE){
+		std::ofstream fout;
+		fout.open("results.txt", std::ofstream::app);
+		std::string timeLimit;
+		if(argv[4] != NULL){
+			timeLimit = argv[4];
+		}
+		else{
+			timeLimit = "-1";
+		}
+		fout << argv[1] << ", " << argv[2] << ", " << argv[4] << ", " << timeLimit << std::endl;
+		fout << mc->getMaxSize() << ", " << mc->getNumNodes() << ", " << todiff(&tod2, &tod1)/1000 << std::endl;	
+		for(int i=0; i<mc->numDevices; i++){
+			fout << mc->kernelTimes[i] << ", ";
+		}
+		fout << std::endl;
+		for(int i=0; i<mc->numDevices; i++){
+			fout << mc->kernelTimesIO[i] << ", ";
+		}
+		fout << std::endl;
+		fout << mc->preProcessing << std::endl;
+		fout << std::endl;
 	}
-	else{
-		timeLimit = "-1";
-	}
-	//fout << argv[1] << ", " << argv[2] << ", " << timeLimit << std::endl;
-	//fout << mc->getMaxSize() << ", " << mc->getNumNodes() << ", " << todiff(&tod2, &tod1)/1000 << std::endl << std::endl;	
 
 	// delete max clique algorithm
 	delete mc;
@@ -169,16 +183,29 @@ void timeLimit(threadData d){
 
 	// if time limit exceed, print the results and kill the cuda kernel
 	if(STILL_RUNNING){
+		if(OUTPUT_TO_FILE){
+			// print results to file here
+			std::ofstream fout;
+			fout.open("results.txt", std::ofstream::app);
+			fout << d.argv[1] << ", " << d.argv[2] << ", " << d.limit/1000 << std::endl;
+			fout << d.mc->getMaxSize() << ", " << d.mc->getNumNodes() << ", " 
+				<< d.limit << std::endl << std::endl;
+		}
 		std::cout << "Timed Out" << std::endl;
-		// print results to file here
-		std::ofstream fout;
-		fout.open("results.txt", std::ofstream::app);
-		fout << d.argv[1] << ", " << d.argv[2] << ", " << d.limit/1000 << std::endl;
-		fout << d.mc->getMaxSize() << ", " << d.mc->getNumNodes() << ", " 
-			<< d.limit << std::endl << std::endl;
 
 		// terminate cuda kernel and program
-		cudaDeviceReset();
+		int numDevices;
+		cudaGetDeviceCount(&numDevices);
+		if(numDevices != 1){
+			for(int i=0; i<numDevices; i++){
+				cudaSetDevice(i);
+				cudaDeviceReset();
+			}
+		}
+		else{
+			cudaSetDevice(1);
+			cudaDeviceReset();
+		}
 		exit(1);
 	}
 }

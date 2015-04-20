@@ -45,12 +45,17 @@ void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInv
 	unsigned short* devU, *devColor;
 	thrust::device_vector<unsigned int> devC, devP;
 	cudaError_t err;
-	cudaEvent_t start, end;
+	cudaEvent_t start, end, start2, end2;
 	float elapsedTime;
 	unsigned int* sol = new unsigned int[numInts * numBlocks];
 	unsigned int* max = new unsigned int[numBlocks];
 
 	cudaSetDevice(threadId);
+
+	cudaEventCreate(&start);
+	cudaEventCreate(&end);
+	cudaEventCreate(&start2);
+	cudaEventCreate(&end2);
 
 	// get limit for stack and heap size
 	err = cudaDeviceSetLimit(cudaLimitStackSize, 40048);
@@ -58,6 +63,7 @@ void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInv
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
+
 	err = cudaMalloc( (void**) &devN, numInts * n * sizeof(unsigned int));
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
@@ -106,6 +112,9 @@ void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInv
 	}
 
 	// move the adjacency matrices to memory on the GPU
+	// start timer to transfer data
+	cudaEventRecord( start2, 0 );
+
 	err = cudaMemcpy(devN, hostN, n * numInts * sizeof(unsigned int), cudaMemcpyHostToDevice);
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
@@ -141,21 +150,12 @@ void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInv
 	// allocate inital nodes for each gpu
 	devC = activeC[threadId];
 	devP = activeP[threadId];
-	std::cout << "Input size: " << devC.size() << std::endl;
-
-
-
-	cudaEventCreate(&start);
-	cudaEventCreate(&end);
-
 
 	cudaEventRecord( start, 0 );
 	maxCliqueP<<<numBlocks, numInts, memSize>>>(currMax, devN, devInvN, devSolution, devMax, thrust::raw_pointer_cast( &devC[0] ),
 	 thrust::raw_pointer_cast( &devP[0] ), devRecC, devRecP, devNewP, devU, devColor);
     cudaEventRecord( end, 0 );
-    cudaEventSynchronize( end );
-    cudaEventElapsedTime( &elapsedTime, start, end );
-    std::cout << threadId << " Kernel Time: " << elapsedTime << std::endl;
+	cudaEventSynchronize( end );
 
 	// get solution back from kernel
   	err = cudaMemcpy(sol, devSolution, numInts * numBlocks * sizeof(unsigned int), cudaMemcpyDeviceToHost);
@@ -168,6 +168,13 @@ void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInv
 		std::cerr << "Error2: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
 	}
+	// end timer that measures transfer time included
+    cudaEventRecord( end2, 0 );
+	cudaEventSynchronize( end2 );
+    cudaEventElapsedTime( &kernelTimes[threadId], start, end );
+    std::cout << threadId << " Kernel Time (no transfer): " << kernelTimes[threadId] << std::endl;
+    cudaEventElapsedTime( &kernelTimesIO[threadId], start2, end2 );
+    std::cout << threadId << " Kernel Time (transfer): " << kernelTimesIO[threadId] << std::endl;
 
 	// print out maxes found in cuda for each search
 	int m = 0, index = 0;
@@ -219,6 +226,10 @@ BBMC::~BBMC(){
 		delete[] N;
 	if(invN != NULL)
 		delete[] invN;
+	if(kernelTimes != NULL)
+		delete[] kernelTimes;
+	if(kernelTimesIO != NULL)
+		delete[] kernelTimesIO;
 }
 
 void BBMC::orderVertices(){
@@ -380,20 +391,30 @@ __device__ void printBitSet(unsigned int* bitset, int size){
 }
 
 //////////////////////////// CUDA PARALLEL FUNCITONS /////////////////////////
-void BBMC::searchParallel(){
+void BBMC::searchParallel(int num){
 	cudaError_t err;
 	numInts = (n+sizeof(int)*8-1)/(sizeof(int)*8);
 	memSize = (sizeof(unsigned int) * numInts);
 	// get the number of devices
-	err = cudaGetDeviceCount(&numDevices);
-	if (err != cudaSuccess) {
-		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
+	numDevices = num;
+	if(num != 1){
+		err = cudaGetDeviceCount(&numDevices);
+		if (err != cudaSuccess) {
+			std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
+			exit(1);
+		}
 	}
 	std::cout << "Num Devices: " << numDevices << std::endl;
 	numBlocks = n;
 	activeC.resize(numDevices);
 	activeP.resize(numDevices);
+
+	// allocate memory for timing results
+	kernelTimes = new float[numDevices];
+	kernelTimesIO = new float[numDevices];
+
+	timeval tod1, tod2;
+	gettimeofday(&tod1, NULL);
 
 	// calculate the number of ints needed per vertex on gpu
 	int r = n % (sizeof(int)*8);
@@ -470,18 +491,13 @@ void BBMC::searchParallel(){
 		//  thrust::raw_pointer_cast( &devP[i][0] ), devRecC[i], devRecP[i], devNewP[i], devU[i], devColor[i]);
 		threads[i] = boost::thread(&BBMC::luanchKernel, this, i, hostN, hostInvN, sol, max, currentMax);
 	}
+	gettimeofday(&tod2, NULL);
+	preProcessing = todiff(&tod2, &tod1)/1000;
 
 	// join threads
 	for(int i=0; i<numDevices; i++){
 		threads[i].join();
 	} 
-
-    // get a cuda error if there was one
-    err = cudaGetLastError();
-	if (err != cudaSuccess) {
-		std::cerr << "Last Kernel Error: " << cudaGetErrorString(err) << std::endl;
-		exit(1);
-	}
 
 	// print out maxes found in cuda for each search
 	int m = 0, index = 0;
@@ -491,7 +507,8 @@ void BBMC::searchParallel(){
 			index = i;
 		}
 	}
-	std::cout << "MAX SIZE: " << *currentMax << std::endl;
+	// std::cout << "MAX SIZE: " << *currentMax << std::endl;
+	maxSize = *currentMax;
 	// printIntArray(sol + index*(numInts), 1, numInts);
 
 	unsigned int* cudaSol = new unsigned int[numInts];
@@ -507,6 +524,12 @@ void BBMC::searchParallel(){
 		std::cout << " | ";
 	}
 	std::cout << std::endl;
+
+	// clean up
+	delete[] hostN;
+	delete[] hostInvN;
+	delete[] sol;
+	delete[] max;
 }
 
 void BBMC::generateInitialNodes(int numBlocks, int numDevices){
@@ -621,8 +644,8 @@ void BBMC::generateInitialNodes(int numBlocks, int numDevices){
 				//std::cout << std::endl;
 			}		
 			// std::cout << "c " << c << " p " <<  p << std::endl;
-			activeC[index].push_back(c);
-			activeP[index].push_back(p);
+			activeC[index%numDevices].push_back(c);
+			activeP[index%numDevices].push_back(p);
 		}
 		// std::cout << count << " " << limit << " " << index << std::endl;
 		count++;

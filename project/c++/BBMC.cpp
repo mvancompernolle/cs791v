@@ -221,21 +221,9 @@ void BBMC::BBColor(const boost::dynamic_bitset<>& P, int U[], int color[]){
 			copyP[v] = 0;
 			Q[v] = 0;
 
-			if(v == 43 && colorClass == 2){
-				//std::cout << "Q: ";
-				//printBitSet(Q);
-				//std::cout << std::endl;
-			}
-
 			// perform a bitwise and operation
 			// Q becomes set of vertices that are in Q but not adjacent to v
 			Q &= invN[v];
-
-			if(v == 43 && colorClass == 2){
-				//std::cout << "Q2: ";
-				//printBitSet(Q);
-				//std::cout << std::endl;
-			}
 
 			U[i] = v;
 			color[i++] = colorClass;
