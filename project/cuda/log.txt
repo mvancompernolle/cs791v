@@ -9459,3 +9459,1675 @@ CUDA SOLUTION FINAL:
 
 Error: 
 
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.776192
+0 Kernel Time (transfer): 0.846816
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 840
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.76637
+0 Kernel Time (transfer): 1.83715
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 839
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 10.8298
+0 Kernel Time (transfer): 10.9025
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 831
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 39.6216
+0 Kernel Time (transfer): 39.6934
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 877
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 422.3
+0 Kernel Time (transfer): 422.373
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 1259
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 7228.24
+0 Kernel Time (transfer): 7228.31
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 8066
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.651264
+0 Kernel Time (transfer): 0.7192
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 123
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.46432
+0 Kernel Time (transfer): 1.53498
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 77
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 8.99994
+0 Kernel Time (transfer): 9.07258
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 86
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 32.7567
+0 Kernel Time (transfer): 32.8296
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 108
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 387.922
+0 Kernel Time (transfer): 388.025
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 464
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 7190.73
+0 Kernel Time (transfer): 7190.82
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7270
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_1.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.115712
+0 Kernel Time (transfer): 0.185344
+CUDA SOLUTION FINAL: 
+74 158  |  |  | 179 146  |  |  |  | 
+ -------- Results --------- 
+4 0 76
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_2.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.2304
+0 Kernel Time (transfer): 0.300736
+CUDA SOLUTION FINAL: 
+ | 94 156  | 103 42  | 66  |  | 43  |  | 
+ -------- Results --------- 
+6 0 80
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.715776
+0 Kernel Time (transfer): 0.804736
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 77
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.59744
+0 Kernel Time (transfer): 1.67552
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 81
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 9.79354
+0 Kernel Time (transfer): 9.86762
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 88
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 35.8431
+0 Kernel Time (transfer): 35.9641
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 112
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 397.911
+0 Kernel Time (transfer): 398.002
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 475
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 7192.79
+0 Kernel Time (transfer): 7192.89
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7271
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_1.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0new kernel launched: 1
+
+0 Kernel Time (no transfer): 0.181248
+0 Kernel Time (transfer): 0.487424
+1 Kernel Time (no transfer): 0.096288
+1 Kernel Time (transfer): 0.149504
+CUDA SOLUTION FINAL: 
+42 168 105  | 78  |  |  |  |  |  | 
+ -------- Results --------- 
+4 0 154
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_2.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 0.212992
+0 Kernel Time (transfer): 0.345632
+1 Kernel Time (no transfer): 0.123872
+1 Kernel Time (transfer): 0.186336
+CUDA SOLUTION FINAL: 
+ | 94 156  | 103 42  | 66  |  | 43  |  | 
+ -------- Results --------- 
+6 0 134
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 0.643072
+0 Kernel Time (transfer): 0.786656
+1 Kernel Time (no transfer): 0.224288
+1 Kernel Time (transfer): 0.299296
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 145
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.44998
+0 Kernel Time (transfer): 1.53293
+new kernel launched: 1
+1 Kernel Time (no transfer): 0.74752
+1 Kernel Time (transfer): 0.79216
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 136
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 8.99891
+0 Kernel Time (transfer): 9.23107
+1 Kernel Time (no transfer): 0.999424
+1 Kernel Time (transfer): 1.06288
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 136
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+0 Kernel Time (no transfer): 32.7107
+0 Kernel Time (transfer): 32.7688
+1 Kernel Time (no transfer): 2.79139
+1 Kernel Time (transfer): 2.8672
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 139
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 3.4529
+1 Kernel Time (transfer): 3.5208
+0 Kernel Time (no transfer): 388.286
+0 Kernel Time (transfer): 388.395
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 464
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 2
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+new kernel launched: 1
+1 Kernel Time (no transfer): 15.9539
+1 Kernel Time (transfer): 16.043
+0 Kernel Time (no transfer): 7193.41
+0 Kernel Time (transfer): 7193.51
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7275
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_1.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.121824
+0 Kernel Time (transfer): 0.191488
+CUDA SOLUTION FINAL: 
+74 158  |  |  | 179 146  |  |  |  | 
+ -------- Results --------- 
+4 0 88
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_2.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.25088
+0 Kernel Time (transfer): 0.321536
+CUDA SOLUTION FINAL: 
+ | 94 156  | 103 42  | 66  |  | 43  |  | 
+ -------- Results --------- 
+6 0 76
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.77824
+0 Kernel Time (transfer): 0.84896
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 79
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.77254
+0 Kernel Time (transfer): 1.84838
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 78
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 10.8524
+0 Kernel Time (transfer): 10.9261
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 91
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 39.6472
+0 Kernel Time (transfer): 39.7282
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 116
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 431.267
+0 Kernel Time (transfer): 431.36
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 507
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 7193.33
+0 Kernel Time (transfer): 7193.43
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7270
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_1.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.124896
+0 Kernel Time (transfer): 0.194592
+CUDA SOLUTION FINAL: 
+110 55 42  |  |  |  | 183  |  |  | 
+ -------- Results --------- 
+4 0 831
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_2.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.248832
+0 Kernel Time (transfer): 0.31888
+CUDA SOLUTION FINAL: 
+ | 94 156  | 103 42  | 66  |  | 43  |  | 
+ -------- Results --------- 
+6 0 874
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.780256
+0 Kernel Time (transfer): 0.849888
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 841
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.76947
+0 Kernel Time (transfer): 1.83949
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 842
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 10.8452
+0 Kernel Time (transfer): 10.9169
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 833
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 39.6646
+0 Kernel Time (transfer): 39.7355
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 879
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 423.309
+0 Kernel Time (transfer): 423.381
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 1262
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 7230.79
+0 Kernel Time (transfer): 7230.86
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 8069
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_1.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.123936
+0 Kernel Time (transfer): 0.193536
+CUDA SOLUTION FINAL: 
+74 158  |  |  | 179 146  |  |  |  | 
+ -------- Results --------- 
+4 0 84
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_2.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.25088
+0 Kernel Time (transfer): 0.321248
+CUDA SOLUTION FINAL: 
+ | 94 156  | 103 42  | 66  |  | 43  |  | 
+ -------- Results --------- 
+6 0 77
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.776192
+0 Kernel Time (transfer): 0.846944
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 78
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.76842
+0 Kernel Time (transfer): 1.81862
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 79
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 10.8482
+0 Kernel Time (transfer): 10.9205
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 89
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 39.6298
+0 Kernel Time (transfer): 39.7056
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 114
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 419.676
+0 Kernel Time (transfer): 419.758
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 498
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 7193.93
+0 Kernel Time (transfer): 7194.02
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7270
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_1.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.108544
+0 Kernel Time (transfer): 0.177728
+CUDA SOLUTION FINAL: 
+110 55 42  |  |  |  | 183  |  |  | 
+ -------- Results --------- 
+4 0 683
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_2.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.212992
+0 Kernel Time (transfer): 0.281568
+CUDA SOLUTION FINAL: 
+ | 94 156  | 103 42  | 66  |  | 43  |  | 
+ -------- Results --------- 
+6 0 75
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.649216
+0 Kernel Time (transfer): 0.718272
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 77
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.47046
+0 Kernel Time (transfer): 1.54061
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 80
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 9.00198
+0 Kernel Time (transfer): 9.07162
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 89
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 32.7803
+0 Kernel Time (transfer): 32.8571
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 109
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 388.037
+0 Kernel Time (transfer): 388.119
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 464
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_1.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.12288
+0 Kernel Time (transfer): 0.192032
+CUDA SOLUTION FINAL: 
+74 158  |  |  | 179 146  |  |  |  | 
+ -------- Results --------- 
+4 0 828
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_2.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.249888
+0 Kernel Time (transfer): 0.321184
+CUDA SOLUTION FINAL: 
+ | 94 156  | 103 42  | 66  |  | 43  |  | 
+ -------- Results --------- 
+6 0 859
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.780288
+0 Kernel Time (transfer): 0.850688
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 841
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.77664
+0 Kernel Time (transfer): 1.8473
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 843
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 10.926
+0 Kernel Time (transfer): 10.9761
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 834
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 39.5397
+0 Kernel Time (transfer): 39.6121
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 895
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 425.053
+0 Kernel Time (transfer): 425.125
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 1248
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 7226.3
+0 Kernel Time (transfer): 7226.37
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 8081
+
+
+Error: 
+
+NEW LOG ENTRY
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_1.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.12288
+0 Kernel Time (transfer): 0.193536
+CUDA SOLUTION FINAL: 
+74 158  |  |  | 179 146  |  |  |  | 
+ -------- Results --------- 
+4 0 75
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_2.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.25088
+0 Kernel Time (transfer): 0.320992
+CUDA SOLUTION FINAL: 
+ | 94 156  | 103 42  | 66  |  | 43  |  | 
+ -------- Results --------- 
+6 0 75
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_3.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 0.776192
+0 Kernel Time (transfer): 0.847872
+CUDA SOLUTION FINAL: 
+100  | 89 39 120  | 61  |  | 45 13  |  |  | 
+ -------- Results --------- 
+7 0 75
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_4.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.77251
+0 Kernel Time (transfer): 1.84573
+CUDA SOLUTION FINAL: 
+48 131  | 88 90 73  |  | 83 67  | 195  | 147  |  | 
+ -------- Results --------- 
+9 0 76
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_5.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 10.8585
+0 Kernel Time (transfer): 10.9308
+CUDA SOLUTION FINAL: 
+62 191  | 72 179 58  | 97 104 110 49  |  | 151  | 160  |  | 
+ -------- Results --------- 
+11 0 85
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_6.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 39.6616
+0 Kernel Time (transfer): 39.7425
+CUDA SOLUTION FINAL: 
+166 133 16  | 139 75 7 83  | 4 162 142  | 134  | 200  | 175  | 189  | 
+ -------- Results --------- 
+14 0 114
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_7.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 418.195
+0 Kernel Time (transfer): 418.276
+CUDA SOLUTION FINAL: 
+176 161 73 25 21 8 97 40 193 39 53  | 170 158  | 149  |  | 6 57 74 195  |  |  | 
+ -------- Results --------- 
+18 0 493
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_8.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 7193.71
+0 Kernel Time (transfer): 7193.81
+CUDA SOLUTION FINAL: 
+192 166 164 2 73 26 168 3  | 186 163 184 90 197 7 140  | 20 17  | 18  | 129 52 145 182 153 34  |  |  | 
+ -------- Results --------- 
+24 0 7268
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../200_9.txt
+Num Devices: 1
+7 8 200 32
+
+num blocks: 200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 381355
+0 Kernel Time (transfer): 381355
+CUDA SOLUTION FINAL: 
+186 177 174 169 167 165 164 153 147 112 111 65 34 26  | 28 25 22 16 200 183  | 189 150 140 110 68 66 49 47 33 168  | 115 79  | 126 75 72 46 71  | 194 154  |  | 
+ -------- Results --------- 
+39 0 381432
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../300_5.txt
+Num Devices: 1
+10 12 300 32
+
+num blocks: 300
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 45.9745
+0 Kernel Time (transfer): 46.0561
+CUDA SOLUTION FINAL: 
+ |  | 214 87 281 293 297  | 124 127  | 128 289  | 36  | 107  | 180  |  |  | 
+ -------- Results --------- 
+12 0 132
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../400_5.txt
+Num Devices: 1
+13 16 400 32
+
+num blocks: 400
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 214.264
+0 Kernel Time (transfer): 214.363
+CUDA SOLUTION FINAL: 
+202 105  | 279 354  | 85  | 28  |  |  | 269 41  | 73  |  |  | 385  | 174 188 220  |  | 
+ -------- Results --------- 
+13 0 314
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../500_5.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 677.804
+0 Kernel Time (transfer): 677.935
+CUDA SOLUTION FINAL: 
+368  | 319 126  |  | 159 154  | 478 95  |  | 109  |  |  | 53  | 305  |  |  | 11  | 181  | 75  | 
+ -------- Results --------- 
+13 0 796
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../600_5.txt
+Num Devices: 1
+19 24 600 32
+
+num blocks: 600
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 2058.05
+0 Kernel Time (transfer): 2058.2
+CUDA SOLUTION FINAL: 
+535 286 399  | 329  |  | 521  |  | 3  | 149 600  | 471  | 271  | 225 262  |  |  |  | 310  |  |  |  | 9  |  | 
+ -------- Results --------- 
+14 0 2199
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../700_5.txt
+Num Devices: 1
+22 28 700 32
+
+num blocks: 700
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 4657.83
+0 Kernel Time (transfer): 4658.01
+CUDA SOLUTION FINAL: 
+614  | 132 438  | 354  |  |  | 391  |  | 89 477  | 561  | 621  |  |  |  |  | 153  | 618  |  | 638  | 264  | 662  |  |  | 
+ -------- Results --------- 
+14 0 4827
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../800_5.txt
+Num Devices: 1
+25 0 800 32
+
+num blocks: 800
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 8242.09
+0 Kernel Time (transfer): 8242.31
+CUDA SOLUTION FINAL: 
+ |  | 12  | 152  |  | 795  | 154  | 124  |  | 322 732  | 546  |  |  | 623 588  |  |  |  | 102  | 211 25 198  |  | 256  |  |  |  |  | 
+ -------- Results --------- 
+15 0 8440
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../900_5.txt
+Num Devices: 1
+29 4 900 32
+
+num blocks: 900
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 30033
+0 Kernel Time (transfer): 30033.2
+CUDA SOLUTION FINAL: 
+749 31  |  |  | 184 406  | 787 848  |  | 409  | 282  |  |  |  |  |  |  |  |  | 431  | 358  | 112  |  |  | 611  |  |  |  |  | 58 401  |  |  | 
+ -------- Results --------- 
+14 0 30269
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../1000_5.txt
+Num Devices: 1
+32 8 1000 32
+
+num blocks: 1000
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 40988.5
+0 Kernel Time (transfer): 40988.8
+CUDA SOLUTION FINAL: 
+ | 368  |  | 445 420  |  | 129  | 270  |  |  |  | 883  |  |  | 601 544  | 705  | 294  |  |  | 669  | 616  |  |  |  |  | 980  |  |  |  |  | 296 830  |  |  | 
+ -------- Results --------- 
+15 0 41266
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../1100_5.txt
+Num Devices: 1
+35 12 1100 32
+
+num blocks: 1100
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 132617
+0 Kernel Time (transfer): 132617
+CUDA SOLUTION FINAL: 
+ | 964 94  | 18  |  |  | 701  |  |  |  |  | 555  |  |  | 357  | 946  | 288  | 404  |  |  |  | 1034 595  |  | 723  |  |  |  | 616  |  |  |  | 483  |  |  | 168  |  | 
+ -------- Results --------- 
+15 0 132936
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../1200_5.txt
+Num Devices: 1
+38 16 1200 32
+
+num blocks: 1200
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 190789
+0 Kernel Time (transfer): 190789
+CUDA SOLUTION FINAL: 
+510  |  |  | 762  | 473  | 1037  | 833  |  |  |  | 1143  |  |  |  |  | 1177  | 643 118  | 771  | 801  | 711  |  | 74  |  |  | 315  |  |  |  | 630  | 938  |  |  |  |  |  |  |  |  | 
+ -------- Results --------- 
+16 0 191159
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../500_2.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 1.36192
+0 Kernel Time (transfer): 1.47053
+CUDA SOLUTION FINAL: 
+479 485 266 230  | 257  |  |  |  |  |  |  |  |  |  |  |  | 232 326  |  |  | 
+ -------- Results --------- 
+7 0 118
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../500_3.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 10.1714
+0 Kernel Time (transfer): 10.284
+CUDA SOLUTION FINAL: 
+ | 198  | 104 269 212  | 334  |  | 102  | 492  |  |  |  |  |  | 126  |  |  |  | 
+ -------- Results --------- 
+8 0 127
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../500_4.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 55.6882
+0 Kernel Time (transfer): 55.8039
+CUDA SOLUTION FINAL: 
+102  | 346  | 146 154  | 318 176  | 487 272  |  |  | 413 216  |  | 42  |  |  |  |  |  |  | 
+ -------- Results --------- 
+11 0 174
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../500_6.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 16107.5
+0 Kernel Time (transfer): 16107.7
+CUDA SOLUTION FINAL: 
+ |  | 395  |  |  | 396 46 21  | 239 114  | 184 174 234 440  |  | 345 302  | 59  |  |  | 151 366 399  |  | 411  | 
+ -------- Results --------- 
+17 0 16226
+
+
+Error: 
+
+NEW LOG ENTRY
+Output: 5 BBMC2 ../500_7.txt
+Num Devices: 1
+16 20 500 32
+
+num blocks: 500
+Stack Limit: 1024 Heap Limit: 8388608
+new kernel launched: 0
+0 Kernel Time (no transfer): 741195
+0 Kernel Time (transfer): 741195
+CUDA SOLUTION FINAL: 
+181 174 459 9  | 139 56 282 234 79  | 424 252 102 400  |  | 189 359  | 309 243  |  | 275  | 251 6  |  |  |  | 233  |  | 4  |  | 
+ -------- Results --------- 
+22 0 741310
+
+
+Error: 
+
+NEW LOG ENTRY

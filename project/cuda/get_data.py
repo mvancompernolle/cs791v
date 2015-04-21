@@ -5,6 +5,7 @@ def main():
 
     N = []
     N.append("1");
+    N.append("2");
 
     L = []
     L.append("BBMC2")
@@ -22,6 +23,8 @@ def main():
 
     G = []
 
+    G.append("../200_1.txt")
+    G.append("../200_2.txt")
     G.append("../200_3.txt")
     G.append("../200_4.txt")
     G.append("../200_5.txt")
@@ -38,6 +41,16 @@ def main():
     G.append("../800_5.txt")
     G.append("../900_5.txt")
     G.append("../1000_5.txt")
+    G.append("../1100_5.txt")
+    G.append("../1200_5.txt")
+
+    G.append("../500_2.txt")
+    G.append("../500_3.txt")
+    G.append("../500_4.txt")
+    G.append("../500_6.txt")
+    G.append("../500_7.txt")
+    G.append("../500_8.txt")
+    G.append("../500_9.txt")
 
     G.append("../java/DIMACS_cliques/brock200_1.clq")
     G.append("../java/DIMACS_cliques/brock400_4.clq")

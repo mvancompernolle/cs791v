@@ -61,7 +61,7 @@ void BBMC::luanchKernel(int threadId, unsigned int* hostN, unsigned int* hostInv
 	cudaEventCreate(&end2);
 
 	// get limit for stack and heap size
-	err = cudaDeviceSetLimit(cudaLimitStackSize, 40048);
+	err = cudaDeviceSetLimit(cudaLimitStackSize, 50048);
 	if (err != cudaSuccess) {
 		std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
 		exit(1);
